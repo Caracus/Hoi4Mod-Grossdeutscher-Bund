@@ -571,6 +571,8 @@ country_event = {
 		
 		86 = { add_core_of = GER}
 		GER = { transfer_state = 86 }
+		808 = { add_core_of = GER}
+		GER = { transfer_state = 808 }
 		85 = { add_core_of = GER}
 		GER = { transfer_state = 85 }
 		

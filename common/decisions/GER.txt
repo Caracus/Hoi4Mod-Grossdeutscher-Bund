@@ -1198,6 +1198,46 @@ political_actions = {
 			add_state_core = 85
 		}
 	}
+
+	# integrate gnesen
+		core_gnesen = {
+			allowed = {
+				OR = {
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
+				}
+			}
+			available = {
+				ROOT = {
+						808 = {
+							compliance > 40
+							resistance < 10
+						}
+				}
+				
+			}
+			cost = 210
+			fire_only_once = yes
+			days_remove = 420
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {
+				owns_state = 808
+							NOT = {
+					ROOT = {
+						86 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+			remove_effect = {
+				add_state_core = 808
+			}
+		}
 	
 # integrate memel
 	core_memel = {
@@ -2098,7 +2138,7 @@ political_actions = {
 		}
 	}
 	
-				# bohemia
+	# bohemia
 	core_bohemia = {
 		allowed = {
 			OR = {
