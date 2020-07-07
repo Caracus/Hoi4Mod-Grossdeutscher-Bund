@@ -1,0 +1,190 @@
+﻿division_template = {
+	name = "Armée des peuples"
+	is_locked = yes
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+		division = {
+		name = "2. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+		division = {
+		name = "3. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+		division = {
+		name = "4. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+		division = {
+		name = "5. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "6. Armée des peuples"
+		location = 3652
+		division_template = "Armée des peuples"
+	}
+		division = {
+		name = "7. Armée des peuples"
+		location = 3652
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "8. Armée des peuples"
+		location = 3652
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "9. Armée des peuples"
+		location = 3652
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "10. Armée des peuples"
+		location = 3652
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "11. Armée des peuples"
+		location = 512
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "12. Armée des peuples"
+		location = 512
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "13. Armée des peuples"
+		location = 512
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "14. Armée des peuples"
+		location = 512
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "15. Armée des peuples"
+		location = 512
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "16. Armée des peuples"
+		location = 9578
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "17. Armée des peuples"
+		location = 9578
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "18. Armée des peuples"
+		location = 9578
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "19. Armée des peuples"
+		location = 9578
+		division_template = "Armée des peuples"
+	}
+			division = {
+		name = "20. Armée des peuples"
+		location = 9578
+		division_template = "Armée des peuples"
+	}
+				division = {
+		name = "21. Armée des peuples"
+		location = 9642
+		division_template = "Armée des peuples"
+	}
+				division = {
+		name = "22. Armée des peuples"
+		location = 9642
+		division_template = "Armée des peuples"
+	}
+				division = {
+		name = "23. Armée des peuples"
+		location = 9642
+		division_template = "Armée des peuples"
+	}
+				division = {
+		name = "24. Armée des peuples"
+		location = 9642
+		division_template = "Armée des peuples"
+	}
+				division = {
+		name = "25. Armée des peuples"
+		location = 9642
+		division_template = "Armée des peuples"
+	}
+				division = {
+		name = "26. Armée des peuples"
+		location = 6649
+		division_template = "Armée des peuples"
+	}
+					division = {
+		name = "27. Armée des peuples"
+		location = 6649
+		division_template = "Armée des peuples"
+	}
+					division = {
+		name = "28. Armée des peuples"
+		location = 6649
+		division_template = "Armée des peuples"
+	}
+					division = {
+		name = "29. Armée des peuples"
+		location = 6649
+		division_template = "Armée des peuples"
+	}
+					division = {
+		name = "30. Armée des peuples"
+		location = 6649
+		division_template = "Armée des peuples"
+	}
+						division = {
+		name = "31. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+						division = {
+		name = "32. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+						division = {
+		name = "33. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+						division = {
+		name = "34. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+						division = {
+		name = "35. Armée des peuples"
+		location = 11506
+		division_template = "Armée des peuples"
+	}
+}

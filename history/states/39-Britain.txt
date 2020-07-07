@@ -1,0 +1,28 @@
+
+state={
+	id=39
+	name="STATE_39"
+	resources={
+		aluminium=14.000
+	}
+
+	history={
+		owner = ITA
+		buildings = {
+		infrastructure = 6
+			
+
+		}
+		add_core_of = ITA
+		add_core_of = AUS
+
+
+	}
+
+	provinces={
+		6675 9630 11615 
+	}
+	manpower=223913
+	buildings_max_level_factor=0.5
+	state_category=rural
+}

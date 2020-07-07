@@ -1,0 +1,18 @@
+state={
+	id=801
+	name="STATE_801"
+	provinces={
+		11562 
+	}
+history={
+		owner = HOL
+		buildings = {
+			infrastructure = 7
+
+		}
+		add_core_of = HOL
+	}
+	manpower=53258
+	buildings_max_level_factor=0.2
+	state_category=rural
+}

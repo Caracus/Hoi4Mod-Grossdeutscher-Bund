@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_germany_wilhelm_II_von_preussen"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_wilhelm_II_von_preussen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_germany_wilhelm_III_von_preussen"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_wilhelm_III_von_preussen.dds"
+	}	
+	
+		spriteType = {
+		name = "GFX_Portrait_germany_wilhelm_IV_von_preussen"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_wilhelm_IV_von_preussen.dds"
+	}	
+	
+		spriteType = {
+		name = "GFX_Portrait_germany_otto_von_hapsburg2"
+		texturefile = "gfx/leaders/GER/Portrait_germany_otto_von_hapsburg2.dds"
+	}	
+	
+			spriteType = {
+		name = "GFX_Portrait_germany_albrecht_von_wurttemberg"
+		texturefile = "gfx/leaders/GER/Portrait_germany_albrecht_von_wurttemberg.dds"
+	}
+			spriteType = {
+		name = "GFX_Portrait_germany_friedrich_christian_von_sachsen"
+		texturefile = "gfx/leaders/GER/Portrait_germany_friedrich_christian_von_sachsen.dds"
+	}
+	
+			spriteType = {
+		name = "GFX_Portrait_germany_rupprecht_von_bayern"
+		texturefile = "gfx/leaders/GER/Portrait_germany_rupprecht_von_bayern.dds"
+	}
+	
+}
