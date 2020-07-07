@@ -1138,9 +1138,9 @@ political_actions = {
 			}
 			
 		}
-		cost = 108
+		cost = 83
 		fire_only_once = yes
-		days_remove = 216
+		days_remove = 166
 		ai_will_do = {
 			factor = 10
 		}
@@ -1178,9 +1178,9 @@ political_actions = {
 			}
 			
 		}
-		cost = 210
+		cost = 190
 		fire_only_once = yes
-		days_remove = 420
+		days_remove = 380
 		ai_will_do = {
 			factor = 10
 		}
@@ -1218,9 +1218,9 @@ political_actions = {
 				}
 				
 			}
-			cost = 210
+			cost = 90
 			fire_only_once = yes
-			days_remove = 420
+			days_remove = 180
 			ai_will_do = {
 				factor = 10
 			}
