@@ -2,17 +2,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Portrait_germany_wilhelm_II_von_preussen"
-		texturefile = "gfx/leaders/GER/Portrait_Germany_wilhelm_II_von_preussen.dds"
+		texturefile = "gfx/leaders/GER/Portrait_germany_wilhelm_II_von_preussen.dds"
 	}
 
 	spriteType = {
 		name = "GFX_Portrait_germany_wilhelm_III_von_preussen"
-		texturefile = "gfx/leaders/GER/Portrait_Germany_wilhelm_III_von_preussen.dds"
+		texturefile = "gfx/leaders/GER/Portrait_germany_wilhelm_III_von_preussen.dds"
 	}	
 	
 		spriteType = {
 		name = "GFX_Portrait_germany_wilhelm_IV_von_preussen"
-		texturefile = "gfx/leaders/GER/Portrait_Germany_wilhelm_IV_von_preussen.dds"
+		texturefile = "gfx/leaders/GER/Portrait_germany_wilhelm_IV_von_preussen.dds"
 	}	
 	
 		spriteType = {

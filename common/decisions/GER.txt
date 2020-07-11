@@ -1,41 +1,39 @@
 #Category only allowed for GER
 GER_mefo_bills_category = {
-
 	GER_mefo_bills_mission = {
-
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		icon = ger_mefo_bills
-
 		available = {
-			NOT = { has_government = democratic }
+			NOT = {
+				has_government = democratic
+			}
 			GER_can_delay_mefo_payment = yes
 			has_political_power > 0
-			hidden_trigger = { always = no }
+			hidden_trigger = {
+				always = no
+			}
 		}
-
 		#cost = GER_mefo_bill_counter?10
-
 		days_mission_timeout = 180
 		is_good = yes
 		fire_only_once = yes
-
 		cancel_trigger = {
 			hidden_trigger = {
 				OR = {
-					NOT = { GER_has_mefo_bills = yes }
+					NOT = {
+						GER_has_mefo_bills = yes
+					}
 					has_idea = GER_mefo_bills_ended
 				}
 			}
 		}
-
 		days_remove = GER_extend_mefo_bills_days?0
 		remove_effect = {
 		}
-
 		complete_effect = {
 		}
-
 		timeout_effect = {
 			if = {
 				limit = {
@@ -45,263 +43,402 @@ GER_mefo_bills_category = {
 				#1
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 15
+							compare = less_than
+						}
 					}
 					add_political_power = -20
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 60 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 60
+					}
 				}
 				#2
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 20 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 20
+							compare = equals
+						}
 					}
 					add_political_power = -40
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 80 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 80
+					}
 				}
 				#3
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 30 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 30
+							compare = equals
+						}
 					}
 					add_political_power = -60
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 100 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 100
+					}
 				}
 				#4
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 40 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 40
+							compare = equals
+						}
 					}
 					add_political_power = -80
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 120 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 120
+					}
 				}
 				#5
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 50 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 50
+							compare = equals
+						}
 					}
 					add_political_power = -100
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 140 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 140
+					}
 				}
 				#6
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 60 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 60
+							compare = equals
+						}
 					}
 					add_political_power = -120
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 160 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 160
+					}
 				}
 				#7
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 70 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 70
+							compare = equals
+						}
 					}
 					add_political_power = -140
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 180 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 180
+					}
 				}
 				#8
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 80 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 80
+							compare = equals
+						}
 					}
 					add_political_power = -160
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 200 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 200
+					}
 				}
 				#9
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 90 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 90
+							compare = equals
+						}
 					}
 					add_political_power = -180
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 220 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 220
+					}
 				}
 				#10
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 100 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 100
+							compare = equals
+						}
 					}
 					add_political_power = -200
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 240 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 240
+					}
 				}
 				#11
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 110 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 110
+							compare = equals
+						}
 					}
 					add_political_power = -220
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 260 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 260
+					}
 				}
 				#12
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 120 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 120
+							compare = equals
+						}
 					}
 					add_political_power = -240
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 280 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 280
+					}
 				}
 				#13
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 130 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 130
+							compare = equals
+						}
 					}
 					add_political_power = -260
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 300 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 300
+					}
 				}
 				#14
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 140 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 140
+							compare = equals
+						}
 					}
 					add_political_power = -280
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 320 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 320
+					}
 				}
 				#15
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 150 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 150
+							compare = equals
+						}
 					}
 					add_political_power = -300
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 340 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 340
+					}
 				}
 				#16
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 160 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 160
+							compare = equals
+						}
 					}
 					add_political_power = -320
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 360 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 360
+					}
 				}
 				#17
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 170 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 170
+							compare = equals
+						}
 					}
 					add_political_power = -340
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 380 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 380
+					}
 				}
 				#18
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 180 compare = equals }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 180
+							compare = equals
+						}
 					}
 					add_political_power = -360
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 400 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 400
+					}
 				}
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 180 compare = greater_than }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 180
+							compare = greater_than
+						}
 					}
 					add_political_power = -380
-					add_timed_idea = { idea = GER_mefo_bills_ended days = 420 }
+					add_timed_idea = {
+						idea = GER_mefo_bills_ended
+						days = 420
+					}
 				}
 			}
 			else = {
 				custom_effect_tooltip = GER_mefo_bills_mission_tt
 				custom_effect_tooltip = GER_mefo_bills_effect_in_days
 				hidden_effect = {
-					set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+					set_variable = {
+						GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission
+					}
 					set_country_flag = paid_for_mefo
 				}
 				GER_mefo_bills_level_up = yes
 				if = {
 					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+						check_variable = {
+							var = GER_mefo_bill_counter
+							value = 15
+							compare = less_than
+						}
 					}
-					hidden_effect = { set_variable = { var = GER_mefo_bill_counter value = 10 } }
+					hidden_effect = {
+						set_variable = {
+							var = GER_mefo_bill_counter
+							value = 10
+						}
+					}
 				}
-				add_to_variable = { var = GER_mefo_bill_counter value = 10 }
-
+				add_to_variable = {
+					var = GER_mefo_bill_counter
+					value = 10
+				}
 				hidden_effect = {
 					activate_mission = GER_mefo_bills_mission
 				}
 			}
 		}
-
 		ai_will_do = {
 			factor = 200
 		}
 	}
-	
 	GER_cancel_mefos = {
-
 		icon = ger_mefo_bills
-
 		available = {
-			hidden_trigger = { 
-				NOT = { has_country_flag = ger_has_cancelled_mefo } 
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = ger_has_cancelled_mefo
+				}
 				NOT = {
 					OR = {
-						NOT = { GER_has_mefo_bills = yes }
+						NOT = {
+							GER_has_mefo_bills = yes
+						}
 						has_idea = GER_mefo_bills_ended
 					}
 				}
 			}
 		}
-
 		cost = 0
-
 		fire_only_once = no
-
 		visible = {
-			hidden_trigger = { 
-				NOT = { has_country_flag = ger_has_cancelled_mefo } 
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = ger_has_cancelled_mefo
+				}
 				NOT = {
 					OR = {
-						NOT = { GER_has_mefo_bills = yes }
+						NOT = {
+							GER_has_mefo_bills = yes
+						}
 						has_idea = GER_mefo_bills_ended
 					}
 				}
 			}
 		}
-
 		cancel_if_not_visible = yes
-
 		remove_effect = {
 			set_country_flag = ger_has_cancelled_mefo
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
 	GER_renew_mefos = {
-
 		icon = ger_mefo_bills
-
 		available = {
-			hidden_trigger = { 
+			hidden_trigger = {
 				has_country_flag = ger_has_cancelled_mefo
 				NOT = {
 					OR = {
-						NOT = { GER_has_mefo_bills = yes }
+						NOT = {
+							GER_has_mefo_bills = yes
+						}
 						has_idea = GER_mefo_bills_ended
 					}
 				}
 			}
 		}
-
 		cost = 0
-
 		fire_only_once = no
-
 		visible = {
-			hidden_trigger = { 
+			hidden_trigger = {
 				has_country_flag = ger_has_cancelled_mefo
 				NOT = {
 					OR = {
-						NOT = { GER_has_mefo_bills = yes }
+						NOT = {
+							GER_has_mefo_bills = yes
+						}
 						has_idea = GER_mefo_bills_ended
 					}
 				}
 			}
 		}
-
 		cancel_if_not_visible = yes
-
 		remove_effect = {
 			clr_country_flag = ger_has_cancelled_mefo
 		}
-
 		ai_will_do = {
 			factor = 200
 		}
@@ -309,249 +446,310 @@ GER_mefo_bills_category = {
 }
 
 operations = {
-
-		invite_norway = {	
-			icon = generic_operation	
-			allowed = {	
-				always = yes	
-				#added through on_action	
-			}	
-			available = {	
-				country_exists = NOR	
-				NOT = {	
-					has_war_with = NOR	
-				}	
-				NOR = {	
-					is_puppet = no	
-				}	
-			}	
-				
-			visible = {	
-				has_country_flag = invite_norway_flag	
-				is_puppet = no	
-			}	
-			fire_only_once = yes	
-			cost = 25	
-			complete_effect = {	
-				NOR = { country_event = { id = gdb_germany.23 days = 1 } }	
-			}	
-			ai_will_do = {	
-				factor = 1	
-			}	
-		}	
-			
-		invite_denmark = {	
-			icon = generic_operation	
-			allowed = {	
-				always = yes	
-				#added through on_action	
-			}	
-			available = {	
-				country_exists = DEN	
-				NOT = {	
-					has_war_with = DEN	
-				}	
-				DEN = {	
-					is_puppet = no	
-				}	
-			}	
-				
-			visible = {	
-				has_country_flag = invite_denmark_flag	
-				is_puppet = no	
-			}	
-			fire_only_once = yes	
-			cost = 25	
-			complete_effect = {	
-				DEN = { country_event = { id = gdb_germany.23 days = 1 } }	
-			}	
-			ai_will_do = {	
-				factor = 1	
-			}	
-		}	
-		
-		invite_poland = {	
-			icon = generic_operation	
-			allowed = {	
-				always = yes	
-				#added through on_action	
-			}	
-			available = {	
-				country_exists = POL	
-				NOT = {	
-					has_war_with = POL	
-				}	
-				POL = {	
-					is_puppet = no	
-				}	
-			}	
-				
-			visible = {	
-				has_country_flag = invite_denmark_flag	
-				is_puppet = no	
-			}	
-			fire_only_once = yes	
-			cost = 25	
-			complete_effect = {	
-				POL = { country_event = { id = gdb_germany.23 days = 1 } }	
-			}	
-			ai_will_do = {	
-				factor = 1	
-			}	
-		}	
-		invite_sweden = {	
-			icon = generic_operation	
-			allowed = {	
-				always = yes	
-				#added through on_action	
-			}	
-			available = {	
-				country_exists = SWE	
-				NOT = {	
-					has_war_with = SWE	
-				}	
-				SWE = {	
-					is_puppet = no	
-				}	
-			}	
-				
-			visible = {	
-				has_country_flag = invite_sweden_flag	
-				is_puppet = no	
-			}	
-			fire_only_once = yes	
-			cost = 25	
-			complete_effect = {	
-				SWE = { country_event = { id = gdb_germany.23 days = 1 } }	
-			}	
-			ai_will_do = {	
-				factor = 1	
-			}	
-		}		
-		invite_uk = {	
-			icon = generic_operation	
-			allowed = {	
-				always = yes	
-				#added through on_action	
-			}	
-			available = {	
-				country_exists = ENG	
-				NOT = {	
-					has_war_with = ENG	
-				}	
-				ENG = {	
-					is_puppet = no	
-				}	
-			}	
-				
-			visible = {	
-				has_country_flag = invite_uk_flag	
-				is_puppet = no	
-			}	
-			fire_only_once = yes	
-			cost = 25	
-			complete_effect = {	
-				ENG = { country_event = { id = gdb_germany.23 days = 1 } }	
-			}	
-			ai_will_do = {	
-				factor = 1	
-			}	
-		}			
-			
-		invite_usa = {	
-			icon = generic_operation	
-			allowed = {	
-				always = yes	
-				#added through on_action	
-			}	
-			available = {	
-				country_exists = USA	
-				NOT = {	
-					has_war_with = USA	
-				}	
-				USA = {	
-					is_puppet = no	
-				}	
-			}	
-				
-			visible = {	
-				has_country_flag = invite_usa_flag	
-				is_puppet = no	
-			}	
-			fire_only_once = yes	
-			cost = 25	
-			complete_effect = {	
-				USA = { country_event = { id = gdb_germany.23 days = 1 } }	
-			}	
-			ai_will_do = {	
-				factor = 1	
-			}	
-		}			
-			
-		invite_netherlands = {	
-			icon = generic_operation	
-			allowed = {	
-				always = yes	
-				#added through on_action	
-			}	
-			available = {	
-				country_exists = HOL	
-				NOT = {	
-					has_war_with = HOL	
-				}	
-				HOL = {	
-					is_puppet = no	
-				}	
-			}	
-				
-			visible = {	
-				has_country_flag = invite_netherlands_flag	
-				is_puppet = no	
-			}	
-			fire_only_once = yes	
-			cost = 25	
-			complete_effect = {	
-				HOL = { country_event = { id = gdb_germany.23 days = 1 } }	
-			}	
-			ai_will_do = {	
-				factor = 1	
-			}	
+	#end the war with poland or white peace on timeout
+	end_polish_war = {
+		allowed = {
 		}
-
-	GER_barbarossa_mission = {
-
+		available = {
+			GER = {
+				controls_province = 362
+				controls_province = 279
+				controls_province = 3295
+				controls_province = 6464
+				controls_province = 6558
+			}
+		}
+		days_mission_timeout = 14
+		fire_only_once = yes
+		activation = {
+			has_global_flag = limited_war_germany_poland
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+		}
+		complete_effect = {
+			clr_global_flag = limited_war_germany_poland
+			GER = {
+				country_event = {
+					id = gdb_germany.33
+					days = 1
+				}
+			}
+		}
+		timeout_effect = {
+			clr_global_flag = limited_war_germany_poland
+			GER = {
+				country_event = {
+					id = gdb_germany.34
+					days = 1
+				}
+			}
+		}
+	}
+	invite_norway = {
 		icon = generic_operation
-
+		allowed = {
+			always = yes
+			#added through on_action	
+		}
+		available = {
+			country_exists = NOR
+			NOT = {
+				has_war_with = NOR
+			}
+			NOR = {
+				is_puppet = no
+			}
+		}
+		visible = {
+			has_country_flag = invite_norway_flag
+			is_puppet = no
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			NOR = {
+				country_event = {
+					id = gdb_germany.23
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invite_denmark = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+			#added through on_action	
+		}
+		available = {
+			country_exists = DEN
+			NOT = {
+				has_war_with = DEN
+			}
+			DEN = {
+				is_puppet = no
+			}
+		}
+		visible = {
+			has_country_flag = invite_denmark_flag
+			is_puppet = no
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			DEN = {
+				country_event = {
+					id = gdb_germany.23
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invite_poland = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+			#added through on_action	
+		}
+		available = {
+			country_exists = POL
+			NOT = {
+				has_war_with = POL
+			}
+			POL = {
+				is_puppet = no
+			}
+		}
+		visible = {
+			has_country_flag = invite_denmark_flag
+			is_puppet = no
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			POL = {
+				country_event = {
+					id = gdb_germany.23
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invite_sweden = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+			#added through on_action	
+		}
+		available = {
+			country_exists = SWE
+			NOT = {
+				has_war_with = SWE
+			}
+			SWE = {
+				is_puppet = no
+			}
+		}
+		visible = {
+			has_country_flag = invite_sweden_flag
+			is_puppet = no
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			SWE = {
+				country_event = {
+					id = gdb_germany.23
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invite_uk = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+			#added through on_action	
+		}
+		available = {
+			country_exists = ENG
+			NOT = {
+				has_war_with = ENG
+			}
+			ENG = {
+				is_puppet = no
+			}
+		}
+		visible = {
+			has_country_flag = invite_uk_flag
+			is_puppet = no
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			ENG = {
+				country_event = {
+					id = gdb_germany.23
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invite_usa = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+			#added through on_action	
+		}
+		available = {
+			country_exists = USA
+			NOT = {
+				has_war_with = USA
+			}
+			USA = {
+				is_puppet = no
+			}
+		}
+		visible = {
+			has_country_flag = invite_usa_flag
+			is_puppet = no
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			USA = {
+				country_event = {
+					id = gdb_germany.23
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invite_netherlands = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+			#added through on_action	
+		}
+		available = {
+			country_exists = HOL
+			NOT = {
+				has_war_with = HOL
+			}
+			HOL = {
+				is_puppet = no
+			}
+		}
+		visible = {
+			has_country_flag = invite_netherlands_flag
+			is_puppet = no
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			HOL = {
+				country_event = {
+					id = gdb_germany.23
+					days = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	GER_barbarossa_mission = {
+		icon = generic_operation
 		allowed = {
 			always = no
 			#added through on_action
 		}
-
 		available = {
-			219 = { is_controlled_by_ROOT_or_ally = yes }
-			195 = { is_controlled_by_ROOT_or_ally = yes }
-			202 = { is_controlled_by_ROOT_or_ally = yes }
-			217 = { is_controlled_by_ROOT_or_ally = yes }
+			219 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			195 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			202 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			217 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
-
 		days_mission_timeout = 180
 		fire_only_once = yes
-
 		activation = {
-
 		}
-
 		is_good = no
-
 		complete_effect = {
 			add_war_support = 0.1
 			custom_effect_tooltip = barbarossa_mission_tt
 		}
-
 		timeout_effect = {
-			
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -559,11 +757,8 @@ operations = {
 }
 
 GER_case_anton_category = {
-
 	GER_case_anton = {
-
 		icon = generic_operation
-
 		available = {
 			original_tag = GER
 			has_war = yes
@@ -575,38 +770,104 @@ GER_case_anton_category = {
 					is_subject_of = GER
 					has_focus_tree = vichy_french_focus
 				}
-				NOT = { has_war_with = GER }
-				NOT = { has_country_flag = case_anton }
+				NOT = {
+					has_war_with = GER
+				}
+				NOT = {
+					has_country_flag = case_anton
+				}
 				custom_trigger_tooltip = {
 					tooltip = GER_case_anton_tt2
-					462 = { CONTROLLER = { has_war_with = ROOT } }
-					461 = { CONTROLLER = { has_war_with = ROOT } }
-					513 = { CONTROLLER = { has_war_with = ROOT } }
-				 	462 = { CONTROLLER = { has_war_with = ROOT } }
-					459 = { CONTROLLER = { has_war_with = ROOT } }
-					460 = { CONTROLLER = { has_war_with = ROOT } }
-					458 = { CONTROLLER = { has_war_with = ROOT } }
-					665 = { CONTROLLER = { has_war_with = ROOT } }
+					462 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
+					461 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
+					513 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
+					462 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
+					459 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
+					460 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
+					458 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
+					665 = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+					}
 				}
 			}
-			divisions_in_state = { state = 31 size < 1 }
-			divisions_in_state = { state = 25 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 21 size < 1 }
-			divisions_in_state = { state = 32 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 26 size < 1 }
-			divisions_in_state = { state = 33 size < 1 }
-			divisions_in_state = { state = 20 size < 1 }
+			divisions_in_state = {
+				state = 31
+				size < 1
+			}
+			divisions_in_state = {
+				state = 25
+				size < 1
+			}
+			divisions_in_state = {
+				state = 22
+				size < 1
+			}
+			divisions_in_state = {
+				state = 21
+				size < 1
+			}
+			divisions_in_state = {
+				state = 32
+				size < 1
+			}
+			divisions_in_state = {
+				state = 22
+				size < 1
+			}
+			divisions_in_state = {
+				state = 26
+				size < 1
+			}
+			divisions_in_state = {
+				state = 33
+				size < 1
+			}
+			divisions_in_state = {
+				state = 20
+				size < 1
+			}
 			OR = {
-				ITA = { owns_state = 735 }
-				divisions_in_state = { state = 735 size < 1 }
+				ITA = {
+					owns_state = 735
+				}
+				divisions_in_state = {
+					state = 735
+					size < 1
+				}
 			}
 		}
-
 		cost = 50
 		fire_only_once = yes
-
 		visible = {
 			original_tag = GER
 			has_government = fascism
@@ -617,15 +878,18 @@ GER_case_anton_category = {
 					is_subject_of = GER
 					has_focus_tree = vichy_french_focus
 				}
-				NOT = { has_war_with = GER }
+				NOT = {
+					has_war_with = GER
+				}
 			}
 		}
 		ai_will_do = {
 			factor = 25
-
 			modifier = {
 				factor = 0
-				VIC = { is_ai = no }
+				VIC = {
+					is_ai = no
+				}
 			}
 		}
 		complete_effect = {
@@ -651,9 +915,7 @@ GER_case_anton_category = {
 #Category only allowed for GER
 GER_reichskommissariats = {
 	GER_reichskommissariat_norwegen = {
-
 		icon = ger_reichskommissariats
-
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -662,26 +924,29 @@ GER_reichskommissariats = {
 			controls_state = 143
 			controls_state = 144
 		}
-
 		cost = 0
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				add = 1
-				ENG = { has_capitulated = yes }
+				ENG = {
+					has_capitulated = yes
+				}
 			}
 		}
-
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 		}
-
 		complete_effect = {
 			if = {
 				limit = {
 					country_exists = NOR
-					NOT = { NOR = { has_government = fascism } }
+					NOT = {
+						NOR = {
+							has_government = fascism
+						}
+					}
 				}
 				hidden_effect = {
 					NOR = {
@@ -692,17 +957,19 @@ GER_reichskommissariats = {
 					}
 				}
 				NOR = {
-					start_civil_war = { 
-						ideology = fascism 
-						size = 1 
-					
+					start_civil_war = {
+						ideology = fascism
+						size = 1
 						transfer_state = 110
 						transfer_state = 142
 						transfer_state = 143
 						transfer_state = 144
 						GER = {
 							puppet = PREV
-							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+							set_autonomy = {
+								target = PREV
+								autonomy_state = autonomy_integrated_puppet
+							}
 						}
 						set_cosmetic_tag = NOR_reichskommissariat
 						create_country_leader = {
@@ -734,15 +1001,15 @@ GER_reichskommissariats = {
 						}
 					}
 				}
-				set_autonomy = { target = NOR autonomy_state = autonomy_integrated_puppet }
+				set_autonomy = {
+					target = NOR
+					autonomy_state = autonomy_integrated_puppet
+				}
 			}
 		}
 	}
-
 	GER_reichskommissariat_niederlande = {
-
 		icon = ger_reichskommissariats
-
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -750,27 +1017,29 @@ GER_reichskommissariats = {
 			controls_state = 35
 			controls_state = 36
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				add = 1
-				ENG = { has_capitulated = yes }
+				ENG = {
+					has_capitulated = yes
+				}
 			}
 		}
-
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 		}
-
 		complete_effect = {
 			if = {
 				limit = {
 					country_exists = HOL
-					NOT = { HOL = { has_government = fascism } }
+					NOT = {
+						HOL = {
+							has_government = fascism
+						}
+					}
 				}
 				hidden_effect = {
 					HOL = {
@@ -780,10 +1049,13 @@ GER_reichskommissariats = {
 					}
 				}
 				HOL = {
-					start_civil_war = { ideology = fascism size = 1 }
+					start_civil_war = {
+						ideology = fascism
+						size = 1
+					}
 				}
 				random_country = {
-					limit= {
+					limit = {
 						original_tag = HOL
 						has_government = fascism
 					}
@@ -792,9 +1064,11 @@ GER_reichskommissariats = {
 					transfer_state = 36
 					GER = {
 						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+						}
 					}
-					
 					set_cosmetic_tag = HOL_reichskommissariat
 					create_country_leader = {
 						name = "Arthur Seyss-Inquart"
@@ -823,15 +1097,15 @@ GER_reichskommissariats = {
 						}
 					}
 				}
-				set_autonomy = { target = HOL autonomy_state = autonomy_integrated_puppet }
+				set_autonomy = {
+					target = HOL
+					autonomy_state = autonomy_integrated_puppet
+				}
 			}
 		}
 	}
-
 	GER_reichskommissariat_belgien_nordfrankreich = {
-
 		icon = ger_reichskommissariats
-
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -839,27 +1113,29 @@ GER_reichskommissariats = {
 			controls_state = 29
 			controls_state = 34
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				add = 1
-				ENG = { has_capitulated = yes }
+				ENG = {
+					has_capitulated = yes
+				}
 			}
 		}
-
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 		}
-
 		complete_effect = {
 			if = {
 				limit = {
 					country_exists = BEL
-					NOT = { BEL = { has_government = fascism } }
+					NOT = {
+						BEL = {
+							has_government = fascism
+						}
+					}
 				}
 				hidden_effect = {
 					BEL = {
@@ -868,10 +1144,13 @@ GER_reichskommissariats = {
 					}
 				}
 				BEL = {
-					start_civil_war = { ideology = fascism size = 1 }
+					start_civil_war = {
+						ideology = fascism
+						size = 1
+					}
 				}
 				random_country = {
-					limit= {
+					limit = {
 						original_tag = BEL
 						has_government = fascism
 					}
@@ -880,7 +1159,10 @@ GER_reichskommissariats = {
 					transfer_state = 34
 					GER = {
 						puppet = PREV
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+						}
 					}
 					set_cosmetic_tag = BEL_reichskommissariat
 					create_country_leader = {
@@ -893,7 +1175,9 @@ GER_reichskommissariats = {
 						}
 					}
 					hidden_effect = {
-						29 = { add_core_of = PREV }
+						29 = {
+							add_core_of = PREV
+						}
 					}
 				}
 			}
@@ -913,15 +1197,15 @@ GER_reichskommissariats = {
 						}
 					}
 				}
-				set_autonomy = { target = BEL autonomy_state = autonomy_integrated_puppet }
+				set_autonomy = {
+					target = BEL
+					autonomy_state = autonomy_integrated_puppet
+				}
 			}
 		}
 	}
-
 	GER_reichskommissariat_ostland = {
-
 		icon = ger_reichskommissariats
-
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -942,22 +1226,20 @@ GER_reichskommissariats = {
 			controls_state = 13
 			controls_state = 191
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				add = 1
-				SOV = { has_capitulated = yes }
+				SOV = {
+					has_capitulated = yes
+				}
 			}
 		}
-
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 		}
-
 		complete_effect = {
 			release = BLR
 			BLR = {
@@ -982,15 +1264,22 @@ GER_reichskommissariats = {
 					puppet = PREV
 					if = {
 						limit = {
-							NOT = { has_dlc = "Death or Dishonor" }
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
 						}
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+						}
 					}
 					else = {
-						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+						}
 					}
 				}
-				
 				set_cosmetic_tag = BLR_reichskommissariat
 				create_country_leader = {
 					name = "Hinrich Lohse"
@@ -1020,23 +1309,36 @@ GER_reichskommissariats = {
 							transfer_state = PREV
 						}
 					}
-					11 = { add_core_of = PREV }
-					97 = { add_core_of = PREV }
-					189 = { add_core_of = PREV }
-					12 = { add_core_of = PREV }
-					190 = { add_core_of = PREV }
-					13 = { add_core_of = PREV }
-					191 = { add_core_of = PREV }
-					784 = { add_core_of = PREV }
+					11 = {
+						add_core_of = PREV
+					}
+					97 = {
+						add_core_of = PREV
+					}
+					189 = {
+						add_core_of = PREV
+					}
+					12 = {
+						add_core_of = PREV
+					}
+					190 = {
+						add_core_of = PREV
+					}
+					13 = {
+						add_core_of = PREV
+					}
+					191 = {
+						add_core_of = PREV
+					}
+					784 = {
+						add_core_of = PREV
+					}
 				}
 			}
 		}
 	}
-
 	GER_reichskommissariat_ukraine = {
-
 		icon = ger_reichskommissariats
-
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -1060,22 +1362,20 @@ GER_reichskommissariats = {
 			controls_state = 228
 			controls_state = 227
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				add = 1
-				SOV = { has_capitulated = yes }
+				SOV = {
+					has_capitulated = yes
+				}
 			}
 		}
-
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 		}
-
 		complete_effect = {
 			release_on_controlled = UKR
 			UKR = {
@@ -1100,7 +1400,10 @@ GER_reichskommissariats = {
 				set_state_controller = 227
 				GER = {
 					puppet = PREV
-					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_integrated_puppet
+					}
 				}
 				set_cosmetic_tag = UKR_reichskommissariat
 				create_country_leader = {
@@ -1118,35 +1421,33 @@ GER_reichskommissariats = {
 }
 
 political_actions = {
-
 	# integrate danzig
 	core_danzig = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
 			ROOT = {
-					85 = {
-						compliance > 40
-						resistance < 10
-					}
+				85 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
-		cost = 108
+		cost = 83
 		fire_only_once = yes
-		days_remove = 216
+		days_remove = 166
 		ai_will_do = {
 			factor = 10
 		}
 		visible = {
 			owns_state = 85
-						NOT = {
+			NOT = {
 				ROOT = {
 					85 = {
 						is_core_of = ROOT
@@ -1158,35 +1459,33 @@ political_actions = {
 			add_state_core = 85
 		}
 	}
-	
 	# integrate posen
 	core_poznan = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
 			ROOT = {
-					86 = {
-						compliance > 40
-						resistance < 10
-					}
+				86 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
-		cost = 210
+		cost = 190
 		fire_only_once = yes
-		days_remove = 420
+		days_remove = 380
 		ai_will_do = {
 			factor = 10
 		}
 		visible = {
 			owns_state = 85
-						NOT = {
+			NOT = {
 				ROOT = {
 					86 = {
 						is_core_of = ROOT
@@ -1198,25 +1497,61 @@ political_actions = {
 			add_state_core = 85
 		}
 	}
-	
-# integrate memel
-	core_memel = {
+	# integrate gnesen
+	core_gnesen = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
 			ROOT = {
-					188 = {
-						compliance > 40
-						resistance < 10
-					}
+				808 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
+		}
+		cost = 45
+		fire_only_once = yes
+		days_remove = 90
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			owns_state = 808
+			NOT = {
+				ROOT = {
+					86 = {
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_state_core = 808
+		}
+	}
+	# integrate memel
+	core_memel = {
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
+			}
+		}
+		available = {
+			ROOT = {
+				188 = {
+					compliance > 40
+					resistance < 10
+				}
+			}
 		}
 		cost = 15
 		fire_only_once = yes
@@ -1226,7 +1561,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 188
-						NOT = {
+			NOT = {
 				ROOT = {
 					188 = {
 						is_core_of = ROOT
@@ -1238,25 +1573,23 @@ political_actions = {
 			add_state_core = 188
 		}
 	}
-	
 	# integrate north schleswig
 	core_north_schleswig = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
 			ROOT = {
-					805 = {
-						compliance > 40
-						resistance < 10
-					}
+				805 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 8
 		fire_only_once = yes
@@ -1266,7 +1599,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 805
-						NOT = {
+			NOT = {
 				ROOT = {
 					805 = {
 						is_core_of = ROOT
@@ -1278,26 +1611,23 @@ political_actions = {
 			add_state_core = 805
 		}
 	}
-	
-		# integrate ost friesland
+	# integrate ost friesland
 	core_east_frisia = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					802 = {
-						compliance > 40
-						resistance < 10
-					}
+				802 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 35
 		fire_only_once = yes
@@ -1307,7 +1637,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 802
-						NOT = {
+			NOT = {
 				ROOT = {
 					802 = {
 						is_core_of = ROOT
@@ -1319,26 +1649,23 @@ political_actions = {
 			add_state_core = 802
 		}
 	}
-	
 	# integrate limbourg
 	core_limbourg = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					801 = {
-						compliance > 40
-						resistance < 10
-					}
+				801 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 5
 		fire_only_once = yes
@@ -1348,7 +1675,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 801
-						NOT = {
+			NOT = {
 				ROOT = {
 					801 = {
 						is_core_of = ROOT
@@ -1358,29 +1685,25 @@ political_actions = {
 		}
 		remove_effect = {
 			add_state_core = 801
-			
 		}
 	}
-	
 	# integrate eupen
 	core_eupen = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-	
 			ROOT = {
-					800 = {
-						compliance > 40
-						resistance < 10
-					}
+				800 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 11
 		fire_only_once = yes
@@ -1390,7 +1713,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 800
-					NOT = {
+			NOT = {
 				ROOT = {
 					800 = {
 						is_core_of = ROOT
@@ -1402,27 +1725,24 @@ political_actions = {
 			add_state_core = 800
 		}
 	}
-	
-		# west luxemburg
+	# west luxemburg
 	core_west_luxemburg = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
-			original_tag = FRA
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
+				original_tag = FRA
 			}
 		}
 		available = {
-
 			ROOT = {
-					806 = {
-						compliance > 40
-						resistance < 10
-					}
+				806 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 298
 		fire_only_once = yes
@@ -1432,7 +1752,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 806
-						NOT = {
+			NOT = {
 				ROOT = {
 					806 = {
 						is_core_of = ROOT
@@ -1444,26 +1764,23 @@ political_actions = {
 			add_state_core = 806
 		}
 	}
-	
 	# luxemburg
 	core_luxemburg = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					8 = {
-						compliance > 40
-						resistance < 10
-					}
+				8 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 30
 		fire_only_once = yes
@@ -1473,7 +1790,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 8
-						NOT = {
+			NOT = {
 				ROOT = {
 					8 = {
 						is_core_of = ROOT
@@ -1485,26 +1802,23 @@ political_actions = {
 			add_state_core = 8
 		}
 	}
-	
-		# sedan
+	# sedan
 	core_sedan = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					797 = {
-						compliance > 40
-						resistance < 10
-					}
+				797 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 26
 		fire_only_once = yes
@@ -1514,7 +1828,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 797
-						NOT = {
+			NOT = {
 				ROOT = {
 					797 = {
 						is_core_of = ROOT
@@ -1526,26 +1840,23 @@ political_actions = {
 			add_state_core = 797
 		}
 	}
-	
-		# alsace
+	# alsace
 	core_alsace = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					28 = {
-						compliance > 40
-						resistance < 10
-					}
+				28 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 191
 		fire_only_once = yes
@@ -1555,7 +1866,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 28
-						NOT = {
+			NOT = {
 				ROOT = {
 					28 = {
 						is_core_of = ROOT
@@ -1566,27 +1877,24 @@ political_actions = {
 		remove_effect = {
 			add_state_core = 28
 		}
-	}	
-	
-		# nanzig
+	}
+	# nanzig
 	core_nanzig = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					799 = {
-						compliance > 40
-						resistance < 10
-					}
+				799 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 40
 		fire_only_once = yes
@@ -1596,7 +1904,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 799
-						NOT = {
+			NOT = {
 				ROOT = {
 					799 = {
 						is_core_of = ROOT
@@ -1607,27 +1915,24 @@ political_actions = {
 		remove_effect = {
 			add_state_core = 799
 		}
-	}	
-	
+	}
 	# eastern switzerland
 	core_eastern_switzerland = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					151 = {
-						compliance > 40
-						resistance < 10
-					}
+				151 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 162
 		fire_only_once = yes
@@ -1637,7 +1942,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 151
-						NOT = {
+			NOT = {
 				ROOT = {
 					151 = {
 						is_core_of = ROOT
@@ -1649,26 +1954,23 @@ political_actions = {
 			add_state_core = 151
 		}
 	}
-	
-			# western switzerland
+	# western switzerland
 	core_western_switzerland = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					3 = {
-						compliance > 40
-						resistance < 10
-					}
+				3 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 177
 		fire_only_once = yes
@@ -1678,7 +1980,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 3
-						NOT = {
+			NOT = {
 				ROOT = {
 					3 = {
 						is_core_of = ROOT
@@ -1690,26 +1992,23 @@ political_actions = {
 			add_state_core = 3
 		}
 	}
-	
-		# south tyrol
+	# south tyrol
 	core_south_tyrol = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					39 = {
-						compliance > 40
-						resistance < 10
-					}
+				39 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 22
 		fire_only_once = yes
@@ -1719,7 +2018,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 39
-						NOT = {
+			NOT = {
 				ROOT = {
 					39 = {
 						is_core_of = ROOT
@@ -1730,27 +2029,24 @@ political_actions = {
 		remove_effect = {
 			add_state_core = 39
 		}
-	}	
-	
-		# istria
+	}
+	# istria
 	core_istria = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					736 = {
-						compliance > 40
-						resistance < 10
-					}
+				736 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 212
 		fire_only_once = yes
@@ -1760,7 +2056,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 736
-						NOT = {
+			NOT = {
 				ROOT = {
 					736 = {
 						is_core_of = ROOT
@@ -1771,27 +2067,24 @@ political_actions = {
 		remove_effect = {
 			add_state_core = 736
 		}
-	}	
-	
-			# slovenia
+	}
+	# slovenia
 	core_slovenia = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					102 = {
-						compliance > 40
-						resistance < 10
-					}
+				102 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 228
 		fire_only_once = yes
@@ -1801,7 +2094,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 102
-						NOT = {
+			NOT = {
 				ROOT = {
 					102 = {
 						is_core_of = ROOT
@@ -1812,25 +2105,24 @@ political_actions = {
 		remove_effect = {
 			add_state_core = 102
 		}
-	}	
+	}
 	# tyrol
 	core_tyrol = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
 			ROOT = {
-					153 = {
-						compliance > 40
-						resistance < 10
-					}
+				153 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 165
 		fire_only_once = yes
@@ -1852,26 +2144,23 @@ political_actions = {
 			add_state_core = 153
 		}
 	}
-	
-			# upper austria
+	# upper austria
 	core_upper_austria = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					152 = {
-						compliance > 40
-						resistance < 10
-					}
+				152 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 227
 		fire_only_once = yes
@@ -1881,7 +2170,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 152
-						NOT = {
+			NOT = {
 				ROOT = {
 					152 = {
 						is_core_of = ROOT
@@ -1892,27 +2181,24 @@ political_actions = {
 		remove_effect = {
 			add_state_core = 152
 		}
-	}	
-	
-				# lower austria
+	}
+	# lower austria
 	core_lower_austria = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					4 = {
-						compliance > 40
-						resistance < 10
-					}
+				4 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 259
 		fire_only_once = yes
@@ -1922,7 +2208,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 4
-						NOT = {
+			NOT = {
 				ROOT = {
 					4 = {
 						is_core_of = ROOT
@@ -1934,26 +2220,23 @@ political_actions = {
 			add_state_core = 4
 		}
 	}
-	
-			# pressburg
+	# pressburg
 	core_pressburg = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					807 = {
-						compliance > 40
-						resistance < 10
-					}
+				807 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 52
 		fire_only_once = yes
@@ -1963,7 +2246,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 807
-						NOT = {
+			NOT = {
 				ROOT = {
 					807 = {
 						is_core_of = ROOT
@@ -1974,27 +2257,24 @@ political_actions = {
 		remove_effect = {
 			add_state_core = 807
 		}
-	}	
-	
+	}
 	# sudetenland
 	core_sudetenland = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					69 = {
-						compliance > 40
-						resistance < 10
-					}
+				69 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 283
 		fire_only_once = yes
@@ -2004,7 +2284,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 69
-						NOT = {
+			NOT = {
 				ROOT = {
 					69 = {
 						is_core_of = ROOT
@@ -2016,25 +2296,23 @@ political_actions = {
 			add_state_core = 69
 		}
 	}
-				# eastern sudetenland
+	# eastern sudetenland
 	core_eastern_sudetenland = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					74 = {
-						compliance > 40
-						resistance < 10
-					}
+				74 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 82
 		fire_only_once = yes
@@ -2044,7 +2322,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 74
-						NOT = {
+			NOT = {
 				ROOT = {
 					74 = {
 						is_core_of = ROOT
@@ -2056,26 +2334,23 @@ political_actions = {
 			add_state_core = 74
 		}
 	}
-	
-				# katowice
+	# katowice
 	core_katowice = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-	
 			ROOT = {
-					762 = {
-						compliance > 40
-						resistance < 10
-					}
+				762 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 100
 		fire_only_once = yes
@@ -2085,7 +2360,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 762
-					NOT = {
+			NOT = {
 				ROOT = {
 					762 = {
 						is_core_of = ROOT
@@ -2097,26 +2372,23 @@ political_actions = {
 			add_state_core = 762
 		}
 	}
-	
-				# bohemia
+	# bohemia
 	core_bohemia = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					9 = {
-						compliance > 40
-						resistance < 10
-					}
+				9 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 449
 		fire_only_once = yes
@@ -2126,7 +2398,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 9
-						NOT = {
+			NOT = {
 				ROOT = {
 					9 = {
 						is_core_of = ROOT
@@ -2138,26 +2410,23 @@ political_actions = {
 			add_state_core = 9
 		}
 	}
-	
-				# moravia
+	# moravia
 	core_moravia = {
 		allowed = {
 			OR = {
-			original_tag = GER
-			original_tag = AUS
-			original_tag = LUX
-			original_tag = SWI
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
 			}
 		}
 		available = {
-
 			ROOT = {
-					75 = {
-						compliance > 40
-						resistance < 10
-					}
+				75 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 260
 		fire_only_once = yes
@@ -2167,7 +2436,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 75
-						NOT = {
+			NOT = {
 				ROOT = {
 					75 = {
 						is_core_of = ROOT
@@ -2179,21 +2448,18 @@ political_actions = {
 			add_state_core = 75
 		}
 	}
-	
-		# ticino
+	# ticino
 	core_ticino = {
 		allowed = {
 			original_tag = FRA
 		}
 		available = {
-	
 			ROOT = {
-					804 = {
-						compliance > 40
-						resistance < 10
-					}
+				804 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 44
 		fire_only_once = yes
@@ -2203,7 +2469,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 804
-					NOT = {
+			NOT = {
 				ROOT = {
 					804 = {
 						is_core_of = ROOT
@@ -2215,21 +2481,18 @@ political_actions = {
 			add_state_core = 804
 		}
 	}
-	
 	# vaud
 	core_vaud = {
 		allowed = {
 			original_tag = ITA
 		}
 		available = {
-
 			ROOT = {
-					803 = {
-						compliance > 40
-						resistance < 10
-					}
+				803 = {
+					compliance > 40
+					resistance < 10
+				}
 			}
-			
 		}
 		cost = 23
 		fire_only_once = yes
@@ -2239,7 +2502,7 @@ political_actions = {
 		}
 		visible = {
 			owns_state = 803
-						NOT = {
+			NOT = {
 				ROOT = {
 					803 = {
 						is_core_of = ROOT
@@ -2251,69 +2514,52 @@ political_actions = {
 			add_state_core = 803
 		}
 	}
-	
-	
-
 	# Reinstate Wilhelm IV into the line of succession
 	reinstate_wilhelm_iv_succession_rights = {
-
 		allowed = {
 			original_tag = GER
 		}
-
 		available = {
-			
 		}
-
 		cost = 100
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			has_war = no
 			has_government = neutrality
 			has_country_flag = backed_down_netherlands_kaiser
 		}
-
 		complete_effect = {
-			add_stability = -0.10
-			add_popularity = { ideology = neutrality popularity = -0.05 }
+			add_stability = -0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
 			custom_effect_tooltip = reinstate_wilhelm_iv_succession_rights_tt
 			hidden_effect = {
 				set_country_flag = reinstated_wilhelm_iv_succession_rights
 			}
 		}
 	}
-	
 	# Agnatic-Cognatic Primogeniture
 	modernize_the_succession_laws = {
-
 		allowed = {
 			original_tag = GER
 		}
-
 		available = {
-			
 		}
-
 		cost = 150
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			has_war = no
 			has_government = neutrality
 			has_country_flag = reinstated_wilhelm_iv_succession_rights
 		}
-
 		complete_effect = {
 			add_stability = 0.05
 			custom_effect_tooltip = modernize_the_succession_laws_tt
@@ -2322,9 +2568,7 @@ political_actions = {
 			}
 		}
 	}
-
 	recall_von_lettow_vorbeck = {
-
 		allowed = {
 			original_tag = GER
 		}
@@ -2333,9 +2577,18 @@ political_actions = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { ruling_only = yes name = "Wilhelm II" }
-				has_country_leader = { ruling_only = yes name = "Wilhelm III" }
-				has_country_leader = { ruling_only = yes name = "Victoria" }
+				has_country_leader = {
+					ruling_only = yes
+					name = "Wilhelm II"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Wilhelm III"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Victoria"
+				}
 			}
 		}
 		cost = 25
@@ -2347,7 +2600,12 @@ political_actions = {
 			create_corps_commander = {
 				name = "Paul von Lettow-Vorbeck"
 				gfx = GFX_portrait_ger_von_lettow_vorbeck
-				traits = { trickster war_hero media_personality jungle_rat}
+				traits = {
+					trickster
+					war_hero
+					media_personality
+					jungle_rat
+				}
 				skill = 4
 				id = 499
 				attack_skill = 3
@@ -2357,117 +2615,111 @@ political_actions = {
 			}
 		}
 	}
-
 	# Safety regulations
 	GER_sharpen_air_safety_regulations = {
-
 		allowed = {
 			original_tag = GER
 			has_dlc = "Waking the Tiger"
 		}
-
 		available = {
-			
 		}
-
 		cost = 50
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			has_government = neutrality
 		}
-
 		complete_effect = {
-			add_timed_idea = { idea = GER_air_safety_regulations days = 1095 }
+			add_timed_idea = {
+				idea = GER_air_safety_regulations
+				days = 1095
+			}
 			set_global_flag = GER_air_safety_regulations_flag
 		}
 	}
 }
 
 foreign_politics = {
-	
 	# Titles Deprivation Act 1917
 	request_restoration_of_british_titles = {
-
 		allowed = {
 			original_tag = GER
 		}
-
 		available = {
-			ENG = { has_opinion = { target = GER value > 99 } }
+			ENG = {
+				has_opinion = {
+					target = GER
+					value > 99
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = hindenburg_destroyed_tt
-				NOT = { has_global_flag = hindenburg_destroyed }
+				NOT = {
+					has_global_flag = hindenburg_destroyed
+				}
 			}
 		}
-
 		cost = 150
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			has_war = no
 			has_government = neutrality
 			has_completed_focus = GER_ally_the_shade
 			has_country_flag = modernized_succession_laws
 		}
-
 		complete_effect = {
-			ENG = { country_event = { id = wtt_germany.999 days = 1 } }
+			ENG = {
+				country_event = {
+					id = wtt_germany.999
+					days = 1
+				}
+			}
 			custom_effect_tooltip = request_restoration_of_british_titles_tt
-			hidden_effect = { set_global_flag = hindenburg_event_in_progress }
+			hidden_effect = {
+				set_global_flag = hindenburg_event_in_progress
+			}
 		}
 	}
-
 	GER_request_polish_war_participation = {
-
 		icon = generic_prepare_civil_war
-
 		allowed = {
 			original_tag = GER
 		}
-
 		available = {
 			has_war_with = SOV
-			NOT = { is_in_faction_with = POL }
+			NOT = {
+				is_in_faction_with = POL
+			}
 		}
-
 		cost = 50
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 200
 		}
-
 		visible = {
 			has_country_flag = poland_traded_danzig
 			has_completed_focus = GER_tackle_the_communist_threat
 		}
-
 		complete_effect = {
-			POL = { country_event = { id = wtt_germany.65 hours = 6 } }
+			POL = {
+				country_event = {
+					id = wtt_germany.65
+					hours = 6
+				}
+			}
 		}
-
 	}
 }
 
 #Category only allowed for GER
 GER_military_buildup = {
-
 	GER_plan_z = {
-
 		icon = generic_naval
-
 		available = {
 			has_navy_size = {
 				unit = battleship
@@ -2494,31 +2746,22 @@ GER_military_buildup = {
 				size > 99
 			}
 		}
-
 		fire_only_once = yes
 		days_mission_timeout = 1800
 		is_good = no
 		activation = {
 			has_completed_focus = GER_plan_z
 		}
-
-		
 		visible = {
 			has_completed_focus = GER_plan_z
 		}
-
 		complete_effect = {
 			add_war_support = 0.05
 			navy_experience = 150
 		}
-
-		
 	}
-
 	GER_jaegernotprogramm = {
-
 		icon = generic_air
-
 		available = {
 			has_war = yes
 			AND = {
@@ -2534,13 +2777,11 @@ GER_military_buildup = {
 				has_idea = GER_jaegernotprogramm
 			}
 		}
-
 		cost = 50
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			has_war = yes
 			AND = {
@@ -2556,19 +2797,21 @@ GER_military_buildup = {
 				has_idea = GER_jaegernotprogramm
 			}
 		}
-
 		complete_effect = {
 			add_stability = -0.05
 			add_war_support = -0.05
-			add_timed_idea = { idea = GER_jaegernotprogramm days = 90 }
+			add_timed_idea = {
+				idea = GER_jaegernotprogramm
+				days = 90
+			}
 		}
 	}
 }
 
 special_projects = {
 	GER_begin_heavy_water_production = {
-		allowed = { 
-			original_tag = GER 
+		allowed = {
+			original_tag = GER
 			has_dlc = "La Resistance"
 		}
 		available = {
@@ -2581,12 +2824,18 @@ special_projects = {
 				}
 			}
 		}
-		visible = { has_tech = atomic_research }
+		visible = {
+			has_tech = atomic_research
+		}
 		cost = 0
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
+		cancel_trigger = {
+			NOT = {
+				has_global_flag = GER_heavy_water_production_underway
+			}
+		}		#can be removed via intelligence ops
 		days_remove = 365
 		remove_effect = {
 			add_tech_bonus = {
@@ -2596,27 +2845,27 @@ special_projects = {
 				bonus = 2
 			}
 		}
-		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+		complete_effect = {
+			set_global_flag = GER_heavy_water_production_underway
+		}
 	}
 	GER_dismantle_maginot = {
-
 		icon = generic_construction
-
 		available = {
 			#has_war = yes
 			controls_state = 28
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
 				}
 				controls_state = 18
 				controls_state = 29
 			}
 		}
-
 		cost = 50
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
@@ -2625,7 +2874,9 @@ special_projects = {
 			controls_state = 28
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
 				}
 				controls_state = 18
 				controls_state = 29
@@ -2649,7 +2900,9 @@ special_projects = {
 			}
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
 				}
 				18 = {
 					set_building_level = {
@@ -2683,38 +2936,44 @@ special_projects = {
 		}
 		complete_effect = {
 			if = {
-				limit = { FRA = { has_completed_focus = FRA_extend_the_maginot_line } }
-				add_timed_idea = { idea = GER_dismantle_maginot days = 270 }
+				limit = {
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
+				}
+				add_timed_idea = {
+					idea = GER_dismantle_maginot
+					days = 270
+				}
 				else = {
-					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+					add_timed_idea = {
+						idea = GER_dismantle_maginot
+						days = 180
+					}
 				}
 			}
 		}
-	}	
+	}
 	GER_dismantle_czechoslovakian_forts = {
-
 		icon = generic_construction
-
 		available = {
 			#has_war = yes
-			controls_state = 69 # Sudetenland
-			controls_state = 74 # Eastern Sudetenland
-			controls_state = 9 # Bohemia
-			controls_state = 75 # Moravia
+			controls_state = 69			# Sudetenland
+			controls_state = 74			# Eastern Sudetenland
+			controls_state = 9			# Bohemia
+			controls_state = 75			# Moravia
 		}
-
 		cost = 50
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
 		visible = {
 			#has_war = yes
-			controls_state = 69 # Sudetenland
-			controls_state = 74 # Eastern Sudetenland
-			controls_state = 9 # Bohemia
-			controls_state = 75 # Moravia
+			controls_state = 69			# Sudetenland
+			controls_state = 74			# Eastern Sudetenland
+			controls_state = 9			# Bohemia
+			controls_state = 75			# Moravia
 		}
 		days_remove = 180
 		modifier = {
@@ -2874,21 +3133,25 @@ special_projects = {
 			}
 		}
 		complete_effect = {
-			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
+			add_timed_idea = {
+				idea = GER_dismantle_czechoslovakian_forts
+				days = 180
+			}
 		}
-	}	
+	}
 }
 
 GER_aid_hun_rom_democratic_civil_war = {
-
 	GER_aid_hun_democratic_civil_war = {
-
 		icon = generic_prepare_civil_war
-
 		available = {
 			HUN = {
-				NOT = { has_government = democratic }
-				NOT = { has_war_with = GER }
+				NOT = {
+					has_government = democratic
+				}
+				NOT = {
+					has_war_with = GER
+				}
 				has_civil_war = yes
 				exists = yes
 				any_enemy_country = {
@@ -2897,23 +3160,23 @@ GER_aid_hun_rom_democratic_civil_war = {
 				}
 			}
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 200
 		}
-
 		#Available if democratic civil war
 		visible = {
 			has_completed_focus = GER_align_hungary
-			GER = { has_government = democratic }
+			GER = {
+				has_government = democratic
+			}
 		}
-
 		complete_effect = {
 			if = {
 				limit = {
-					HUN = { is_in_faction_with = GER }
+					HUN = {
+						is_in_faction_with = GER
+					}
 				}
 				remove_from_faction = HUN
 				random_country = {
@@ -2922,7 +3185,9 @@ GER_aid_hun_rom_democratic_civil_war = {
 						has_government = democratic
 						has_war_with = HUN
 					}
-					GER = { add_to_faction = PREV }
+					GER = {
+						add_to_faction = PREV
+					}
 				}
 			}
 			random_country = {
@@ -2931,19 +3196,26 @@ GER_aid_hun_rom_democratic_civil_war = {
 					has_government = democratic
 					has_war_with = HUN
 				}
-				GER = { add_to_war = { targeted_alliance = PREV enemy = HUN hostility_reason = asked_to_join } }
+				GER = {
+					add_to_war = {
+						targeted_alliance = PREV
+						enemy = HUN
+						hostility_reason = asked_to_join
+					}
+				}
 			}
 		}
 	}
-
 	GER_aid_rom_democratic_civil_war = {
-
 		icon = generic_prepare_civil_war
-
 		available = {
 			ROM = {
-				NOT = { has_government = democratic }
-				NOT = { has_war_with = GER }
+				NOT = {
+					has_government = democratic
+				}
+				NOT = {
+					has_war_with = GER
+				}
 				has_civil_war = yes
 				exists = yes
 				any_enemy_country = {
@@ -2952,23 +3224,23 @@ GER_aid_hun_rom_democratic_civil_war = {
 				}
 			}
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 200
 		}
-
 		#Available if democratic civil war
 		visible = {
 			has_completed_focus = GER_align_romania
-			GER = { has_government = democratic }
+			GER = {
+				has_government = democratic
+			}
 		}
-
 		complete_effect = {
 			if = {
 				limit = {
-					ROM = { is_in_faction_with = GER }
+					ROM = {
+						is_in_faction_with = GER
+					}
 				}
 				remove_from_faction = ROM
 				random_country = {
@@ -2977,7 +3249,9 @@ GER_aid_hun_rom_democratic_civil_war = {
 						has_government = democratic
 						has_war_with = ROM
 					}
-					GER = { add_to_faction = PREV }
+					GER = {
+						add_to_faction = PREV
+					}
 				}
 			}
 			random_country = {
@@ -2986,17 +3260,20 @@ GER_aid_hun_rom_democratic_civil_war = {
 					has_government = democratic
 					has_war_with = ROM
 				}
-				GER = { add_to_war = { targeted_alliance = PREV enemy = ROM hostility_reason = asked_to_join } }
+				GER = {
+					add_to_war = {
+						targeted_alliance = PREV
+						enemy = ROM
+						hostility_reason = asked_to_join
+					}
+				}
 			}
 		}
 	}
-
 }
 
 GER_austro_hungarian_empire = {
-
 	GER_reform_austro_hungarian_empire = {
-
 		allowed = {
 			OR = {
 				original_tag = AUS
@@ -3004,7 +3281,6 @@ GER_austro_hungarian_empire = {
 				original_tag = CZE
 			}
 		}
-
 		available = {
 			AUS = {
 				OR = {
@@ -3025,10 +3301,9 @@ GER_austro_hungarian_empire = {
 				}
 			}
 		}
-
 		visible = {
-			GER = { 
-				has_completed_focus = GER_rekindle_imperial_sentiment 
+			GER = {
+				has_completed_focus = GER_rekindle_imperial_sentiment
 				has_government = neutrality
 			}
 			AUS = {
@@ -3040,12 +3315,12 @@ GER_austro_hungarian_empire = {
 			CZE = {
 				exists = yes
 			}
-			NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
+			NOT = {
+				has_global_flag = GER_reformed_austro_hungarian_empire
+			}
 		}
-
 		cost = 0
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 200
 			modifier = {
@@ -3057,30 +3332,61 @@ GER_austro_hungarian_empire = {
 				tag = CZE
 			}
 		}
-
 		complete_effect = {
 			custom_effect_tooltip = GER_reform_austro_hungarian_empire_tt
-			hidden_effect = { set_global_flag = GER_reformed_austro_hungarian_empire }
+			hidden_effect = {
+				set_global_flag = GER_reformed_austro_hungarian_empire
+			}
 			if = {
 				limit = {
 					tag = AUS
 				}
-				HUN = { country_event = { id = wtt_germany.68 hours = 1 } }
-				CZE = { country_event = { id = wtt_germany.68 hours = 3 } }
+				HUN = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 1
+					}
+				}
+				CZE = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 3
+					}
+				}
 			}
 			if = {
 				limit = {
 					tag = HUN
 				}
-				AUS = { country_event = { id = wtt_germany.68 hours = 1 } }
-				CZE = { country_event = { id = wtt_germany.68 hours = 3 } }
+				AUS = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 1
+					}
+				}
+				CZE = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 3
+					}
+				}
 			}
 			if = {
 				limit = {
 					tag = CZE
 				}
-				HUN = { country_event = { id = wtt_germany.68 hours = 1 } }
-				AUS = { country_event = { id = wtt_germany.68 hours = 3 } }
+				HUN = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 1
+					}
+				}
+				AUS = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 3
+					}
+				}
 			}
 		}
 	}
