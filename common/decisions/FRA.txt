@@ -1212,6 +1212,7 @@ political_actions = {
 		allowed = { original_tag = FRA }
 		available = {
 			has_global_flag = enable_fra_belgium
+			has_war = no
 
 		}
 		fire_only_once = yes
@@ -1221,13 +1222,15 @@ political_actions = {
 		}
 		visible = {
 		}
-		complete_effect = {
+		days_remove = 21
+		remove_effect = {
 			GER = {
 				country_event = {
 					id = gdb_germany.58
 					days = 1
 				}
 			}
+			clr_global_flag = enable_fra_belgium
 		}
 	}
 
@@ -1236,7 +1239,6 @@ political_actions = {
 		available = {
 			has_global_flag = enable_fra_switzerland
 			controls_state = 17
-			controls_state = 20
 		}
 		fire_only_once = yes
 
@@ -1245,7 +1247,7 @@ political_actions = {
 		}
 		visible = {
 		}
-		days_remove = 7
+		days_remove = 14
 		remove_effect = {
 		transfer_state = 804
 		804 = {
@@ -1254,9 +1256,10 @@ political_actions = {
 			GER = {
 				country_event = {
 					id = gdb_germany.57
-					days = 1
+					hours = 1
 				}
 			}
+			clr_global_flag = enable_fra_switzerland
 		}
 		}
 	}

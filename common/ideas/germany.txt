@@ -19,6 +19,46 @@ ideas = {
 				communism_drift = 0.05
 			}
 		}
+
+		french_refugees_welcome = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				research_speed_factor = 0.05
+				intelligence_agency_defense = -0.1
+				drift_defence_factor = -0.1
+			}
+		}
+
+		revive_abteilung_3_b = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				operative_slot = 1
+				resistance_damage_to_garrison = -0.1
+				intelligence_agency_defense = 0.2
+			}
+		}
 		
 			zdb_send_com_away = {
 			allowed = {

@@ -42,8 +42,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 120
+			add_political_power = 150
 			add_ideas = GER_clamp_down_on_fascism
 			delete_unit_template_and_units = { division_template = "Landsturmregiment" }
 			delete_unit_template_and_units = { division_template = "Altwaffen Division" }
@@ -302,6 +301,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_stability = 0.15
+			add_war_support = -0.1
 		}
 	}
 
@@ -318,6 +319,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			FRA = {add_timed_idea = { idea = zdb_com_incoming days = 150 }}
+			GER = {add_timed_idea = { idea = zdb_send_com_away days = 150 }}
 		}
 	}
 
@@ -334,6 +337,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = revive_abteilung_3_b
 		}
 	}
 
@@ -351,6 +355,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+					FRA = {
+			country_event = { id = gdb_germany.1 }
+			add_named_threat = { threat = 5 name = zdb_french_civil }
+			}
 		}
 	}
 
@@ -365,9 +373,26 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			NOT = {
+				any_country = {
+					original_tag = FRA
+					has_government = democratic
+				}
+			}
+		}
 		
 		completion_reward = {
+			random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism	
+			}
+			delete_unit_template_and_units = { division_template = "Armée des peuples" }
 		}
+		country_event = { id = gdb_germany.74 }
+	}
 	}
 
 	focus = {

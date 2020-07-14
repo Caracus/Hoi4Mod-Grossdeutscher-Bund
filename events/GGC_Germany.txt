@@ -64,16 +64,12 @@ country_event = {
 			load_oob = "FRA_Civil_War_democratic"
 			GER = {
 				country_event = {
-					id = gdb_germany.2
+					id = gdb_germany.70
 					days = 1
 				}
-				GER = {
-					country_event = {
-						id = gdb_germany.5
-						days = 30
-					}
-				}
 			}
+			set_global_flag = enable_fra_switzerland
+			set_global_flag = enable_fra_belgium
 		}
 	}
 }
@@ -248,8 +244,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.5.a
-		set_country_flag = GER_tensions_in_belgium
-		set_global_flag = enable_fra_switzerland
+
 	}
 }
 
@@ -2665,5 +2660,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.73.a
+	}
+}
+
+country_event = {
+	id = gdb_germany.74
+	title = gdb_germany.74.t
+	desc = gdb_germany.74.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.74.a
+	}
+	option = {
+		name = gdb_germany.74.b
+		add_ideas = french_refugees_welcome
 	}
 }
