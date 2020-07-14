@@ -21,6 +21,584 @@ focus_tree = {
 	default = no
 
 	focus = {
+		id = a_bright_future
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = GER_oppose_hitler }
+		available = {
+			is_puppet = no
+			has_war = no
+			NOT = {
+				any_country = {
+					original_tag = GER
+					has_government = fascism
+				}
+			}
+		}
+		x = 94
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+			add_ideas = GER_clamp_down_on_fascism
+			delete_unit_template_and_units = { division_template = "Landsturmregiment" }
+			delete_unit_template_and_units = { division_template = "Altwaffen Division" }
+		}
+	}
+
+	focus = {
+		id = german_spirit_reborn
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = a_bright_future }
+		x = -6
+		y = 1
+		relative_position_id = a_bright_future
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea = { idea = GER_rebuild_the_nation days = 365 }
+			add_ideas = GER_national_revitalization
+		}
+	}
+
+	focus = {
+		id = realpolitik
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = german_spirit_reborn }
+		x = 0
+		y = 1
+		relative_position_id = german_spirit_reborn
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = deutschlandlied
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = german_spirit_reborn }
+		x = 4
+		y = 1
+		relative_position_id = german_spirit_reborn
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = reach_out_to_austria
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = deutschlandlied }
+		x = 0
+		y = 1
+		relative_position_id = deutschlandlied
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = approach_hungary
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = realpolitik }
+		prerequisite = { focus = reach_out_to_austria }
+		x = -2
+		y = 1
+		relative_position_id = reach_out_to_austria
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = the_future_of_czechoslovakia
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = the_polish_corridor }
+		prerequisite = { focus = approach_hungary }
+		prerequisite = { focus = austrian_claims }
+		x = -1
+		y = 2
+		relative_position_id = approach_hungary
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = german_hungarian_alliance
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = the_future_of_czechoslovakia }
+		prerequisite = { focus = eastern_expansion }
+		x = -1
+		y = 1
+		relative_position_id = the_future_of_czechoslovakia
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = deepen_our_ties
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = polish_cooperation }
+		prerequisite = { focus = eastern_expansion }
+		x = 0
+		y = 2
+		relative_position_id = polish_cooperation
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = balkan_royale
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = balkan_allies }
+		prerequisite = { focus = german_hungarian_alliance }
+		mutually_exclusive = {
+			focus = pressure_yugoslavia
+		}
+		x = 0
+		y = 2
+		relative_position_id = deepen_our_ties
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = zweiter_deutscher_bund
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = reach_out_to_austria }
+		x = 0
+		y = 1
+		relative_position_id = reach_out_to_austria
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = austrian_claims
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = zweiter_deutscher_bund }
+		x = 0
+		y = 1
+		relative_position_id = zweiter_deutscher_bund
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = approach_italy
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = austrian_claims }
+		x = 0
+		y = 1
+		relative_position_id = austrian_claims
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = the_italian_exchange
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = approach_italy }
+		prerequisite = { focus = consolidate_the_bund }
+		x = 1
+		y = 1
+		relative_position_id = approach_italy
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = pressure_yugoslavia
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = approach_italy }
+		mutually_exclusive = {
+			focus = balkan_royale
+		}
+		x = 0
+		y = 2
+		relative_position_id = approach_italy
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = stabilize_the_nation
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = a_bright_future }
+		x = 4
+		y = 1
+		relative_position_id = a_bright_future
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = pass_on_the_torch
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = stabilize_the_nation }
+		x = -1
+		y = 1
+		relative_position_id = stabilize_the_nation
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = abteilung_drei_b
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = stabilize_the_nation }
+		x = 1
+		y = 1
+		relative_position_id = stabilize_the_nation
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ignite_the_spark
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = pass_on_the_torch }
+		prerequisite = { focus = abteilung_drei_b }
+		x = 0
+		y = 2
+		relative_position_id = stabilize_the_nation
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = aftermath
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = ignite_the_spark }
+		x = 0
+		y = 1
+		relative_position_id = ignite_the_spark
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = consolidate_the_bund
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = aftermath }
+		prerequisite = { focus = zweiter_deutscher_bund }
+		x = -1
+		y = 1
+		relative_position_id = aftermath
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = grossdeutscher_bund
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = consolidate_the_bund }
+		prerequisite = { focus = the_future_of_czechoslovakia }
+		x = 0
+		y = 4
+		relative_position_id = consolidate_the_bund
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = the_polish_corridor
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = realpolitik }
+		x = -2
+		y = 1
+		relative_position_id = realpolitik
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = polish_cooperation
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = the_polish_corridor }
+		x = 0
+		y = 1
+		relative_position_id = the_polish_corridor
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = eastern_expansion
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = new_alliances }
+		x = 1
+		y = 1
+		relative_position_id = new_alliances
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = balkan_allies
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = eastern_expansion }
+		x = 1
+		y = 2
+		relative_position_id = eastern_expansion
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = worried_outlook
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = realpolitik }
+		x = -6
+		y = 1
+		relative_position_id = realpolitik
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = new_alliances
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = worried_outlook }
+		x = 0
+		y = 1
+		relative_position_id = worried_outlook
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = germanic_expansion
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = new_alliances }
+		x = -1
+		y = 1
+		relative_position_id = new_alliances
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = swamp_germans
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = germanic_expansion }
+		x = 0
+		y = 1
+		relative_position_id = germanic_expansion
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = scandinavian_cousins
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = swamp_germans }
+		x = 0
+		y = 1
+		relative_position_id = swamp_germans
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = land_purchase
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = scandinavian_cousins }
+		x = -2
+		y = 1
+		relative_position_id = scandinavian_cousins
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = anglosaxons
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = scandinavian_cousins }
+		x = 0
+		y = 1
+		relative_position_id = scandinavian_cousins
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = big_brother
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = anglosaxons }
+		x = 0
+		y = 1
+		relative_position_id = anglosaxons
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
 		id = fire_is_spreading
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		prerequisite = { focus = GER_oppose_hitler }
@@ -42,7 +620,7 @@ focus_tree = {
 	}
 	
 		focus = {
-		id = ignite_the_spark
+		id = ignite_the_spark_old
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = fire_is_spreading }
 		x = 64
@@ -63,7 +641,7 @@ focus_tree = {
 		focus = {
 		id = powderkeg_belgium
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-		prerequisite = { focus = ignite_the_spark }
+		prerequisite = { focus = ignite_the_spark_old }
 		x = 62
 		y = 3
 		cost = 10
@@ -83,7 +661,7 @@ focus_tree = {
 		focus = {
 		id = protect_switzerland
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = ignite_the_spark }
+		prerequisite = { focus = ignite_the_spark_old }
 		x = 64
 		y = 3
 		cost = 10
@@ -101,7 +679,7 @@ focus_tree = {
 			focus = {
 		id = guarantee_luxemburg
 		icon = GFX_goal_generic_defence
-		prerequisite = { focus = ignite_the_spark }
+		prerequisite = { focus = ignite_the_spark_old }
 		x = 66
 		y = 3
 		cost = 2
@@ -114,7 +692,7 @@ focus_tree = {
 		}
 	}
 	
-				focus = {
+	focus = {
 		id = end_of_the_cv
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = GER_oppose_hitler }
