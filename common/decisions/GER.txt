@@ -1489,6 +1489,173 @@ GER_reichskommissariats = {
 }
 
 political_actions = {
+
+	SPR_civil_end = {
+		allowed = { original_tag = SPR }
+		available = {
+			has_civil_war = no
+			has_government = democratic
+			date > 1937.6.6
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 1
+		remove_effect = {
+			GER = {
+				country_event = {
+					id = gdb_germany.77
+					days = 1
+				}
+			}
+		}
+	}
+
+	SPR_seize_portugal = {
+		allowed = { original_tag = SPR }
+		available = {
+			has_civil_war = no
+			has_government = communism
+			any_country_with_original_tag = {
+				original_tag_to_check = FRA
+				has_civil_war = no
+				has_government = communism
+			}
+			has_global_flag = bund_has_unified
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 1
+		remove_effect = {
+			GER = {
+				country_event = {
+					id = gdb_germany.79
+					days = 180
+				}
+			}
+		}
+	}
+
+	FRA_invade_belgium = {
+		allowed = { original_tag = FRA }
+		available = {
+			has_global_flag = enable_fra_belgium
+			has_war = no
+
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 21
+		remove_effect = {
+			GER = {
+				country_event = {
+					id = gdb_germany.58
+					days = 1
+				}
+			}
+			clr_global_flag = enable_fra_belgium
+		}
+	}
+
+	FRA_invade_switzerland = {
+		allowed = { original_tag = FRA }
+		available = {
+			has_global_flag = enable_fra_switzerland
+			controls_state = 17
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 14
+		remove_effect = {
+		transfer_state = 804
+		804 = {
+			add_core_of = FRA
+		}
+			GER = {
+				country_event = {
+					id = gdb_germany.57
+					hours = 1
+				}
+			}
+			clr_global_flag = enable_fra_switzerland
+		}
+		}
+
+		FRA_civil_war_ended = {
+			allowed = { original_tag = FRA }
+			available = {
+				has_civil_war = no
+				has_government = communism
+				NOT = {
+					has_government = democratic
+				}
+			}
+			fire_only_once = yes
+	
+			ai_will_do = {
+				factor = 1000
+			}
+			visible = {
+			}
+			days_remove = 1
+			remove_effect = {
+				set_global_flag = french_civil_war_ended
+				GER = {
+					country_event = {
+						id = gdb_germany.84
+						days = 30
+					}
+				}
+			}
+			}
+
+			FRA_demand_alsace_lorraince = {
+				allowed = { original_tag = FRA }
+				available = {
+					has_civil_war = no
+					has_government = communism
+					has_global_flag = bund_has_unified
+					GER = {
+						has_full_control_of_state = 28
+					}
+				}
+				fire_only_once = yes
+		
+				ai_will_do = {
+					factor = 1000
+				}
+				visible = {
+				}
+				days_remove = 1
+				remove_effect = {
+					GER = {
+						country_event = {
+							id = gdb_germany.86
+							days = 365
+						}
+					}
+				}
+				}
+
 	# integrate danzig
 	core_danzig = {
 		allowed = {

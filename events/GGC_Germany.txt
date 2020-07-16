@@ -2147,7 +2147,7 @@ country_event = {
 					ideology = neutrality
 					popularity = 0.4
 				}
-			} 
+			}
 			country_event = {
 				id = gdb_germany.76
 				days = 60
@@ -2737,11 +2737,370 @@ country_event = {
 		name = gdb_germany.76.a
 		random_other_country = {
 			limit = {
-					original_tag = ITA
-					has_government = communism
+				original_tag = ITA
+				has_government = communism
 			}
 			SOV = {
 				add_to_faction = PREV
+			}
+		}
+	}
+}
+
+#Spain event chain
+country_event = {
+	id = gdb_germany.77
+	title = gdb_germany.77.t
+	desc = gdb_germany.77.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.77.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.78
+				days = 90
+			}
+		}
+	}
+}
+
+#Spain join comintern
+country_event = {
+	id = gdb_germany.78
+	title = gdb_germany.78.t
+	desc = gdb_germany.78.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.78.a
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = democratic
+			}
+			SOV = {
+				add_to_faction = PREV
+			}
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = democratic
+				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.6
+				}
+			}
+		}
+	}
+}
+
+#Seizing of Portugal
+country_event = {
+	id = gdb_germany.79
+	title = gdb_germany.79.t
+	desc = gdb_germany.79.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	immediate = {
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			transfer_state = 181
+			transfer_state = 795
+		}
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 296
+			transfer_state = 796
+			transfer_state = 540
+			transfer_state = 705
+		}
+	}
+	option = {
+		name = gdb_germany.79.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.80
+				days = 3
+			}
+		}
+	}
+}
+
+#Brits protect holdings
+country_event = {
+	id = gdb_germany.80
+	title = gdb_germany.80.t
+	desc = gdb_germany.80.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	immediate = {
+		ENG = {
+			transfer_state = 544
+			transfer_state = 268
+		}
+		RAJ = {
+			transfer_state = 321
+			transfer_state = 320
+		}
+		AST = {
+			transfer_state = 721
+		}
+	}
+	option = {
+		name = gdb_germany.80.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.81
+				days = 21
+			}
+			country_event = {
+				id = gdb_germany.82
+				days = 14
+			}
+		}
+	}
+}
+
+#Spain takes gibraltar
+country_event = {
+	id = gdb_germany.81
+	title = gdb_germany.81.t
+	desc = gdb_germany.81.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	immediate = {
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			transfer_state = 118
+		}
+	}
+	option = {
+		name = gdb_germany.81.a
+		set_global_flag = uk_feels_threatened
+	}
+}
+
+#Portugal surrenders
+country_event = {
+	id = gdb_germany.82
+	title = gdb_germany.82.t
+	desc = gdb_germany.82.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	immediate = {
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			annex_country = {
+				target = POR
+			}
+			set_cosmetic_tag = SPR_union
+		}
+	}
+	option = {
+		name = gdb_germany.82.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.83
+				days = 14
+			}
+		}
+	}
+}
+
+#French Iberian Colonial Exchange
+country_event = {
+	id = gdb_germany.83
+	title = gdb_germany.83.t
+	desc = gdb_germany.83.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.83.a
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				transfer_state = 461
+				transfer_state = 462
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = communism
+				}
+				transfer_state = 297
+			}
+		}
+	}
+}
+
+#France needs weapons
+country_event = {
+	id = gdb_germany.84
+	title = gdb_germany.84.t
+	desc = gdb_germany.84.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.84.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.85
+				days = 14
+			}
+		}
+	}
+}
+
+#Soviet weapons for alliance
+country_event = {
+	id = gdb_germany.85
+	title = gdb_germany.85.t
+	desc = gdb_germany.85.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.85.a
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			SOV = {
+				add_to_faction = PREV
+			}
+		}
+		hidden_effect = {
+			SOV = {
+				add_political_power = -200
+				send_equipment = {
+					target = FRA
+					type = infantry_equipment
+					amount = 50000
+				}
+				send_equipment = {
+					target = FRA
+					type = support_equipment
+					amount = 3000
+				}
+			}
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 50000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 3000
+					producer = SOV
+				}
+			}
+		}
+	}
+}
+
+#France demands alsace-lorraine
+country_event = {
+	id = gdb_germany.86
+	title = gdb_germany.86.t
+	desc = gdb_germany.86.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.86.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.87
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.86.b
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 28
+			if = {
+				limit = {
+					GER = {
+						has_full_control_of_state = 799
+					}
+				}
+			transfer_state = 799
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.88
+				days = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.87
+	title = gdb_germany.87.t
+	desc = gdb_germany.87.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.87.a
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			declare_war_on = {
+				target = GER
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.88
+	title = gdb_germany.88.t
+	desc = gdb_germany.88.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.88.a
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			declare_war_on = {
+				target = GER
+				type = puppet_wargoal_focus
 			}
 		}
 	}

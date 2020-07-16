@@ -636,6 +636,7 @@ focus_tree = {
 			remove_idea = general_staff
 			add_idea = general_staff_unorganized
 		}
+		set_global_flag = bund_has_unified
 		add_named_threat = { threat = 3 name = zdb_deutscher_bund }
 	}
 	
