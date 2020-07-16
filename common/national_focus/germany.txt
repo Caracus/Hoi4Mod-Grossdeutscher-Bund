@@ -80,6 +80,39 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = realpolitik_idea
+			if = {
+				limit = {
+					NOT = {
+						has_idea = GER_national_revitalization
+						has_idea = GER_national_revitalization2
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = GER_national_revitalization
+						add_idea = GER_national_revitalization3
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_national_revitalization
+				}
+				swap_ideas = {
+					remove_idea = GER_national_revitalization
+					add_idea = GER_national_revitalization3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_national_revitalization2
+				}
+				swap_ideas = {
+					remove_idea = GER_national_revitalization2
+					add_idea = GER_national_revitalization4
+				}
+			}
 		}
 	}
 
@@ -96,6 +129,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_opinion_modifier = { target = SWI modifier = large_increase }
+			add_opinion_modifier = { target = LUX modifier = large_increase }
+			add_opinion_modifier = { target = AUS modifier = large_increase }
+			SWI = {add_opinion_modifier = { target = GER modifier = large_increase }}
+			LUX = {add_opinion_modifier = { target = GER modifier = large_increase }}
+			AUS = {add_opinion_modifier = { target = GER modifier = large_increase }}
 		}
 	}
 
@@ -112,7 +151,34 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		AUS = {
+			add_opinion_modifier = { target = GER modifier = huge_increase }
+			if = {
+				limit = {
+					GER = {
+						has_government = fascism
+					}
+				}
+				add_ideas = fascist_influence
+			}
+			if = {
+				limit = {
+					GER = {
+						has_government = communism
+					}
+				}
+				add_ideas = communist_influence
+			}
+			if = {
+				limit = {
+					GER = {
+						has_government = democratic
+					}
+				}
+				add_ideas = democratic_influence
+			}
 		}
+	}
 	}
 
 	focus = {
@@ -129,6 +195,42 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			HUN = { 
+				add_state_claim = 70
+				add_state_claim = 71
+				add_state_claim = 73
+				add_state_claim = 76
+				add_state_claim = 84
+				add_state_claim = 83
+				add_state_claim = 764
+				add_state_claim = 45
+				add_state_claim = 109
+					if = {
+						limit = {
+							GER = {
+								has_government = fascism
+							}
+						}
+						add_ideas = fascist_influence
+					}
+					if = {
+						limit = {
+							GER = {
+								has_government = communism
+							}
+						}
+						add_ideas = communist_influence
+					}
+					if = {
+						limit = {
+							GER = {
+								has_government = democratic
+							}
+						}
+						add_ideas = democratic_influence
+					}
+				
+		}
 		}
 	}
 
@@ -147,6 +249,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = gdb_germany.38}
 		}
 	}
 
@@ -164,7 +267,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = invitation_decision_unlocked
+		HUN = {
+			add_opinion_modifier = { target = GER modifier = huge_increase }
 		}
+		GER = {set_country_flag = invite_hungary_flag}
+	}
 	}
 
 	focus = {
@@ -181,7 +289,36 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = invitation_decision_unlocked
+		POL = {
+			add_opinion_modifier = { target = GER modifier = huge_increase }
+			if = {
+				limit = {
+					GER = {
+						has_government = fascism
+					}
+				}
+				add_ideas = fascist_influence
+			}
+			if = {
+				limit = {
+					GER = {
+						has_government = communism
+					}
+				}
+				add_ideas = communist_influence
+			}
+			if = {
+				limit = {
+					GER = {
+						has_government = democratic
+					}
+				}
+				add_ideas = democratic_influence
+			}
 		}
+		GER = {set_country_flag = invite_poland_flag}
+	}
 	}
 
 	focus = {
@@ -199,8 +336,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			BUL = {
+				is_in_faction_with = GER
+			}
+			HUN = {
+				is_in_faction_with = GER
+			}
+		}
 		
 		completion_reward = {
+			country_event = { id = gdb_germany.47}
 		}
 	}
 
@@ -217,6 +364,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			GER = {
+				add_ideas = member_of_the_bund
+			}
+			AUS = {
+				add_ideas = member_of_the_bund
+			}
 		}
 	}
 
@@ -233,6 +386,20 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			AUS = { 
+				add_state_claim = 88
+				add_state_claim = 736
+				add_state_claim = 102
+				add_state_claim = 69
+				add_state_claim = 9
+				add_state_claim = 75
+				add_state_claim = 74
+				add_state_claim = 807
+				add_state_claim = 88
+				add_state_claim = 91
+				add_state_claim = 89
+				add_state_claim = 80
+		}
 		}
 	}
 
@@ -249,6 +416,14 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			ITA = {
+				add_opinion_modifier = { target = GER modifier = medium_increase }
+				add_state_claim = 103
+				add_state_claim = 163
+			}
+			798 = {
+				remove_core_of = AUS 
+			}
 		}
 	}
 
@@ -264,8 +439,34 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			OR = {
+				GER = {has_full_control_of_state = 804}
+				AND = {
+					SWI = {has_full_control_of_state = 804}
+					SWI = { is_puppet_of = GER }
+				}
+			}
+			ITA = {has_full_control_of_state = 39}
+		}
 		
 		completion_reward = {
+			ITA = {
+				transfer_state = 804
+			}
+			804 = {
+				add_core_of = ITA
+			}
+			AUS = {
+				transfer_state = 39
+			}
+			39 = {
+				add_core_of = AUS
+			}
+			hidden_effect = {
+				add_core_of = GER
+			}
 		}
 	}
 
@@ -273,6 +474,7 @@ focus_tree = {
 		id = pressure_yugoslavia
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = approach_italy }
+		prerequisite = { focus = the_future_of_czechoslovakia }
 		mutually_exclusive = {
 			focus = balkan_royale
 		}
@@ -285,6 +487,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = gdb_germany.54}
 		}
 	}
 
@@ -409,6 +612,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = gdb_germany.75 }
 		}
 	}
 
@@ -417,6 +621,7 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = consolidate_the_bund }
 		prerequisite = { focus = the_future_of_czechoslovakia }
+		prerequisite = { focus = the_italian_exchange }
 		x = 0
 		y = 4
 		relative_position_id = consolidate_the_bund
@@ -426,7 +631,14 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = gdb_germany.20 }
+			swap_ideas = {
+			remove_idea = general_staff
+			add_idea = general_staff_unorganized
 		}
+		add_named_threat = { threat = 3 name = zdb_deutscher_bund }
+	}
+	
 	}
 
 	focus = {
@@ -442,6 +654,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = gdb_germany.26}
 		}
 	}
 
@@ -456,8 +669,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			has_global_flag = german_polish_friendly_outcome
+		}
 		
 		completion_reward = {
+			country_event = { id = gdb_germany.35}
 		}
 	}
 
@@ -491,7 +709,36 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = invitation_decision_unlocked
+		BUL = {
+			add_opinion_modifier = { target = GER modifier = huge_increase }
+			if = {
+				limit = {
+					GER = {
+						has_government = fascism
+					}
+				}
+				add_ideas = fascist_influence
+			}
+			if = {
+				limit = {
+					GER = {
+						has_government = communism
+					}
+				}
+				add_ideas = communist_influence
+			}
+			if = {
+				limit = {
+					GER = {
+						has_government = democratic
+					}
+				}
+				add_ideas = democratic_influence
+			}
 		}
+		GER = {set_country_flag = invite_bulgaria_flag}
+	}
 	}
 
 	focus = {
@@ -505,8 +752,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			threat > 0.3
+		}
 		
 		completion_reward = {
+			add_war_support = 0.05
 		}
 	}
 
@@ -523,6 +774,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			create_faction = GER_vanguard_faction
 		}
 	}
 
@@ -539,6 +791,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			HOL = {add_opinion_modifier = { target = GER modifier = medium_increase }}
+			ENG = {add_opinion_modifier = { target = GER modifier = medium_increase }}
+			DEN = {add_opinion_modifier = { target = GER modifier = medium_increase }}
+			NOR = {add_opinion_modifier = { target = GER modifier = medium_increase }}
+			SWE = {add_opinion_modifier = { target = GER modifier = medium_increase }}
+			USA = {add_opinion_modifier = { target = GER modifier = small_increase }}
 		}
 	}
 
@@ -555,6 +813,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = invitation_decision_unlocked
+			GER = {set_country_flag = invite_netherlands_flag}
 		}
 	}
 
@@ -571,6 +831,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = invitation_decision_unlocked
+			GER = {
+				set_country_flag = invite_denmark_flag
+				set_country_flag = invite_norway_flag
+				set_country_flag = invite_sweden_flag
+		}
 		}
 	}
 
@@ -585,9 +851,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			DEN = {
+				is_in_faction_with = GER
+			}
+		}
 		
 		completion_reward = {
-		}
+			805 = { add_core_of = GER }
+			GER = { transfer_state = 805
+			add_timed_idea = { idea = zdb_lose_money days = 180}
+			}
+			DEN = {
+			add_timed_idea = { idea = zdb_make_money days = 1095}
+			}
+			}
 	}
 
 	focus = {
@@ -601,27 +880,60 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			has_global_flag = uk_feels_threatened
+		}
 		
 		completion_reward = {
+			custom_effect_tooltip = invitation_decision_unlocked
+			GER = {set_country_flag = invite_uk_flag}
 		}
 	}
 
 	focus = {
-		id = big_brother
+		id = the_sleeping_giant
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = anglosaxons }
-		x = 0
-		y = 1
-		relative_position_id = anglosaxons
+		prerequisite = { focus = scandinavian_cousins }
+		x = 1
+		y = 2
+		relative_position_id = scandinavian_cousins
 		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			NOT = {
+				USA = {
+					has_war_with = GER
+				}
+			}
+			OR = {
+				AND = {
+					GER = {
+						has_war_with = JAP
+					}
+					USA = {
+						has_war_with = JAP
+					}
+				}
+				AND = {
+					GER = {
+						has_war_with = SOV
+					}
+					USA = {
+						has_war_with = SOV
+					}
+				}
+			}
+		}
 		
 		completion_reward = {
+			custom_effect_tooltip = invitation_decision_unlocked
+			GER = {set_country_flag = invite_usa_flag}
 		}
 	}
-
 
 	focus = {
 		id = fire_is_spreading

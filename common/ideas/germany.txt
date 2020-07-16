@@ -20,6 +20,25 @@ ideas = {
 			}
 		}
 
+		realpolitik_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.25
+			}
+		}
+
 		french_refugees_welcome = {
 			allowed = {
 				always = no
@@ -57,6 +76,44 @@ ideas = {
 				operative_slot = 1
 				resistance_damage_to_garrison = -0.1
 				intelligence_agency_defense = 0.2
+			}
+		}
+
+		member_of_the_bund = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.1
+				political_power_gain = -0.05
+			}
+		}
+
+		soviet_volunteer_army = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				send_volunteer_size = 15
 			}
 		}
 		

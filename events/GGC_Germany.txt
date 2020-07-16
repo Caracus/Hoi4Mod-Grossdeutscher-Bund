@@ -182,6 +182,12 @@ country_event = {
 			factor = 50
 		}
 		set_country_flag = GER_com_help_accepted
+		SOV = {
+			add_timed_idea = {
+				idea = soviet_volunteer_army
+				days = 1200
+			}
+		}
 		load_oob = "GER_Soviet_Help"
 		GER = {
 			add_timed_idea = {
@@ -244,7 +250,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.5.a
-
 	}
 }
 
@@ -1498,6 +1503,10 @@ country_event = {
 			71 = {
 				add_core_of = HUN
 			}
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
 		}
 	}
 }
@@ -1532,6 +1541,10 @@ country_event = {
 			71 = {
 				add_core_of = HUN
 			}
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
 		}
 	}
 	option = {
@@ -1548,10 +1561,20 @@ country_event = {
 			71 = {
 				add_core_of = HUN
 			}
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
 		}
 	}
 	option = {
 		name = gdb_germany.41.c
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
+		}
 	}
 }
 
@@ -1708,14 +1731,12 @@ country_event = {
 			766 = {
 				add_core_of = BUL
 			}
-
 			set_global_flag = germany_helps_bulgaria
 		}
 	}
 	option = {
 		name = gdb_germany.46.b
 		hidden_effect = {
-
 			ROM = {
 				transfer_state = 46
 				transfer_state = 81
@@ -1794,11 +1815,9 @@ country_event = {
 			44 = {
 				add_core_of = ITA
 			}
-
 			764 = {
 				add_core_of = HUN
 			}
-
 			45 = {
 				add_core_of = HUN
 			}
@@ -1814,45 +1833,45 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.50.a
-
-		BUL = {add_opinion_modifier = { target = GER modifier = medium_increase }}
-		ITA = {add_opinion_modifier = { target = GER modifier = large_decrease }}
-
+		BUL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_increase
+			}
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_decrease
+			}
+		}
 		BUL = {
 			transfer_state = 44
 			transfer_state = 105
 		}
-
 		44 = {
 			add_core_of = BUL
 		}
-
 		103 = {
 			add_core_of = BUL
 		}
-
 		105 = {
 			add_core_of = BUL
 		}
-
 		163 = {
 			add_core_of = BUL
 		}
-
 		184 = {
 			add_core_of = BUL
 		}
-
 		731 = {
 			add_core_of = BUL
 		}
-
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.51
 				days = 14
 			}
-
 			BUL = {
 				transfer_state = 104
 				transfer_state = 106
@@ -1860,7 +1879,6 @@ country_event = {
 				transfer_state = 108
 				transfer_state = 109
 			}
-
 			104 = {
 				add_core_of = BUL
 			}
@@ -1877,29 +1895,32 @@ country_event = {
 				add_core_of = BUL
 			}
 		}
-
 	}
 	option = {
 		name = gdb_germany.50.b
-
-		BUL = {add_opinion_modifier = { target = GER modifier = medium_decrease }}
-		ITA = {add_opinion_modifier = { target = GER modifier = medium_increase }}
-
+		BUL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_decrease
+			}
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_increase
+			}
+		}
 		ITA = {
 			transfer_state = 44
 			transfer_state = 105
 		}
-
 		44 = {
 			add_core_of = ITA
 		}
-
 		105 = {
 			add_core_of = ITA
 		}
-
 		hidden_effect = {
-
 			BUL = {
 				transfer_state = 104
 				transfer_state = 106
@@ -1907,7 +1928,6 @@ country_event = {
 				transfer_state = 108
 				transfer_state = 109
 			}
-
 			104 = {
 				add_core_of = BUL
 			}
@@ -1936,9 +1956,18 @@ country_event = {
 	#unholy
 	option = {
 		name = gdb_germany.51.a
-		SOV = {add_opinion_modifier = { target = ITA modifier = medium_increase }}
-		ITA = {add_opinion_modifier = { target = SOV modifier = medium_increase }}
-
+		SOV = {
+			add_opinion_modifier = {
+				target = ITA
+				modifier = medium_increase
+			}
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_increase
+			}
+		}
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.52
@@ -1980,24 +2009,34 @@ country_event = {
 		name = gdb_germany.53.a
 		add_political_power = -50
 		ITA = {
-			set_politics = { ruling_party = communism elections_allowed = no }
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
 		}
 		SOV = {
 			add_to_faction = ITA
 		}
 		hidden_effect = {
-			add_popularity = { ideology = communism popularity = 0.4 }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
 		}
 		ITA = {
 			start_civil_war = {
 				ruling_party = communism
 				ideology = fascism
 				size = 0.3
-				states = { 
-					115 114 163 156 160
+				states = {
+					115
+					114
+					163
+					156
+					160
 				}
 				capital = 115
-		}
+			}
 		}
 		hidden_effect = {
 			if = {
@@ -2017,128 +2056,131 @@ country_event = {
 				add_core_of = GER
 				add_core_of = AUS
 			}
-	
-		}
-
-}
-
-option = {
-	name = gdb_germany.53.b
-	GER = {
-		add_political_power = -200
-		send_equipment = {
-			target = ITA
-			type = infantry_equipment
-			amount = 25000
-		}
-		send_equipment = {
-			target = ITA
-			type = support_equipment
-			amount = 1000
 		}
 	}
-
-	ITA = {
-		add_equipment_to_stockpile = {
-
-			type = infantry_equipment_1
-	
-			amount = 25000
-			producer = GER
-	
+	option = {
+		name = gdb_germany.53.b
+		GER = {
+			add_political_power = -200
+			send_equipment = {
+				target = ITA
+				type = infantry_equipment
+				amount = 25000
+			}
+			send_equipment = {
+				target = ITA
+				type = support_equipment
+				amount = 1000
+			}
 		}
-
-		add_equipment_to_stockpile = {
-
-			type = support_equipment
-	
-			amount = 1000
-			producer = GER
-	
+		ITA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 25000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = GER
+			}
 		}
-	}
-
-	ITA = {
-		set_politics = { ruling_party = neutrality elections_allowed = no }
-		
-		effect_tooltip = {
-			create_country_leader = {
-				name = "Victor Emmanuel III"
-				desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-				picture = "GFX_portrait_italy_victor_emmanuel_iii"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-			
+		ITA = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Victor Emmanuel III"
+					desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+					picture = "GFX_portrait_italy_victor_emmanuel_iii"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
 				}
 			}
+			set_capital = 160
 		}
-		set_capital = 160
-	}
-
-
-
-	hidden_effect = {
-		if = {
-			limit = {
-				country_exists = AUS
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				AUS = {
+					transfer_state = 736
+				}
 			}
-			AUS = {
-				transfer_state = 736
+			else = {
+				GER = {
+					transfer_state = 736
+				}
+			}
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				AUS = {
+					transfer_state = 39
+				}
+			}
+			else = {
+				GER = {
+					transfer_state = 39
+				}
+			}
+			736 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			39 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			BUL = {
+				transfer_state = 103
+				transfer_state = 163
+			}
+			ITA = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.4
+				}
+			} 
+			country_event = {
+				id = gdb_germany.76
+				days = 60
 			}
 		}
-		else = {
-			GER = {
-				transfer_state = 736
-			}
-		}
-
-		if = {
-			limit = {
-				country_exists = AUS
-			}
-			AUS = {
-				transfer_state = 39
-			}
-		}
-		else = {
-			GER = {
-				transfer_state = 39
-			}
-		}
-
-		736 = {
-			add_core_of = GER
-			add_core_of = AUS
-		}
-
-		39 = {
-			add_core_of = GER
-			add_core_of = AUS
-		}
-
-		BUL = {
-			transfer_state = 103
-			transfer_state = 163
-		}
-
 		ITA = {
-			add_popularity = { ideology = neutrality popularity = 0.4 }
-		}
-	}
-
-	ITA = {
-		start_civil_war = {
-			ruling_party = ROOT
-			ideology = communism
-			size = 0.5
-			states = { 
-				2 156 158 162 117 157 448 449 450 451 661 662 663 273 550 271 559
+			start_civil_war = {
+				ruling_party = ROOT
+				ideology = communism
+				size = 0.5
+				states = {
+					2
+					156
+					158
+					162
+					117
+					157
+					448
+					449
+					450
+					451
+					661
+					662
+					663
+					273
+					550
+					271
+					559
+				}
+				capital = 2
 			}
-			capital = 2
 		}
 	}
-}
 }
 
 country_event = {
@@ -2170,7 +2212,6 @@ country_event = {
 			transfer_state = 764
 			transfer_state = 45
 		}
-
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.55
@@ -2201,19 +2242,16 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.55.a
-
+	}
+	option = {
+		name = gdb_germany.55.b
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.56
+				days = 14
+			}
 		}
-
-		option = {
-			name = gdb_germany.55.b
-			hidden_effect = {
-				country_event = {
-					id = gdb_germany.56
-					days = 14
-				}
-			}
-
-			}
+	}
 }
 
 country_event = {
@@ -2235,11 +2273,9 @@ country_event = {
 		ITA = {
 			transfer_state = 104
 		}
-
 		HUN = {
 			transfer_state = 109
 		}
-
 		SER = {
 			transfer_state = 106
 		}
@@ -2268,9 +2304,7 @@ country_event = {
 		ITA = {
 			puppet = SER
 		}
-		}
-
-
+	}
 }
 
 country_event = {
@@ -2281,8 +2315,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.57.a
-			puppet = SWI
+		puppet = SWI
+		SWI = {
+			add_ideas = member_of_the_bund
 		}
+	}
 }
 
 country_event = {
@@ -2293,11 +2330,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.58.a
-			country_event = {
-				id = gdb_germany.59
-				days = 1
-			}
+		country_event = {
+			id = gdb_germany.59
+			days = 1
 		}
+	}
 }
 
 country_event = {
@@ -2308,13 +2345,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.59.a
-		hidden_effect={
+		hidden_effect = {
 			country_event = {
 				id = gdb_germany.60
 				days = 1
 			}
 		}
-		}
+	}
 }
 
 country_event = {
@@ -2331,8 +2368,7 @@ country_event = {
 				days = 1
 			}
 		}
-
-		}
+	}
 }
 
 country_event = {
@@ -2344,13 +2380,16 @@ country_event = {
 	option = {
 		name = gdb_germany.61.a
 		puppet = LUX
+		LUX = {
+			add_ideas = member_of_the_bund
+		}
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.62
 				days = 1
 			}
 		}
-		}
+	}
 }
 
 country_event = {
@@ -2378,20 +2417,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.63.a
+		country_event = {
+			id = gdb_germany.65
+			days = 1
+		}
+	}
+	option = {
+		name = gdb_germany.63.b
+		hidden_effect = {
 			country_event = {
-				id = gdb_germany.65
+				id = gdb_germany.64
 				days = 1
 			}
 		}
-		option = {
-			name = gdb_germany.63.b
-			hidden_effect = {
-				country_event = {
-					id = gdb_germany.64
-					days = 1
-				}
-			}
-}
+	}
 }
 
 country_event = {
@@ -2430,11 +2469,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.65.a
-			country_event = {
-				id = gdb_germany.66
-				days = 1
-			}
+		country_event = {
+			id = gdb_germany.66
+			days = 1
 		}
+	}
 }
 
 country_event = {
@@ -2451,7 +2490,7 @@ country_event = {
 				days = 1
 			}
 		}
-		}
+	}
 }
 
 country_event = {
@@ -2462,18 +2501,18 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.67.a
-			country_event = {
-				id = gdb_germany.68
-				days = 1
-			}
+		country_event = {
+			id = gdb_germany.68
+			days = 1
 		}
-		option = {
-			name = gdb_germany.67.b
-				country_event = {
-					id = gdb_germany.69
-					days = 1
-				}
-			}
+	}
+	option = {
+		name = gdb_germany.67.b
+		country_event = {
+			id = gdb_germany.69
+			days = 1
+		}
+	}
 }
 
 country_event = {
@@ -2489,7 +2528,6 @@ country_event = {
 			transfer_state = 34
 			transfer_state = 538
 		}
-
 		806 = {
 			add_core_of = FRA
 		}
@@ -2522,7 +2560,7 @@ country_event = {
 		6 = {
 			add_core_of = HOL
 		}
-		}
+	}
 }
 
 country_event = {
@@ -2538,7 +2576,6 @@ country_event = {
 			transfer_state = 34
 			transfer_state = 538
 		}
-
 		806 = {
 			add_core_of = FRA
 		}
@@ -2555,7 +2592,7 @@ country_event = {
 		800 = {
 			add_core_of = GER
 		}
-		}
+	}
 }
 
 country_event = {
@@ -2631,7 +2668,7 @@ country_event = {
 		}
 		799 = {
 			set_compliance = 50
-		}	
+		}
 	}
 	option = {
 		name = gdb_germany.71.a
@@ -2648,7 +2685,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.72.a
-		add_war_support = -0.1	
+		add_war_support = -0.1
 	}
 }
 
@@ -2675,5 +2712,37 @@ country_event = {
 	option = {
 		name = gdb_germany.74.b
 		add_ideas = french_refugees_welcome
+	}
+}
+
+country_event = {
+	id = gdb_germany.75
+	title = gdb_germany.75.t
+	desc = gdb_germany.75.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.75.a
+		puppet = AUS
+	}
+}
+
+country_event = {
+	id = gdb_germany.76
+	title = gdb_germany.76.t
+	desc = gdb_germany.76.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.76.a
+		random_other_country = {
+			limit = {
+					original_tag = ITA
+					has_government = communism
+			}
+			SOV = {
+				add_to_faction = PREV
+			}
+		}
 	}
 }
