@@ -231,6 +231,11 @@ country_event = {
 				days = 150
 			}
 		}
+		hidden_effect = {
+		ENG = {
+add_ideas = uk_we_stand_alone
+}
+}
 	}
 	#refuse
 	option = {

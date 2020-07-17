@@ -39,6 +39,26 @@ ideas = {
 			}
 		}
 
+		
+		uk_we_stand_alone= {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				neutrality_drift = 0.1
+				democratic_drift = 0.15
+			}
+		}
+
 		french_refugees_welcome = {
 			allowed = {
 				always = no
