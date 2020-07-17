@@ -53,7 +53,7 @@ focus_tree = {
 		id = german_spirit_reborn
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = a_bright_future }
-		x = -6
+		x = 0
 		y = 1
 		relative_position_id = a_bright_future
 		cost = 1
@@ -70,10 +70,10 @@ focus_tree = {
 	focus = {
 		id = realpolitik
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = german_spirit_reborn }
-		x = 0
+		prerequisite = { focus = a_bright_future }
+		x = -4
 		y = 1
-		relative_position_id = german_spirit_reborn
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -120,9 +120,9 @@ focus_tree = {
 		id = deutschlandlied
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = german_spirit_reborn }
-		x = 4
-		y = 1
-		relative_position_id = german_spirit_reborn
+		x = 0
+		y = 2
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -143,8 +143,8 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = deutschlandlied }
 		x = 0
-		y = 1
-		relative_position_id = deutschlandlied
+		y = 3
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -184,11 +184,10 @@ focus_tree = {
 	focus = {
 		id = approach_hungary
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = realpolitik }
-		prerequisite = { focus = reach_out_to_austria }
-		x = -2
-		y = 1
-		relative_position_id = reach_out_to_austria
+		prerequisite = { focus = eastern_expansion }
+		x = -5
+		y = 3
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -240,9 +239,9 @@ focus_tree = {
 		prerequisite = { focus = the_polish_corridor }
 		prerequisite = { focus = approach_hungary }
 		prerequisite = { focus = austrian_claims }
-		x = -1
-		y = 2
-		relative_position_id = approach_hungary
+		x = -3
+		y = 8
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -256,11 +255,10 @@ focus_tree = {
 	focus = {
 		id = german_hungarian_alliance
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = the_future_of_czechoslovakia }
-		prerequisite = { focus = eastern_expansion }
-		x = -1
-		y = 1
-		relative_position_id = the_future_of_czechoslovakia
+		prerequisite = { focus = approach_hungary }
+		x = -5
+		y = 4
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -278,14 +276,17 @@ focus_tree = {
 	focus = {
 		id = deepen_our_ties
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = polish_cooperation }
+		prerequisite = { focus = the_polish_corridor }
 		prerequisite = { focus = eastern_expansion }
-		x = 0
-		y = 2
-		relative_position_id = polish_cooperation
+		x = -2
+		y = 4
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_global_flag = german_polish_friendly_outcome
 		}
 		
 		completion_reward = {
@@ -325,13 +326,12 @@ focus_tree = {
 		id = balkan_royale
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = balkan_allies }
-		prerequisite = { focus = german_hungarian_alliance }
 		mutually_exclusive = {
 			focus = pressure_yugoslavia
 		}
-		x = 0
-		y = 2
-		relative_position_id = deepen_our_ties
+		x = -7
+		y = 9
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -356,8 +356,8 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = reach_out_to_austria }
 		x = 0
-		y = 1
-		relative_position_id = reach_out_to_austria
+		y = 4
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -377,9 +377,9 @@ focus_tree = {
 		id = austrian_claims
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = zweiter_deutscher_bund }
-		x = 0
-		y = 1
-		relative_position_id = zweiter_deutscher_bund
+		x = -3
+		y = 5
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -407,9 +407,9 @@ focus_tree = {
 		id = approach_italy
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = austrian_claims }
-		x = 0
-		y = 1
-		relative_position_id = austrian_claims
+		x = -5
+		y = 6
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -431,10 +431,9 @@ focus_tree = {
 		id = the_italian_exchange
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = approach_italy }
-		prerequisite = { focus = consolidate_the_bund }
-		x = 1
-		y = 1
-		relative_position_id = approach_italy
+		x = -6
+		y = 7
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -458,14 +457,24 @@ focus_tree = {
 			804 = {
 				add_core_of = ITA
 			}
-			AUS = {
-				transfer_state = 39
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				AUS = {
+					transfer_state = 39
+				}
+				39 = {
+					add_core_of = AUS
+				}
 			}
-			39 = {
-				add_core_of = AUS
-			}
-			hidden_effect = {
-				add_core_of = GER
+			else = {
+				GER = {
+					transfer_state = 39
+				}
+				39 = {
+					add_core_of = GER
+				}
 			}
 		}
 	}
@@ -478,9 +487,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = balkan_royale
 		}
-		x = 0
-		y = 2
-		relative_position_id = approach_italy
+		x = -5
+		y = 9
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -603,9 +612,9 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = aftermath }
 		prerequisite = { focus = zweiter_deutscher_bund }
-		x = -1
-		y = 1
-		relative_position_id = aftermath
+		x = 0
+		y = 5
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -619,12 +628,11 @@ focus_tree = {
 	focus = {
 		id = grossdeutscher_bund
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = consolidate_the_bund }
+		prerequisite = { focus = reform_state focus = traditional_state }
 		prerequisite = { focus = the_future_of_czechoslovakia }
-		prerequisite = { focus = the_italian_exchange }
-		x = 0
-		y = 4
-		relative_position_id = consolidate_the_bund
+		x = -3
+		y = 10
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -646,9 +654,9 @@ focus_tree = {
 		id = the_polish_corridor
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = realpolitik }
-		x = -2
-		y = 1
-		relative_position_id = realpolitik
+		x = -3
+		y = 2
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -683,13 +691,16 @@ focus_tree = {
 	focus = {
 		id = eastern_expansion
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = new_alliances }
-		x = 1
-		y = 1
-		relative_position_id = new_alliances
+		prerequisite = { focus = realpolitik }
+		x = -5
+		y = 2
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_flag = new_alliance_has_been_made
 		}
 		
 		completion_reward = {
@@ -700,10 +711,10 @@ focus_tree = {
 	focus = {
 		id = balkan_allies
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = eastern_expansion }
-		x = 1
-		y = 2
-		relative_position_id = eastern_expansion
+		prerequisite = { focus = german_hungarian_alliance }
+		x = -6
+		y = 5
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -745,10 +756,10 @@ focus_tree = {
 	focus = {
 		id = worried_outlook
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = realpolitik }
-		x = -6
-		y = 1
-		relative_position_id = realpolitik
+		prerequisite = { focus = aftermath }
+		x = 4
+		y = 5
+		relative_position_id = a_bright_future
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -845,9 +856,9 @@ focus_tree = {
 		id = land_purchase
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = scandinavian_cousins }
-		x = -2
-		y = 1
-		relative_position_id = scandinavian_cousins
+		x = -1
+		y = 4
+		relative_position_id = new_alliances
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -873,10 +884,10 @@ focus_tree = {
 	focus = {
 		id = anglosaxons
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = scandinavian_cousins }
-		x = 0
+		prerequisite = { focus = new_alliances }
+		x = 1
 		y = 1
-		relative_position_id = scandinavian_cousins
+		relative_position_id = new_alliances
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -895,10 +906,10 @@ focus_tree = {
 	focus = {
 		id = the_sleeping_giant
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = scandinavian_cousins }
+		prerequisite = { focus = anglosaxons }
 		x = 1
 		y = 2
-		relative_position_id = scandinavian_cousins
+		relative_position_id = new_alliances
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -1708,9 +1719,10 @@ focus_tree = {
 		focus = {
 		id = neue_verfassung
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = complete_the_bund }
-		x = 62
-		y = 7
+		prerequisite = { focus = consolidate_the_bund }
+		x = 0
+		y = 6
+		relative_position_id = a_bright_future
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1728,12 +1740,14 @@ focus_tree = {
 		icon = GFX_goal_tfv_sever_ties_with_uk 
 		prerequisite = { focus = neue_verfassung }
 		mutually_exclusive = { focus = new_kaiser }
-		x = 61
-		y = 8
+		x = -1
+		y = 1
+		relative_position_id = neue_verfassung
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
+		
 		
 		completion_reward = {
 		add_ideas = { GER_wilhelm_iii }
@@ -1746,8 +1760,9 @@ focus_tree = {
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = neue_verfassung }
 		mutually_exclusive = { focus = keep_adenauer }
-		x = 63
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = neue_verfassung
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1763,8 +1778,9 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = keep_adenauer focus = new_kaiser}
 		mutually_exclusive = { focus = limited_vote }
-		x = 61
-		y = 9
+		x = -1
+		y = 2
+		relative_position_id = neue_verfassung
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1781,8 +1797,9 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = keep_adenauer focus = new_kaiser}
 		mutually_exclusive = { focus = free_vote }
-		x = 63
-		y = 9
+		x = 1
+		y = 2
+		relative_position_id = neue_verfassung
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1799,8 +1816,9 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = limited_vote focus = free_vote}
 		mutually_exclusive = { focus = traditional_state }
-		x = 61
-		y = 10
+		x = -1
+		y = 3
+		relative_position_id = neue_verfassung
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1818,8 +1836,9 @@ focus_tree = {
 		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = limited_vote focus = free_vote}
 		mutually_exclusive = { focus = reform_state }
-		x = 63
-		y = 10
+		x = 1
+		y = 3
+		relative_position_id = neue_verfassung
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2272,8 +2291,6 @@ focus_tree = {
 		focus = {
 		id = phoenix_from_the_ashes
 		icon = GFX_focus_ger_revive_kaiserreich
-		prerequisite = { focus = reform_state focus = traditional_state }
-		prerequisite = { focus = attack_soviets }
 		available = {
 		date > 1944.1.1
 		is_puppet = no
