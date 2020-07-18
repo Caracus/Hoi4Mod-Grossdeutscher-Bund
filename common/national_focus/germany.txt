@@ -81,6 +81,28 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = realpolitik_idea
+		}
+	}
+
+	focus = {
+		id = deutschlandlied
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = german_spirit_reborn }
+		x = 0
+		y = 2
+		relative_position_id = a_bright_future
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_opinion_modifier = { target = SWI modifier = large_increase }
+			add_opinion_modifier = { target = LUX modifier = large_increase }
+			add_opinion_modifier = { target = AUS modifier = large_increase }
+			SWI = {add_opinion_modifier = { target = GER modifier = large_increase }}
+			LUX = {add_opinion_modifier = { target = GER modifier = large_increase }}
+			AUS = {add_opinion_modifier = { target = GER modifier = large_increase }}
 			if = {
 				limit = {
 					NOT = {
@@ -113,28 +135,6 @@ focus_tree = {
 					add_idea = GER_national_revitalization4
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = deutschlandlied
-		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = german_spirit_reborn }
-		x = 0
-		y = 2
-		relative_position_id = a_bright_future
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			add_opinion_modifier = { target = SWI modifier = large_increase }
-			add_opinion_modifier = { target = LUX modifier = large_increase }
-			add_opinion_modifier = { target = AUS modifier = large_increase }
-			SWI = {add_opinion_modifier = { target = GER modifier = large_increase }}
-			LUX = {add_opinion_modifier = { target = GER modifier = large_increase }}
-			AUS = {add_opinion_modifier = { target = GER modifier = large_increase }}
 		}
 	}
 
@@ -1749,8 +1749,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			set_politics = { ruling_party = democratic elections_allowed = no }
-			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_stability = 0.1
+			add_popularity = { ideology = neutrality popularity = 0.3 }
+			add_popularity = { ideology = democratic popularity = 0.2 }
 			set_country_flag = GER_democratic_gov
 		}
 	}	

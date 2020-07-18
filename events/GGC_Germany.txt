@@ -183,10 +183,7 @@ country_event = {
 		}
 		set_country_flag = GER_com_help_accepted
 		SOV = {
-			add_timed_idea = {
-				idea = soviet_volunteer_army
-				days = 1200
-			}
+			add_ideas = soviet_volunteer_army
 		}
 		load_oob = "GER_Soviet_Help"
 		GER = {
@@ -507,6 +504,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = gdb_germany.12
 	title = gdb_germany.12.t
@@ -538,7 +536,7 @@ country_event = {
 	option = {
 		name = gdb_germany.12.c
 		create_country_leader = {
-			name = "Friedrich Wilhelm III von Hohenzollern"
+			name = "Friedrich Wilhelm IV von Hohenzollern"
 			picture = GFX_Portrait_germany_wilhelm_IV_von_preussen
 			expire = "1965.1.1"
 			ideology = conservatism
