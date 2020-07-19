@@ -1867,6 +1867,9 @@ country_event = {
 		184 = {
 			add_core_of = BUL
 		}
+		341 = {
+			add_core_of = BUL
+		}
 		731 = {
 			add_core_of = BUL
 		}

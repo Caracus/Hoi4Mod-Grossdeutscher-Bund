@@ -371,7 +371,8 @@ ideas = {
 				}
 			}
 			modifier = {
-			 	 air_air_superiority_agility_factor = 0.1
+				  air_air_superiority_agility_factor = 0.1
+				  air_air_superiority_attack_factor = 0.05
 			}
 		}
 		
@@ -397,6 +398,7 @@ ideas = {
 			}
 			modifier = {
 			air_close_air_support_attack_factor = 0.1
+			air_cas_present_factor = 0.1
 			}
 		}
 		
@@ -423,11 +425,12 @@ ideas = {
 
 			}
 						modifier = {
-			 	 air_air_superiority_attack_factor = 0.1
+				  air_air_superiority_attack_factor = 0.1
+				  air_air_superiority_defence_factor = 0.1
 			}
 		}
 		
-				zdb_strat_discount = {
+		zdb_strat_discount = {
 			
 			allowed = {
 				always = no
@@ -447,7 +450,8 @@ ideas = {
 				}
 			}
 			modifier = {
-			 	air_strategic_bomber_attack_factor = 0.1
+				 air_strategic_bomber_attack_factor = 0.1
+				 air_strategic_bomber_defence_factor = 0.1
 			}
 		}
 		
