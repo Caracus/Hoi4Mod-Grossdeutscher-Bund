@@ -489,14 +489,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			has_full_control_of_state = 803
+		}
 		available = {
 			OR = {
 				GER = {
-					has_full_control_of_state = 804
+					has_full_control_of_state = 803
 				}
 				AND = {
 					SWI = {
-						has_full_control_of_state = 804
+						has_full_control_of_state = 803
 					}
 					SWI = {
 						is_puppet_of = GER
@@ -509,7 +512,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			ITA = {
-				transfer_state = 804
+				transfer_state = 803
 			}
 			804 = {
 				add_core_of = ITA
@@ -908,6 +911,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = GER_vanguard_faction
+			set_country_flag = new_alliance_has_been_made
 		}
 	}
 	focus = {
@@ -1205,9 +1209,16 @@ focus_tree = {
 			add_ideas = {
 				GER_wilhelm_iii
 			}
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
+			add_popularity = { ideology = neutrality popularity = party_popularity@democratic }
+			add_popularity = { ideology = democratic popularity = -1}
+			set_party_name = { ideology = neutrality long_name = GER_neutrality_democratic_long name = Ger_neutrality_democratic }
+			create_country_leader = {
+				name = "Konrad Adenauer"
+				picture = GFX_Portrait_germany_non_aligned_adenauer
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
 			}
 		}
 	}

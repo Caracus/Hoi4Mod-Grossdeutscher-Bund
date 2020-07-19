@@ -182,8 +182,10 @@ country_event = {
 			factor = 50
 		}
 		set_country_flag = GER_com_help_accepted
-		SOV = {
-			add_ideas = soviet_volunteer_army
+		hidden_effect = {
+			SOV = {
+				add_ideas = soviet_volunteer_army
+			}
 		}
 		load_oob = "GER_Soviet_Help"
 		GER = {
@@ -229,10 +231,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-		ENG = {
-add_ideas = uk_we_stand_alone
-}
-}
+			ENG = {
+				add_ideas = uk_we_stand_alone
+			}
+		}
 	}
 	#refuse
 	option = {
@@ -464,7 +466,7 @@ country_event = {
 			name = "Otto von Habsburg"
 			picture = GFX_Portrait_hungary_otto_von_hapsburg
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = despotism
 			traits = {
 			}
 		}
@@ -475,7 +477,7 @@ country_event = {
 			name = "Albrecht von Württemberg"
 			picture = GFX_Portrait_germany_albrecht_von_wurttemberg
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = despotism
 			traits = {
 			}
 		}
@@ -486,7 +488,7 @@ country_event = {
 			name = "Friedrich Christian von Wettin"
 			picture = GFX_Portrait_germany_friedrich_christian_von_sachsen
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = despotism
 			traits = {
 			}
 		}
@@ -497,13 +499,12 @@ country_event = {
 			name = "Rupprecht von Wittelsbach"
 			picture = GFX_Portrait_germany_rupprecht_von_bayern
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = despotism
 			traits = {
 			}
 		}
 	}
 }
-
 
 country_event = {
 	id = gdb_germany.12
@@ -517,7 +518,7 @@ country_event = {
 			name = "Friedrich Wilhelm II von Hohenzollern"
 			picture = GFX_Portrait_germany_wilhelm_II_von_preussen
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = despotism
 			traits = {
 			}
 		}
@@ -528,7 +529,7 @@ country_event = {
 			name = "Friedrich Wilhelm III von Hohenzollern"
 			picture = GFX_Portrait_germany_wilhelm_III_von_preussen
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = despotism
 			traits = {
 			}
 		}
@@ -539,7 +540,7 @@ country_event = {
 			name = "Friedrich Wilhelm IV von Hohenzollern"
 			picture = GFX_Portrait_germany_wilhelm_IV_von_preussen
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = despotism
 			traits = {
 			}
 		}
@@ -850,6 +851,7 @@ country_event = {
 			target = SWI
 			transfer_troops = yes
 		}
+		add_threat = 3
 		3 = {
 			add_core_of = GER
 		}
@@ -869,6 +871,21 @@ country_event = {
 			add_core_of = GER
 		}
 		39 = {
+			add_core_of = GER
+		}
+		69 = {
+			add_core_of = GER
+		}
+		9 = {
+			add_core_of = GER
+		}
+		74 = {
+			add_core_of = GER
+		}
+		75 = {
+			add_core_of = GER
+		}
+		807 = {
 			add_core_of = GER
 		}
 		set_cosmetic_tag = GER_GDB
@@ -1239,6 +1256,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.32.a
+		add_named_threat = {
+			threat = 7
+			name = gdb_german_polish_war
+		}
 		hidden_effect = {
 			ENG = {
 				diplomatic_relation = {
@@ -1360,7 +1381,7 @@ country_event = {
 		POL = {
 			set_cosmetic_tag = POL_GDB
 			add_named_threat = {
-				threat = 2
+				threat = 4
 				name = gdb_polish_baltics
 			}
 		}
@@ -1492,6 +1513,10 @@ country_event = {
 			transfer_state = 70
 			transfer_state = 71
 		}
+		add_threat = 3
+		HUN = {
+add_threat = 2
+}
 		hidden_effect = {
 			set_global_flag = hungarians_happy_czech_claims
 			75 = {
@@ -1592,10 +1617,12 @@ country_event = {
 		name = gdb_germany.42.a
 		POL = {
 			transfer_state = 80
+			add_threat = 1
 		}
 		HUN = {
 			transfer_state = 83
 			transfer_state = 76
+			add_threat = 1
 		}
 		hidden_effect = {
 			country_event = {
@@ -1626,6 +1653,7 @@ country_event = {
 		name = gdb_germany.43.a
 		SOV = {
 			transfer_state = 78
+			add_threat = 3
 		}
 		BUL = {
 			transfer_state = 77
@@ -1657,6 +1685,7 @@ country_event = {
 		HUN = {
 			transfer_state = 84
 			transfer_state = 82
+			add_threat = 1
 		}
 		hidden_effect = {
 			country_event = {
@@ -1685,6 +1714,7 @@ country_event = {
 		SOV = {
 			transfer_state = 79
 			transfer_state = 766
+			add_threat = 3
 		}
 		BUL = {
 			transfer_state = 46
@@ -1771,6 +1801,7 @@ country_event = {
 			id = gdb_germany.48
 			days = 3
 		}
+
 	}
 }
 
@@ -1788,20 +1819,24 @@ country_event = {
 			}
 			AUS = {
 				transfer_state = 102
+				add_threat = 1
 			}
 		}
 		else = {
 			GER = {
 				transfer_state = 102
+				add_threat = 1
 			}
 		}
 		ITA = {
 			transfer_state = 103
 			transfer_state = 44
+			add_threat = 1
 		}
 		HUN = {
 			transfer_state = 764
 			transfer_state = 45
+			add_threat = 1
 		}
 		country_event = {
 			id = gdb_germany.50
@@ -1851,6 +1886,7 @@ country_event = {
 		BUL = {
 			transfer_state = 44
 			transfer_state = 105
+			add_threat = 5
 		}
 		44 = {
 			add_core_of = BUL
@@ -1884,6 +1920,7 @@ country_event = {
 				transfer_state = 107
 				transfer_state = 108
 				transfer_state = 109
+			add_threat = 6
 			}
 			104 = {
 				add_core_of = BUL
@@ -1919,6 +1956,7 @@ country_event = {
 		ITA = {
 			transfer_state = 44
 			transfer_state = 105
+			add_threat = 2
 		}
 		44 = {
 			add_core_of = ITA
@@ -1926,13 +1964,13 @@ country_event = {
 		105 = {
 			add_core_of = ITA
 		}
-		hidden_effect = {
 			BUL = {
 				transfer_state = 104
 				transfer_state = 106
 				transfer_state = 107
 				transfer_state = 108
 				transfer_state = 109
+				add_threat = 3
 			}
 			104 = {
 				add_core_of = BUL
@@ -1949,7 +1987,7 @@ country_event = {
 			109 = {
 				add_core_of = BUL
 			}
-		}
+		
 	}
 }
 
@@ -2147,6 +2185,7 @@ country_event = {
 			BUL = {
 				transfer_state = 103
 				transfer_state = 163
+				add_threat = 1
 			}
 			ITA = {
 				add_popularity = {
@@ -2278,9 +2317,11 @@ country_event = {
 		}
 		ITA = {
 			transfer_state = 104
+			add_threat = 5
 		}
 		HUN = {
 			transfer_state = 109
+			add_threat = 1
 		}
 		SER = {
 			transfer_state = 106
@@ -2336,10 +2377,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.58.a
-		country_event = {
-			id = gdb_germany.59
-			days = 1
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.59
+				days = 1
+			}
 		}
+		add_threat = 1
 	}
 }
 
@@ -2357,6 +2401,7 @@ country_event = {
 				days = 1
 			}
 		}
+		add_threat = 1
 	}
 }
 
@@ -2374,6 +2419,7 @@ country_event = {
 				days = 1
 			}
 		}
+		add_threat = 1
 	}
 }
 
@@ -2412,6 +2458,7 @@ country_event = {
 				days = 1
 			}
 		}
+		add_threat = 1
 	}
 }
 
@@ -2426,6 +2473,10 @@ country_event = {
 		country_event = {
 			id = gdb_germany.65
 			days = 1
+		}
+		add_named_threat = {
+			threat = -3
+			name = germany_last_attempt_for_peace
 		}
 	}
 	option = {
@@ -2511,12 +2562,20 @@ country_event = {
 			id = gdb_germany.68
 			days = 1
 		}
+		add_named_threat = {
+			threat = 3
+			name = france_angered_in_belgium
+		}
 	}
 	option = {
 		name = gdb_germany.67.b
 		country_event = {
 			id = gdb_germany.69
 			days = 1
+		}
+		add_named_threat = {
+			threat = -2
+			name = france_satisfied_in_belgium
 		}
 	}
 }
@@ -2565,6 +2624,10 @@ country_event = {
 		}
 		6 = {
 			add_core_of = HOL
+		}
+		add_named_threat = {
+			threat = 2
+			name = end_of_belgium
 		}
 	}
 }
@@ -2768,6 +2831,9 @@ country_event = {
 				days = 90
 			}
 		}
+		SOV = {
+add_threat = 1
+}
 	}
 }
 
@@ -3025,6 +3091,13 @@ country_event = {
 				}
 			}
 		}
+FRA = {
+	add_named_threat = {
+		threat = 3
+		name = france_joins_comintern_threat
+	}
+}
+
 	}
 }
 
@@ -3058,7 +3131,7 @@ country_event = {
 						has_full_control_of_state = 799
 					}
 				}
-			transfer_state = 799
+				transfer_state = 799
 			}
 		}
 		hidden_effect = {

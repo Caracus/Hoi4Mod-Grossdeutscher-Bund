@@ -34,4 +34,9 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GER/Portrait_germany_rupprecht_von_bayern.dds"
 	}
 	
+			spriteType = {
+		name = "GFX_Portrait_germany_non_aligned_adenauer"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+	}
+	
 }

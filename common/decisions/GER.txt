@@ -570,7 +570,7 @@ operations = {
 			}
 		}
 		visible = {
-			has_country_flag = invite_denmark_flag
+			has_country_flag = invite_poland_flag
 			is_puppet = no
 		}
 		fire_only_once = yes
@@ -1506,6 +1506,7 @@ political_actions = {
 		}
 		days_remove = 1
 		remove_effect = {
+			add_ideas = strong_soviet_influence
 			GER = {
 				country_event = {
 					id = gdb_germany.77
