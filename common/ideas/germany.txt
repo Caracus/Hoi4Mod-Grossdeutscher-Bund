@@ -24,7 +24,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_communism_drift_bonus
 			modifier = {
-				communism_drift = 0.15
+				communism_drift = 0.25
 			}
 		}
 		realpolitik_idea = {
@@ -52,7 +52,7 @@ ideas = {
 			picture = generic_intel_bonus
 			modifier = {
 				neutrality_drift = 0.1
-				democratic_drift = 0.15
+				democratic_drift = 0.4
 			}
 		}
 		french_refugees_welcome = {
