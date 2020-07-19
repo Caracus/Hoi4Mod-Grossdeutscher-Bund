@@ -31,9 +31,9 @@ focus_tree = {
 				}
 			}
 		}
-		x = 94
+		x = 68
 		y = 1
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -50,14 +50,14 @@ focus_tree = {
 	}
 	focus = {
 		id = german_spirit_reborn
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_construction
 		prerequisite = {
 			focus = a_bright_future
 		}
 		x = 0
 		y = 1
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -71,14 +71,14 @@ focus_tree = {
 	}
 	focus = {
 		id = realpolitik
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = {
 			focus = a_bright_future
 		}
 		x = -4
 		y = 1
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -88,14 +88,14 @@ focus_tree = {
 	}
 	focus = {
 		id = deutschlandlied
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_spr_unify_the_london_bureau
 		prerequisite = {
 			focus = german_spirit_reborn
 		}
 		x = 0
 		y = 2
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -166,14 +166,14 @@ focus_tree = {
 	}
 	focus = {
 		id = reach_out_to_austria
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_anschluss
 		prerequisite = {
 			focus = deutschlandlied
 		}
 		x = 0
 		y = 3
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -212,14 +212,14 @@ focus_tree = {
 	}
 	focus = {
 		id = approach_hungary
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		prerequisite = {
 			focus = eastern_expansion
 		}
 		x = -5
 		y = 3
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -263,7 +263,7 @@ focus_tree = {
 	}
 	focus = {
 		id = the_future_of_czechoslovakia
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = {
 			focus = the_polish_corridor
 		}
@@ -276,7 +276,7 @@ focus_tree = {
 		x = -3
 		y = 8
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -288,14 +288,14 @@ focus_tree = {
 	}
 	focus = {
 		id = german_hungarian_alliance
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = {
 			focus = approach_hungary
 		}
 		x = -5
 		y = 4
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -324,7 +324,7 @@ focus_tree = {
 		x = -2
 		y = 4
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -370,7 +370,7 @@ focus_tree = {
 	}
 	focus = {
 		id = balkan_royale
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_major_war
 		prerequisite = {
 			focus = balkan_allies
 		}
@@ -383,7 +383,7 @@ focus_tree = {
 		x = -7
 		y = 9
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -403,14 +403,14 @@ focus_tree = {
 	}
 	focus = {
 		id = zweiter_deutscher_bund
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = {
 			focus = reach_out_to_austria
 		}
 		x = 0
 		y = 4
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -425,14 +425,14 @@ focus_tree = {
 	}
 	focus = {
 		id = austrian_claims
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		prerequisite = {
 			focus = zweiter_deutscher_bund
 		}
 		x = -3
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -451,14 +451,14 @@ focus_tree = {
 	}
 	focus = {
 		id = approach_italy
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_position_armies
 		prerequisite = {
 			focus = austrian_claims
 		}
 		x = -5
 		y = 6
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -478,14 +478,14 @@ focus_tree = {
 	}
 	focus = {
 		id = the_italian_exchange
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_befriend_italy
 		prerequisite = {
 			focus = approach_italy
 		}
 		x = -6
 		y = 7
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -537,7 +537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = pressure_yugoslavia
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = {
 			focus = approach_italy
 		}
@@ -550,7 +550,7 @@ focus_tree = {
 		x = -5
 		y = 9
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -562,14 +562,14 @@ focus_tree = {
 	}
 	focus = {
 		id = stabilize_the_nation
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = {
 			focus = a_bright_future
 		}
 		x = 4
 		y = 1
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -580,14 +580,14 @@ focus_tree = {
 	}
 	focus = {
 		id = pass_on_the_torch
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		prerequisite = {
 			focus = stabilize_the_nation
 		}
 		x = -1
 		y = 1
 		relative_position_id = stabilize_the_nation
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -608,14 +608,14 @@ focus_tree = {
 	}
 	focus = {
 		id = abteilung_drei_b
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_mex_privatisation
 		prerequisite = {
 			focus = stabilize_the_nation
 		}
 		x = 1
 		y = 1
 		relative_position_id = stabilize_the_nation
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -625,7 +625,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ignite_the_spark
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_major_war
 		prerequisite = {
 			focus = pass_on_the_torch
 		}
@@ -635,7 +635,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = stabilize_the_nation
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -653,14 +653,14 @@ focus_tree = {
 	}
 	focus = {
 		id = aftermath
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = {
 			focus = ignite_the_spark
 		}
 		x = 0
 		y = 1
 		relative_position_id = ignite_the_spark
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -689,7 +689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = consolidate_the_bund
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_generic_self_management
 		prerequisite = {
 			focus = aftermath
 		}
@@ -699,7 +699,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -711,7 +711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = grossdeutscher_bund
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = {
 			focus = reform_state
 			focus = traditional_state
@@ -722,7 +722,7 @@ focus_tree = {
 		x = -3
 		y = 10
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -743,14 +743,14 @@ focus_tree = {
 	}
 	focus = {
 		id = restructure_the_armed_forces
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
 			focus = grossdeutscher_bund
 		}
 		x = -3
 		y = 11
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -762,14 +762,14 @@ focus_tree = {
 	}
 	focus = {
 		id = the_polish_corridor
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_generic_polish_deal
 		prerequisite = {
 			focus = realpolitik
 		}
 		x = -3
 		y = 2
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -781,14 +781,14 @@ focus_tree = {
 	}
 	focus = {
 		id = polish_cooperation
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_tripartite_pact
 		prerequisite = {
 			focus = the_polish_corridor
 		}
 		x = 0
 		y = 1
 		relative_position_id = the_polish_corridor
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -803,14 +803,14 @@ focus_tree = {
 	}
 	focus = {
 		id = eastern_expansion
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = {
 			focus = realpolitik
 		}
 		x = -5
 		y = 2
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -822,14 +822,14 @@ focus_tree = {
 	}
 	focus = {
 		id = balkan_allies
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = {
 			focus = german_hungarian_alliance
 		}
 		x = -6
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -872,7 +872,7 @@ focus_tree = {
 	}
 	focus = {
 		id = worried_outlook
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = {
 			focus = aftermath
 		}
@@ -882,7 +882,7 @@ focus_tree = {
 		x = 4
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -895,14 +895,14 @@ focus_tree = {
 	}
 	focus = {
 		id = new_alliances
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = {
 			focus = worried_outlook
 		}
 		x = 0
 		y = 1
 		relative_position_id = worried_outlook
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -912,14 +912,14 @@ focus_tree = {
 	}
 	focus = {
 		id = germanic_expansion
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = {
 			focus = new_alliances
 		}
 		x = -1
 		y = 1
 		relative_position_id = new_alliances
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -964,14 +964,14 @@ focus_tree = {
 	}
 	focus = {
 		id = swamp_germans
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_hol_oranje_boven
 		prerequisite = {
 			focus = germanic_expansion
 		}
 		x = 0
 		y = 1
 		relative_position_id = germanic_expansion
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -984,14 +984,14 @@ focus_tree = {
 	}
 	focus = {
 		id = scandinavian_cousins
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_invite_finland
 		prerequisite = {
 			focus = swamp_germans
 		}
 		x = 0
 		y = 1
 		relative_position_id = swamp_germans
-		cost = 1
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1006,14 +1006,14 @@ focus_tree = {
 	}
 	focus = {
 		id = land_purchase
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_generic_concessions
 		prerequisite = {
 			focus = scandinavian_cousins
 		}
 		x = -1
 		y = 4
 		relative_position_id = new_alliances
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1043,14 +1043,14 @@ focus_tree = {
 	}
 	focus = {
 		id = anglosaxons
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = {
 			focus = new_alliances
 		}
 		x = 1
 		y = 1
 		relative_position_id = new_alliances
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1066,14 +1066,14 @@ focus_tree = {
 	}
 	focus = {
 		id = the_sleeping_giant
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_chi_mission_to_the_us
 		prerequisite = {
 			focus = anglosaxons
 		}
 		x = 1
 		y = 2
 		relative_position_id = new_alliances
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1104,879 +1104,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = invitation_decision_unlocked
-			GER = {
-				set_country_flag = invite_usa_flag
-			}
-		}
-	}
-	focus = {
-		id = fire_is_spreading
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		prerequisite = {
-			focus = GER_oppose_hitler
-		}
-		x = 64
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = GER_com_help_accepted
-			has_war = no
-		}
-		completion_reward = {
-			FRA = {
-				add_timed_idea = {
-					idea = zdb_com_incoming
-					days = 150
-				}
-			}
-			GER = {
-				add_timed_idea = {
-					idea = zdb_send_com_away
-					days = 150
-				}
-			}
-		}
-	}
-	focus = {
-		id = ignite_the_spark_old
-		icon = GFX_goal_generic_major_war
-		prerequisite = {
-			focus = fire_is_spreading
-		}
-		x = 64
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			FRA = {
-				country_event = {
-					id = gdb_germany.1
-				}
-				add_named_threat = {
-					threat = 5
-					name = zdb_french_civil
-				}
-			}
-		}
-	}
-	focus = {
-		id = powderkeg_belgium
-		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-		prerequisite = {
-			focus = ignite_the_spark_old
-		}
-		x = 62
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = GER_tensions_in_belgium
-		}
-		completion_reward = {
-			add_named_threat = {
-				threat = 2
-				name = zdb_belgium_powder
-			}
-			country_event = {
-				id = gdb_germany.6
-			}
-		}
-	}
-	focus = {
-		id = protect_switzerland
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = {
-			focus = ignite_the_spark_old
-		}
-		x = 64
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event = {
-				id = gdb_germany.10
-			}
-			give_guarantee = SWI
-		}
-	}
-	focus = {
-		id = guarantee_luxemburg
-		icon = GFX_goal_generic_defence
-		prerequisite = {
-			focus = ignite_the_spark_old
-		}
-		x = 66
-		y = 3
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			give_guarantee = LUX
-		}
-	}
-	focus = {
-		id = end_of_the_cv
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = {
-			focus = GER_oppose_hitler
-		}
-		available = {
-			is_puppet = no
-			has_war = no
-			NOT = {
-				any_country = {
-					original_tag = GER
-					has_government = fascism
-				}
-			}
-		}
-		x = 69
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 120
-			add_ideas = GER_clamp_down_on_fascism
-			delete_unit_template_and_units = {
-				division_template = "Landsturmregiment"
-			}
-			delete_unit_template_and_units = {
-				division_template = "Altwaffen Division"
-			}
-		}
-	}
-	focus = {
-		id = use_the_momentum
-		icon = GFX_goal_generic_cavalry
-		prerequisite = {
-			focus = end_of_the_cv
-		}
-		x = 69
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = GER_rebuild_the_nation
-				days = 365
-			}
-			add_ideas = GER_national_revitalization
-		}
-	}
-	focus = {
-		id = neuer_deutscher_bund
-		icon = GFX_goal_generic_national_unity
-		prerequisite = {
-			focus = use_the_momentum
-		}
-		x = 68
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_opinion_modifier = {
-				target = SWI
-				modifier = large_increase
-			}
-			add_opinion_modifier = {
-				target = LUX
-				modifier = large_increase
-			}
-			add_opinion_modifier = {
-				target = AUS
-				modifier = large_increase
-			}
-			SWI = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = large_increase
-				}
-			}
-			LUX = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = large_increase
-				}
-			}
-			AUS = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = large_increase
-				}
-			}
-		}
-	}
-	focus = {
-		id = invite_austria
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = {
-			focus = neuer_deutscher_bund
-		}
-		x = 67
-		y = 4
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			set_autonomy = {
-				target = AUS
-				autonomy_state = autonomy_satellite
-			}
-		}
-	}
-	focus = {
-		id = invite_luxemburg
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = {
-			focus = guarantee_luxemburg
-		}
-		prerequisite = {
-			focus = neuer_deutscher_bund
-		}
-		x = 65
-		y = 4
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			set_autonomy = {
-				target = LUX
-				autonomy_state = autonomy_satellite
-			}
-		}
-	}
-	focus = {
-		id = invite_switzerland
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = {
-			focus = protect_switzerland
-		}
-		prerequisite = {
-			focus = neuer_deutscher_bund
-		}
-		x = 63
-		y = 4
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			set_autonomy = {
-				target = SWI
-				autonomy_state = autonomy_satellite
-			}
-		}
-	}
-	focus = {
-		id = complete_the_bund
-		icon = GFX_goal_generic_propaganda
-		prerequisite = {
-			focus = former_austrian_lands
-		}
-		prerequisite = {
-			focus = former_lands_north
-		}
-		prerequisite = {
-			focus = invite_luxemburg
-		}
-		prerequisite = {
-			focus = invite_switzerland
-		}
-		x = 69
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event = {
-				id = gdb_germany.20
-			}
-			swap_ideas = {
-				remove_idea = general_staff
-				add_idea = general_staff_unorganized
-			}
-			add_named_threat = {
-				threat = 3
-				name = zdb_deutscher_bund
-			}
-		}
-	}
-	focus = {
-		id = former_lands
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = {
-			focus = use_the_momentum
-		}
-		x = 70
-		y = 3
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_idea = GER_national_revitalization
-						has_idea = GER_national_revitalization2
-					}
-				}
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = GER_national_revitalization
-						add_idea = GER_national_revitalization3
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_idea = GER_national_revitalization
-				}
-				swap_ideas = {
-					remove_idea = GER_national_revitalization
-					add_idea = GER_national_revitalization3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = GER_national_revitalization2
-				}
-				swap_ideas = {
-					remove_idea = GER_national_revitalization2
-					add_idea = GER_national_revitalization4
-				}
-			}
-		}
-	}
-	focus = {
-		id = former_austrian_lands
-		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-		prerequisite = {
-			focus = invite_austria
-		}
-		x = 68
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event = {
-				id = gdb_germany.13
-			}
-			add_named_threat = {
-				threat = 5
-				name = zdb_austrian_claims
-			}
-		}
-	}
-	focus = {
-		id = former_lands_north
-		icon = GFX_focus_generic_polish_deal
-		prerequisite = {
-			focus = former_lands
-		}
-		x = 70
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = GER_austrian_claims
-		}
-		completion_reward = {
-			country_event = {
-				id = gdb_germany.17
-			}
-			add_named_threat = {
-				threat = 3
-				name = zdb_polish_conference
-			}
-		}
-	}
-	focus = {
-		id = hold_our_promise
-		icon = GFX_goal_tripartite_pact
-		prerequisite = {
-			focus = former_lands_north
-		}
-		x = 70
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_named_threat = {
-				threat = 2
-				name = zdb_pol_lit
-			}
-			country_event = {
-				id = gdb_germany.19
-			}
-			add_opinion_modifier = {
-				target = POL
-				modifier = medium_increase
-			}
-			POL = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = medium_increase
-				}
-			}
-		}
-	}
-	focus = {
-		id = french_civil_ended
-		icon = GFX_focus_ger_great_red_menace
-		prerequisite = {
-			focus = GER_oppose_hitler
-		}
-		x = 74
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				any_country = {
-					original_tag = FRA
-					has_government = democratic
-				}
-			}
-		}
-		completion_reward = {
-			random_other_country = {
-				limit = {
-					original_tag = FRA
-					has_government = communism
-				}
-				delete_unit_template_and_units = {
-					division_template = "Armée des peuples"
-				}
-			}
-			add_political_power = 75
-		}
-	}
-	focus = {
-		id = new_alliance_system
-		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = {
-			focus = french_civil_ended
-		}
-		x = 74
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_faction = "GER_new_faction"
-		}
-	}
-	focus = {
-		id = dutch_relations
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = {
-			focus = new_alliance_system
-		}
-		x = 74
-		y = 3
-		cost = 3
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = GER_democratic_gov
-		}
-		completion_reward = {
-			custom_effect_tooltip = invitation_decision_unlocked
-			HOL = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = huge_increase
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-			}
-			GER = {
-				set_country_flag = invite_netherlands_flag
-			}
-		}
-	}
-	focus = {
-		id = polish_relations
-		icon = GFX_focus_generic_concessions
-		prerequisite = {
-			focus = dutch_relations
-		}
-		prerequisite = {
-			focus = hold_our_promise
-		}
-		x = 71
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			custom_effect_tooltip = invitation_decision_unlocked
-			POL = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = huge_increase
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-			}
-			GER = {
-				set_country_flag = invite_poland_flag
-			}
-		}
-	}
-	focus = {
-		id = denmark_relations
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = {
-			focus = dutch_relations
-		}
-		x = 72
-		y = 4
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			custom_effect_tooltip = invitation_decision_unlocked
-			DEN = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = huge_increase
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-			}
-			GER = {
-				set_country_flag = invite_denmark_flag
-			}
-		}
-	}
-	focus = {
-		id = pressure_denmark
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = {
-			focus = denmark_relations
-		}
-		x = 72
-		y = 5
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			805 = {
-				add_core_of = GER
-			}
-			GER = {
-				transfer_state = 805
-				add_timed_idea = {
-					idea = zdb_lose_money
-					days = 180
-				}
-			}
-			DEN = {
-				add_timed_idea = {
-					idea = zdb_make_money
-					days = 1095
-				}
-			}
-		}
-	}
-	focus = {
-		id = norway_relations
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = {
-			focus = dutch_relations
-		}
-		x = 74
-		y = 4
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			custom_effect_tooltip = invitation_decision_unlocked
-			NOR = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = huge_increase
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-			}
-			GER = {
-				set_country_flag = invite_norway_flag
-			}
-		}
-	}
-	focus = {
-		id = sweden_relations
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = {
-			focus = dutch_relations
-		}
-		x = 76
-		y = 4
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			custom_effect_tooltip = invitation_decision_unlocked
-			SWE = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = huge_increase
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-			}
-			GER = {
-				set_country_flag = invite_sweden_flag
-			}
-		}
-	}
-	focus = {
-		id = british_relations
-		icon = GFX_focus_ger_accept_british_naval_dominance
-		prerequisite = {
-			focus = denmark_relations
-		}
-		prerequisite = {
-			focus = norway_relations
-		}
-		prerequisite = {
-			focus = sweden_relations
-		}
-		x = 74
-		y = 5
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			custom_effect_tooltip = invitation_decision_unlocked
-			ENG = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = huge_increase
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-			}
-			GER = {
-				set_country_flag = invite_uk_flag
-			}
-		}
-	}
-	focus = {
-		id = american_relations
-		icon = GFX_goal_support_democracy
-		prerequisite = {
-			focus = british_relations
-		}
-		x = 74
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			custom_effect_tooltip = invitation_decision_unlocked
-			USA = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = huge_increase
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-			}
 			GER = {
 				set_country_flag = invite_usa_flag
 			}
@@ -2034,14 +1161,14 @@ focus_tree = {
 	}
 	focus = {
 		id = neue_verfassung
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = {
 			focus = consolidate_the_bund
 		}
 		x = 0
 		y = 6
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2070,7 +1197,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = neue_verfassung
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2096,7 +1223,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = neue_verfassung
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2119,7 +1246,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = neue_verfassung
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2144,7 +1271,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = neue_verfassung
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2169,7 +1296,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = neue_verfassung
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2198,7 +1325,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = neue_verfassung
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2350,7 +1477,6 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = special_forces_germany
 		icon = GFX_goal_generic_military_sphere
@@ -2365,10 +1491,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
 		}
 	}
-
 	focus = {
 		id = secret_agency_germany
 		icon = GFX_goal_generic_military_sphere
@@ -2383,20 +1507,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
 		}
 	}
-
 	focus = {
 		id = neue_wehrmacht
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
 		x = 2
 		y = 1
 		relative_position_id = restructure_the_armed_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2416,7 +1538,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = restructure_the_armed_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2436,7 +1558,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = restructure_the_armed_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2527,12 +1649,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
 		}
 	}
 	focus = {
 		id = stolz_des_bundes
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = {
 			focus = neue_werften
 		}
@@ -5337,7 +4458,8 @@ focus_tree = {
 			has_government = fascism
 			has_army_manpower = {
 				size > 849999
-			}			#ca 90 div
+			}
+			#ca 90 div
 			SOV = {
 				NOT = {
 					has_war_with = GER
@@ -5761,7 +4883,8 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = {
 				size > 849999
-			}			#ca 90 div
+			}
+			#ca 90 div
 		}
 		x = 0
 		y = 3
@@ -6235,7 +5358,8 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = {
 				size > 949999
-			}			#100 div			
+			}
+			#100 div			
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -6836,7 +5960,8 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = {
 				size > 724999
-			}			#80 div		
+			}
+			#80 div		
 			NOT = {
 				AND = {
 					CZE = {
@@ -6948,11 +6073,13 @@ focus_tree = {
 						NOT = {
 							is_in_faction_with = GER
 						}
-					}					#in case AH is in faction with GER and dragged a subject CZE along.
+					}
+					#in case AH is in faction with GER and dragged a subject CZE along.
 					OR = {
 						69 = {
 							is_owned_by = HUN
-						}						#AH restored
+						}
+						#AH restored
 						AND = {
 							CZE = {
 								is_subject_of = HUN
@@ -7333,7 +6460,8 @@ focus_tree = {
 										NOT = {
 											is_in_faction_with = GER
 										}
-									}									#GER should not want to give territory to Hungary if Romania joined the axis early.
+									}
+									#GER should not want to give territory to Hungary if Romania joined the axis early.
 								}
 							}
 						}
@@ -7366,7 +6494,8 @@ focus_tree = {
 				}
 				HUN = {
 					is_subject_of = ROM
-				}				#just rude
+				}
+				#just rude
 			}
 		}
 		completion_reward = {
@@ -8765,7 +7894,8 @@ focus_tree = {
 			controls_state = 152
 			has_army_manpower = {
 				size > 749999
-			}			#ca 80 div
+			}
+			#ca 80 div
 		}
 		bypass = {
 			OR = {
@@ -11503,7 +10633,8 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = {
 				size > 849999
-			}			#ca 90 div
+			}
+			#ca 90 div
 		}
 		x = 0
 		y = 1
@@ -11934,7 +11065,8 @@ focus_tree = {
 					limit = {
 						SOV = {
 							has_government = fascism
-						}						#futureproofing
+						}
+						#futureproofing
 					}
 					random_other_country = {
 						limit = {
