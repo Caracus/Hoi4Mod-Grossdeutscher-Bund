@@ -33,7 +33,7 @@ focus_tree = {
 		}
 		x = 68
 		y = 1
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -57,7 +57,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = a_bright_future
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -78,7 +78,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -95,7 +95,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -173,7 +173,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -219,7 +219,7 @@ focus_tree = {
 		x = -5
 		y = 3
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -276,7 +276,7 @@ focus_tree = {
 		x = -3
 		y = 8
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -295,7 +295,7 @@ focus_tree = {
 		x = -5
 		y = 4
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -324,7 +324,7 @@ focus_tree = {
 		x = -2
 		y = 4
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -383,7 +383,7 @@ focus_tree = {
 		x = -7
 		y = 9
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -410,7 +410,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -432,7 +432,7 @@ focus_tree = {
 		x = -3
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -458,7 +458,7 @@ focus_tree = {
 		x = -5
 		y = 6
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -485,7 +485,7 @@ focus_tree = {
 		x = -6
 		y = 7
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -553,7 +553,7 @@ focus_tree = {
 		x = -5
 		y = 9
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -572,7 +572,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -590,7 +590,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = stabilize_the_nation
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -618,7 +618,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = stabilize_the_nation
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -638,7 +638,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = stabilize_the_nation
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -663,7 +663,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ignite_the_spark
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -702,7 +702,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -725,7 +725,7 @@ focus_tree = {
 		x = -3
 		y = 10
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -753,7 +753,7 @@ focus_tree = {
 		x = -3
 		y = 11
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -772,7 +772,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = a_bright_future
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -791,7 +791,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = the_polish_corridor
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -813,7 +813,7 @@ focus_tree = {
 		x = -5
 		y = 2
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -832,7 +832,7 @@ focus_tree = {
 		x = -6
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -885,7 +885,7 @@ focus_tree = {
 		x = 4
 		y = 5
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -905,7 +905,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = worried_outlook
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -923,7 +923,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = new_alliances
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -995,7 +995,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = swamp_germans
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1172,7 +1172,7 @@ focus_tree = {
 		x = 0
 		y = 6
 		relative_position_id = a_bright_future
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1201,7 +1201,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = neue_verfassung
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1234,7 +1234,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = neue_verfassung
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1257,7 +1257,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = neue_verfassung
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1282,7 +1282,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = neue_verfassung
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1307,7 +1307,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = neue_verfassung
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1336,7 +1336,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = neue_verfassung
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1593,7 +1593,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = restructure_the_armed_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

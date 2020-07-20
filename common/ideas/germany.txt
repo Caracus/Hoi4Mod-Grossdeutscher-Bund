@@ -110,7 +110,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				send_volunteer_size = 15
+				send_volunteer_size = 18
 			}
 		}
 		zdb_send_com_away = {

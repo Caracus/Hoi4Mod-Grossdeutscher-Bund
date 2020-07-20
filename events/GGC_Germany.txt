@@ -13,7 +13,7 @@ country_event = {
 			start_civil_war = {
 				ruling_party = democratic
 				ideology = communism
-				size = 0.55
+				size = 0.6
 				capital = 16
 				states = {
 					16
