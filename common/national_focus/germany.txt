@@ -22,6 +22,7 @@ focus_tree = {
 			focus = GER_oppose_hitler
 		}
 		available = {
+			has_country_flag = GER_com_help_accepted
 			is_puppet = no
 			has_war = no
 			NOT = {
@@ -579,6 +580,30 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.15
 			add_war_support = -0.1
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = GER_democratic_provisional_long
+				name = GER_democratic_provisional
+			}
+			create_country_leader = {
+				name = "August von Mackensen"
+				desc = "POLITICS_AUGUST_VON_MACKENSEN_DESC"
+				picture = GFX_portrait_ger_august_von_mackensen
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					reichsverweser
+				}
+			}
+			set_cosmetic_tag = GER_german_provisionsregierung
 		}
 	}
 	focus = {
@@ -722,7 +747,7 @@ focus_tree = {
 		prerequisite = {
 			focus = the_future_of_czechoslovakia
 		}
-		x = -3
+		x = 0
 		y = 10
 		relative_position_id = a_bright_future
 		cost = 6
@@ -744,13 +769,203 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = discuss_civil_matters
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = grossdeutscher_bund
+		}
+		x = 5
+		y = 11
+		relative_position_id = a_bright_future
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = constructions
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = discuss_civil_matters
+		}
+		x = -5
+		y = 1
+		relative_position_id = discuss_civil_matters
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = defenses
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = constructions
+		}
+		x = -1
+		y = 1
+		relative_position_id = constructions
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = todt
+		}
+	}
+
+	focus = {
+		id = defenses_west_one
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = defenses
+		}
+		x = -1
+		y = 1
+		relative_position_id = defenses
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = defenses_west_two
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = defenses_west_one
+		}
+		x = 0
+		y = 1
+		relative_position_id = defenses_west_one
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = defenses_east_one
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = defenses
+		}
+		x = 1
+		y = 1
+		relative_position_id = defenses
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = defenses_east_two
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = defenses_east_one
+		}
+		x = 0
+		y = 1
+		relative_position_id = defenses_east_one
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = unity_werke
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = constructions
+		}
+		prerequisite = {
+			focus = social_justice
+		}
+		x = -2
+		y = 1
+		relative_position_id = social_justice
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = social_justice
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = discuss_civil_matters
+		}
+		x = 0
+		y = 1
+		relative_position_id = discuss_civil_matters
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
 	focus = {
 		id = restructure_the_armed_forces
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
 			focus = grossdeutscher_bund
 		}
-		x = -3
+		x = -9
 		y = 11
 		relative_position_id = a_bright_future
 		cost = 4
@@ -1180,11 +1395,11 @@ focus_tree = {
 			add_stability = 0.1
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.3
+				popularity = 0.05
 			}
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.2
+				popularity = 0.1
 			}
 			set_country_flag = GER_democratic_gov
 		}
@@ -1209,16 +1424,35 @@ focus_tree = {
 			add_ideas = {
 				GER_wilhelm_iii
 			}
-			add_popularity = { ideology = neutrality popularity = party_popularity@democratic }
-			add_popularity = { ideology = democratic popularity = -1}
-			set_party_name = { ideology = neutrality long_name = GER_neutrality_democratic_long name = Ger_neutrality_democratic }
+			set_party_name = {
+				ideology = democratic
+				long_name = GER_constitutionalists_long
+				name = GER_constitutionalists
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = GER_absolutists_long
+				name = GER_absolutists
+			}
 			create_country_leader = {
 				name = "Konrad Adenauer"
 				picture = GFX_Portrait_germany_non_aligned_adenauer
 				expire = "1965.1.1"
-				ideology = despotism
+				ideology = conservatism
 				traits = {
 				}
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
 			}
 		}
 	}
@@ -1239,6 +1473,28 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			set_party_name = {
+				ideology = democratic
+				long_name = GER_semi_constitutionalists_long
+				name = GER_semi_constitutionalists
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = GER_absolutists_long
+				name = GER_absolutists
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = party_popularity@neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 			country_event = {
 				id = gdb_germany.11
 			}
@@ -1350,12 +1606,9 @@ focus_tree = {
 		prerequisite = {
 			focus = new_alliances
 		}
-		prerequisite = {
-			focus = grossdeutscher_bund
-		}
-		x = 7
-		y = 0
-		relative_position_id = restructure_the_armed_forces
+		x = 3
+		y = 1
+		relative_position_id = new_alliances
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1374,11 +1627,11 @@ focus_tree = {
 		id = vereinte_wissenschaft
 		icon = GFX_focus_research
 		prerequisite = {
-			focus = neue_wissenschaft
+			focus = social_justice
 		}
 		x = 0
 		y = 1
-		relative_position_id = neue_wissenschaft
+		relative_position_id = social_justice
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1394,11 +1647,11 @@ focus_tree = {
 			focus = vereinte_wissenschaft
 		}
 		prerequisite = {
-			focus = technocracy
+			focus = appeal_to_expat_scientists
 		}
-		x = 0
+		x = 1
 		y = 3
-		relative_position_id = neue_wissenschaft
+		relative_position_id = discuss_civil_matters
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1455,11 +1708,11 @@ focus_tree = {
 		id = technocracy
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = {
-			focus = vereinte_wissenschaft
+			focus = discuss_civil_matters
 		}
-		x = -1
-		y = 2
-		relative_position_id = neue_wissenschaft
+		x = 2
+		y = 1
+		relative_position_id = discuss_civil_matters
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1469,55 +1722,316 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = extra_research_slot_zdb
+		id = appeal_to_expat_scientists
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {
+			focus = technocracy
+		}
+		prerequisite = {
+			focus = social_justice
+		}
+		x = 0
+		y = 1
+		relative_position_id = technocracy
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = heavy_water
 		icon = GFX_focus_research
+		prerequisite = {
+			focus = einstein_project
+		}
+		x = -1
+		y = 1
+		relative_position_id = einstein_project
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = uranium_mines
+		icon = GFX_focus_research
+		prerequisite = {
+			focus = einstein_project
+		}
+		x = 1
+		y = 1
+		relative_position_id = einstein_project
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = economic_potential
+		icon = GFX_focus_research
+		prerequisite = {
+			focus = unity_werke
+		}
 		prerequisite = {
 			focus = vereinte_wissenschaft
 		}
 		x = 1
-		y = 2
-		relative_position_id = neue_wissenschaft
+		y = 1
+		relative_position_id = unity_werke
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			num_of_factories > 500
+			num_of_factories > 400
 		}
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
 	focus = {
-		id = special_forces_germany
-		icon = GFX_goal_generic_military_sphere
+		id = expand_special_forces
+		icon = GFX_goal_generic_special_forces
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
 		x = 4
 		y = 1
 		relative_position_id = restructure_the_armed_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = expanded_special_forces
+		}
+	}
+	focus = {
+		id = special_forces_research
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {
+			focus = expand_special_forces
+		}
+		x = 0
+		y = 1
+		relative_position_id = expand_special_forces
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 2
+				uses = 2
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = alpine_legacy
+		icon = GFX_focus_generic_military_academy
+		prerequisite = {
+			focus = special_forces_research
+		}
+		x = 0
+		y = 2
+		relative_position_id = expand_special_forces
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = alpine_legacy_bonus
 		}
 	}
 	focus = {
 		id = secret_agency_germany
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = restructure_the_armed_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = revive_abteilung_3_b
+				add_idea = abteilung_3_b_upgrade_1
+			}
+		}
+	}
+	focus = {
+		id = covert_ops_focus
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = {
+			focus = secret_agency_germany
+		}
+		mutually_exclusive = {
+			focus = fatherland_focus
+		}
+		x = -1
+		y = 1
+		relative_position_id = secret_agency_germany
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = operative_training
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = {
+			focus = covert_ops_focus
+		}
+		x = -1
+		y = 2
+		relative_position_id = secret_agency_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = abteilung_3_b_upgrade_1
+				add_idea = abteilung_3_b_upgrade_2_offensive
+			}
+		}
+	}
+	focus = {
+		id = incentivise_cooperation
+		icon = GFX_focus_mex_privatisation
+		prerequisite = {
+			focus = operative_training
+		}
+		x = -1
+		y = 3
+		relative_position_id = secret_agency_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = abteilung_3_b_upgrade_2_offensive
+				add_idea = abteilung_3_b_upgrade_3_offensive
+			}
+		}
+	}
+	focus = {
+		id = masterplan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {
+			focus = incentivise_cooperation
+		}
+		x = -1
+		y = 4
+		relative_position_id = secret_agency_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = abteilung_3_b_upgrade_3_offensive
+				add_idea = abteilung_3_b_upgrade_4_offensive
+			}
+		}
+	}
+	focus = {
+		id = fatherland_focus
+		icon = GFX_goal_generic_defence
+		prerequisite = {
+			focus = secret_agency_germany
+		}
+		mutually_exclusive = {
+			focus = covert_ops_focus
+		}
+		x = 1
+		y = 1
+		relative_position_id = secret_agency_germany
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = bounty_program
+		icon = GFX_goal_generic_radar
+		prerequisite = {
+			focus = fatherland_focus
+		}
+		x = 1
+		y = 2
+		relative_position_id = secret_agency_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = abteilung_3_b_upgrade_1
+				add_idea = abteilung_3_b_upgrade_2
+			}
+		}
+	}
+	focus = {
+		id = enigma
+		icon = GFX_goal_generic_production2
+		prerequisite = {
+			focus = bounty_program
+		}
+		x = 1
+		y = 3
+		relative_position_id = secret_agency_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = abteilung_3_b_upgrade_2
+				add_idea = abteilung_3_b_upgrade_3
+			}
+		}
+	}
+	focus = {
+		id = analysts
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {
+			focus = enigma
+		}
+		x = 1
+		y = 4
+		relative_position_id = secret_agency_germany
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = abteilung_3_b_upgrade_3
+				add_idea = abteilung_3_b_upgrade_4
+			}
 		}
 	}
 	focus = {

@@ -27,6 +27,35 @@ ideas = {
 				communism_drift = 0.25
 			}
 		}
+		expanded_special_forces = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				special_forces_cap = 0.05
+			}
+		}
+		alpine_legacy_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.3
+				special_forces_attack_factor = 0.05
+				max_dig_in = 5
+				training_time_factor = 0.1
+			}
+		}
 		realpolitik_idea = {
 			allowed = {
 				always = no
@@ -81,8 +110,130 @@ ideas = {
 			picture = generic_intel_bonus
 			modifier = {
 				operative_slot = 1
-				resistance_damage_to_garrison = -0.1
-				intelligence_agency_defense = 0.2
+			}
+		}
+		abteilung_3_b_upgrade_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+			}
+		}
+		abteilung_3_b_upgrade_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				intelligence_agency_defense = 1.5
+				enemy_operative_recruitment_chance = 0.5
+				consumer_goods_factor = 0.01
+
+			}
+		}
+		abteilung_3_b_upgrade_3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				intelligence_agency_defense = 1.5
+				enemy_operative_recruitment_chance = 0.5
+				crypto_strength = 3
+				consumer_goods_factor = 0.02
+
+			}
+		}
+		abteilung_3_b_upgrade_4 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				intelligence_agency_defense = 1.5
+				enemy_operative_recruitment_chance = 0.5
+				crypto_strength = 3
+				decryption_power_factor = 0.25
+				consumer_goods_factor = 0.03
+			}
+		}
+		abteilung_3_b_upgrade_2_offensive = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				commando_trait_chance_factor = 1
+				operative_death_on_capture_chance = 0.2
+				consumer_goods_factor = 0.01
+			}
+		}
+		abteilung_3_b_upgrade_3_offensive = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				commando_trait_chance_factor = 1
+				operative_death_on_capture_chance = 0.2
+				intel_network_gain_factor = 0.5
+				consumer_goods_factor = 0.02
+			}
+		}
+		abteilung_3_b_upgrade_4_offensive = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.25
+				commando_trait_chance_factor = 1
+				operative_death_on_capture_chance = 0.2
+				intel_network_gain_factor = 0.5
+				operation_outcome = 0.5
+				consumer_goods_factor = 0.03
 			}
 		}
 		member_of_the_bund = {
@@ -1706,7 +1857,10 @@ ideas = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_west_wall
+				OR = {
+					has_completed_focus = GER_west_wall
+					has_completed_focus = defenses
+				}
 			}
 			traits = {
 				fortification_engineer

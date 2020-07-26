@@ -48,6 +48,13 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_020.dds"
 	}
 
+	spriteType = {
+		name = "GFX_report_event_hohenzollern_family"
+		texturefile = "gfx/event_pictures/hohenzollern_family.dds"
+	}
+
+
+	
 	
 }
 

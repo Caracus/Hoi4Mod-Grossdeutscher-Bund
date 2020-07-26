@@ -466,7 +466,7 @@ country_event = {
 			name = "Otto von Habsburg"
 			picture = GFX_Portrait_hungary_otto_von_hapsburg
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 			}
 		}
@@ -477,7 +477,7 @@ country_event = {
 			name = "Albrecht von Württemberg"
 			picture = GFX_Portrait_germany_albrecht_von_wurttemberg
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 			}
 		}
@@ -488,7 +488,7 @@ country_event = {
 			name = "Friedrich Christian von Wettin"
 			picture = GFX_Portrait_germany_friedrich_christian_von_sachsen
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 			}
 		}
@@ -499,7 +499,7 @@ country_event = {
 			name = "Rupprecht von Wittelsbach"
 			picture = GFX_Portrait_germany_rupprecht_von_bayern
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 			}
 		}
@@ -510,7 +510,7 @@ country_event = {
 	id = gdb_germany.12
 	title = gdb_germany.12.t
 	desc = gdb_germany.12.d
-	picture = GFX_report_event_generic_sign_treaty1
+	picture = GFX_report_event_hohenzollern_family
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.12.a
@@ -518,7 +518,7 @@ country_event = {
 			name = "Friedrich Wilhelm II von Hohenzollern"
 			picture = GFX_Portrait_germany_wilhelm_II_von_preussen
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 			}
 		}
@@ -529,7 +529,7 @@ country_event = {
 			name = "Friedrich Wilhelm III von Hohenzollern"
 			picture = GFX_Portrait_germany_wilhelm_III_von_preussen
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 			}
 		}
@@ -540,7 +540,7 @@ country_event = {
 			name = "Friedrich Wilhelm IV von Hohenzollern"
 			picture = GFX_Portrait_germany_wilhelm_IV_von_preussen
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = conservatism
 			traits = {
 			}
 		}
