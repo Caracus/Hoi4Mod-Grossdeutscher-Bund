@@ -767,9 +767,9 @@ focus_tree = {
 				threat = 3
 				name = zdb_deutscher_bund
 			}
+			set_capital = 55
 		}
 	}
-
 	focus = {
 		id = discuss_civil_matters
 		icon = GFX_goal_generic_army_doctrines
@@ -787,10 +787,9 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-
 	focus = {
 		id = constructions
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_construction
 		prerequisite = {
 			focus = discuss_civil_matters
 		}
@@ -802,13 +801,129 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
 		}
 	}
 
 	focus = {
+		id = stockpile_iron_ore
+		icon = GFX_focus_generic_steel
+		prerequisite = {
+			focus = constructions
+		}
+		x = 2
+		y = 1
+		relative_position_id = constructions
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			SWE = {
+				is_in_faction_with = ROOT 
+				controls_state = 666
+			}
+			GER = {
+				controls_state = 63
+			}
+		}
+		completion_reward = {
+			63 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 6282
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 32
+				}
+			}
+		}
+	}
+	focus = {
+		id = stockpile_tungsten
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = {
+			focus = stockpile_iron_ore
+		}
+		x = 0
+		y = 1
+		relative_position_id = stockpile_iron_ore
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			SWE = {
+				is_in_faction_with = ROOT 
+				controls_state = 666
+			}
+			GER = {
+				controls_state = 63
+			}
+		}
+		completion_reward = {
+
+				63 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 6282
+						instant_build = yes
+					}
+					add_resource = {
+						type = tungsten
+						amount = 16
+					}
+				}
+
+			
+		}
+	}
+	focus = {
+		id = stockpile_chromium
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = {
+			focus = stockpile_tungsten
+		}
+		x = 0
+		y = 2
+		relative_position_id = stockpile_iron_ore
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			SWE = {
+				is_in_faction_with = ROOT 
+				controls_state = 666
+			}
+			GER = {
+				controls_state = 63
+			}
+		}
+		completion_reward = {
+
+				63 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 6282
+						instant_build = yes
+					}
+					add_resource = {
+						type = chromium
+						amount = 16
+					}
+				}
+
+			
+		}
+	}
+	focus = {
 		id = defenses
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {
 			focus = constructions
 		}
@@ -819,15 +934,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_war = yes
+		}
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
 		}
 	}
-
 	focus = {
 		id = defenses_west_one
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_construct_military
 		prerequisite = {
 			focus = defenses
 		}
@@ -839,13 +956,185 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			50 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11640
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6712
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6542
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3530
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3679
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6934
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6568
+						instant_build = yes
+					}
+				}
+			}
+			55 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 589
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6488
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6444
+						instant_build = yes
+					}
+				}
+			}
+			51 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 529
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6570
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6469
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3512
+						instant_build = yes
+					}
+				}
+			}
+			802 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							HOL = {
+								is_in_faction_with = ROOT
+							}
+							HOL = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9363
+						instant_build = yes
+					}
+				}
+			}
+			36 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							HOL = {
+								is_in_faction_with = ROOT
+							}
+							HOL = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6241
+						instant_build = yes
+					}
+				}
+			}
+			7 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							HOL = {
+								is_in_faction_with = ROOT
+							}
+							HOL = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 391
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3211
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
-
 	focus = {
 		id = defenses_west_two
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = {
 			focus = defenses_west_one
 		}
@@ -857,13 +1146,149 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			50 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 519
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11499
+						instant_build = yes
+					}
+				}
+			}
+			52 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6540
+						instant_build = yes
+					}
+				}
+			}
+			53 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3299
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3541
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 532
+						instant_build = yes
+					}
+				}
+			}
+			152 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 732
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6723
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6552
+						instant_build = yes
+					}
+				}
+			}
+			4 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9527
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6739
+						instant_build = yes
+					}
+				}
+			}
+			807 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9692
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
-
 	focus = {
 		id = defenses_east_one
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_construct_military
 		prerequisite = {
 			focus = defenses
 		}
@@ -875,13 +1300,167 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			67 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9457
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6512
+						instant_build = yes
+					}
+				}
+			}
+			66 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9570
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 552
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6595
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3438
+						instant_build = yes
+					}
+				}
+			}
+			68 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3572
+						instant_build = yes
+					}
+				}
+			}
+			64 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9496
+						instant_build = yes
+					}
+				}
+			}
+			62 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3207
+						instant_build = yes
+					}
+				}
+			}
+			62 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6282
+						instant_build = yes
+					}
+				}
+			}
+			69 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11432
+						instant_build = yes
+					}
+				}
+			}
+			9 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6440
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11542
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9429
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
-
 	focus = {
 		id = defenses_east_two
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = {
 			focus = defenses_east_one
 		}
@@ -893,25 +1472,244 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			65 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6559
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11481
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11545
+						instant_build = yes
+					}
+				}
+			}
+			64 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9560
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6487
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3522
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11359
+						instant_build = yes
+					}
+				}
+			}
+			59 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9238
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9264
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6298
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 6325
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
-
+	focus = {
+		id = close_the_gaps
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {
+			focus = defenses_west_two
+		}
+		prerequisite = {
+			focus = defenses_east_two
+		}
+		x = 1
+		y = 1
+		relative_position_id = defenses_west_two
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			807 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 9539
+						instant_build = yes
+					}
+				}
+			}
+			75 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 6576
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 6590
+						instant_build = yes
+					}
+				}
+			}
+			74 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 3583
+						instant_build = yes
+					}
+				}
+			}
+			69 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 11525
+						instant_build = yes
+					}
+				}
+			}
+			9 = {
+				if = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							AUS = {
+								is_in_faction_with = ROOT
+							}
+							AUS = {
+								is_puppet_of = ROOT
+							}
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 11556
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 	focus = {
 		id = unity_werke
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {
 			focus = constructions
 		}
 		prerequisite = {
 			focus = social_justice
 		}
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = social_justice
 		cost = 4
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_flag = jewish_relations_reconciled
+			has_country_flag = peacefull_compensations
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -940,10 +1738,9 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = social_justice
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = {
 			focus = discuss_civil_matters
 		}
@@ -955,10 +1752,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			country_event = {
+				id = gdb_germany.89
+			}
 		}
 	}
-
 	focus = {
 		id = restructure_the_armed_forces
 		icon = GFX_goal_generic_army_doctrines
@@ -1625,21 +2423,21 @@ focus_tree = {
 	}
 	focus = {
 		id = vereinte_wissenschaft
-		icon = GFX_focus_research
+		icon = GFX_focus_generic_military_academy
 		prerequisite = {
-			focus = social_justice
+			focus = technocracy
 		}
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = social_justice
-		cost = 10
+		relative_position_id = technocracy
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			add_research_slot = 1
 		}
-	}
+	} 
 	focus = {
 		id = einstein_project
 		icon = GFX_focus_wonderweapons
@@ -1657,50 +2455,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			custom_effect_tooltip = GER_the_mannheim_project_tt
-			if = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
-				add_tech_bonus = {
-					name = GER_the_mannheim_project
-					bonus = 1
-					ahead_reduction = 2
-					technology = atomic_research
-				}
-			}
-			if = {
-				limit = {
-					has_tech = atomic_research
-					NOT = {
-						has_tech = nuclear_reactor
-					}
-				}
-				add_tech_bonus = {
-					name = GER_the_mannheim_project
-					bonus = 1
-					ahead_reduction = 2
-					technology = nuclear_reactor
-				}
-			}
-			if = {
-				limit = {
-					has_tech = nuclear_reactor
-				}
-				55 = {
-					add_building_construction = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_tech_bonus = {
-					name = GER_the_mannheim_project
-					bonus = 1
-					technology = nukes
-				}
+			add_tech_bonus = {
+				name = GER_einstein_project
+				bonus = 0.5
+				ahead_reduction = 2
+				technology = atomic_research
 			}
 		}
 	}
@@ -1713,7 +2472,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = discuss_civil_matters
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1723,76 +2482,97 @@ focus_tree = {
 	}
 	focus = {
 		id = appeal_to_expat_scientists
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = {
 			focus = technocracy
 		}
 		prerequisite = {
 			focus = social_justice
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = technocracy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = jewish_relations_reconciled
+		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = jewish_reparations_payments
+				add_idea = jewish_reparations_payments_extended
+			}
 		}
 	}
-
 	focus = {
 		id = heavy_water
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = {
 			focus = einstein_project
 		}
 		x = -1
 		y = 1
 		relative_position_id = einstein_project
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOR = {
+				is_in_faction_with = ROOT
+			}
+		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = GER_heavy_water
+				bonus = 0.5
+				ahead_reduction = 2
+				technology = nuclear_reactor
+			}
 		}
 	}
-
 	focus = {
 		id = uranium_mines
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_construction2
 		prerequisite = {
 			focus = einstein_project
 		}
 		x = 1
 		y = 1
 		relative_position_id = einstein_project
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
+		available = {
+			owns_state = 69
 		}
+		completion_reward = {			
+				add_tech_bonus = {
+					name = GER_uranium_mines
+					bonus = 0.5
+					ahead_reduction = 2
+					technology = nukes
+				}
+			}
 	}
-
 	focus = {
 		id = economic_potential
 		icon = GFX_focus_research
 		prerequisite = {
-			focus = unity_werke
-		}
-		prerequisite = {
 			focus = vereinte_wissenschaft
 		}
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = unity_werke
+		relative_position_id = vereinte_wissenschaft
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			num_of_factories > 400
+			num_of_civilian_factories > 200
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -2316,8 +3096,13 @@ focus_tree = {
 		id = phoenix_from_the_ashes
 		icon = GFX_focus_ger_revive_kaiserreich
 		available = {
-			date > 1944.1.1
 			is_puppet = no
+			NOT = {
+				any_other_country = {
+					original_tag = FRA
+					has_government = communism
+				}
+			}
 			NOT = {
 				any_other_country = {
 					original_tag = SOV
@@ -2335,7 +3120,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = gdb_germany.24
-				days = 1
+
 			}
 		}
 	}

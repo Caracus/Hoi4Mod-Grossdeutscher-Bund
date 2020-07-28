@@ -56,6 +56,36 @@ ideas = {
 				training_time_factor = 0.1
 			}
 		}
+		jewish_reparations_payments = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+
+		jewish_reparations_payments_extended = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				consumer_goods_factor = 0.03
+				recruitable_population_factor = 0.001
+				research_speed_factor = 0.02
+			}
+		}
+		
 		realpolitik_idea = {
 			allowed = {
 				always = no

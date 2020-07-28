@@ -53,6 +53,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/hohenzollern_family.dds"
 	}
 
+	spriteType = {
+		name = "GFX_report_event_ger_united"
+		texturefile = "gfx/event_pictures/ger_united_flag.dds"
+	}
+
 
 	
 	
