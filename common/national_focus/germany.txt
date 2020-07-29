@@ -768,6 +768,7 @@ focus_tree = {
 				name = zdb_deutscher_bund
 			}
 			set_capital = 55
+			custom_effect_tooltip = GDB_TT_2
 		}
 	}
 	focus = {
@@ -776,7 +777,7 @@ focus_tree = {
 		prerequisite = {
 			focus = grossdeutscher_bund
 		}
-		x = 5
+		x = 6
 		y = 11
 		relative_position_id = a_bright_future
 		cost = 4
@@ -793,7 +794,7 @@ focus_tree = {
 		prerequisite = {
 			focus = discuss_civil_matters
 		}
-		x = -5
+		x = -4
 		y = 1
 		relative_position_id = discuss_civil_matters
 		cost = 4
@@ -810,7 +811,7 @@ focus_tree = {
 		prerequisite = {
 			focus = constructions
 		}
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = constructions
 		cost = 4
@@ -927,7 +928,7 @@ focus_tree = {
 		prerequisite = {
 			focus = constructions
 		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = constructions
 		cost = 4
@@ -1700,7 +1701,7 @@ focus_tree = {
 		prerequisite = {
 			focus = social_justice
 		}
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = social_justice
 		cost = 4
@@ -1763,7 +1764,7 @@ focus_tree = {
 		prerequisite = {
 			focus = grossdeutscher_bund
 		}
-		x = -9
+		x = -7
 		y = 11
 		relative_position_id = a_bright_future
 		cost = 4
@@ -2150,9 +2151,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = 2
-		y = 4
-		relative_position_id = restructure_the_armed_forces
+		x = 0
+		y = 3
+		relative_position_id = neue_wehrmacht
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2447,7 +2448,7 @@ focus_tree = {
 		prerequisite = {
 			focus = appeal_to_expat_scientists
 		}
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = discuss_civil_matters
 		cost = 5
@@ -2469,7 +2470,7 @@ focus_tree = {
 		prerequisite = {
 			focus = discuss_civil_matters
 		}
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = discuss_civil_matters
 		cost = 5
@@ -2584,7 +2585,7 @@ focus_tree = {
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
-		x = 4
+		x = 6
 		y = 1
 		relative_position_id = restructure_the_armed_forces
 		cost = 5
@@ -2640,7 +2641,7 @@ focus_tree = {
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
-		x = -7
+		x = -5
 		y = 1
 		relative_position_id = restructure_the_armed_forces
 		cost = 5
@@ -2820,7 +2821,7 @@ focus_tree = {
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = restructure_the_armed_forces
 		cost = 5
@@ -2840,9 +2841,9 @@ focus_tree = {
 		prerequisite = {
 			focus = neue_wehrmacht
 		}
-		x = 2
-		y = 2
-		relative_position_id = restructure_the_armed_forces
+		x = 0
+		y = 1
+		relative_position_id = neue_wehrmacht
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2860,9 +2861,9 @@ focus_tree = {
 		prerequisite = {
 			focus = neue_wehrmacht2
 		}
-		x = 2
-		y = 3
-		relative_position_id = restructure_the_armed_forces
+		x = 0
+		y = 2
+		relative_position_id = neue_wehrmacht
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2884,7 +2885,7 @@ focus_tree = {
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = restructure_the_armed_forces
 		cost = 5
@@ -2907,8 +2908,8 @@ focus_tree = {
 			focus = neue_kriegsflotte
 		}
 		x = 0
-		y = 2
-		relative_position_id = restructure_the_armed_forces
+		y = 1
+		relative_position_id = neue_kriegsflotte
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2963,8 +2964,8 @@ focus_tree = {
 			focus = neue_werften
 		}
 		x = 0
-		y = 3
-		relative_position_id = restructure_the_armed_forces
+		y = 2
+		relative_position_id = neue_kriegsflotte
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2986,8 +2987,8 @@ focus_tree = {
 			focus = stolz_des_bundes
 		}
 		x = 0
-		y = 4
-		relative_position_id = restructure_the_armed_forces
+		y = 3
+		relative_position_id = neue_kriegsflotte
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3002,7 +3003,7 @@ focus_tree = {
 		prerequisite = {
 			focus = restructure_the_armed_forces
 		}
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = restructure_the_armed_forces
 		cost = 10
@@ -3027,9 +3028,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = heavy_fighters
 		}
-		x = -4
-		y = 2
-		relative_position_id = restructure_the_armed_forces
+		x = -1
+		y = 1
+		relative_position_id = neue_luftwaffe
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3044,9 +3045,9 @@ focus_tree = {
 		prerequisite = {
 			focus = light_fighters
 		}
-		x = -4
-		y = 3
-		relative_position_id = restructure_the_armed_forces
+		x = -1
+		y = 2
+		relative_position_id = neue_luftwaffe
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3064,9 +3065,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = light_fighters
 		}
-		x = -2
-		y = 2
-		relative_position_id = restructure_the_armed_forces
+		x = 1
+		y = 1
+		relative_position_id = neue_luftwaffe
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3081,9 +3082,9 @@ focus_tree = {
 		prerequisite = {
 			focus = heavy_fighters
 		}
-		x = -2
-		y = 3
-		relative_position_id = restructure_the_armed_forces
+		x = 1
+		y = 2
+		relative_position_id = neue_luftwaffe
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3095,6 +3096,9 @@ focus_tree = {
 	focus = {
 		id = phoenix_from_the_ashes
 		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = {
+			focus = grossdeutscher_bund
+		}
 		available = {
 			is_puppet = no
 			NOT = {
@@ -3110,9 +3114,9 @@ focus_tree = {
 				}
 			}
 		}
-		x = -3
-		y = 16
-		relative_position_id = a_bright_future
+		x = 0
+		y = 6
+		relative_position_id = grossdeutscher_bund
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3122,6 +3126,24 @@ focus_tree = {
 				id = gdb_germany.24
 
 			}
+		}
+	}
+	focus = {
+		id = natural_borders
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {
+			focus = phoenix_from_the_ashes
+		}
+		x = 0
+		y = 1
+		relative_position_id = phoenix_from_the_ashes
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = natural_borders_west
+			custom_effect_tooltip = GDB_TT_1
 		}
 	}
 	focus = {

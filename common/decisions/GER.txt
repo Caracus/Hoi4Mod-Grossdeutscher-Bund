@@ -1490,6 +1490,39 @@ GER_reichskommissariats = {
 
 political_actions = {
 
+	SPR_civil_start_boost = {
+		allowed = { original_tag = SPR }
+		available = {
+			has_civil_war = yes
+			has_government = democratic
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 5
+		remove_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 50000
+					producer = SPR
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = SPR
+				}
+				add_manpower = 500000
+			}
+
+
+		}
+	}
+
 	SPR_civil_end = {
 		allowed = { original_tag = SPR }
 		available = {
@@ -1972,11 +2005,11 @@ political_actions = {
 				original_tag = AUS
 				original_tag = LUX
 				original_tag = SWI
-				original_tag = FRA
 			}
 		}
 		available = {
 			ROOT = {
+				has_country_flag = natural_borders_west
 				806 = {
 					compliance > 40
 					resistance < 10
@@ -1985,7 +2018,7 @@ political_actions = {
 		}
 		cost = 298
 		fire_only_once = yes
-		days_remove = 596
+		days_remove = 298
 		ai_will_do = {
 			factor = 10
 		}
@@ -2053,6 +2086,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
+				has_country_flag = natural_borders_west
 				797 = {
 					compliance > 40
 					resistance < 10
@@ -2129,6 +2163,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
+				has_country_flag = natural_borders_west
 				799 = {
 					compliance > 40
 					resistance < 10
