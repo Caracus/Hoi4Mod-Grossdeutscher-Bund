@@ -58,8 +58,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ger_united_flag.dds"
 	}
 
-
-	
-	
+	spriteType = {
+		name = "GFX_event_pictures_ger_new_bund_flag"
+		texturefile = "gfx/event_pictures/ger_new_bund_flag.dds"
+	}
 }
 

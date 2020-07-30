@@ -1,4 +1,24 @@
 add_namespace = gdb_germany
+
+country_event = {
+	id = gdb_germany.0
+	title = gdb_germany.0.t
+	desc = gdb_germany.0.d
+	picture = GFX_report_event_hohenzollern_family
+
+	trigger = {
+		date > 1936.1.1
+		original_tag = GER
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = gdb_germany.0.a
+	}
+}
+
 country_event = {
 	id = gdb_germany.1
 	title = gdb_germany.1.t
@@ -13,7 +33,7 @@ country_event = {
 			start_civil_war = {
 				ruling_party = democratic
 				ideology = communism
-				size = 0.6
+				size = 0.65
 				capital = 16
 				states = {
 					16
@@ -851,6 +871,9 @@ country_event = {
 			target = SWI
 			transfer_troops = yes
 		}
+		country_event = {
+			id = gdb_germany.90
+		}
 		add_threat = 3
 		3 = {
 			add_core_of = GER
@@ -888,7 +911,6 @@ country_event = {
 		807 = {
 			add_core_of = GER
 		}
-		set_cosmetic_tag = GER_GDB
 		AUS = {
 			every_unit_leader = {
 				set_nationality = GER
@@ -1001,15 +1023,12 @@ country_event = {
 	id = gdb_germany.24
 	title = gdb_germany.24.t
 	desc = gdb_germany.24.d
-	picture = GFX_report_event_ger_united
+	picture = GFX_report_event_german_reichstag_gathering
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.24.a
-		set_cosmetic_tag = GER_united
-	}
-	option = {
-		name = gdb_germany.24.b
 		set_cosmetic_tag = GER_MOD
+		add_ideas = defender_of_freedom
 	}
 }
 
@@ -1733,6 +1752,9 @@ country_event = {
 			81 = {
 				add_core_of = BUL
 			}
+			79 = {
+				add_core_of = BUL
+			}
 		}
 	}
 }
@@ -1747,7 +1769,7 @@ country_event = {
 	option = {
 		name = gdb_germany.46.a
 		BUL = {
-			set_cosmetic_tag = BUL_GDB
+			set_cosmetic_tag = BUL_GDB_small
 		}
 		give_guarantee = BUL
 		hidden_effect = {
@@ -1911,6 +1933,7 @@ country_event = {
 				days = 14
 			}
 			BUL = {
+				set_cosmetic_tag = BUL_GDB
 				transfer_state = 104
 				transfer_state = 106
 				transfer_state = 107
@@ -1961,6 +1984,7 @@ country_event = {
 			add_core_of = ITA
 		}
 			BUL = {
+				set_cosmetic_tag = BUL_GDB
 				transfer_state = 104
 				transfer_state = 106
 				transfer_state = 107
@@ -2863,7 +2887,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.78
-				days = 90
+				days = 30
 			}
 		}
 		SOV = {
@@ -2904,6 +2928,19 @@ country_event = {
 					ideology = communism
 					popularity = 0.6
 				}
+				if = {
+					limit = { has_idea = SPA_recovering_from_civil_war }
+					remove_ideas = SPA_recovering_from_civil_war
+				}
+				if = {
+					limit = { has_idea = SPA_recovering_from_civil_war_2 }
+					remove_ideas = SPA_recovering_from_civil_war_2
+				}
+				if = {
+					limit = { has_idea = SPA_recovering_from_civil_war_3 }
+					remove_ideas = SPA_recovering_from_civil_war_3
+				}
+				
 			}
 		}
 	}
@@ -3248,4 +3285,47 @@ country_event = {
 		name = gdb_germany.89.c
 		add_political_power = -10
 	}
+}
+
+#grossdeutscher bund flag choice
+country_event = {
+	id = gdb_germany.90
+	title = gdb_germany.90.t
+	desc = gdb_germany.90.d
+	picture = GFX_event_pictures_ger_new_bund_flag
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.90.a
+		set_cosmetic_tag = GER_MOD_bund_big
+	}
+	option = {
+		name = gdb_germany.90.b
+		set_cosmetic_tag = GER_united
+	}
+	option = {
+		name = gdb_germany.90.c
+		set_cosmetic_tag = GER_GDB
+	}
+}
+
+#dummy event join eu, no local needed
+country_event = {
+	id = gdb_germany.91
+	title = gdb_germany.91.t
+	desc = gdb_germany.91.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.91.a
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
 }

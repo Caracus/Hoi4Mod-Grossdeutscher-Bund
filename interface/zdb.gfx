@@ -38,5 +38,11 @@ spriteTypes = {
 		name = "GFX_Portrait_germany_non_aligned_adenauer"
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_germany_european_council"
+		texturefile = "gfx/leaders/GER/european_council.dds"
+	}
+	
 	
 }

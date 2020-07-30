@@ -1,5 +1,35 @@
 ideas = {
 	country = {
+		defender_of_freedom = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				political_power_gain = 1
+				drift_defence_factor = 0.5
+				communism_drift = -0.02
+				fascism_drift = -0.02
+			}
+
+		}
+
+		european_ambitions = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				resistance_target = -0.05
+				subjects_autonomy_gain = -5
+				justify_war_goal_time = -0.9
+				generate_wargoal_tension = -1
+			}
+
+		}
+
 		zdb_soviet_help_civil_war = {
 			allowed = {
 				always = no
@@ -22,7 +52,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_communism_drift_bonus
+			picture = generic_spy_coup
 			modifier = {
 				communism_drift = 0.25
 			}
@@ -35,7 +65,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = idea_eng_special_air_service
 			modifier = {
 				special_forces_cap = 0.05
 			}
@@ -48,7 +78,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_army_war_college
 			modifier = {
 				acclimatization_cold_climate_gain_factor = 0.3
 				special_forces_attack_factor = 0.05
@@ -64,7 +94,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_foreign_capital
 			modifier = {
 				consumer_goods_factor = 0.01
 			}
@@ -78,7 +108,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_foreign_capital
 			modifier = {
 				consumer_goods_factor = 0.03
 				recruitable_population_factor = 0.001
@@ -94,7 +124,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_war_preparation
 			modifier = {
 				political_power_gain = 0.15
 				political_advisor_cost_factor = -0.25
@@ -108,7 +138,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_fascism_banned
 			modifier = {
 				neutrality_drift = 0.1
 				democratic_drift = 0.4
@@ -122,7 +152,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_morale_bonus
 			modifier = {
 				research_speed_factor = 0.05
 				intelligence_agency_defense = -0.1
@@ -137,7 +167,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 			}
@@ -150,7 +180,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.25
@@ -164,7 +194,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.25
@@ -182,7 +212,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.25
@@ -201,7 +231,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.25
@@ -220,7 +250,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.25
@@ -237,7 +267,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.25
@@ -255,7 +285,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_secret_police
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.25
@@ -274,7 +304,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_economic_increase
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
@@ -289,7 +319,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_intel_bonus
+			picture = generic_volunteer_expedition_bonus
 			modifier = {
 				send_volunteer_size = 18
 			}
@@ -328,7 +358,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = generic_constitutional_guarantee
 			modifier = {
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.05
@@ -344,7 +374,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = generic_constitutional_guarantee
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.05
@@ -361,7 +391,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = generic_monarchist_uprising
 			modifier = {
 				industrial_capacity_dockyard = 0.05
 				conscription = 0.015
@@ -375,7 +405,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = generic_king_handled
 			modifier = {
 				research_speed_factor = 0.05
 				political_power_gain = 0.25
@@ -389,7 +419,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = generic_license_production
 			modifier = {
 				research_speed_factor = 0.1
 				consumer_goods_factor = 0.05
@@ -402,7 +432,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_production_bonus
+			picture = german_advisors
 			removal_cost = -1
 			modifier = {
 				army_org_Factor = -0.3
@@ -417,7 +447,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_production_bonus
+			picture = german_advisors
 			removal_cost = -1
 			modifier = {
 				planning_speed = -0.7
@@ -428,7 +458,7 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-			picture = generic_production_bonus
+			picture = german_advisors
 			allowed_civil_war = {
 				always = yes
 			}
@@ -444,7 +474,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_production_bonus
+			picture = german_advisors
 			removal_cost = -1
 			modifier = {
 				planning_speed = 0.4
@@ -460,7 +490,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_air_bonus
+			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
 				fighter_equipment = {
@@ -480,7 +510,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_air_bonus
+			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
 				cas = {
@@ -500,7 +530,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_air_bonus
+			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
 				heavy_fighter_equipment = {
@@ -520,7 +550,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_air_bonus
+			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
 				strat_bomber_equipment = {
@@ -598,7 +628,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = generic_economic_increase
 			modifier = {
 				consumer_goods_factor = -0.3
 			}
@@ -611,7 +641,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = generic_export_focus
 			modifier = {
 				consumer_goods_factor = 0.02
 			}

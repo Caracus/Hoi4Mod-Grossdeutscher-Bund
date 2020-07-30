@@ -83,6 +83,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_army_manpower = {
+				size > 449999
+			}
+		}
 		completion_reward = {
 			add_ideas = realpolitik_idea
 		}
@@ -177,6 +182,9 @@ focus_tree = {
 		cost = 2
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_government = democratic
 		}
 		completion_reward = {
 			AUS = {
@@ -411,11 +419,12 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = a_bright_future
-		cost = 6
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			set_cosmetic_tag = GER_MOD_bund
 			GER = {
 				add_ideas = member_of_the_bund
 			}
@@ -471,6 +480,10 @@ focus_tree = {
 				}
 				add_state_claim = 103
 				add_state_claim = 163
+				diplomatic_relation = {
+					country = AUS
+					relation = non_aggression_pact
+				}
 			}
 			798 = {
 				remove_core_of = AUS
@@ -804,7 +817,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
 	focus = {
 		id = stockpile_iron_ore
 		icon = GFX_focus_generic_steel
@@ -820,7 +832,7 @@ focus_tree = {
 		}
 		available = {
 			SWE = {
-				is_in_faction_with = ROOT 
+				is_in_faction_with = ROOT
 				controls_state = 666
 			}
 			GER = {
@@ -857,7 +869,7 @@ focus_tree = {
 		}
 		available = {
 			SWE = {
-				is_in_faction_with = ROOT 
+				is_in_faction_with = ROOT
 				controls_state = 666
 			}
 			GER = {
@@ -865,21 +877,18 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-
-				63 = {
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 6282
-						instant_build = yes
-					}
-					add_resource = {
-						type = tungsten
-						amount = 16
-					}
+			63 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 6282
+					instant_build = yes
 				}
-
-			
+				add_resource = {
+					type = tungsten
+					amount = 16
+				}
+			}
 		}
 	}
 	focus = {
@@ -897,7 +906,7 @@ focus_tree = {
 		}
 		available = {
 			SWE = {
-				is_in_faction_with = ROOT 
+				is_in_faction_with = ROOT
 				controls_state = 666
 			}
 			GER = {
@@ -905,21 +914,18 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-
-				63 = {
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 6282
-						instant_build = yes
-					}
-					add_resource = {
-						type = chromium
-						amount = 16
-					}
+			63 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 6282
+					instant_build = yes
 				}
-
-			
+				add_resource = {
+					type = chromium
+					amount = 16
+				}
+			}
 		}
 	}
 	focus = {
@@ -2019,6 +2025,7 @@ focus_tree = {
 				set_country_flag = invite_denmark_flag
 				set_country_flag = invite_norway_flag
 				set_country_flag = invite_sweden_flag
+				set_country_flag = invite_finland_flag
 			}
 		}
 	}
@@ -2134,6 +2141,9 @@ focus_tree = {
 			focus = neue_wehrmacht3
 		}
 		available = {
+			has_army_manpower = {
+				size > 1499999
+			}
 			is_puppet = no
 			SOV = {
 				has_government = communism
@@ -2408,7 +2418,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = new_alliances
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2438,7 +2448,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
-	} 
+	}
 	focus = {
 		id = einstein_project
 		icon = GFX_focus_wonderweapons
@@ -2550,14 +2560,14 @@ focus_tree = {
 		available = {
 			owns_state = 69
 		}
-		completion_reward = {			
-				add_tech_bonus = {
-					name = GER_uranium_mines
-					bonus = 0.5
-					ahead_reduction = 2
-					technology = nukes
-				}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_uranium_mines
+				bonus = 0.5
+				ahead_reduction = 2
+				technology = nukes
 			}
+		}
 	}
 	focus = {
 		id = economic_potential
@@ -2573,7 +2583,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			num_of_civilian_factories > 200
+			num_of_civilian_factories > 300
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -3117,14 +3127,13 @@ focus_tree = {
 		x = 0
 		y = 6
 		relative_position_id = grossdeutscher_bund
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			country_event = {
 				id = gdb_germany.24
-
 			}
 		}
 	}
@@ -3134,7 +3143,10 @@ focus_tree = {
 		prerequisite = {
 			focus = phoenix_from_the_ashes
 		}
-		x = 0
+		mutually_exclusive = {
+			focus = pursue_european_ambitions
+		}
+		x = -1
 		y = 1
 		relative_position_id = phoenix_from_the_ashes
 		cost = 4
@@ -3144,6 +3156,79 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = natural_borders_west
 			custom_effect_tooltip = GDB_TT_1
+		}
+	}
+	focus = {
+		id = pursue_european_ambitions
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {
+			focus = phoenix_from_the_ashes
+		}
+		mutually_exclusive = {
+			focus = natural_borders
+		}
+		x = 1
+		y = 1
+		relative_position_id = phoenix_from_the_ashes
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = european_ambitions
+			set_cosmetic_tag = EUR_UNIFIED
+			add_popularity = {
+				ideology = neutrality
+				popularity = party_popularity@democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = eu_neutral_party_long
+				name = eu_neutral_party
+			}
+			create_country_leader = {
+				name = "European Council"
+				picture = GFX_Portrait_germany_european_council
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			custom_effect_tooltip = GDB_TT_4
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_on_continent = europe
+					}
+					add_core_of = GER
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = ROOT
+						is_puppet = no
+						capital_scope = {
+							is_on_continent = europe
+						}
+						has_opinion = {
+							target = GER
+							value > 49
+						}
+					}
+					country_event = {
+						id = gdb_germany.91
+					}
+				}
+			}
+			custom_effect_tooltip = GDB_TT_3
+			dismantle_faction = yes
 		}
 	}
 	focus = {
