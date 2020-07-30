@@ -1892,7 +1892,7 @@ political_actions = {
 			ROOT = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 50000
+					amount = 100000
 					producer = SPR
 				}
 				add_equipment_to_stockpile = {
@@ -1900,7 +1900,7 @@ political_actions = {
 					amount = 5000
 					producer = SPR
 				}
-				add_manpower = 500000
+				add_manpower = 750000
 			}
 
 
@@ -1920,12 +1920,12 @@ political_actions = {
 		}
 		visible = {
 		}
-		days_remove = 45
+		days_remove = 75
 		remove_effect = {
 			ROOT = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 100000
+					amount = 150000
 					producer = FRA
 				}
 				add_equipment_to_stockpile = {
@@ -1933,7 +1933,7 @@ political_actions = {
 					amount = 5000
 					producer = FRA
 				}
-				add_manpower = 250000
+				add_manpower = 500000
 			}
 		}
 	}
