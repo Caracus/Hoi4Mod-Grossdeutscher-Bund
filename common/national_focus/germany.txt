@@ -3213,7 +3213,6 @@ focus_tree = {
 				every_country = {
 					limit = {
 						is_in_faction_with = ROOT
-						is_puppet = no
 						capital_scope = {
 							is_on_continent = europe
 						}
