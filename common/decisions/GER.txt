@@ -620,7 +620,6 @@ operations = {
 			factor = 1
 		}
 	}
-
 	invite_hungary = {
 		icon = generic_operation
 		allowed = {
@@ -654,7 +653,6 @@ operations = {
 			factor = 1
 		}
 	}
-
 	invite_bulgaria = {
 		icon = generic_operation
 		allowed = {
@@ -1522,13 +1520,13 @@ GER_reichskommissariats = {
 }
 
 political_actions = {
-
 	rename_danzig_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1539,17 +1537,23 @@ political_actions = {
 			state = 85
 		}
 		complete_effect = {
-			set_province_name = { id = 279 name = "Bromberg"}
-			set_province_name = { id = 3295 name = "Thorn"}
+			set_province_name = {
+				id = 279
+				name = "Bromberg"
+			}
+			set_province_name = {
+				id = 3295
+				name = "Thorn"
+			}
 		}
 	}
-
 	rename_katowice_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1560,16 +1564,19 @@ political_actions = {
 			state = 762
 		}
 		complete_effect = {
-			set_province_name = { id = 6464 name = "Kattowitz"}
+			set_province_name = {
+				id = 6464
+				name = "Kattowitz"
+			}
 		}
 	}
-
 	rename_poznan_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1580,16 +1587,19 @@ political_actions = {
 			state = 86
 		}
 		complete_effect = {
-			set_province_name = { id = 6558 name = "Posen"}
+			set_province_name = {
+				id = 6558
+				name = "Posen"
+			}
 		}
 	}
-
 	rename_alsace_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1600,17 +1610,23 @@ political_actions = {
 			state = 28
 		}
 		complete_effect = {
-			set_province_name = { id = 9503 name = "Straßburg"}
-			set_province_name = { id = 678 name = "Mülhausen"}
+			set_province_name = {
+				id = 9503
+				name = "Straßburg"
+			}
+			set_province_name = {
+				id = 678
+				name = "Mülhausen"
+			}
 		}
 	}
-
 	rename_nancy_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1621,16 +1637,19 @@ political_actions = {
 			state = 799
 		}
 		complete_effect = {
-			set_province_name = { id = 11516 name = "Nanzig"}
+			set_province_name = {
+				id = 11516
+				name = "Nanzig"
+			}
 		}
 	}
-
 	rename_luxemburg_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1641,16 +1660,19 @@ political_actions = {
 			state = 8
 		}
 		complete_effect = {
-			set_province_name = { id = 6583 name = "Lützelburg"}
+			set_province_name = {
+				id = 6583
+				name = "Lützelburg"
+			}
 		}
 	}
-	
 	rename_slovenia_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1661,16 +1683,19 @@ political_actions = {
 			state = 102
 		}
 		complete_effect = {
-			set_province_name = { id = 9627 name = "Laibach"}
+			set_province_name = {
+				id = 9627
+				name = "Laibach"
+			}
 		}
 	}
-
 	rename_istria_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1681,16 +1706,19 @@ political_actions = {
 			state = 736
 		}
 		complete_effect = {
-			set_province_name = { id = 6626 name = "Triest"}
+			set_province_name = {
+				id = 6626
+				name = "Triest"
+			}
 		}
 	}
-
 	rename_sudetenland_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1701,18 +1729,23 @@ political_actions = {
 			state = 69
 		}
 		complete_effect = {
-			set_province_name = { id = 3585 name = "Karlsbad"}
-			set_province_name = { id = 11401 name = "Reichenberg"}
+			set_province_name = {
+				id = 3585
+				name = "Karlsbad"
+			}
+			set_province_name = {
+				id = 11401
+				name = "Reichenberg"
+			}
 		}
 	}
-
-	
 	rename_bohemia_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1723,18 +1756,27 @@ political_actions = {
 			state = 9
 		}
 		complete_effect = {
-			set_province_name = { id = 6418 name = "Pilsen"}
-			set_province_name = { id = 9569 name = "Taber"}
-			set_province_name = { id = 11542 name = "Prag"}
+			set_province_name = {
+				id = 6418
+				name = "Pilsen"
+			}
+			set_province_name = {
+				id = 9569
+				name = "Taber"
+			}
+			set_province_name = {
+				id = 11542
+				name = "Prag"
+			}
 		}
 	}
-
 	rename_moravia_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1745,17 +1787,23 @@ political_actions = {
 			state = 75
 		}
 		complete_effect = {
-			set_province_name = { id = 3569 name = "Brünn"}
-			set_province_name = { id = 6562 name = "Olmütz"}
+			set_province_name = {
+				id = 3569
+				name = "Brünn"
+			}
+			set_province_name = {
+				id = 6562
+				name = "Olmütz"
+			}
 		}
 	}
-
 	rename_ost_sudeten_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1766,16 +1814,19 @@ political_actions = {
 			state = 74
 		}
 		complete_effect = {
-			set_province_name = { id = 3583 name = "Ostrau"}
+			set_province_name = {
+				id = 3583
+				name = "Ostrau"
+			}
 		}
 	}
-
 	rename_bratislava_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1786,16 +1837,19 @@ political_actions = {
 			state = 807
 		}
 		complete_effect = {
-			set_province_name = { id = 9692 name = "Pressburg"}
+			set_province_name = {
+				id = 9692
+				name = "Pressburg"
+			}
 		}
 	}
-
 	rename_west_switzerland_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1806,20 +1860,22 @@ political_actions = {
 			state = 3
 		}
 		complete_effect = {
-			set_province_name = { id = 9620 name = "Bern"}
+			set_province_name = {
+				id = 9620
+				name = "Bern"
+			}
 		}
 	}
-
 	rename_austrian_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		highlight_state_targets = {
 			state = 4
 		}
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1827,20 +1883,22 @@ political_actions = {
 			owns_state = 4
 		}
 		complete_effect = {
-			set_province_name = { id = 11666 name = "Wien"}
+			set_province_name = {
+				id = 11666
+				name = "Wien"
+			}
 		}
 	}
-
 	rename_oberbayern_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
-
 		visible = {
 			owns_state = 52
 		}
@@ -1848,40 +1906,44 @@ political_actions = {
 			state = 52
 		}
 		complete_effect = {
-			set_province_name = { id = 692 name = "München"}
+			set_province_name = {
+				id = 692
+				name = "München"
+			}
 		}
 	}
-
 	rename_franken_state_cities = {
-		allowed = { original_tag = GER }
+		allowed = {
+			original_tag = GER
+		}
 		available = {
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
-
 		highlight_state_targets = {
 			state = 54
 		}
-
 		visible = {
 			owns_state = 54
 		}
 		complete_effect = {
-			set_province_name = { id = 11544 name = "Nürnberg"}
+			set_province_name = {
+				id = 11544
+				name = "Nürnberg"
+			}
 		}
 	}
-
 	SPR_civil_start_boost = {
-		allowed = { original_tag = SPR }
+		allowed = {
+			original_tag = SPR
+		}
 		available = {
 			has_civil_war = yes
 			has_government = democratic
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1902,19 +1964,17 @@ political_actions = {
 				}
 				add_manpower = 750000
 			}
-
-
 		}
 	}
-
 	FRA_civil_start_boost = {
-		allowed = { original_tag = FRA }
+		allowed = {
+			original_tag = FRA
+		}
 		available = {
 			has_civil_war = yes
 			has_government = communism
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1937,16 +1997,16 @@ political_actions = {
 			}
 		}
 	}
-
 	SPR_civil_end = {
-		allowed = { original_tag = SPR }
+		allowed = {
+			original_tag = SPR
+		}
 		available = {
 			has_civil_war = no
 			has_government = democratic
 			date > 1937.6.6
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1966,9 +2026,10 @@ political_actions = {
 			}
 		}
 	}
-
 	SPR_seize_portugal = {
-		allowed = { original_tag = SPR }
+		allowed = {
+			original_tag = SPR
+		}
 		available = {
 			has_civil_war = no
 			has_government = communism
@@ -1980,7 +2041,6 @@ political_actions = {
 			has_global_flag = bund_has_unified
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1996,16 +2056,15 @@ political_actions = {
 			}
 		}
 	}
-
 	FRA_invade_belgium = {
-		allowed = { original_tag = FRA }
+		allowed = {
+			original_tag = FRA
+		}
 		available = {
 			has_global_flag = enable_fra_belgium
 			has_war = no
-
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2022,15 +2081,15 @@ political_actions = {
 			clr_global_flag = enable_fra_belgium
 		}
 	}
-
 	FRA_invade_switzerland = {
-		allowed = { original_tag = FRA }
+		allowed = {
+			original_tag = FRA
+		}
 		available = {
 			has_global_flag = enable_fra_switzerland
 			controls_state = 17
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2038,10 +2097,10 @@ political_actions = {
 		}
 		days_remove = 14
 		remove_effect = {
-		transfer_state = 804
-		804 = {
-			add_core_of = FRA
-		}
+			transfer_state = 804
+			804 = {
+				add_core_of = FRA
+			}
 			GER = {
 				country_event = {
 					id = gdb_germany.57
@@ -2050,65 +2109,99 @@ political_actions = {
 			}
 			clr_global_flag = enable_fra_switzerland
 		}
+	}
+	FRA_civil_war_ended = {
+		allowed = {
+			original_tag = FRA
 		}
-
-		FRA_civil_war_ended = {
-			allowed = { original_tag = FRA }
-			available = {
-				has_civil_war = no
-				has_government = communism
-				NOT = {
-					has_government = democratic
+		available = {
+			has_civil_war = no
+			has_government = communism
+			NOT = {
+				has_government = democratic
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 1
+		remove_effect = {
+			set_global_flag = french_civil_war_ended
+			GER = {
+				country_event = {
+					id = gdb_germany.84
+					days = 30
 				}
 			}
-			fire_only_once = yes
-	
-			ai_will_do = {
-				factor = 1000
+		}
+	}
+	FRA_demand_alsace_lorraince = {
+		allowed = {
+			original_tag = FRA
+		}
+		available = {
+			has_civil_war = no
+			has_government = communism
+			has_global_flag = bund_has_unified
+			GER = {
+				has_full_control_of_state = 28
 			}
-			visible = {
+			date > 1939.1.1
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 1
+		remove_effect = {
+			GER = {
+				country_event = {
+					id = gdb_germany.86
+					days = 210
+				}
 			}
-			days_remove = 1
-			remove_effect = {
-				set_global_flag = french_civil_war_ended
-				GER = {
-					country_event = {
-						id = gdb_germany.84
-						days = 30
+		}
+	}
+	# integrate ticino
+	core_ticino = {
+		allowed = {
+			OR = {
+				original_tag = GER
+			}
+		}
+		available = {
+			ROOT = {
+				803 = {
+					compliance > 40
+					resistance < 10
+				}
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			owns_state = 803
+			NOT = {
+				ROOT = {
+					803 = {
+						is_core_of = ROOT
 					}
 				}
 			}
-			}
-
-			FRA_demand_alsace_lorraince = {
-				allowed = { original_tag = FRA }
-				available = {
-					has_civil_war = no
-					has_government = communism
-					has_global_flag = bund_has_unified
-					GER = {
-						has_full_control_of_state = 28
-					}
-					date > 1939.1.1
-				}
-				fire_only_once = yes
-		
-				ai_will_do = {
-					factor = 1000
-				}
-				visible = {
-				}
-				days_remove = 1
-				remove_effect = {
-					GER = {
-						country_event = {
-							id = gdb_germany.86
-							days = 210
-						}
-					}
-				}
-				}
-
+		}
+		remove_effect = {
+			add_state_core = 803
+		}
+	}
 	# integrate danzig
 	core_danzig = {
 		allowed = {
@@ -3138,8 +3231,8 @@ political_actions = {
 			add_state_core = 75
 		}
 	}
-	# ticino
-	core_ticino = {
+	# vaud
+	core_vaud = {
 		allowed = {
 			original_tag = FRA
 		}
@@ -3171,8 +3264,8 @@ political_actions = {
 			add_state_core = 804
 		}
 	}
-	# vaud
-	core_vaud = {
+	# ticino
+	core_ticino_ita = {
 		allowed = {
 			original_tag = ITA
 		}
@@ -3525,7 +3618,8 @@ special_projects = {
 			NOT = {
 				has_global_flag = GER_heavy_water_production_underway
 			}
-		}		#can be removed via intelligence ops
+		}
+		#can be removed via intelligence ops
 		days_remove = 365
 		remove_effect = {
 			add_tech_bonus = {

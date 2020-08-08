@@ -690,6 +690,37 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+		a_nation_reborn = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			modifier = {
+				political_power_gain = 0.5
+				drift_defence_factor = 1
+			}
+		}
+		dawn_of_a_new_europe = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			modifier = {
+				political_power_gain = 0.5
+				drift_defence_factor = 1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
 		GER_air_innovations_2_idea = {
 			removal_cost = -1
 			allowed = {

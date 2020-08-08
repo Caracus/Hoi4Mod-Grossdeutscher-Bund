@@ -1710,7 +1710,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = social_justice
-		cost = 4
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -2184,6 +2184,90 @@ focus_tree = {
 					id = "GER"
 					value = 30000
 				}
+			}
+		}
+	}
+	focus = {
+		id = attack_poland_to_get_soviets
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		prerequisite = {
+			focus = attack_soviets
+		}
+		available = {
+			has_war_with = SOV	    
+		}
+		cancel_if_invalid = yes
+		x = 0
+		y = 4
+		relative_position_id = neue_wehrmacht
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = GDB_TT_5
+			if = {
+			 limit = {
+				country_exists = POL
+				NOT = {
+					POL = {
+						is_in_faction_with = ROOT 
+					}
+				}
+			 }
+			 create_wargoal = {
+				type = topple_government
+				target = POL
+			}
+			}
+			if = {
+				limit = {
+				   country_exists = LIT
+				   NOT = {
+					   LIT = {
+						   is_in_faction_with = ROOT 
+					   }
+				   }
+				}
+				create_wargoal = {
+				   type = topple_government
+				   target = LIT
+			   }
+			   }
+			   if = {
+				limit = {
+				   country_exists = LAT
+				   NOT = {
+					   LAT = {
+						   is_in_faction_with = ROOT 
+					   }
+				   }
+				}
+				create_wargoal = {
+				   type = topple_government
+				   target = LAT
+			   }
+			   }
+			   if = {
+				limit = {
+				   country_exists = EST
+				   NOT = {
+					   EST = {
+						   is_in_faction_with = ROOT 
+					   }
+				   }
+				}
+				create_wargoal = {
+				   type = topple_government
+				   target = EST
+			   }
+			   }
+			   add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = tp_tech
 			}
 		}
 	}
@@ -3135,6 +3219,8 @@ focus_tree = {
 			country_event = {
 				id = gdb_germany.24
 			}
+			remove_ideas = sour_loser
+			add_ideas = a_nation_reborn
 		}
 	}
 	focus = {
@@ -3176,7 +3262,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = european_ambitions
-			set_cosmetic_tag = EUR_UNIFIED
+			set_cosmetic_tag = EUR_UNIFIED_GDB
+			hidden_effect = [
 			add_popularity = {
 				ideology = neutrality
 				popularity = party_popularity@democratic
@@ -3194,6 +3281,7 @@ focus_tree = {
 				long_name = eu_neutral_party_long
 				name = eu_neutral_party
 			}
+		}
 			create_country_leader = {
 				name = "European Council"
 				picture = GFX_Portrait_germany_european_council
@@ -3228,6 +3316,10 @@ focus_tree = {
 			}
 			custom_effect_tooltip = GDB_TT_3
 			dismantle_faction = yes
+			swap_ideas = {
+				remove_idea = a_nation_reborn
+				add_idea = dawn_of_a_new_europe
+			}
 		}
 	}
 	focus = {
