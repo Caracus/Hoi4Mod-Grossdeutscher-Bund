@@ -532,7 +532,7 @@ operations = {
 			NOT = {
 				has_war_with = FIN
 			}
-			NOR = {
+			FIN = {
 				is_puppet = no
 			}
 		}
@@ -543,7 +543,7 @@ operations = {
 		fire_only_once = yes
 		cost = 25
 		complete_effect = {
-			NOR = {
+			FIN = {
 				country_event = {
 					id = gdb_germany.23
 					days = 1
