@@ -1962,7 +1962,12 @@ political_actions = {
 					amount = 5000
 					producer = SPR
 				}
-				add_manpower = 750000
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 5000
+					producer = SPR
+				}
+				add_manpower = 350000
 			}
 		}
 	}
@@ -1990,10 +1995,15 @@ political_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment
-					amount = 5000
+					amount = 10000
 					producer = FRA
 				}
-				add_manpower = 500000
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 10000
+					producer = FRA
+				}
+				add_manpower = 300000
 			}
 		}
 	}
@@ -3297,6 +3307,175 @@ political_actions = {
 			add_state_core = 803
 		}
 	}
+
+	make_victoria_a_leader = {
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			has_civil_war = no
+			has_completed_focus = vereinte_wissenschaft
+		}
+		visible = {
+				has_country_flag = GER_com_help_accepted
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_field_marshal = {
+				name = "Victoria Louise von Hohenzollern"
+				gfx = GFX_Portrait_germany_victoria_army
+				traits = {
+				inspirational_leader 
+				politically_connected
+				media_personality
+				cavalry_officer 
+				}
+				skill = 1
+				id = 2001
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+
+	general_stauffenberg = {
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+				has_country_flag = GER_com_help_accepted
+		}
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Claus Schenk, Graf von Stauffenberg"
+				gfx = GFX_Portrait_germany_stauffenberg
+				traits = {
+				organizer
+				cavalry_officer
+				}
+				skill = 3
+				id = 2002
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 4
+			}
+		}
+	}
+
+	general_tresckow = {
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+				has_country_flag = GER_com_help_accepted
+		}
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Henning von Tresckow"
+				gfx = GFX_Portrait_germany_henning_von_tresckow
+				traits = {
+				brilliant_strategist
+				infantry_officer
+				career_officer
+				}
+				skill = 4
+				id = 2003
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 3
+			}
+		}
+	}
+
+	general_groscurth = {
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+				has_country_flag = GER_com_help_accepted
+		}
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Helmuth Groscurth"
+				gfx = GFX_Portrait_germany_helmut_groscurth
+				traits = {
+				infantry_officer
+				}
+				skill = 2
+				id = 2004
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+	}
+
+	field_marshall_mackensen = {
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+				has_country_flag = GER_com_help_accepted
+		}
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "August von Mackensen"
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_field_marshal = {
+				name = "August von Mackensen"
+				gfx = GFX_portrait_ger_august_von_mackensen
+				traits = {
+				trait_reckless
+				old_guard
+				career_officer
+				cavalry_officer
+				politically_connected
+				media_personality
+				war_hero
+				urban_assault_specialist
+				}
+				skill = 6
+				id = 2005
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 6
+				logistics_skill = 5
+			}
+		}
+	}
+
 	# Reinstate Wilhelm IV into the line of succession
 	reinstate_wilhelm_iv_succession_rights = {
 		allowed = {
@@ -3372,6 +3551,7 @@ political_actions = {
 					ruling_only = yes
 					name = "Victoria"
 				}
+				has_country_flag = GER_com_help_accepted
 			}
 		}
 		cost = 25

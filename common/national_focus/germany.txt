@@ -44,8 +44,11 @@ focus_tree = {
 			delete_unit_template_and_units = {
 				division_template = "Landsturmregiment"
 			}
-			delete_unit_template_and_units = {
-				division_template = "Altwaffen Division"
+			GER = {
+				country_event = {
+					id = gdb_germany.95
+					days = 3
+				}
 			}
 		}
 	}
@@ -63,10 +66,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_rebuild_the_nation
-				days = 365
-			}
 			add_ideas = GER_national_revitalization
 		}
 	}
@@ -632,6 +631,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_idea = militant_underground_infiltrated
+		}
 		completion_reward = {
 			FRA = {
 				add_timed_idea = {
@@ -662,6 +664,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = revive_abteilung_3_b
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -5000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -300
+				producer = GER
+			}
 		}
 	}
 	focus = {
@@ -688,6 +700,12 @@ focus_tree = {
 				add_named_threat = {
 					threat = 5
 					name = zdb_french_civil
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = gdb_germany.102
+					days = 14
 				}
 			}
 		}
@@ -2389,7 +2407,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			country_event = {
-				id = gdb_germany.11
+				id = gdb_germany.107
 			}
 		}
 	}
@@ -2531,6 +2549,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
+			custom_effect_tooltip = GDB_TT_6
 		}
 	}
 	focus = {
@@ -3065,12 +3084,48 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_tech = ship_hull_super_heavy
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_tech = ship_hull_super_heavy
+			} 
+			
 		}
 		completion_reward = {
-			country_event = {
-				id = gdb_germany.21
-				days = 180
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				country_event = {
+					id = gdb_germany.21
+					days = 180
+				}
+			} else = {
+				58 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				63 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				763 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 	}
@@ -3100,7 +3155,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = restructure_the_armed_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -10080,7 +10135,7 @@ focus_tree = {
 			GER = {
 				country_event = {
 					id = gdb_germany.4
-					days = 14
+					days = 7
 				}
 			}
 		}

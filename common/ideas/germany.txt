@@ -1,5 +1,105 @@
 ideas = {
 	country = {
+		ostsiedlungs_bau = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = idea_ger_rebuild_the_nation
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.3
+
+			}
+
+		}
+
+		cheap_labor = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = idea_ger_rebuild_the_nation
+			modifier = {
+				local_resources_factor = 0.10
+				industrial_capacity_factory = 0.02
+			}
+
+		}
+
+
+		militant_underground_discovered = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = idea_generic_secret_police
+			modifier = {
+				communism_drift = 0.02
+				stability_weekly = -0.005
+				political_power_gain = -0.2
+			}
+
+		}
+
+		militant_underground_infiltrated = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = idea_generic_secret_police
+			modifier = {
+				communism_drift = 0.01
+				stability_weekly = -0.002
+				political_power_gain = -0.1
+			}
+
+		}
+
+		trade_union_strenghend = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = socialist_science_focus
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.05
+
+			}
+
+		}
+
+		conessions_factories = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.1
+				communism_drift = -0.03
+			}
+
+		}
+
+		conessions_max_work_hours = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = FRA_matignon_agreements
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				communism_drift = -0.02
+
+			}
+
+		}
+
 		defender_of_freedom = {
 			allowed = {
 				always = no

@@ -1,11 +1,9 @@
 add_namespace = gdb_germany
-
 country_event = {
 	id = gdb_germany.0
 	title = gdb_germany.0.t
 	desc = gdb_germany.0.d
 	picture = GFX_report_event_hohenzollern_family
-
 	trigger = {
 		date > 1936.1.1
 		original_tag = GER
@@ -189,6 +187,7 @@ country_event = {
 	}
 }
 
+#accept soviet help prompt
 country_event = {
 	id = gdb_germany.4
 	title = gdb_germany.4.t
@@ -202,12 +201,6 @@ country_event = {
 			factor = 50
 		}
 		set_country_flag = GER_com_help_accepted
-		hidden_effect = {
-			SOV = {
-				add_ideas = soviet_volunteer_army
-			}
-		}
-		load_oob = "GER_Soviet_Help"
 		GER = {
 			add_timed_idea = {
 				idea = zdb_soviet_help_civil_war
@@ -253,6 +246,12 @@ country_event = {
 		hidden_effect = {
 			ENG = {
 				add_ideas = uk_we_stand_alone
+			}
+			GER = {
+				country_event = {
+					id = gdb_germany.93
+					days = 14
+				}
 			}
 		}
 	}
@@ -466,7 +465,7 @@ country_event = {
 		}
 	}
 }
-
+#select royal family
 country_event = {
 	id = gdb_germany.11
 	title = gdb_germany.11.t
@@ -494,7 +493,7 @@ country_event = {
 	option = {
 		name = gdb_germany.11.c
 		create_country_leader = {
-			name = "Albrecht von WÃ¼rttemberg"
+			name = "Albrecht von Württemberg"
 			picture = GFX_Portrait_germany_albrecht_von_wurttemberg
 			expire = "1965.1.1"
 			ideology = conservatism
@@ -540,6 +539,9 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
+				headstrong
+				imperial_connections
+				autocratic_imperialist
 			}
 		}
 	}
@@ -551,6 +553,8 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
+				the_legitimist
+				camarilla_leader
 			}
 		}
 	}
@@ -562,7 +566,16 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
+				democratic_reformer
+				inexperienced_monarch
+
 			}
+		}
+	}
+	option = {
+		name = gdb_germany.12.e
+		country_event = {
+			id = gdb_germany.107
 		}
 	}
 }
@@ -1142,7 +1155,7 @@ country_event = {
 		}
 	}
 }
- 
+
 country_event = {
 	id = gdb_germany.29
 	title = gdb_germany.29.t
@@ -1530,8 +1543,8 @@ country_event = {
 		}
 		add_threat = 3
 		HUN = {
-add_threat = 2
-}
+			add_threat = 2
+		}
 		hidden_effect = {
 			set_global_flag = hungarians_happy_czech_claims
 			75 = {
@@ -1819,7 +1832,6 @@ country_event = {
 			id = gdb_germany.48
 			days = 3
 		}
-
 	}
 }
 
@@ -1939,7 +1951,7 @@ country_event = {
 				transfer_state = 107
 				transfer_state = 108
 				transfer_state = 109
-			add_threat = 6
+				add_threat = 6
 			}
 			104 = {
 				add_core_of = BUL
@@ -1983,31 +1995,30 @@ country_event = {
 		105 = {
 			add_core_of = ITA
 		}
-			BUL = {
-				set_cosmetic_tag = BUL_GDB
-				transfer_state = 104
-				transfer_state = 106
-				transfer_state = 107
-				transfer_state = 108
-				transfer_state = 109
-				add_threat = 3
-			}
-			104 = {
-				add_core_of = BUL
-			}
-			106 = {
-				add_core_of = BUL
-			}
-			107 = {
-				add_core_of = BUL
-			}
-			108 = {
-				add_core_of = BUL
-			}
-			109 = {
-				add_core_of = BUL
-			}
-		
+		BUL = {
+			set_cosmetic_tag = BUL_GDB
+			transfer_state = 104
+			transfer_state = 106
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 109
+			add_threat = 3
+		}
+		104 = {
+			add_core_of = BUL
+		}
+		106 = {
+			add_core_of = BUL
+		}
+		107 = {
+			add_core_of = BUL
+		}
+		108 = {
+			add_core_of = BUL
+		}
+		109 = {
+			add_core_of = BUL
+		}
 	}
 }
 
@@ -2382,7 +2393,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.57.a
-		hidden_effect = {
 			if = {
 				limit = {
 					has_dlc = "Together for Victory"
@@ -2399,8 +2409,6 @@ country_event = {
 			SWI = {
 				add_ideas = member_of_the_bund
 			}
-		}
-
 	}
 }
 
@@ -2891,8 +2899,8 @@ country_event = {
 			}
 		}
 		SOV = {
-add_threat = 1
-}
+			add_threat = 1
+		}
 	}
 }
 
@@ -2929,18 +2937,23 @@ country_event = {
 					popularity = 0.6
 				}
 				if = {
-					limit = { has_idea = SPA_recovering_from_civil_war }
+					limit = {
+						has_idea = SPA_recovering_from_civil_war
+					}
 					remove_ideas = SPA_recovering_from_civil_war
 				}
 				if = {
-					limit = { has_idea = SPA_recovering_from_civil_war_2 }
+					limit = {
+						has_idea = SPA_recovering_from_civil_war_2
+					}
 					remove_ideas = SPA_recovering_from_civil_war_2
 				}
 				if = {
-					limit = { has_idea = SPA_recovering_from_civil_war_3 }
+					limit = {
+						has_idea = SPA_recovering_from_civil_war_3
+					}
 					remove_ideas = SPA_recovering_from_civil_war_3
 				}
-				
 			}
 		}
 	}
@@ -3163,13 +3176,12 @@ country_event = {
 				}
 			}
 		}
-FRA = {
-	add_named_threat = {
-		threat = 3
-		name = france_joins_comintern_threat
-	}
-}
-
+		FRA = {
+			add_named_threat = {
+				threat = 3
+				name = france_joins_comintern_threat
+			}
+		}
 	}
 }
 
@@ -3327,7 +3339,6 @@ country_event = {
 			factor = 100
 		}
 	}
-
 }
 
 #response that country joined alliance
@@ -3339,7 +3350,723 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.92.a
-		
 	}
-
 }
+
+#first wave of volunteers
+country_event = {
+	id = gdb_germany.93
+	title = gdb_germany.93.t
+	desc = gdb_germany.93.d
+	picture = GFX_report_event_canadian_soldiers
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.93.a
+		GER = {
+			load_oob = "GER_Soviet_Help"
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.94
+				days = 45
+			}
+		}
+	}
+}
+
+#soviets establish foreign intervention center
+country_event = {
+	id = gdb_germany.94
+	title = gdb_germany.94.t
+	desc = gdb_germany.94.d
+	picture = GFX_report_event_stalin_propaganda
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.94.a
+		hidden_effect = {
+			SOV = {
+				add_ideas = soviet_volunteer_army
+			}
+			country_event = {
+				id = gdb_germany.96
+				days = 21
+			}
+		}
+		SOV = {
+			add_threat = 1
+		}
+	}
+}
+
+#wolga germans express their desire to stay
+country_event = {
+	id = gdb_germany.95
+	title = gdb_germany.95.t
+	desc = gdb_germany.95.d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.95.a
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Wolga German ASSR Volunteer Division"
+			}
+		}
+		add_manpower = 23000
+		add_political_power = -20
+		army_experience = 5
+	}
+	option = {
+		name = gdb_germany.95.b
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Wolga German ASSR Volunteer Division"
+			}
+		}
+		SOV = {
+			add_political_power = 50
+			army_experience = 10
+		}
+	}
+}
+
+#workers demand more rights
+country_event = {
+	id = gdb_germany.96
+	title = gdb_germany.96.t
+	desc = gdb_germany.96.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.96.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.07
+		}
+		add_political_power = -25
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.97
+				days = 14
+			}
+		}
+	}
+}
+
+#leftist parties fuse
+country_event = {
+	id = gdb_germany.97
+	title = gdb_germany.97.t
+	desc = gdb_germany.97.d
+	picture = GFX_report_event_german_advisors_remain
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.97.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+		}
+		add_political_power = -50
+		add_stability = -0.1
+		add_war_support = -0.05
+		set_party_name = {
+			ideology = communism
+			long_name = GER_sed_long
+			name = GER_sed
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.98
+				days = 14
+			}
+		}
+	}
+}
+
+#labor unions demand max working hours
+country_event = {
+	id = gdb_germany.98
+	title = gdb_germany.98.t
+	desc = gdb_germany.98.d
+	picture = GFX_report_event_physics_lab_02
+	is_triggered_only = yes
+	#no
+	option = {
+		name = gdb_germany.98.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.99
+				days = 14
+			}
+		}
+	}
+	#yes
+	option = {
+		name = gdb_germany.98.b
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+		add_political_power = -25
+		add_timed_idea = {
+			idea = conessions_max_work_hours
+			days = 1095
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.99
+				days = 14
+			}
+		}
+	}
+}
+
+#labor unions demand collectivization of nazi industry
+country_event = {
+	id = gdb_germany.99
+	title = gdb_germany.99.t
+	desc = gdb_germany.99.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	#no
+	option = {
+		name = gdb_germany.99.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.100
+				days = 14
+			}
+		}
+	}
+	#yes
+	option = {
+		name = gdb_germany.99.b
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+		add_political_power = -25
+		add_timed_idea = {
+			idea = conessions_factories
+			days = 730
+		}
+		add_ideas = trade_union_strenghend
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.100
+				days = 14
+			}
+		}
+	}
+}
+
+#militant underground discovered
+country_event = {
+	id = gdb_germany.100
+	title = gdb_germany.100.t
+	desc = gdb_germany.100.d
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.100.a
+		GER = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -12731
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -874
+				producer = GER
+			}
+		}
+		add_ideas = militant_underground_discovered
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.101
+				days = 35
+			}
+		}
+	}
+}
+
+#militant underground infiltrated
+country_event = {
+	id = gdb_germany.101
+	title = gdb_germany.101.t
+	desc = gdb_germany.101.d
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.101.a
+		swap_ideas = {
+			remove_idea = militant_underground_discovered
+			add_idea = militant_underground_infiltrated
+		}
+		random_state = {
+			limit = {
+				is_fully_controlled_by = GER
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.8
+			}
+		}
+		random_state = {
+			limit = {
+				is_fully_controlled_by = GER
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.8
+			}
+		}
+		random_state = {
+			limit = {
+				is_fully_controlled_by = GER
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.8
+			}
+		}
+	}
+}
+
+#blame the soviets for civil war
+country_event = {
+	id = gdb_germany.102
+	title = gdb_germany.102.t
+	desc = gdb_germany.102.d
+	picture = GFX_report_event_poland_rejects
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.102.a
+		every_other_country = {
+			limit = {
+				NOT = {
+					original_tag = SOV
+				}
+				has_government = democratic
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_decrease
+			}
+		}
+		every_other_country = {
+			limit = {
+				NOT = {
+					original_tag = SOV
+				}
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_decrease
+			}
+		}
+		every_other_country = {
+			limit = {
+				NOT = {
+					original_tag = SOV
+				}
+				has_government = communism
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_increase
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_decrease
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.103
+				days = 3
+			}
+		}
+	}
+}
+
+#justify banning the communist party
+country_event = {
+	id = gdb_germany.103
+	title = gdb_germany.103.t
+	desc = gdb_germany.103.d
+	picture = GFX_report_event_romania_parliament
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.103.a
+		remove_ideas = militant_underground_infiltrated
+		hidden_effect = {
+			set_temp_variable = {
+				var = ban_ideology_var
+				value = party_popularity@communism
+			}
+			multiply_temp_variable = {
+				var = ban_ideology_var
+				value = -1
+			}
+			multiply_temp_variable = {
+				var = ban_ideology_var
+				value = 0.5
+			}
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -1
+		}
+		add_stability = ban_ideology_var
+	}
+	option = {
+		name = gdb_germany.103.b
+		remove_ideas = militant_underground_infiltrated
+		add_political_power = 50
+	}
+}
+
+#wolga refugees decision
+country_event = {
+	id = gdb_germany.104
+	title = gdb_germany.104.t
+	desc = gdb_germany.104.d
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.104.a
+		SOV = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = embargo
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.105
+				days = 1
+			}
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_stability = 0.01
+	}
+	option = {
+		name = gdb_germany.104.b
+		SOV = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = embargo
+			}
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+}
+
+#wolga refugees decision
+country_event = {
+	id = gdb_germany.105
+	title = gdb_germany.105.t
+	desc = gdb_germany.105.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.105.a
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = -150
+			producer = GER
+		}
+		add_fuel = -100000
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.106
+				days = 21
+			}
+		}
+	}
+}
+
+#resettle event
+country_event = {
+	id = gdb_germany.106
+	title = gdb_germany.106.t
+	desc = gdb_germany.106.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.106.a
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = 148
+			producer = GER
+		}
+		add_stability = -0.05
+		763 = {
+			add_manpower = 284723
+		}
+		5 = {
+			add_manpower = 122353
+		}
+		63 = {
+			add_manpower = 118162
+		}
+		68 = {
+			add_manpower = 126323
+		}
+		66 = {
+			add_manpower = 327524
+		}
+		67 = {
+			add_manpower = 172562
+		}
+		62 = {
+			add_manpower = 142376
+		}
+		61 = {
+			add_manpower = 120623
+		}
+		add_timed_idea = {
+			idea = ostsiedlungs_bau
+			days = 180
+		}
+		add_timed_idea = {
+			idea = cheap_labor
+			days = 3650
+		}
+	}
+}
+
+
+
+#select royal family start screen
+country_event = {
+	id = gdb_germany.107
+	title = gdb_germany.107.t
+	desc = gdb_germany.107.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#bigger houses
+	option = {
+		name = gdb_germany.107.a
+		country_event = {
+			id = gdb_germany.108
+		}
+	}
+	#smaller houses
+	option = {
+		name = gdb_germany.107.b
+		country_event = {
+			id = gdb_germany.109
+		}
+	}
+}
+
+#bigger houses
+country_event = {
+	id = gdb_germany.108
+	title = gdb_germany.108.t
+	desc = gdb_germany.108.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#prussia
+	option = {
+		name = gdb_germany.108.a
+		country_event = {
+			id = gdb_germany.12
+		}
+	}
+	#austria
+	option = {
+		name = gdb_germany.108.b
+		create_country_leader = {
+			name = "Otto von Habsburg"
+			picture = GFX_Portrait_hungary_otto_von_hapsburg
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				empire_builder
+				imperial_connections
+			}
+		}
+	}
+	#bavaria
+	option = {
+		name = gdb_germany.108.c
+	create_country_leader = {
+		name = "Rupprecht von Wittelsbach"
+		picture = GFX_Portrait_germany_rupprecht_von_bayern
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			retired_officer
+			anti_communist
+		}
+	}
+	}
+	#go back
+		option = {
+			name = gdb_germany.108.e
+			country_event = {
+				id = gdb_germany.107
+			}
+		}
+}
+
+#smaller houses
+country_event = {
+	id = gdb_germany.109
+	title = gdb_germany.109.t
+	desc = gdb_germany.109.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#hannover
+	option = {
+		name = gdb_germany.109.a
+		create_country_leader = {
+			name = "Ernst August III von Hannover"
+			picture = GFX_Portrait_germany_ernst_august_III_von_hannover
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				dealbroker
+			}
+		}
+		hidden_effect = {
+		#eu4 unlucky gang
+		country_event = {
+			id = gdb_germany.110
+			days = 100
+		}
+		}
+	}
+	#swabia
+	option = {
+		name = gdb_germany.109.b
+		create_country_leader = {
+			name = "Albrecht von Wuerttemberg"
+			picture = GFX_Portrait_germany_albrecht_von_wurttemberg
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				retired_officer
+				anti_communist
+			}
+		}
+	}
+	#saxony
+	option = {
+		name = gdb_germany.109.c
+		create_country_leader = {
+			name = "Friedrich Christian von Wettin"
+			picture = GFX_Portrait_germany_friedrich_christian_von_sachsen
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				retired_officer
+				political_dancer
+			}
+		}
+	}
+		#go back
+		option = {
+			name = gdb_germany.109.e
+			country_event = {
+				id = gdb_germany.107
+			}
+		}
+}
+
+#bigger houses
+country_event = {
+	id = gdb_germany.110
+	title = gdb_germany.110.t
+	desc = gdb_germany.110.d
+	picture = GFX_report_event_europe_funeral
+	is_triggered_only = yes
+	#prussia
+	option = {
+		name = gdb_germany.110.a
+		kill_country_leader = yes
+		add_stability = -0.05
+		create_country_leader = {
+			name = "Ernst August IV von Hannover"
+			picture = GFX_Portrait_germany_ernst_august_IV_von_hannover
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				inexperienced_monarch
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.110.b
+		kill_country_leader = yes
+		add_stability = -0.05
+		create_country_leader = {
+			name = "Victoria"
+			desc = "POLITICS_VICTORIA_DESC"
+			picture = GFX_portrait_ger_victoria_louise
+			expire = "1965.1.1"
+			ideology = conservatism
+			female = yes
+			traits = {
+				kaiserin_of_the_people
+				victoria_iii # Third Victoria counting from Queen Victoria hurr durr
+			}
+		}
+	}
+}
+

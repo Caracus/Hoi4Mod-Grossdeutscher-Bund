@@ -43,6 +43,35 @@ spriteTypes = {
 		name = "GFX_Portrait_germany_european_council"
 		texturefile = "gfx/leaders/GER/european_council.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_germany_victoria_army"
+		texturefile = "gfx/leaders/GER/Portrait_germany_victoria_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_germany_stauffenberg"
+		texturefile = "gfx/leaders/GER/Portrait_germany_claus_schenk_graf_von_stauffenberg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_germany_henning_von_tresckow"
+		texturefile = "gfx/leaders/GER/Portrait_germany_henning_von_tresckow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_germany_helmut_groscurth"
+		texturefile = "gfx/leaders/GER/Portrait_germany_helmut_groscurth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_germany_ernst_august_III_von_hannover"
+		texturefile = "gfx/leaders/GER/Portrait_germany_ernst_august_III_von_hannover.dds"
+	}	
 	
+	spriteType = {
+		name = "GFX_Portrait_germany_ernst_august_IV_von_hannover"
+		texturefile = "gfx/leaders/GER/Portrait_germany_ernst_august_IV_von_hannover.dds"
+	}
 	
 }
