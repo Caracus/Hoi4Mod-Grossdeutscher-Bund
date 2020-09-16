@@ -2275,7 +2275,7 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 85
+			owns_state = 86
 			NOT = {
 				ROOT = {
 					86 = {
@@ -2285,7 +2285,7 @@ political_actions = {
 			}
 		}
 		remove_effect = {
-			add_state_core = 85
+			add_state_core = 86
 		}
 	}
 	# integrate gnesen
@@ -2316,7 +2316,7 @@ political_actions = {
 			owns_state = 808
 			NOT = {
 				ROOT = {
-					86 = {
+					808 = {
 						is_core_of = ROOT
 					}
 				}

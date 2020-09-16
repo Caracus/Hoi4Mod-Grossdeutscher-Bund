@@ -1312,6 +1312,7 @@ country_event = {
 	}
 }
 
+#limited war succes
 country_event = {
 	id = gdb_germany.33
 	title = gdb_germany.33.t
@@ -1342,9 +1343,15 @@ country_event = {
 			transfer_state = 808
 			transfer_state = 762
 		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.111
+				days = 30
+			}
+		}
 	}
 }
-
+#limited war failure
 country_event = {
 	id = gdb_germany.34
 	title = gdb_germany.34.t
@@ -4067,6 +4074,40 @@ country_event = {
 				victoria_iii # Third Victoria counting from Queen Victoria hurr durr
 			}
 		}
+	}
+}
+
+#purchase memel
+country_event = {
+	id = gdb_germany.111
+	title = gdb_germany.111.t
+	desc = gdb_germany.111.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#prussia
+	option = {
+		name = gdb_germany.111.a
+		188 = {
+			add_core_of = GER
+			remove_core_of = LIT
+		}
+		GER = {
+			transfer_state = 188
+			add_timed_idea = {
+				idea = zdb_lose_money
+				days = 180
+			}
+		}
+		LIT = {
+			add_timed_idea = {
+				idea = zdb_make_money
+				days = 1095
+			} 
+		}
+	}
+	option = {
+		name = gdb_germany.111.b
+		
 	}
 }
 
