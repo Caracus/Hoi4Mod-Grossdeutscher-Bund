@@ -799,12 +799,16 @@ operations = {
 			HOL = {
 				is_puppet = no
 			}
+			NOT = {
+				HOL = {
+					is_in_faction_with = ROOT
+				}
+			}
 		}
 		visible = {
 			has_country_flag = invite_netherlands_flag
 			is_puppet = no
 		}
-		fire_only_once = yes
 		cost = 25
 		complete_effect = {
 			HOL = {
@@ -1935,6 +1939,64 @@ political_actions = {
 			}
 		}
 	}
+
+	HUN_start_democracy_chain = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			NOT = {
+				has_government = democratic
+			}
+			GER = {
+				has_country_flag = GER_com_help_accepted
+			}
+		controls_state = 664
+		controls_state = 73
+		controls_state = 84
+		controls_state = 76
+		controls_state = 83
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 7
+		remove_effect = {
+			GER = {
+				country_event = {
+					id = gdb_germany.112
+					days = 1
+				}
+			}
+		}
+	}
+
+	HUN_goes_democratic = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			democratic > 0.45
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+		}
+		days_remove = 1
+		remove_effect = {
+			GER = {
+				country_event = {
+					id = gdb_germany.113
+				}
+			}
+		}
+	}
+
 	SPR_civil_start_boost = {
 		allowed = {
 			original_tag = SPR

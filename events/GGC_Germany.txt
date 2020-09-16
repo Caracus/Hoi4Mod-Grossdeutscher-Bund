@@ -4111,3 +4111,50 @@ country_event = {
 	}
 }
 
+#hungary goes democratic after attaining enough old claims
+country_event = {
+	id = gdb_germany.112
+	title = gdb_germany.112.t
+	desc = gdb_germany.112.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.112.a
+		HUN = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_timed_idea = {
+				idea = GER_align_hungary_democratic
+				days = 365
+			} 
+		}
+	}
+}
+
+#hungary goes democratic 
+country_event = {
+	id = gdb_germany.113
+	title = gdb_germany.113.t
+	desc = gdb_germany.113.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.113.a
+		HUN = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+}
