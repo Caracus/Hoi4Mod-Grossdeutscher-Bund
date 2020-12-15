@@ -44,8 +44,8 @@ country_event = {
 					18
 					32
 					785
-					799
-					797
+					811
+					809
 				}
 			}
 			random_other_country = {
@@ -127,11 +127,11 @@ country_event = {
 		GER = {
 			transfer_state = 28
 		}
-		799 = {
+		811 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 799
+			transfer_state = 811
 		}
 		add_named_threat = {
 			threat = 5
@@ -172,17 +172,17 @@ country_event = {
 		HOL = {
 			transfer_state = 6
 		}
-		800 = {
+		812 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 800
+			transfer_state = 812
 		}
-		801 = {
+		813 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 801
+			transfer_state = 813
 		}
 	}
 }
@@ -342,9 +342,9 @@ country_event = {
 			transfer_state = 295
 		}
 		LUX = {
-			transfer_state = 806
+			transfer_state = 818
 		}
-		806 = {
+		818 = {
 			add_core_of = LUX
 		}
 		random_other_country = {
@@ -354,12 +354,12 @@ country_event = {
 			}
 			transfer_state = 538
 			transfer_state = 34
-			transfer_state = 806
+			transfer_state = 818
 		}
 		34 = {
 			add_core_of = FRA
 		}
-		806 = {
+		818 = {
 			add_core_of = FRA
 		}
 		6 = {
@@ -368,23 +368,23 @@ country_event = {
 		HOL = {
 			transfer_state = 6
 		}
-		800 = {
+		812 = {
 			add_core_of = GER
 		}
-		801 = {
+		813 = {
 			add_core_of = GER
 		}
-		802 = {
+		814 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 800
+			transfer_state = 812
 		}
 		GER = {
-			transfer_state = 801
+			transfer_state = 813
 		}
 		GER = {
-			transfer_state = 802
+			transfer_state = 814
 		}
 	}
 }
@@ -413,15 +413,15 @@ country_event = {
 			transfer_state = 538
 		}
 		LUX = {
-			transfer_state = 806
+			transfer_state = 818
 		}
-		806 = {
+		818 = {
 			add_core_of = LUX
 		}
 		34 = {
 			add_core_of = FRA
 		}
-		806 = {
+		818 = {
 			add_core_of = FRA
 		}
 		random_other_country = {
@@ -430,13 +430,13 @@ country_event = {
 				has_government = communism
 			}
 			transfer_state = 34
-			transfer_state = 806
+			transfer_state = 818
 		}
-		800 = {
+		812 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 800
+			transfer_state = 812
 		}
 		country_event = {
 			id = gdb_germany.10
@@ -458,9 +458,9 @@ country_event = {
 				original_tag = FRA
 				has_government = communism
 			}
-			transfer_state = 804
+			transfer_state = 816
 		}
-		804 = {
+		816 = {
 			add_core_of = FRA
 		}
 	}
@@ -606,7 +606,7 @@ country_event = {
 		9 = {
 			add_core_of = AUS
 		}
-		807 = {
+		808 = {
 			add_core_of = AUS
 		}
 		736 = {
@@ -627,7 +627,7 @@ country_event = {
 		9 = {
 			add_core_of = GER
 		}
-		807 = {
+		808 = {
 			add_core_of = GER
 		}
 		country_event = {
@@ -708,11 +708,11 @@ country_event = {
 				transfer_state = 39
 			}
 		}
-		803 = {
+		815 = {
 			add_core_of = ITA
 		}
 		ITA = {
-			transfer_state = 803
+			transfer_state = 815
 		}
 	}
 	option = {
@@ -766,7 +766,7 @@ country_event = {
 				transfer_state = 75
 			}
 			AUS = {
-				transfer_state = 807
+				transfer_state = 808
 			}
 		}
 		else = {
@@ -783,7 +783,7 @@ country_event = {
 				transfer_state = 75
 			}
 			GER = {
-				transfer_state = 807
+				transfer_state = 808
 			}
 		}
 		73 = {
@@ -816,11 +816,11 @@ country_event = {
 		GER = {
 			transfer_state = 86
 		}
-		808 = {
+		807 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 808
+			transfer_state = 807
 		}
 		85 = {
 			add_core_of = GER
@@ -921,7 +921,7 @@ country_event = {
 		75 = {
 			add_core_of = GER
 		}
-		807 = {
+		808 = {
 			add_core_of = GER
 		}
 		AUS = {
@@ -1331,7 +1331,7 @@ country_event = {
 		86 = {
 			add_core_of = GER
 		}
-		808 = {
+		807 = {
 			add_core_of = GER
 		}
 		762 = {
@@ -1340,7 +1340,7 @@ country_event = {
 		GER = {
 			transfer_state = 85
 			transfer_state = 86
-			transfer_state = 808
+			transfer_state = 807
 			transfer_state = 762
 		}
 		hidden_effect = {
@@ -1499,7 +1499,7 @@ country_event = {
 		AUS = {
 			transfer_state = 74
 			transfer_state = 69
-			transfer_state = 807
+			transfer_state = 808
 		}
 		POL = {
 			transfer_state = 72
@@ -1515,7 +1515,7 @@ country_event = {
 			69 = {
 				add_core_of = AUS
 			}
-			807 = {
+			808 = {
 				add_core_of = AUS
 			}
 			72 = {
@@ -2561,8 +2561,8 @@ country_event = {
 	option = {
 		name = gdb_germany.64.a
 		FRA = {
-			transfer_state = 800
-			transfer_state = 806
+			transfer_state = 812
+			transfer_state = 818
 			transfer_state = 34
 			transfer_state = 6
 			transfer_state = 295
@@ -2571,7 +2571,7 @@ country_event = {
 			transfer_state = 768
 			transfer_state = 769
 		}
-		806 = {
+		818 = {
 			add_core_of = FRA
 		}
 		34 = {
@@ -2651,11 +2651,11 @@ country_event = {
 	option = {
 		name = gdb_germany.68.a
 		FRA = {
-			transfer_state = 806
+			transfer_state = 818
 			transfer_state = 34
 			transfer_state = 538
 		}
-		806 = {
+		818 = {
 			add_core_of = FRA
 		}
 		34 = {
@@ -2668,17 +2668,17 @@ country_event = {
 			transfer_state = 718
 		}
 		GER = {
-			transfer_state = 800
-			transfer_state = 801
-			transfer_state = 802
+			transfer_state = 812
+			transfer_state = 813
+			transfer_state = 814
 		}
-		800 = {
+		812 = {
 			add_core_of = GER
 		}
-		801 = {
+		813 = {
 			add_core_of = GER
 		}
-		801 = {
+		813 = {
 			add_core_of = GER
 		}
 		HOL = {
@@ -2703,11 +2703,11 @@ country_event = {
 	option = {
 		name = gdb_germany.69.a
 		FRA = {
-			transfer_state = 806
+			transfer_state = 818
 			transfer_state = 34
 			transfer_state = 538
 		}
-		806 = {
+		818 = {
 			add_core_of = FRA
 		}
 		34 = {
@@ -2718,9 +2718,9 @@ country_event = {
 			transfer_state = 769
 		}
 		GER = {
-			transfer_state = 800
+			transfer_state = 812
 		}
-		800 = {
+		812 = {
 			add_core_of = GER
 		}
 	}
@@ -2773,7 +2773,7 @@ country_event = {
 				on_cancel = gdb_germany.72
 			}
 			defender = {
-				state = 799
+				state = 811
 				num_provinces = 2
 				on_win = gdb_germany.73
 				on_lose = gdb_germany.73
@@ -2795,9 +2795,9 @@ country_event = {
 	#accept
 	immediate = {
 		GER = {
-			transfer_state = 799
+			transfer_state = 811
 		}
-		799 = {
+		811 = {
 			set_compliance = 50
 		}
 	}
@@ -2988,7 +2988,7 @@ country_event = {
 				has_government = communism
 			}
 			transfer_state = 296
-			transfer_state = 796
+			transfer_state = 808
 			transfer_state = 540
 			transfer_state = 705
 		}
@@ -3219,10 +3219,10 @@ country_event = {
 			if = {
 				limit = {
 					GER = {
-						has_full_control_of_state = 799
+						has_full_control_of_state = 811
 					}
 				}
-				transfer_state = 799
+				transfer_state = 811
 			}
 		}
 		hidden_effect = {

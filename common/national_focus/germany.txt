@@ -453,7 +453,7 @@ focus_tree = {
 				add_state_claim = 9
 				add_state_claim = 75
 				add_state_claim = 74
-				add_state_claim = 807
+				add_state_claim = 808
 				add_state_claim = 39
 			}
 		}
@@ -484,7 +484,7 @@ focus_tree = {
 					relation = non_aggression_pact
 				}
 			}
-			798 = {
+			810 = {
 				remove_core_of = AUS
 			}
 		}
@@ -503,16 +503,16 @@ focus_tree = {
 			factor = 1
 		}
 		bypass = {
-			has_full_control_of_state = 803
+			has_full_control_of_state = 815
 		}
 		available = {
 			OR = {
 				GER = {
-					has_full_control_of_state = 803
+					has_full_control_of_state = 815
 				}
 				AND = {
 					SWI = {
-						has_full_control_of_state = 803
+						has_full_control_of_state = 815
 					}
 					SWI = {
 						is_puppet_of = GER
@@ -525,9 +525,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			ITA = {
-				transfer_state = 803
+				transfer_state = 815
 			}
-			804 = {
+			816 = {
 				add_core_of = ITA
 			}
 			if = {
@@ -1086,7 +1086,7 @@ focus_tree = {
 					}
 				}
 			}
-			802 = {
+			814 = {
 				if = {
 					limit = {
 						OR = {
@@ -1288,7 +1288,7 @@ focus_tree = {
 					}
 				}
 			}
-			807 = {
+			808 = {
 				if = {
 					limit = {
 						OR = {
@@ -1603,7 +1603,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			807 = {
+			808 = {
 				if = {
 					limit = {
 						OR = {
@@ -2066,11 +2066,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			805 = {
+			817 = {
 				add_core_of = GER
 			}
 			GER = {
-				transfer_state = 805
+				transfer_state = 817
 				add_timed_idea = {
 					idea = zdb_lose_money
 					days = 180

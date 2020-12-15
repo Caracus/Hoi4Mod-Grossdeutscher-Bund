@@ -2021,8 +2021,8 @@ country_event = {
 		GER = { transfer_state = 69 }
 		74 = { add_core_of = GER }
 		GER = { transfer_state = 74 }
-		807 = { add_core_of = GER }
-		GER = { transfer_state = 807 }
+		808 = { add_core_of = GER }
+		GER = { transfer_state = 808 }
 		set_country_flag = sudetenland_acquired
 		add_war_support = 0.1
 		add_stability = 0.05
