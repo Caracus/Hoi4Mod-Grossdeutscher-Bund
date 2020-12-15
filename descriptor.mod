@@ -6,5 +6,5 @@ tags={
 	"Events"
 }
 name="Großdeutscher Bund"
-supported_version="2.0.*"
+supported_version="1.10.*"
 remote_file_id="2182657195"
