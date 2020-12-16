@@ -438,6 +438,12 @@ country_event = {
 		GER = {
 			transfer_state = 812
 		}
+		819 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 819
+		}
 		country_event = {
 			id = gdb_germany.10
 			days = 150
@@ -2597,6 +2603,7 @@ country_event = {
 		FRA = {
 			transfer_state = 812
 			transfer_state = 818
+			transfer_state = 819
 			transfer_state = 34
 			transfer_state = 6
 			transfer_state = 295
@@ -2606,6 +2613,9 @@ country_event = {
 			transfer_state = 769
 		}
 		818 = {
+			add_core_of = FRA
+		}
+		819 = {
 			add_core_of = FRA
 		}
 		34 = {
@@ -2705,6 +2715,7 @@ country_event = {
 			transfer_state = 812
 			transfer_state = 813
 			transfer_state = 814
+			transfer_state = 819
 		}
 		812 = {
 			add_core_of = GER
@@ -2713,6 +2724,9 @@ country_event = {
 			add_core_of = GER
 		}
 		813 = {
+			add_core_of = GER
+		}
+		819 = {
 			add_core_of = GER
 		}
 		HOL = {
@@ -2755,6 +2769,12 @@ country_event = {
 			transfer_state = 812
 		}
 		812 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 819
+		}
+		819 = {
 			add_core_of = GER
 		}
 	}
