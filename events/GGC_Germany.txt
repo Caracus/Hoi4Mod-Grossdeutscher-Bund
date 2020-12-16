@@ -1868,6 +1868,7 @@ country_event = {
 		ITA = {
 			transfer_state = 103
 			transfer_state = 44
+			transfer_state = 805
 			add_threat = 1
 		}
 		HUN = {
@@ -1887,6 +1888,9 @@ country_event = {
 			103 = {
 				add_core_of = ITA
 			}
+			104 = {
+				add_core_of = ITA
+			}
 			44 = {
 				add_core_of = ITA
 			}
@@ -1900,6 +1904,7 @@ country_event = {
 	}
 }
 
+#split of yugoslavia
 country_event = {
 	id = gdb_germany.50
 	title = gdb_germany.50.t
@@ -1923,6 +1928,10 @@ country_event = {
 		BUL = {
 			transfer_state = 44
 			transfer_state = 105
+			transfer_state = 804
+			transfer_state = 805
+			transfer_state = 802
+			transfer_state = 803
 			add_threat = 5
 		}
 		44 = {
@@ -1944,6 +1953,12 @@ country_event = {
 			add_core_of = BUL
 		}
 		731 = {
+			add_core_of = BUL
+		}
+		802 = {
+			add_core_of = BUL
+		}
+		803 = {
 			add_core_of = BUL
 		}
 		hidden_effect = {
@@ -1975,6 +1990,12 @@ country_event = {
 			109 = {
 				add_core_of = BUL
 			}
+			804 = {
+				add_core_of = BUL
+			}
+			805 = {
+				add_core_of = BUL
+			}
 		}
 	}
 	option = {
@@ -1994,6 +2015,7 @@ country_event = {
 		ITA = {
 			transfer_state = 44
 			transfer_state = 105
+			transfer_state = 804
 			add_threat = 2
 		}
 		44 = {
@@ -2009,6 +2031,8 @@ country_event = {
 			transfer_state = 107
 			transfer_state = 108
 			transfer_state = 109
+			transfer_state = 802
+			transfer_state = 803
 			add_threat = 3
 		}
 		104 = {
@@ -2024,6 +2048,12 @@ country_event = {
 			add_core_of = BUL
 		}
 		109 = {
+			add_core_of = BUL
+		}
+		802 = {
+			add_core_of = BUL
+		}
+		803 = {
 			add_core_of = BUL
 		}
 	}
@@ -2290,6 +2320,7 @@ country_event = {
 		ITA = {
 			transfer_state = 103
 			transfer_state = 105
+			transfer_state = 804
 		}
 		HUN = {
 			transfer_state = 764
@@ -2305,6 +2336,9 @@ country_event = {
 				add_core_of = AUS
 			}
 			103 = {
+				add_core_of = ITA
+			}
+			804 = {
 				add_core_of = ITA
 			}
 			764 = {
