@@ -1,0 +1,20 @@
+state={
+	id=820
+	name="STATE_820"
+	provinces={
+		13238 13239 13240 
+	}
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = HUN
+		add_core_of = AUS
+
+	}
+	manpower=73793
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+}

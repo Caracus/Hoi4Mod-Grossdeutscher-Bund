@@ -456,6 +456,17 @@ focus_tree = {
 				add_state_claim = 808
 				add_state_claim = 39
 			}
+			820 = {
+				remove_core_of = HUN
+			}
+			AUS = {
+				transfer_state = 820
+			}
+			hidden_effect = {
+				820 = {
+					add_core_of = GER
+				}
+			}
 		}
 	}
 	focus = {
