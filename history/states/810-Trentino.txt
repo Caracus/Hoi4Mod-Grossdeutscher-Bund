@@ -5,14 +5,9 @@ state={
 		656 6631 9598 11598 
 	}
 	history={
-		victory_points = {
-			11598 1
-		}
 		owner = ITA
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 1
-
 		}
 		add_core_of = ITA
 		add_core_of = AUS
@@ -20,8 +15,8 @@ state={
 	}
 	
 	
-	manpower=417737
-	buildings_max_level_factor=0.5
-	state_category=town
+	manpower=317737
+	buildings_max_level_factor=1.000
+	state_category=rural
 }
 

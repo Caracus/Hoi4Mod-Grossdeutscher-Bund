@@ -9,9 +9,11 @@ state={
 	history={
 		owner = ITA
 		buildings = {
-		infrastructure = 6
-			
-
+		infrastructure = 7
+		industrial_complex = 1
+		}
+		victory_points = {
+			9630 1
 		}
 		add_core_of = ITA
 		add_core_of = AUS
@@ -22,7 +24,7 @@ state={
 	provinces={
 		6675 9630 11615 
 	}
-	manpower=223913
-	buildings_max_level_factor=0.5
-	state_category=rural
+	manpower=323913
+	buildings_max_level_factor=1.000
+	state_category=town
 }
