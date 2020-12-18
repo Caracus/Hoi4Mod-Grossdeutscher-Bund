@@ -518,8 +518,13 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				GER = {
-					has_full_control_of_state = 815
+				OR = {
+					GER = {
+						has_full_control_of_state = 815
+					}
+					SWI = {
+						has_full_control_of_state = 815
+					}
 				}
 				AND = {
 					SWI = {

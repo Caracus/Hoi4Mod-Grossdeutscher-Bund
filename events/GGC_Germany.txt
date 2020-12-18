@@ -438,9 +438,6 @@ country_event = {
 		GER = {
 			transfer_state = 812
 		}
-		819 = {
-			add_core_of = GER
-		}
 		GER = {
 			transfer_state = 819
 		}
@@ -2726,9 +2723,6 @@ country_event = {
 		813 = {
 			add_core_of = GER
 		}
-		819 = {
-			add_core_of = GER
-		}
 		HOL = {
 			transfer_state = 6
 		}
@@ -2773,9 +2767,6 @@ country_event = {
 		}
 		GER = {
 			transfer_state = 819
-		}
-		819 = {
-			add_core_of = GER
 		}
 	}
 }
