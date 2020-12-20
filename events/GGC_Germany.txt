@@ -253,6 +253,7 @@ country_event = {
 					days = 14
 				}
 			}
+			set_global_flag = GER_danger_diminished
 		}
 	}
 	#refuse
