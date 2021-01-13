@@ -1,5 +1,7 @@
 GitHub Version of the mod "Großdeutscher Bund" - a mod for the game Hearts of Iron IV by Paradox Interactive
 
+-- If you just want to play it from this version you can just download it and drag the GDB.mod file one folder higher, just like you would handle your normal mods. --
+
 Short intro:
 Großdeutscher Bund explores an alternative history where the Wehrmacht successfully opposes Hitler with the help of the Soviet Union and thereby opens the door for something that might be far more dangerous...
 
