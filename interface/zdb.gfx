@@ -46,7 +46,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Portrait_germany_victoria_army"
-		texturefile = "gfx/leaders/GER/Portrait_germany_victoria_army.dds"
+		texturefile = "gfx/leaders/GER/Portrait_germany_victoria_army_normal.dds"
 	}
 
 	spriteType = {

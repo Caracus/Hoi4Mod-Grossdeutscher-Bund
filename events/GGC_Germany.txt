@@ -3034,7 +3034,7 @@ country_event = {
 				has_government = communism
 			}
 			transfer_state = 296
-			transfer_state = 808
+			transfer_state = 796
 			transfer_state = 540
 			transfer_state = 705
 		}
