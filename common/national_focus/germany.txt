@@ -2411,11 +2411,11 @@ focus_tree = {
 				name = GER_absolutists
 			}
 			add_popularity = {
-				ideology = neutrality
-				popularity = party_popularity@democratic
+				ideology = democratic
+				popularity = party_popularity@neutrality
 			}
 			add_popularity = {
-				ideology = democratic
+				ideology = neutrality
 				popularity = -1
 			}
 			add_popularity = {
