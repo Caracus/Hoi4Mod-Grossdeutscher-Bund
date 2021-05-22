@@ -4204,3 +4204,39 @@ country_event = {
 		}
 	}
 }
+
+#new capital for the bund
+country_event = {
+	id = gdb_germany.114
+	title = gdb_germany.114.t
+	desc = gdb_germany.114.d
+	picture = GFX_event_pictures_ger_new_capital
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.114.a
+		GER = {
+			set_capital = 55
+			#custom_effect_tooltip = GDB_TT_2
+		}
+	}
+	option = {
+		name = gdb_germany.114.b
+		GER = {
+			set_capital = 64
+		}
+	}
+	option = {
+		name = gdb_germany.114.c
+		GER = {
+			set_capital = 4
+		}
+	}
+	option = {
+		name = gdb_germany.114.e
+		GER = {
+			set_capital = 52
+		}
+	}
+}
+
+

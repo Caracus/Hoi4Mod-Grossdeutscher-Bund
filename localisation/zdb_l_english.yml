@@ -672,6 +672,12 @@
  gdb_germany.113.t:0"Elections in Hungary"
  gdb_germany.113.d:0"The calls for a new system have been heard. Today many Hungarians cast their first vote on their road towards a democracy. Plans for a final constitution are still vague but the cornerstones have already been agreed upon."
  gdb_germany.113.a:0"Lets send our congratulations!"
+ gdb_germany.114.t:0"A new Seat of Power"
+ gdb_germany.114.d:0"Now that we have come together as one people it would be only fair to reevaluate which one of our many great cities shall become the new capital."
+ gdb_germany.114.a:0"Frankfurt - Capital of the first Bund"
+ gdb_germany.114.b:0"Berlin - Capital of Prussia"
+ gdb_germany.114.c:0"Wien - Capital of Austria"
+ gdb_germany.114.e:0"München - Capital of Bavaria"
 
  gdb_germany..t:0""
  gdb_germany..d:0""

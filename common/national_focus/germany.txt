@@ -814,8 +814,10 @@ focus_tree = {
 				threat = 3
 				name = zdb_deutscher_bund
 			}
-			set_capital = 55
-			custom_effect_tooltip = GDB_TT_2
+			country_event = {
+				id = gdb_germany.114
+				days = 7
+			}
 		}
 	}
 	focus = {
