@@ -15,3 +15,6 @@ For new features please open a branch and open a pull request once youre done so
 The repository is quite messy right now as this was not intended to be open to the public upon the initial conception. Some events are no longer used and lack commentary about their context. So if you go in there please just add a comment what it does. 
 
 Personally I use Visual Studio Code with some extensions like Auto Close Tag and the Paradox related syntax highlighter CWTool by Thomas Boby. And of course you should start the game with -debug enabled in the launch options of hoi4.
+
+--If you created a pull request please let me know via the steam comments as I tend to watch there more often than I do here--
+
