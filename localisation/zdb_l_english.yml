@@ -1,4 +1,5 @@
-l_english:
+﻿l_english:
+ l_english:
  powderkeg_belgium:0 "Belgian Powderkeg"
  powderkeg_belgium_desc:0 "We have concrete evidence that the Paris Commune is trying to start a Flemish-Walloon civil war to annex Belgium. We must resolve the Belgian question once and for all in order to forestall the Communists. If we do not act we could risk the entirety of Belgium falling to the communists."
  fire_is_spreading:0 "Pass on the torch"
@@ -1013,3 +1014,4 @@ l_english:
  core_vaud_desc:0 ""
  VICTORY_POINTS_9630:0 "Bozen"
  GER_danger_diminished:0 "German Threat Diminished"
+ 
