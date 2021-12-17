@@ -1,18 +1,19 @@
 state={
-	id=819
-	name="STATE_819"
+	id=840
+	name="STATE_840"
 	provinces={
-		13236 
+		3488 
 	}
 	history={
 		owner = BEL
 	
 		buildings = {
-			infrastructure = 7
+			infrastructure = 6
 		}
 		add_core_of = BEL
 	}
-	manpower=163745
+	
+	manpower=85785
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

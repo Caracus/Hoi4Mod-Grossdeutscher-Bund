@@ -1,19 +1,22 @@
 state={
-	id=812
-	name="STATE_812"
+	id=838
+	name="STATE_838"
 	provinces={
-		3488 
+		656 6631 9598 11598 
 	}
 	history={
-		owner = BEL
-	
+		owner = ITA
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = BEL
+		add_core_of = ITA
+		add_core_of = AUS
+
 	}
 	
-	manpower=85785
+	
+	manpower=317737
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
+

@@ -1,25 +1,20 @@
 state={
-	id=809
-	name="STATE_809"
+	id=848
+	name="STATE_848"
 	provinces={
-		3560 5291 
+		13238 13239 13240 
 	}
 	history={
-		owner = FRA
-		victory_points = {
-			3560 1
-		}
-
-
+		owner = HUN
 		buildings = {
 			infrastructure = 7
-
 		}
-		add_core_of = FRA
+		add_core_of = HUN
+		add_core_of = AUS
 
 	}
-
-	manpower=125894
+	manpower=73793
 	buildings_max_level_factor=1.000
 	state_category=rural
+
 }
