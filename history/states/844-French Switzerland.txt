@@ -8,7 +8,7 @@ state={
 		history={
 		owner = SWI
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
 
@@ -20,6 +20,6 @@ state={
 	manpower=439416
 	buildings_max_level_factor=0.3
 	state_category=town
-	
+	local_supplies=0.0 
 }
 

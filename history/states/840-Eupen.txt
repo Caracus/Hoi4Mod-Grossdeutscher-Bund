@@ -8,7 +8,7 @@ state={
 		owner = BEL
 	
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 		}
 		add_core_of = BEL
 	}
@@ -16,4 +16,5 @@ state={
 	manpower=85785
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.0 
 }

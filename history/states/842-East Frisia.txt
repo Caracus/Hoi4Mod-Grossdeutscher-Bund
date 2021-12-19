@@ -11,7 +11,7 @@ history={
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 
 		}
 	}
@@ -19,4 +19,5 @@ history={
 	manpower=347194
 	buildings_max_level_factor=0.5
 	state_category=town
+	local_supplies=0.0 
 }
