@@ -829,8 +829,14 @@ country_event = {
 		85 = {
 			add_core_of = GER
 		}
+		807 = {
+			add_core_of = GER
+		}
 		GER = {
 			transfer_state = 85
+		}
+		GER = {
+			transfer_state = 807
 		}
 		give_guarantee = POL
 	}
@@ -859,8 +865,20 @@ country_event = {
 		189 = {
 			add_core_of = POL
 		}
+		814 = {
+			add_core_of = POL
+		}
+		815 = {
+			add_core_of = POL
+		}
 		POL = {
 			transfer_state = 189
+		}
+		POL = {
+			transfer_state = 814
+		}
+		POL = {
+			transfer_state = 815
 		}
 		POL = {
 			set_cosmetic_tag = POL_GDB
@@ -1127,8 +1145,12 @@ country_event = {
 		85 = {
 			add_core_of = GER
 		}
+		807 = {
+			add_core_of = GER
+		}
 		GER = {
 			transfer_state = 85
+			transfer_state = 807
 			add_political_power = -50
 			random_owned_state = {
 				limit = {
@@ -1204,11 +1226,15 @@ country_event = {
 		85 = {
 			add_core_of = GER
 		}
+		807 = {
+			add_core_of = GER
+		}
 		86 = {
 			add_core_of = GER
 		}
 		GER = {
 			transfer_state = 85
+			transfer_state = 807
 			transfer_state = 86
 		}
 		GER = {
@@ -1332,6 +1358,9 @@ country_event = {
 		85 = {
 			add_core_of = GER
 		}
+		807 = {
+			add_core_of = GER
+		}
 		86 = {
 			add_core_of = GER
 		}
@@ -1343,6 +1372,7 @@ country_event = {
 		}
 		GER = {
 			transfer_state = 85
+			transfer_state = 807
 			transfer_state = 86
 			transfer_state = 835
 			transfer_state = 762
@@ -1409,13 +1439,25 @@ country_event = {
 		189 = {
 			add_core_of = POL
 		}
+		814 = {
+			add_core_of = POL
+		}
+		815 = {
+			add_core_of = POL
+		}
 		190 = {
+			add_core_of = POL
+		}
+		809 = {
 			add_core_of = POL
 		}
 		POL = {
 			transfer_state = 11
 			transfer_state = 189
 			transfer_state = 190
+			transfer_state = 809
+			transfer_state = 814
+			transfer_state = 815
 		}
 		POL = {
 			set_cosmetic_tag = POL_GDB
@@ -1445,6 +1487,12 @@ country_event = {
 			transfer_state = 12
 			transfer_state = 13
 			transfer_state = 191
+			transfer_state = 808
+			transfer_state = 810
+			transfer_state = 811
+			transfer_state = 812
+			transfer_state = 813
+			transfer_state = 814
 			add_named_threat = {
 				threat = 3
 				name = gdb_soviet_baltics
@@ -1457,6 +1505,24 @@ country_event = {
 			add_core_of = SOV
 		}
 		191 = {
+			add_core_of = SOV
+		}
+		808 = {
+			add_core_of = SOV
+		}
+		810 = {
+			add_core_of = SOV
+		}
+		811 = {
+			add_core_of = SOV
+		}
+		812 = {
+			add_core_of = SOV
+		}
+		813 = {
+			add_core_of = SOV
+		}
+		814 = {
 			add_core_of = SOV
 		}
 	}
