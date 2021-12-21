@@ -954,6 +954,8 @@
  core_ticino_desc:0 "The Italian part of Switzerland is understandably more reluctant to accept a more dominant German rule. However, the area has experienced German influence over several hundreds of years, and so it shouldn't be hard to mend the rift once more given some acclimatization time."
  core_danzig:0 "Reintegrate Danzig"
  core_danzig_desc:0 ""
+ core_gdynia:0 "Reintegrate Gdingen"
+ core_gdynia_desc:0 ""
  core_poznan:0 "Reintegrate Posen"
  core_poznan_desc:0 ""
  core_memel:0 "Reintegrate the Memelland"
