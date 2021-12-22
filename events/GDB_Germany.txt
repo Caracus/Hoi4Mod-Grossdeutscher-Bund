@@ -32,7 +32,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = communism
 				size = 0.62
-				capital = 16
+				set_capital = { state = 16 }
 				states = {
 					16
 					15
@@ -2217,7 +2217,7 @@ country_event = {
 					156
 					160
 				}
-				capital = 115
+				set_capital = { state = 115 }
 			}
 		}
 		hidden_effect = {
@@ -4281,26 +4281,26 @@ country_event = {
 	option = {
 		name = gdb_germany.114.a
 		GER = {
-			set_capital = 55
+			set_capital = { state = 55 }
 			#custom_effect_tooltip = GDB_TT_2
 		}
 	}
 	option = {
 		name = gdb_germany.114.b
 		GER = {
-			set_capital = 64
+			set_capital = { state = 64 }
 		}
 	}
 	option = {
 		name = gdb_germany.114.c
 		GER = {
-			set_capital = 4
+			set_capital = { state = 4 }
 		}
 	}
 	option = {
 		name = gdb_germany.114.e
 		GER = {
-			set_capital = 52
+			set_capital = { state = 52 }
 		}
 	}
 }
