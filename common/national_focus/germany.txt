@@ -3401,6 +3401,7 @@ focus_tree = {
 			}
 		}
 		}
+	}
 	#end modded#
 
 	focus = {
@@ -12459,4 +12460,5 @@ focus_tree = {
 			}
 		}
 	}
+}
 }

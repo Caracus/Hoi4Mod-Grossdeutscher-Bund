@@ -1,0 +1,32 @@
+characters={
+    GDB_otto_von_habsburg={
+        name=GDB_otto_von_habsburg
+        portraits={
+            civilian={
+                large="GFX_Portrait_hungary_otto_von_hapsburg"
+            }
+        }
+        country_leader={
+            ideology=despotism
+            traits={  }
+            expire="1965.1.1.1"
+        }
+    }
+    GDB_rupprecht_von_wittelsbach={
+        name=GDB_rupprecht_von_wittelsbach
+        portraits={
+            civilian={
+                large="GFX_Portrait_germany_rupprecht_von_bayern"
+            }
+        }
+        country_leader={
+            ideology=despotism
+            traits={  
+                retired_officer
+                anti_communist
+            }
+            expire="1965.1.1.1"
+        }
+    }
+}
+
