@@ -456,6 +456,15 @@ recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled 
 ### start modded ###
 recruit_character = GDB_otto_von_habsburg
 recruit_character = GDB_rupprecht_von_wittelsbach
+recruit_character = GDB_ernst_august_3_von_hannover
+recruit_character = GDB_albrecht_von_wuerttemberg
+recruit_character = GDB_friedrich_christian_von_wettin
+recruit_character = GDB_ernst_august_4_von_hannover
+recruit_character = GDB_victoria_3
+recruit_character = GDB_friedrich_wilhelm_2_von_hohenzollern
+recruit_character = GDB_friedrich_wilhelm_3_von_hohenzollern
+recruit_character = GDB_friedrich_wilhelm_4_von_hohenzollern
+recruit_character = GDB_european_council
 ### end modded ###
 
 

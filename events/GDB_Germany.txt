@@ -469,65 +469,6 @@ country_event = {
 		}
 	}
 }
-#select royal family
-country_event = {
-	id = gdb_germany.11
-	title = gdb_germany.11.t
-	desc = gdb_germany.11.de
-	picture = GFX_report_event_generic_sign_treaty1
-	is_triggered_only = yes
-	option = {
-		name = gdb_germany.11.a
-		country_event = {
-			id = gdb_germany.12
-			days = 1
-		}
-	}
-	option = {
-		name = gdb_germany.11.b
-		create_country_leader = {
-			name = "Otto von Habsburg"
-			picture = GFX_Portrait_hungary_otto_von_hapsburg
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-			}
-		}
-	}
-	option = {
-		name = gdb_germany.11.c
-		create_country_leader = {
-			name = "Albrecht von Württemberg"
-			picture = GFX_Portrait_germany_albrecht_von_wurttemberg
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-			}
-		}
-	}
-	option = {
-		name = gdb_germany.11.d
-		create_country_leader = {
-			name = "Friedrich Christian von Wettin"
-			picture = GFX_Portrait_germany_friedrich_christian_von_sachsen
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-			}
-		}
-	}
-	option = {
-		name = gdb_germany.11.e
-		create_country_leader = {
-			name = "Rupprecht von Wittelsbach"
-			picture = GFX_Portrait_germany_rupprecht_von_bayern
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-			}
-		}
-	}
-}
 
 country_event = {
 	id = gdb_germany.12
@@ -537,42 +478,50 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.12.a
-		create_country_leader = {
-			name = "Friedrich Wilhelm II von Hohenzollern"
-			picture = GFX_Portrait_germany_wilhelm_II_von_preussen
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				headstrong
-				imperial_connections
-				autocratic_imperialist
+		GDB_friedrich_wilhelm_2_von_hohenzollern = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						headstrong
+						imperial_connections
+						autocratic_imperialist
+					}
+				}
+				promote_leader = yes
 			}
 		}
 	}
 	option = {
 		name = gdb_germany.12.b
-		create_country_leader = {
-			name = "Friedrich Wilhelm III von Hohenzollern"
-			picture = GFX_Portrait_germany_wilhelm_III_von_preussen
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				the_legitimist
-				camarilla_leader
+		GDB_friedrich_wilhelm_3_von_hohenzollern = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						the_legitimist
+						camarilla_leader
+					}
+				}
+				promote_leader = yes
 			}
 		}
 	}
 	option = {
 		name = gdb_germany.12.c
-		create_country_leader = {
-			name = "Friedrich Wilhelm IV von Hohenzollern"
-			picture = GFX_Portrait_germany_wilhelm_IV_von_preussen
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				democratic_reformer
-				inexperienced_monarch
-
+		GDB_friedrich_wilhelm_4_von_hohenzollern = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						democratic_reformer
+						inexperienced_monarch
+					}
+				}
+				promote_leader = yes
 			}
 		}
 	}
@@ -2273,15 +2222,17 @@ country_event = {
 				elections_allowed = no
 			}
 			effect_tooltip = {
-				create_country_leader = {
-					name = "Victor Emmanuel III"
-					desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-					picture = "GFX_portrait_italy_victor_emmanuel_iii"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
+				ITA_victor_emmanuel_iii= = {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+						promote_leader = yes
 					}
-				}
+				}	
 			}
 			set_capital = { state = 160 }
 		}
@@ -4100,13 +4051,16 @@ country_event = {
 	#hannover
 	option = {
 		name = gdb_germany.109.a
-		create_country_leader = {
-			name = "Ernst August III von Hannover"
-			picture = GFX_Portrait_germany_ernst_august_III_von_hannover
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				dealbroker
+		GDB_ernst_august_3_von_hannover = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						dealbroker
+					}
+				}
+				promote_leader = yes
 			}
 		}
 		hidden_effect = {
@@ -4120,28 +4074,34 @@ country_event = {
 	#swabia
 	option = {
 		name = gdb_germany.109.b
-		create_country_leader = {
-			name = "Albrecht von Wuerttemberg"
-			picture = GFX_Portrait_germany_albrecht_von_wurttemberg
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				retired_officer
-				anti_communist
+		GDB_albrecht_von_wuerttemberg = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						retired_officer
+						anti_communist
+					}
+				}
+				promote_leader = yes
 			}
 		}
 	}
 	#saxony
 	option = {
 		name = gdb_germany.109.c
-		create_country_leader = {
-			name = "Friedrich Christian von Wettin"
-			picture = GFX_Portrait_germany_friedrich_christian_von_sachsen
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				retired_officer
-				political_dancer
+		GDB_friedrich_christian_von_wettin = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						retired_officer
+						political_dancer
+					}
+				}
+				promote_leader = yes
 			}
 		}
 	}
@@ -4166,13 +4126,16 @@ country_event = {
 		name = gdb_germany.110.a
 		kill_country_leader = yes
 		add_stability = -0.05
-		create_country_leader = {
-			name = "Ernst August IV von Hannover"
-			picture = GFX_Portrait_germany_ernst_august_IV_von_hannover
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				inexperienced_monarch
+		GDB_friedrich_christian_von_wettin = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						inexperienced_monarch
+					}
+				}
+				promote_leader = yes
 			}
 		}
 	}
@@ -4180,16 +4143,17 @@ country_event = {
 		name = gdb_germany.110.b
 		kill_country_leader = yes
 		add_stability = -0.05
-		create_country_leader = {
-			name = "Victoria"
-			desc = "POLITICS_VICTORIA_DESC"
-			picture = GFX_portrait_ger_victoria_louise
-			expire = "1965.1.1"
-			ideology = conservatism
-			female = yes
-			traits = {
-				kaiserin_of_the_people
-				victoria_iii # Third Victoria counting from Queen Victoria hurr durr
+		GDB_victoria_3 = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						kaiserin_of_the_people
+						victoria_iii
+					}
+				}
+				promote_leader = yes
 			}
 		}
 	}
