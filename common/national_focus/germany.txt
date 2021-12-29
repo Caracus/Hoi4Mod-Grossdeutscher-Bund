@@ -3343,6 +3343,17 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = european_ambitions
 			set_cosmetic_tag = EUR_UNIFIED_GDB
+			GDB_european_council = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+					promote_leader = yes
+				}
+			}	
 			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
@@ -3361,17 +3372,6 @@ focus_tree = {
 				long_name = eu_neutral_party_long
 				name = eu_neutral_party
 			}
-			GDB_european_council= = {
-				add_country_leader_role = {
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-						}
-					}
-					promote_leader = yes
-				}
-			}	
 			custom_effect_tooltip = GDB_TT_4
 			hidden_effect = {
 				every_state = {
@@ -9349,7 +9349,7 @@ focus_tree = {
 			}
 			GER = {	
 				country_event = {	
-					id = gdb_germany.95	
+					id = gdb_germany.4
 					days = 3	
 				}	
 			}
@@ -12463,5 +12463,4 @@ focus_tree = {
 			}
 		}
 	}
-}
 }

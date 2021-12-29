@@ -1,10 +1,9 @@
-version="1.1.6"
+version="1"
 tags={
 	"Alternative History"
 	"Map"
 	"National Focuses"
 	"Events"
 }
-name="Großdeutscher Bund"
-supported_version="1.10.*"
-remote_file_id="2182657195"
+name="Großdeutscher Bund New"
+supported_version="1.11.4"

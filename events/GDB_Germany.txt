@@ -187,6 +187,7 @@ country_event = {
 	}
 }
 
+#used 1.11
 #accept soviet help prompt
 country_event = {
 	id = gdb_germany.4
@@ -1441,7 +1442,6 @@ country_event = {
 			transfer_state = 811
 			transfer_state = 812
 			transfer_state = 813
-			transfer_state = 814
 			add_named_threat = {
 				threat = 3
 				name = gdb_soviet_baltics
@@ -1469,9 +1469,6 @@ country_event = {
 			add_core_of = SOV
 		}
 		813 = {
-			add_core_of = SOV
-		}
-		814 = {
 			add_core_of = SOV
 		}
 	}

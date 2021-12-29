@@ -3580,10 +3580,7 @@ political_actions = {
 				has_country_flag = GER_com_help_accepted
 		}
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "August von Mackensen"
-			}
+			has_country_leader = { ruling_only = yes character = GER_august_von_mackensen }
 		}
 		cost = 25
 		fire_only_once = yes
@@ -3591,25 +3588,23 @@ political_actions = {
 			factor = 1
 		}
 		complete_effect = {
-			create_field_marshal = {
-				name = "August von Mackensen"
-				gfx = GFX_portrait_ger_august_von_mackensen
-				traits = {
-				trait_reckless
-				old_guard
-				career_officer
-				cavalry_officer
-				politically_connected
-				media_personality
-				war_hero
-				urban_assault_specialist
-				}
-				skill = 6
-				id = 2005
-				attack_skill = 5
-				defense_skill = 3
-				planning_skill = 6
-				logistics_skill = 5
+			add_field_marshal_role = {
+				character = "GER_august_von_mackensen"
+					traits = { 
+						trait_reckless
+						old_guard
+						career_officer
+						cavalry_officer
+						politically_connected
+						media_personality
+						war_hero
+						urban_assault_specialist
+					}
+					skill = 6
+					attack_skill = 5
+					defense_skill = 3
+					planning_skill = 6
+					logistics_skill = 5
 			}
 		}
 	}
@@ -3677,18 +3672,9 @@ political_actions = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "Wilhelm II"
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Wilhelm III"
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Victoria"
-				}
+				has_country_leader = { ruling_only = yes character = GER_wilhelm_ii }
+				has_country_leader = { ruling_only = yes character = GER_wilhelm_iii }
+				has_country_leader = { ruling_only = yes character = GER_victoria }
 				has_country_flag = GER_com_help_accepted
 			}
 		}
@@ -3701,12 +3687,7 @@ political_actions = {
 			create_corps_commander = {
 				name = "Paul von Lettow-Vorbeck"
 				gfx = GFX_portrait_ger_von_lettow_vorbeck
-				traits = {
-					trickster
-					war_hero
-					media_personality
-					jungle_rat
-				}
+				traits = { trickster war_hero media_personality jungle_rat}
 				skill = 4
 				id = 499
 				attack_skill = 3
