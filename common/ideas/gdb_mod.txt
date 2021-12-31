@@ -458,7 +458,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_constitutional_guarantee
+			picture = idea_generic_constitutional_guarantees
 			modifier = {
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.05
@@ -474,7 +474,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_constitutional_guarantee
+			picture = idea_generic_constitutional_guarantees
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.05

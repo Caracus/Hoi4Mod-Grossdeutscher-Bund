@@ -483,7 +483,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						headstrong
 						imperial_connections
@@ -500,7 +500,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						the_legitimist
 						camarilla_leader
@@ -516,7 +516,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						democratic_reformer
 						inexperienced_monarch
@@ -4002,7 +4002,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						empire_builder
 						imperial_connections
@@ -4019,7 +4019,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						retired_officer
 						anti_communist
@@ -4052,7 +4052,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						dealbroker
 					}
@@ -4075,7 +4075,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						retired_officer
 						anti_communist
@@ -4092,7 +4092,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						retired_officer
 						political_dancer
@@ -4127,7 +4127,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						inexperienced_monarch
 					}
@@ -4144,7 +4144,7 @@ country_event = {
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = despotism
+					ideology = conservatism
 					traits = {
 						kaiserin_of_the_people
 						victoria_iii

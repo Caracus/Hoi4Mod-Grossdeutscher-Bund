@@ -20,9 +20,5 @@ Personally I use Visual Studio Code with some extensions like Auto Close Tag and
 
 Todo:
 1.11 Upgrade:
--Increase base compliance for events for Spa and East frisia
--Fix leader ideologies on assignment according to the new system
 -Review wording and time windows for the belgian revolt
--zdb_limited_vote idea has broken icon
--wtt reenable wtt_germany.53 from firing when flag is true
 

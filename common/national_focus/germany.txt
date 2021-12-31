@@ -2370,14 +2370,17 @@ focus_tree = {
 				long_name = GER_absolutists_long
 				name = GER_absolutists
 			}
-			create_country_leader = {
-				name = "Konrad Adenauer"
-				picture = GFX_Portrait_germany_non_aligned_adenauer
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
+			GER_konrad_adenauer = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+					promote_leader = yes
 				}
-			}
+			}	
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -3353,7 +3356,16 @@ focus_tree = {
 					}
 					promote_leader = yes
 				}
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
 			}	
+			set_party_name = {
+				ideology = neutrality
+				long_name = eu_neutral_party_long
+				name = eu_neutral_party
+			}
 			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
@@ -3362,15 +3374,6 @@ focus_tree = {
 			add_popularity = {
 				ideology = democratic
 				popularity = -1
-			}
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-			set_party_name = {
-				ideology = neutrality
-				long_name = eu_neutral_party_long
-				name = eu_neutral_party
 			}
 			custom_effect_tooltip = GDB_TT_4
 			hidden_effect = {

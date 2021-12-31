@@ -7,7 +7,7 @@ characters={
             }
         }
         country_leader={
-            ideology=despotism
+            ideology=conservatism
             traits={  }
             expire="1965.1.1.1"
         }
@@ -20,7 +20,7 @@ characters={
             }
         }
         country_leader={
-            ideology=despotism
+            ideology=conservatism
             traits={  
                 retired_officer
                 anti_communist
@@ -36,7 +36,7 @@ characters={
             }
         }
         country_leader={
-            ideology=despotism
+            ideology=conservatism
             traits={  
                 dealbroker
             }
@@ -51,7 +51,7 @@ characters={
             }
         }
         country_leader={
-            ideology=despotism
+            ideology=conservatism
             traits={  
 				retired_officer
 				anti_communist
@@ -67,7 +67,7 @@ characters={
             }
         }
         country_leader={
-            ideology=despotism
+            ideology=conservatism
             traits={  
 				retired_officer
 				political_dancer
@@ -83,7 +83,7 @@ characters={
             }
         }
         country_leader={
-            ideology=despotism
+            ideology=conservatism
             traits={  
                 inexperienced_monarch
             }
@@ -98,7 +98,7 @@ characters={
             }
         }
         country_leader={
-            ideology=despotism
+            ideology=conservatism
             traits={  
 				kaiserin_of_the_people
 				victoria_iii
