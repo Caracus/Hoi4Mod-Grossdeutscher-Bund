@@ -1635,10 +1635,10 @@ political_actions = {
 			factor = 1000
 		}
 		visible = {
-			owns_state = 811
+			owns_state = 839
 		}
 		highlight_state_targets = {
-			state = 811
+			state = 839
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1835,10 +1835,10 @@ political_actions = {
 			factor = 1000
 		}
 		visible = {
-			owns_state = 808
+			owns_state = 836
 		}
 		highlight_state_targets = {
-			state = 808
+			state = 836
 		}
 		complete_effect = {
 			set_province_name = {
@@ -2169,8 +2169,8 @@ political_actions = {
 		}
 		days_remove = 14
 		remove_effect = {
-			transfer_state = 816
-			816 = {
+			transfer_state = 844
+			844 = {
 				add_core_of = FRA
 			}
 			GER = {
@@ -2248,7 +2248,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				815 = {
+				843 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2261,17 +2261,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 815
+			owns_state = 843
 			NOT = {
 				ROOT = {
-					815 = {
+					843 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 815
+			add_state_core = 843
 		}
 	}
 	# integrate danzig
@@ -2292,9 +2292,9 @@ political_actions = {
 				}
 			}
 		}
-		cost = 83
+		cost = 37
 		fire_only_once = yes
-		days_remove = 166
+		days_remove = 74
 		ai_will_do = {
 			factor = 10
 		}
@@ -2312,6 +2312,44 @@ political_actions = {
 			add_state_core = 85
 		}
 	}
+		# integrate gdynia
+	core_gdynia = {
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = AUS
+					original_tag = LUX
+					original_tag = SWI
+				}
+			}
+			available = {
+				ROOT = {
+					807 = {
+						compliance > 40
+						resistance < 10
+					}
+				}
+			}
+			cost = 71
+			fire_only_once = yes
+			days_remove = 142
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {
+				owns_state = 807
+				NOT = {
+					ROOT = {
+						807 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+			remove_effect = {
+				add_state_core = 85
+			}
+		}
 	# integrate posen
 	core_poznan = {
 		allowed = {
@@ -2362,7 +2400,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				807 = {
+				835 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2375,17 +2413,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 807
+			owns_state = 835
 			NOT = {
 				ROOT = {
-					807 = {
+					835 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 807
+			add_state_core = 835
 		}
 	}
 	# integrate memel
@@ -2438,7 +2476,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				817 = {
+				845 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2451,17 +2489,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 817
+			owns_state = 845
 			NOT = {
 				ROOT = {
-					817 = {
+					845 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 817
+			add_state_core = 845
 		}
 	}
 	# integrate ost friesland
@@ -2476,7 +2514,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				814 = {
+				842 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2489,17 +2527,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 814
+			owns_state = 842
 			NOT = {
 				ROOT = {
-					814 = {
+					842 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 814
+			add_state_core = 842
 		}
 	}
 	# integrate limbourg
@@ -2514,7 +2552,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				813 = {
+				841 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2527,17 +2565,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 813
+			owns_state = 841
 			NOT = {
 				ROOT = {
-					813 = {
+					841 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 813
+			add_state_core = 841
 		}
 	}
 	# integrate spa
@@ -2552,7 +2590,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				819 = {
+				847 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2565,17 +2603,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 819
+			owns_state = 847
 			NOT = {
 				ROOT = {
-					819 = {
+					847 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 819
+			add_state_core = 847
 		}
 	}
 	# integrate eupen
@@ -2590,7 +2628,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				812 = {
+				840 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2603,17 +2641,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 812
+			owns_state = 840
 			NOT = {
 				ROOT = {
-					812 = {
+					840 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 812
+			add_state_core = 840
 		}
 	}
 	# west luxemburg
@@ -2629,7 +2667,7 @@ political_actions = {
 		available = {
 			ROOT = {
 				has_country_flag = natural_borders_west
-				818 = {
+				846 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2642,17 +2680,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 818
+			owns_state = 846
 			NOT = {
 				ROOT = {
-					818 = {
+					846 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 818
+			add_state_core = 846
 		}
 	}
 	# luxemburg
@@ -2706,7 +2744,7 @@ political_actions = {
 		available = {
 			ROOT = {
 				has_country_flag = natural_borders_west
-				809 = {
+				837 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2719,17 +2757,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 809
+			owns_state = 837
 			NOT = {
 				ROOT = {
-					809 = {
+					837 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 809
+			add_state_core = 837
 		}
 	}
 	# alsace
@@ -2783,7 +2821,7 @@ political_actions = {
 		available = {
 			ROOT = {
 				has_country_flag = natural_borders_west
-				811 = {
+				839 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2796,17 +2834,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 811
+			owns_state = 839
 			NOT = {
 				ROOT = {
-					811 = {
+					839 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 811
+			add_state_core = 839
 		}
 	}
 	# eastern switzerland
@@ -3125,7 +3163,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				808 = {
+				836 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -3138,17 +3176,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 808
+			owns_state = 836
 			NOT = {
 				ROOT = {
-					808 = {
+					836 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 808
+			add_state_core = 836
 		}
 	}
 	# sudetenland
@@ -3348,7 +3386,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				816 = {
+				844 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -3361,17 +3399,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 816
+			owns_state = 844
 			NOT = {
 				ROOT = {
-					816 = {
+					844 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 816
+			add_state_core = 844
 		}
 	}
 	# ticino
@@ -3381,7 +3419,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				815 = {
+				843 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -3394,17 +3432,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 815
+			owns_state = 843
 			NOT = {
 				ROOT = {
-					815 = {
+					843 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 815
+			add_state_core = 843
 		}
 	}
 
@@ -3542,10 +3580,7 @@ political_actions = {
 				has_country_flag = GER_com_help_accepted
 		}
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				name = "August von Mackensen"
-			}
+			has_country_leader = { ruling_only = yes character = GER_august_von_mackensen }
 		}
 		cost = 25
 		fire_only_once = yes
@@ -3553,25 +3588,23 @@ political_actions = {
 			factor = 1
 		}
 		complete_effect = {
-			create_field_marshal = {
-				name = "August von Mackensen"
-				gfx = GFX_portrait_ger_august_von_mackensen
-				traits = {
-				trait_reckless
-				old_guard
-				career_officer
-				cavalry_officer
-				politically_connected
-				media_personality
-				war_hero
-				urban_assault_specialist
-				}
-				skill = 6
-				id = 2005
-				attack_skill = 5
-				defense_skill = 3
-				planning_skill = 6
-				logistics_skill = 5
+			add_field_marshal_role = {
+				character = "GER_august_von_mackensen"
+					traits = { 
+						trait_reckless
+						old_guard
+						career_officer
+						cavalry_officer
+						politically_connected
+						media_personality
+						war_hero
+						urban_assault_specialist
+					}
+					skill = 6
+					attack_skill = 5
+					defense_skill = 3
+					planning_skill = 6
+					logistics_skill = 5
 			}
 		}
 	}
@@ -3639,18 +3672,9 @@ political_actions = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "Wilhelm II"
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Wilhelm III"
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Victoria"
-				}
+				has_country_leader = { ruling_only = yes character = GER_wilhelm_ii }
+				has_country_leader = { ruling_only = yes character = GER_wilhelm_iii }
+				has_country_leader = { ruling_only = yes character = GER_victoria }
 				has_country_flag = GER_com_help_accepted
 			}
 		}
@@ -3663,12 +3687,7 @@ political_actions = {
 			create_corps_commander = {
 				name = "Paul von Lettow-Vorbeck"
 				gfx = GFX_portrait_ger_von_lettow_vorbeck
-				traits = {
-					trickster
-					war_hero
-					media_personality
-					jungle_rat
-				}
+				traits = { trickster war_hero media_personality jungle_rat}
 				skill = 4
 				id = 499
 				attack_skill = 3

@@ -1,0 +1,25 @@
+state={
+	id=844
+	name="STATE_844"
+	provinces={
+		3612 6666 6683 9622 11590 13124 
+	}
+	
+		history={
+		owner = SWI
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = SWI
+		add_core_of = FRA
+
+	}
+	manpower=439416
+	buildings_max_level_factor=0.3
+	state_category=town
+	local_supplies=0.0 
+}
+

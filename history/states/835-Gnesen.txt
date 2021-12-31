@@ -1,0 +1,35 @@
+state={
+	id=835
+	name="STATE_835"
+
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9532 = {
+				bunker = 1
+
+			}
+			3381 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = POL
+		1938.3.12 = {
+			add_claim_by = GER
+
+		}
+
+	}
+
+	provinces={
+		17 243 3381 9532 11558 
+	}
+	manpower=451742
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.0 
+}
