@@ -1,11 +1,17 @@
 GitHub Version of the mod "Großdeutscher Bund" - a mod for the game Hearts of Iron IV by Paradox Interactive
 
--- If you just want to play it from this version you can just download it and drag the GDB.mod file one folder higher, just like you would handle your normal mods. --
+-- Installation --
+Download your desired version from the releases section. 
+1. Put the content into C:\Users\"yourUser"\Documents\Paradox Interactive\Hearts of Iron IV\mod
+2. Navigate into mod\GDB and select the GDB.mod
+3. Either drag it one folder higher or cut and paste it
+4. Your mod folder should now contain a GDB folder aswell as a GDB.mod file
+5. Start the game and select the mod as usual (I advise unsubbing from the steam version for stability)
 
 Short intro:
 Großdeutscher Bund explores an alternative history where the Wehrmacht successfully opposes Hitler with the help of the Soviet Union and thereby opens the door for something that might be far more dangerous...
 
-The public Steam release version can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=2182657195
+The public Steam release version for 1.10.5 can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=2182657195
 
 If you want to contribute to the mod then heres a little how to. I suggest to install Git and watch a video on how to use it.
 Just download all the files here and move the GDB.mod file one folder up into the level as the main GDB folder. Then open it with something like notepad++, visual studio code or any other compatible editor and make sure that the path matches the one on your machine. You should be able to launch the downloaded version afterwards from the regular game launcher.
@@ -20,5 +26,5 @@ Personally I use Visual Studio Code with some extensions like Auto Close Tag and
 
 Todo:
 1.11 Upgrade:
--Review wording and time windows for the belgian revolt
+-Playtesting
 
