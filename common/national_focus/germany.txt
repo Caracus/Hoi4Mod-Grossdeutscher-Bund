@@ -3410,7 +3410,7 @@ focus_tree = {
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 26
+		x = 28
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -4534,7 +4534,7 @@ focus_tree = {
 		id = GER_autarky
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GER_four_year_plan }
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
@@ -4958,7 +4958,7 @@ focus_tree = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GER_four_year_plan }
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
