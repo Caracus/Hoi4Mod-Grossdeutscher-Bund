@@ -5,5 +5,5 @@ tags={
 	"National Focuses"
 	"Events"
 }
-name="Großdeutscher Bund New"
+name="Großdeutscher Bund Alpha"
 supported_version="1.11.4"
