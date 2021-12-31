@@ -6,7 +6,8 @@ Download your desired version from the releases section.
 2. Navigate into mod\GDB and select the GDB.mod
 3. Either drag it one folder higher or cut and paste it
 4. Your mod folder should now contain a GDB folder aswell as a GDB.mod file
-5. Start the game and select the mod as usual (I advise unsubbing from the steam version for stability)
+5. Open the GDB.mod file and adjust the path accordingly to where it is on your harddrive ( You might need notepad++ or VSC if your default editor cant read the format)
+6. Start the game and select the mod as usual (I advise unsubbing from the steam version for stability)
 
 Short intro:
 Großdeutscher Bund explores an alternative history where the Wehrmacht successfully opposes Hitler with the help of the Soviet Union and thereby opens the door for something that might be far more dangerous...
