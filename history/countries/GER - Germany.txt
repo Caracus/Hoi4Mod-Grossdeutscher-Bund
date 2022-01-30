@@ -465,6 +465,9 @@ recruit_character = GDB_friedrich_wilhelm_2_von_hohenzollern
 recruit_character = GDB_friedrich_wilhelm_3_von_hohenzollern
 recruit_character = GDB_friedrich_wilhelm_4_von_hohenzollern
 recruit_character = GDB_european_council
+recruit_character = GDB_graf_stauffenberg
+recruit_character = GDB_groscurth
+recruit_character = GDB_tresckow
 ### end modded ###
 
 

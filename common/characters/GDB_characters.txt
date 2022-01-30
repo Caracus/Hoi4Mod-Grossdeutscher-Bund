@@ -169,5 +169,29 @@ characters={
             expire="1965.1.1.1"
         }
     }
+    GDB_graf_stauffenberg={
+        name=GDB_graf_stauffenberg
+        portraits={
+            civilian={
+                large="GFX_Portrait_germany_stauffenberg"
+            }
+        }
+    }
+    GDB_groscurth={
+        name=GDB_groscurth
+        portraits={
+            civilian={
+                large="GFX_Portrait_germany_helmut_groscurth"
+            }
+        }
+    }
+    GDB_tresckow={
+        name=GDB_tresckow
+        portraits={
+            civilian={
+                large="GFX_Portrait_germany_henning_von_tresckow"
+            }
+        }
+    }
 }
 

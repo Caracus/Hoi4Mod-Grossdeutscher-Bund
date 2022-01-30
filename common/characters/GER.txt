@@ -78,23 +78,6 @@ characters={
 				large="GFX_portrait_ger_august_von_mackensen"
 			}
 		}
-		field_marshal={
-			traits = { 
-				trait_reckless
-				old_guard
-				career_officer
-				cavalry_officer
-				politically_connected
-				media_personality
-				war_hero
-				urban_assault_specialist
-			}
-			skill = 6
-			attack_skill = 5
-			defense_skill = 3
-			planning_skill = 6
-			logistics_skill = 5
-		}
 	}
 
 	GER_gerd_von_rundstedt={

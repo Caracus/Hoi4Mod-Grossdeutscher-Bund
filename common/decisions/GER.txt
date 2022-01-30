@@ -3495,20 +3495,18 @@ political_actions = {
 			factor = 1
 		}
 		complete_effect = {
-			create_corps_commander = {
-				name = "Claus Schenk, Graf von Stauffenberg"
-				gfx = GFX_Portrait_germany_stauffenberg
+			add_corps_commander_role = {
+				Character = GDB_graf_stauffenberg
 				traits = {
-				organizer
-				cavalry_officer
-				}
-				skill = 3
-				id = 2002
-				attack_skill = 3
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 4
-			}
+					organizer
+					cavalry_officer
+					}
+					skill = 3
+					attack_skill = 3
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 4
+			  }
 		}
 	}
 
@@ -3525,21 +3523,19 @@ political_actions = {
 			factor = 1
 		}
 		complete_effect = {
-			create_corps_commander = {
-				name = "Henning von Tresckow"
-				gfx = GFX_Portrait_germany_henning_von_tresckow
+			add_corps_commander_role = {
+				Character = GDB_tresckow
 				traits = {
-				brilliant_strategist
-				infantry_officer
-				career_officer
-				}
-				skill = 4
-				id = 2003
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 4
-				logistics_skill = 3
-			}
+					brilliant_strategist
+					infantry_officer
+					career_officer
+					}
+					skill = 4
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 3
+			  }
 		}
 	}
 
@@ -3556,19 +3552,18 @@ political_actions = {
 			factor = 1
 		}
 		complete_effect = {
-			create_corps_commander = {
-				name = "Helmuth Groscurth"
-				gfx = GFX_Portrait_germany_helmut_groscurth
+			add_corps_commander_role = {
+				Character = GDB_groscurth
 				traits = {
-				infantry_officer
-				}
-				skill = 2
-				id = 2004
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 1
-			}
+					infantry_officer
+					}
+					skill = 2
+					id = 2004
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 1
+			  }
 		}
 	}
 
