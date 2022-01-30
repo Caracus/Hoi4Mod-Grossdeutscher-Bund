@@ -679,6 +679,9 @@
  gdb_germany.114.b:0"Berlin - Capital of Prussia"
  gdb_germany.114.c:0"Wien - Capital of Austria"
  gdb_germany.114.e:0"München - Capital of Bavaria"
+ gdb_germany.115.t:0"Fill the Ranks"
+ gdb_germany.115.d:0"A civil war is messy by nature. Even though most members of the Generalstaab chose the right side not everyone was able to make it out unharmed and therefore there are still gaps within the ranks. Now that we have consolidated our forces into units it is time to assign leadership. For this reason we have prepared a few dossiers of promising candidates under your decision section. All candidates are enemies of the Nazi regime."
+ gdb_germany.115.a:0"Alright, I'll take a look!"
 
  gdb_germany..t:0""
  gdb_germany..d:0""

@@ -3487,7 +3487,7 @@ political_actions = {
 			original_tag = GER
 		}
 		visible = {
-				has_country_flag = GER_com_help_accepted
+			has_global_flag = GER_new_generals
 		}
 		cost = 10
 		fire_only_once = yes
@@ -3515,7 +3515,7 @@ political_actions = {
 			original_tag = GER
 		}
 		visible = {
-				has_country_flag = GER_com_help_accepted
+			has_global_flag = GER_new_generals
 		}
 		cost = 10
 		fire_only_once = yes
@@ -3544,7 +3544,7 @@ political_actions = {
 			original_tag = GER
 		}
 		visible = {
-				has_country_flag = GER_com_help_accepted
+			has_global_flag = GER_new_generals
 		}
 		cost = 10
 		fire_only_once = yes

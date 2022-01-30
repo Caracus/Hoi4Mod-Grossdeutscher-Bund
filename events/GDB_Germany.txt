@@ -4271,4 +4271,16 @@ country_event = {
 	}
 }
 
+#enable new generals after civ war start
+country_event = {
+	id = gdb_germany.115
+	title = gdb_germany.115.t
+	desc = gdb_germany.115.d
+	picture = GFX_event_pictures_ger_new_capital
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.115.a
+		set_global_flag = GER_new_generals
+	}
+}
 

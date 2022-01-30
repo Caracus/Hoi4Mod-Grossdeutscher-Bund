@@ -9341,6 +9341,12 @@ focus_tree = {
 					   value = 2000
 					}
 				}
+				GER = {	
+					country_event = {	
+						id = gdb_germany.115
+						days = 5	
+					}	
+				}
 			}
 			custom_effect_tooltip = GER_oppose_hitler_civil_war
 			effect_tooltip = {
