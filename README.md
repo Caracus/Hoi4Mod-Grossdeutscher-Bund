@@ -3,11 +3,13 @@ GitHub Version of the mod "Großdeutscher Bund" - a mod for the game Hearts of I
 -- Installation --
 Download your desired version from the releases section. 
 1. Put the content into C:\Users\"yourUser"\Documents\Paradox Interactive\Hearts of Iron IV\mod
-2. Navigate into mod\GDB and select the GDB.mod
-3. Either drag it one folder higher or cut and paste it
-4. Your mod folder should now contain a GDB folder aswell as a GDB.mod file
-5. Open the GDB.mod file and adjust the path accordingly to where it is on your harddrive ( You might need notepad++ or VSC if your default editor cant read the format)
-6. Start the game and select the mod as usual (I advise unsubbing from the steam version for stability)
+2. Navigate into mod\Hoi4Mod-Grossdeutscher-Bund and select the GDB.mod
+3. Either drag it one folder higher or cut and paste it there
+4. Your mod folder should now contain a Hoi4Mod-Grossdeutscher-Bund folder aswell as a GDB.mod file
+5. Open the GDB.mod file and adjust the path accordingly to where it is on your harddrive ( You might need notepad++ or VSC if your default editor cant read the format), you might have to replace gdb with Hoi4Mod-Grossdeutscher-Bund in the path aswell
+6. Start the game and select tihs mod
+7. (Optional) add -debug to the launch option if you encounter an error
+
 
 Short intro:
 Großdeutscher Bund explores an alternative history where the Wehrmacht successfully opposes Hitler with the help of the Soviet Union and thereby opens the door for something that might be far more dangerous...
@@ -28,4 +30,5 @@ Personally I use Visual Studio Code with some extensions like Auto Close Tag and
 Todo:
 1.11 Upgrade:
 -Playtesting
+-militant_underground_infiltrated has a missing icon
 

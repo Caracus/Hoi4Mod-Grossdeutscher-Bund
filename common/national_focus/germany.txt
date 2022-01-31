@@ -442,6 +442,9 @@ focus_tree = {
 		prerequisite = {
 			focus = zweiter_deutscher_bund
 		}
+		prerequisite = {
+			focus = approach_hungary
+		}
 		x = -3
 		y = 5
 		relative_position_id = a_bright_future

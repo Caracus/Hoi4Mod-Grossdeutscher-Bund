@@ -2218,7 +2218,7 @@ country_event = {
 				elections_allowed = no
 			}
 			effect_tooltip = {
-				ITA_victor_emmanuel_iii= = {
+				ITA_victor_emmanuel_iii = {
 					add_country_leader_role = {
 						country_leader = {
 							expire = "1965.1.1"
@@ -2852,18 +2852,16 @@ country_event = {
 	picture = GFX_report_event_generic_rifles
 	is_triggered_only = yes
 	#accept
-	immediate = {
+	option = {
+		name = gdb_germany.71.a
+		army_experience = 10
+		add_war_support = 0.05
 		GER = {
 			transfer_state = 839
 		}
 		839 = {
 			set_compliance = 50
 		}
-	}
-	option = {
-		name = gdb_germany.71.a
-		army_experience = 10
-		add_war_support = 0.05
 	}
 }
 
@@ -3675,7 +3673,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.101
-				days = 35
+				days = 70
 			}
 		}
 	}
@@ -4276,7 +4274,7 @@ country_event = {
 	id = gdb_germany.115
 	title = gdb_germany.115.t
 	desc = gdb_germany.115.d
-	picture = GFX_event_pictures_ger_new_capital
+	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 	option = {
 		name = gdb_germany.115.a
