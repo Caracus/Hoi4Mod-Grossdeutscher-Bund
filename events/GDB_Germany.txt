@@ -2481,7 +2481,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.59
-				days = 1
+				days = 7
 			}
 		}
 		add_threat = 1
@@ -2499,7 +2499,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.60
-				days = 1
+				days = 3
 			}
 		}
 		add_threat = 1
@@ -2551,7 +2551,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.62
-				days = 1
+				days = 5
 			}
 		}
 	}
@@ -2568,7 +2568,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.63
-				days = 1
+				days = 2
 			}
 		}
 		add_threat = 1
@@ -2597,7 +2597,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = gdb_germany.64
-				days = 1
+				days = 7
 			}
 		}
 	}
@@ -2645,7 +2645,7 @@ country_event = {
 		name = gdb_germany.65.a
 		country_event = {
 			id = gdb_germany.66
-			days = 1
+			days = 5
 		}
 	}
 }
