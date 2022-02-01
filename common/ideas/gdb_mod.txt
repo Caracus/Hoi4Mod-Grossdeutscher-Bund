@@ -33,7 +33,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = idea_generic_secret_police
+			picture = generic_spy_coup
 			modifier = {
 				communism_drift = 0.02
 				stability_weekly = -0.005
@@ -47,7 +47,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = idea_generic_secret_police
+			picture = generic_spy_coup
 			modifier = {
 				communism_drift = 0.01
 				stability_weekly = -0.002
@@ -458,7 +458,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = idea_generic_constitutional_guarantees
+			picture = generic_constitutional_guarantees
 			modifier = {
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.05
@@ -474,7 +474,6 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = idea_generic_constitutional_guarantees
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.05
@@ -482,6 +481,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.1
 				production_factory_start_efficiency_factor = 0.05
 			}
+			picture = generic_constitutional_guarantees
 		}
 		zdb_prussian_traditions = {
 			allowed = {
@@ -758,6 +758,7 @@ ideas = {
 				political_power_gain = 0.5
 				drift_defence_factor = 1
 			}
+			picture = ger_revive_the_kaiserreich
 		}
 		dawn_of_a_new_europe = {
 			allowed = {
@@ -776,6 +777,7 @@ ideas = {
 			rule = {
 				can_create_factions = yes
 			}
+			picture = ger_revive_the_kaiserreich
 		}
 	}
 }

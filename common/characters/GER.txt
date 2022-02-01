@@ -1540,6 +1540,12 @@ characters={
 					}
 					has_completed_focus = GER_reestablish_free_elections 
 				}
+				if = {
+					limit = {
+						has_completed_focus = stabilize_the_nation
+					}
+
+				}
 			}
 			traits = {
 				democratic_reformer 
@@ -1798,7 +1804,10 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich 
+				OR = {
+					has_completed_focus = GER_revive_the_kaiserreich 
+					has_completed_focus = stabilize_the_nation
+				}
 			}
 			traits = {
 				economist 
@@ -1824,7 +1833,10 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_reestablish_free_elections 
+				OR = {
+					has_completed_focus = GER_reestablish_free_elections 
+					has_completed_focus = stabilize_the_nation
+				}
 			}
 			traits = {
 				connected_citizen 
@@ -1850,7 +1862,10 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_reestablish_free_elections 
+				OR = {
+					has_completed_focus = GER_reestablish_free_elections 
+					has_completed_focus = stabilize_the_nation
+				}
 			}
 			traits = {
 				liberal_journalist 

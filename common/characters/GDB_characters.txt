@@ -111,5 +111,26 @@ characters={
             }
         }
     }
+    GDB_paul_von_lettow_vorbeck={
+        name=GDB_paul_von_lettow_vorbeck
+        portraits={
+            civilian={
+                large="GFX_portrait_ger_von_lettow_vorbeck"
+            }
+        }
+        advisor = {
+              slot = political_advisor
+              idea_token = paul_von_lettow_vorbeck
+              traits = {
+                silent_workhorse
+              }
+              allowed = {
+                original_tag = GER
+              }
+              available = {
+                  has_country_flag = paul_von_lettow_vorbeck_recalled
+              }
+        }
+    }
 }
 

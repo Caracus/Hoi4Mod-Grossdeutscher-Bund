@@ -73,5 +73,10 @@ spriteTypes = {
 		name = "GFX_Portrait_germany_ernst_august_IV_von_hannover"
 		texturefile = "gfx/leaders/GER/Portrait_germany_ernst_august_IV_von_hannover.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_paul_von_lettow_vorbeck"
+		texturefile = "gfx/interface/ideas/idea_paul_von_lettow_vorbeck.dds"
+	}
 	
 }

@@ -468,6 +468,7 @@ recruit_character = GDB_european_council
 recruit_character = GDB_graf_stauffenberg
 recruit_character = GDB_groscurth
 recruit_character = GDB_tresckow
+recruit_character = GDB_paul_von_lettow_vorbeck
 ### end modded ###
 
 

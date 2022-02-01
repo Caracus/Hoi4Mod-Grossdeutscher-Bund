@@ -20,6 +20,10 @@ focus_tree = {
 	
 	default = no
 
+	initial_show_position = {
+		focus = a_bright_future
+	}
+
 	#start modded#
 
 	focus = {
@@ -2372,12 +2376,6 @@ focus_tree = {
 			}
 			GER_konrad_adenauer = {
 				add_country_leader_role = {
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = conservatism
-						traits = {
-						}
-					}
 					promote_leader = yes
 				}
 			}	
@@ -3366,17 +3364,17 @@ focus_tree = {
 				long_name = eu_neutral_party_long
 				name = eu_neutral_party
 			}
-			hidden_effect = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = party_popularity@democratic
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -1
-			}
 			custom_effect_tooltip = GDB_TT_4
+			custom_effect_tooltip = GDB_TT_3
 			hidden_effect = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = party_popularity@democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -1
+				}
 				every_state = {
 					limit = {
 						is_on_continent = europe
@@ -3385,13 +3383,23 @@ focus_tree = {
 				}
 				every_country = {
 					limit = {
-						is_in_faction_with = ROOT
 						capital_scope = {
 							is_on_continent = europe
 						}
-						has_opinion = {
-							target = GER
-							value > 49
+						NOT = { has_government = communism }
+						OR = {
+							AND = {
+								is_in_faction_with = ROOT
+								has_opinion = {
+									target = GER
+									value > -51
+								}
+							}
+							num_of_factories < 50
+							has_opinion = {
+								target = GER
+								value > 49
+							}
 						}
 					}
 					country_event = {
@@ -3399,13 +3407,11 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = GDB_TT_3
 			dismantle_faction = yes
 			swap_ideas = {
 				remove_idea = a_nation_reborn
 				add_idea = dawn_of_a_new_europe
 			}
-		}
 		}
 	}
 	#end modded#
@@ -9381,6 +9387,9 @@ focus_tree = {
 					original_tag = GER
 					has_government = fascism
 				}
+			}
+			NOT = {
+				has_country_flag = GER_com_help_accepted
 			}
 		}
 		x = 0

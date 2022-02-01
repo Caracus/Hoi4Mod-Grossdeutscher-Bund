@@ -3680,17 +3680,16 @@ political_actions = {
 			factor = 1
 		}
 		complete_effect = {
-			create_corps_commander = {
-				name = "Paul von Lettow-Vorbeck"
-				gfx = GFX_portrait_ger_von_lettow_vorbeck
-				traits = { trickster war_hero media_personality jungle_rat}
-				skill = 4
-				id = 499
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 5
+			add_corps_commander_role = {
+				Character = GDB_paul_von_lettow_vorbeck
+					traits = { trickster war_hero media_personality jungle_rat brilliant_strategist }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 5
 			}
+			set_country_flag = paul_von_lettow_vorbeck_recalled
 		}
 	}
 	# Safety regulations
