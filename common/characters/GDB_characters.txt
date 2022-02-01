@@ -6,11 +6,6 @@ characters={
                 large="GFX_Portrait_hungary_otto_von_hapsburg"
             }
         }
-        country_leader={
-            ideology=conservatism
-            traits={  }
-            expire="1965.1.1.1"
-        }
     }
     GDB_rupprecht_von_wittelsbach={
         name=GDB_rupprecht_von_wittelsbach
@@ -18,14 +13,6 @@ characters={
             civilian={
                 large="GFX_Portrait_germany_rupprecht_von_bayern"
             }
-        }
-        country_leader={
-            ideology=conservatism
-            traits={  
-                retired_officer
-                anti_communist
-            }
-            expire="1965.1.1.1"
         }
     }
     GDB_ernst_august_3_von_hannover={
@@ -35,13 +22,6 @@ characters={
                 large="GFX_Portrait_germany_ernst_august_III_von_hannover"
             }
         }
-        country_leader={
-            ideology=conservatism
-            traits={  
-                dealbroker
-            }
-            expire="1965.1.1.1"
-        }
     }
         GDB_albrecht_von_wuerttemberg={
         name=GDB_albrecht_von_wuerttemberg
@@ -49,14 +29,6 @@ characters={
             civilian={
                 large="GFX_Portrait_germany_albrecht_von_wurttemberg"
             }
-        }
-        country_leader={
-            ideology=conservatism
-            traits={  
-				retired_officer
-				anti_communist
-            }
-            expire="1965.1.1.1"
         }
     }
         GDB_friedrich_christian_von_wettin={
@@ -66,14 +38,6 @@ characters={
                 large="GFX_Portrait_germany_friedrich_christian_von_sachsen"
             }
         }
-        country_leader={
-            ideology=conservatism
-            traits={  
-				retired_officer
-				political_dancer
-            }
-            expire="1965.1.1.1"
-        }
     }
     GDB_ernst_august_4_von_hannover={
         name=GDB_ernst_august_4_von_hannover
@@ -81,13 +45,6 @@ characters={
             civilian={
                 large="GFX_Portrait_germany_ernst_august_IV_von_hannover"
             }
-        }
-        country_leader={
-            ideology=conservatism
-            traits={  
-                inexperienced_monarch
-            }
-            expire="1965.1.1.1"
         }
     }   
     GDB_victoria_3={
@@ -97,14 +54,6 @@ characters={
                 large="GFX_portrait_ger_victoria_louise"
             }
         }
-        country_leader={
-            ideology=conservatism
-            traits={  
-				kaiserin_of_the_people
-				victoria_iii
-            }
-            expire="1965.1.1.1"
-        }
     }
     GDB_friedrich_wilhelm_2_von_hohenzollern={
         name=GDB_friedrich_wilhelm_2_von_hohenzollern
@@ -112,15 +61,6 @@ characters={
             civilian={
                 large="GFX_Portrait_germany_wilhelm_II_von_preussen"
             }
-        }
-        country_leader={
-			ideology = conservatism
-			traits = {
-				headstrong
-				imperial_connections
-				autocratic_imperialist
-			}
-            expire="1965.1.1.1"
         }
     }
         GDB_friedrich_wilhelm_3_von_hohenzollern={
@@ -130,14 +70,6 @@ characters={
                 large="GFX_Portrait_germany_wilhelm_III_von_preussen"
             }
         }
-        country_leader={
-			ideology = conservatism
-			traits = {
-				the_legitimist
-				camarilla_leader
-			}
-            expire="1965.1.1.1"
-        }
     }
         GDB_friedrich_wilhelm_4_von_hohenzollern={
         name=GDB_friedrich_wilhelm_4_von_hohenzollern
@@ -146,14 +78,6 @@ characters={
                 large="GFX_Portrait_germany_wilhelm_IV_von_preussen"
             }
         }
-        country_leader={
-			ideology = conservatism
-			traits = {
-				democratic_reformer
-				inexperienced_monarch
-			}
-            expire="1965.1.1.1"
-        }
     }
     GDB_european_council={
         name=GDB_european_council
@@ -161,12 +85,6 @@ characters={
             civilian={
                 large="GFX_Portrait_germany_european_council"
             }
-        }
-        country_leader={
-			ideology = despotism
-			traits = {
-			}
-            expire="1965.1.1.1"
         }
     }
     GDB_graf_stauffenberg={

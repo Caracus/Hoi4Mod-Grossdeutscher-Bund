@@ -490,7 +490,7 @@ country_event = {
 						autocratic_imperialist
 					}
 				}
-				promote_leader = yes
+				promote_leader = yes	
 			}
 		}
 	}
@@ -1045,7 +1045,7 @@ country_event = {
 		name = gdb_germany.26.a
 		country_event = {
 			id = gdb_germany.27
-			days = 3
+			days = 5
 		}
 	}
 }
@@ -1343,6 +1343,58 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
+		if = {
+			limit = {
+				GER = {
+					controls_province = 362
+				}
+			}
+			GER = {
+				transfer_state = 85
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 9263
+					controls_province = 3295
+				}
+			}
+			GER = {
+				transfer_state = 807
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 279
+					controls_province = 6558
+				}
+			}
+			GER = {
+				transfer_state = 86
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 6464
+				}
+			}
+			GER = {
+				transfer_state = 762
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 17
+				}
+			}
+			GER = {
+				transfer_state = 835
+			}
+		}
 		white_peace = POL
 	}
 	option = {
@@ -1360,7 +1412,7 @@ country_event = {
 		name = gdb_germany.35.a
 		country_event = {
 			id = gdb_germany.36
-			days = 3
+			days = 10
 		}
 	}
 	option = {

@@ -457,6 +457,7 @@ operations = {
 				controls_province = 3295
 				controls_province = 6464
 				controls_province = 6558
+				controls_province = 9263
 			}
 		}
 		days_mission_timeout = 14
@@ -2016,20 +2017,20 @@ political_actions = {
 			ROOT = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 100000
+					amount = 150000
 					producer = SPR
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment
-					amount = 5000
+					amount = 8000
 					producer = SPR
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 5000
+					amount = 8000
 					producer = SPR
 				}
-				add_manpower = 350000
+				add_manpower = 500000
 			}
 		}
 	}
@@ -2076,7 +2077,7 @@ political_actions = {
 		available = {
 			has_civil_war = no
 			has_government = democratic
-			date > 1937.6.6
+			date > 1937.3.3
 		}
 		fire_only_once = yes
 		ai_will_do = {

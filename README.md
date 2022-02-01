@@ -31,4 +31,6 @@ Todo:
 1.11 Upgrade:
 -Playtesting
 -militant_underground_infiltrated has a missing icon
-
+-zdb_limited_vote icon missing
+-a_nation_reborn icon missing
+-dawn_of_a_new_europe icon missing
