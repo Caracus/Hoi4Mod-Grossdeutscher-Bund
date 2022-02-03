@@ -4348,13 +4348,13 @@ country_event = {
 		GER = {
 			country_event = {
 				id = gdb_germany.117
-				days = 24
+				days = 1
 			}
 		}
 		GER = {
 			country_event = {
 				id = gdb_germany.119
-				days = 25
+				days = 2
 			}
 		}
 	}

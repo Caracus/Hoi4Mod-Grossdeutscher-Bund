@@ -57,6 +57,10 @@ focus_tree = {
 					id = gdb_germany.95
 					days = 3
 				}
+				country_event = {
+					id = gdb_germany.116
+					days = 6
+				}
 			}
 		}
 	}
