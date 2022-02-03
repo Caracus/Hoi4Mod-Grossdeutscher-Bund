@@ -202,6 +202,7 @@ country_event = {
 			factor = 50
 		}
 		set_country_flag = GER_com_help_accepted
+		set_global_flag = gdb_path_global
 		GER = {
 			add_timed_idea = {
 				idea = zdb_soviet_help_civil_war
@@ -4331,6 +4332,87 @@ country_event = {
 	option = {
 		name = gdb_germany.115.a
 		set_global_flag = GER_new_generals
+	}
+}
+
+#what to do with nazi soliders
+country_event = {
+	id = gdb_germany.116
+	title = gdb_germany.116.t
+	desc = gdb_germany.116.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.116.a
+
+		GER = {
+			country_event = {
+				id = gdb_germany.117
+				days = 24
+			}
+		}
+		GER = {
+			country_event = {
+				id = gdb_germany.119
+				days = 25
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.116.b
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_political_power = 50
+	}
+}
+
+#what to do with nazi soliders outcome 1
+country_event = {
+	id = gdb_germany.117
+	title = gdb_germany.117.t
+	desc = gdb_germany.117.d
+	picture = GFX_report_event_fascist_militia
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.117.a
+		add_manpower = 233198
+		add_political_power = -50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+	}
+	option = {
+		name = gdb_germany.117.b
+
+	}
+}
+
+#what to do with nazi soliders outcome 3
+country_event = {
+	id = gdb_germany.119
+	title = gdb_germany.119.t
+	desc = gdb_germany.119.d
+	picture = GFX_report_event_gre_officers_chatting
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.119.a
+		add_manpower = 11528
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.06
+		}
+		add_political_power = -60
+		army_experience = 80
+		air_experience = 35 
+		navy_experience = 20
+		add_ideas = guerilla_advisors
+	}
+	option = {
+		name = gdb_germany.119.b
+
 	}
 }
 

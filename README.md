@@ -30,5 +30,3 @@ Personally I use Visual Studio Code with some extensions like Auto Close Tag and
 Todo:
 1.11 Upgrade:
 -Playtesting
--fix pauls advisor portrait
--fix soviets taking eastern poland

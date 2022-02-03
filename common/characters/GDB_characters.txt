@@ -117,6 +117,9 @@ characters={
             civilian={
                 large="GFX_portrait_ger_von_lettow_vorbeck"
             }
+            army={
+				small="GFX_idea_paul_von_lettow_vorbeck"
+			}
         }
         advisor = {
               slot = political_advisor
