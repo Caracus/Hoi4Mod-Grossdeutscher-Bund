@@ -6,5 +6,5 @@ tags={
 	"Events"
 }
 name="Großdeutscher Bund Alpha"
-supported_version="1.11.4"
+supported_version="1.11.*"
 path="C:/Users/333ha/Documents/Paradox Interactive/Hearts of Iron IV/mod/GDB"
