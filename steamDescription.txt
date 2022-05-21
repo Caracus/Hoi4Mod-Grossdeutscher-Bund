@@ -1,0 +1,65 @@
+[h1]Summary[/h1]
+Großdeutscher Bund explores an alternative version of history where the Wehrmacht successfully opposes Hitler with the help of the Soviet Union and thereby opens the door for something that might be far more dangerous...
+
+or as a friend put it: "Eat up German neighbours and fight communists"
+
+[h1]Content breakdown[/h1]
+[list]
+    [*][b]A completely new focus path for Monarchist/Democratic Germany[/b]
+    [*]Event chains
+    [*]New States
+    [*]Tons of new ideas
+    [*]More than 100 new events
+    [*]New flags
+    [*]New leaders, generals and advisors
+    [*]An afternoon worth of playtime
+[/list]
+
+[h2]Backstory[/h2]
+[i]After the beginning of the German civil war, opinions within the general staff are split. Now that we are getting the upper hand against the fascists, one subject causes lots of discussions:[/i]
+
+Was it right to accept the help from the Soviet Union? At the time it seemed like the right choice but now that such help is no longer needed I am afraid that we can see the consequences of our choices lingering on the horizon. By desposing the world of one evil we might have created another one in its place. Whispers of revolution reach our ear more often every day. Will there be another uprising now that the state is weak and distracted? Wouldn't be the first time our war is lost from the inside out. Is it just old age or is there more to it? Only time will tell...
+While Spain is engulfed in its own civil war, it is France who worries me deeply with her instability. Her parties just cant seem to find common ground. One spark and the whole country might face another revolution. If we do not secure Germany soon then France might exploit our weakness and start a war against us because we remilitarized the rhineland; just to distract the people from her internal struggles of course, a strategy as old as time itself. 
+
+The words of a young officer wont leave my thoughts these many sleepless nights. "Herr Mackensen" he said, "Why don't we just send these insurrectionary communists over to France and kill two birds with one stone?". Of course everyone laughed at the suggestion and continued their original discussion. Back then we had bigger fish to fry but now we have to think about the future. Perhaps it is best to let them die for their illusory purpose abroad. All we need is time to rebuild the army.  
+
+Will our plan work? What will be the outcome of it? No one knows. The only thing that is for sure is that we have to focus on values of old and find new friends if we are to withstand the danger that is looming on the horizon.  The last time Ive seen this much motion in Europe was twenty years ago. Im afraid another great war in on the horizon and I doubt I will live to see the end of it. At last I put my hope in [b]You[/b].
+
+[h1]How to get started[/h1]
+[olist]
+    [*]Enable historical focusses
+    [*]Select the oppose Hitler focus
+    [*]Accept the Soviet help event after the civil war has begun
+[/olist]
+
+[h2]FAQ:[/h2]
+How to check if the mod is working:
+[list]
+    [*]Germany should have an extra focus path
+    [*]If Switzerland has 4 states you are also good to go
+[/list]
+
+Things that should be incompatible:
+[list]
+    [*]Focus tree mods
+    [*]Mods that change the map.
+[/list]
+
+[h2]Troubleshooting[/h2]
+If the mod does not work, you can try a few things:
+[olist]
+    [*]Unsubscribe from any older version of the mod, in case you are coming from the pre NSB version
+    [*]Verify that you have the Waking the Tiger dlc
+    [*]Create a new playset and just add this mod, then run the game, if it works then you were probably trying it with incompatible mods
+    [*]In most cases the issue is launcher related however, please look up any of PDX launcher issue guides
+[/olist]
+
+[h2]Version[/h2]
+[i] Now updated to No Step Back![/i]
+HOI4 Version 1.11.5 - 1.11.*
+
+[h2]Other versions:[/h2]
+[url=https://github.com/Caracus/Hoi4Mod-Grossdeutscher-Bund]Github[/url] if you want to contribute
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2182657195]Pre NSB version[/url] 1.10.* if you want an older version
+
+Enjoy!
