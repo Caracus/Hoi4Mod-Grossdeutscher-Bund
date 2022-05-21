@@ -5713,6 +5713,7 @@ focus_tree = {
 		prerequisite = { focus = GER_army_innovation }
 		available = {
 			NOT = { has_completed_focus = GER_anti_soviet_pact }
+			NOT = { has_global_flag = german_soviet_relation_shattered_flag}
 			OR = {
 				NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
 				NOT = { has_completed_focus = GER_the_great_red_menace }
@@ -5730,6 +5731,7 @@ focus_tree = {
 				NOT = { country_exists = SOV }
 				has_completed_focus = GER_bulwark_against_bolshevism
 				has_completed_focus = GER_the_great_red_menace
+				has_global_flag = german_soviet_relation_shattered_flag
 			}
 		}
 

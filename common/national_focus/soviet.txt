@@ -13228,6 +13228,9 @@ ai_will_do = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
+			NOT = {
+				has_global_flag = GER_danger_diminished
+			}
 		}
 
 		bypass = {
@@ -13347,7 +13350,7 @@ ai_will_do = {
 
 		available = {
 			NOT = {
-				has_global_flag = gdb_path_global
+				has_global_flag = GER_danger_diminished
 			}
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
@@ -13450,6 +13453,9 @@ ai_will_do = {
 		}
 
 		available = {
+			NOT = {
+				has_global_flag = GER_danger_diminished
+			}
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			country_exists = POL
 			NOT = { has_war_with = POL }

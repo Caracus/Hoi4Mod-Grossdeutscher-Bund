@@ -2348,7 +2348,7 @@ political_actions = {
 				}
 			}
 			remove_effect = {
-				add_state_core = 85
+				add_state_core = 807
 			}
 		}
 	# integrate posen

@@ -2451,9 +2451,12 @@ focus_tree = {
 				has_government = democratic
 				has_government = communism
 			}
+			NOT = {
+				has_global_flag = GER_danger_diminished
+			}
 		}
 
-		continue_if_invalid = yes
+		continue_if_invalid = no
 
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		x = 33
