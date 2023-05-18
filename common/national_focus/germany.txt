@@ -463,22 +463,23 @@ focus_tree = {
 		completion_reward = {
 			AUS = {
 				add_state_claim = 736
+				add_state_claim = 852
 				add_state_claim = 102
 				add_state_claim = 69
 				add_state_claim = 9
 				add_state_claim = 75
 				add_state_claim = 74
-				add_state_claim = 836
+				add_state_claim = 917
 				add_state_claim = 39
 			}
-			848 = {
+			918 = {
 				remove_core_of = HUN
 			}
 			AUS = {
-				transfer_state = 848
+				transfer_state = 918
 			}
 			hidden_effect = {
-				848 = {
+				918 = {
 					add_core_of = GER
 				}
 			}
@@ -510,7 +511,7 @@ focus_tree = {
 					relation = non_aggression_pact
 				}
 			}
-			838 = {
+			850 = {
 				remove_core_of = AUS
 			}
 		}
@@ -529,21 +530,21 @@ focus_tree = {
 			factor = 1
 		}
 		bypass = {
-			has_full_control_of_state = 843
+			has_full_control_of_state = 846
 		}
 		available = {
 			OR = {
 				OR = {
 					GER = {
-						has_full_control_of_state = 843
+						has_full_control_of_state = 846
 					}
 					SWI = {
-						has_full_control_of_state = 843
+						has_full_control_of_state = 846
 					}
 				}
 				AND = {
 					SWI = {
-						has_full_control_of_state = 843
+						has_full_control_of_state = 846
 					}
 					SWI = {
 						is_puppet_of = GER
@@ -556,9 +557,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			ITA = {
-				transfer_state = 843
+				transfer_state = 846
 			}
-			844 = {
+			845 = {
 				add_core_of = ITA
 			}
 			if = {
@@ -1119,7 +1120,7 @@ focus_tree = {
 					}
 				}
 			}
-			842 = {
+			914 = {
 				if = {
 					limit = {
 						OR = {
@@ -1321,7 +1322,7 @@ focus_tree = {
 					}
 				}
 			}
-			836 = {
+			917 = {
 				if = {
 					limit = {
 						OR = {
@@ -1636,7 +1637,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			836 = {
+			917 = {
 				if = {
 					limit = {
 						OR = {
@@ -2099,11 +2100,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			845 = {
+			915 = {
 				add_core_of = GER
 			}
 			GER = {
-				transfer_state = 845
+				transfer_state = 915
 				add_timed_idea = {
 					idea = zdb_lose_money
 					days = 180
