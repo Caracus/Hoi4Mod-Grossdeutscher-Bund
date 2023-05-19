@@ -559,7 +559,7 @@ focus_tree = {
 			ITA = {
 				transfer_state = 846
 			}
-			845 = {
+			846 = {
 				add_core_of = ITA
 			}
 			if = {
