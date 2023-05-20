@@ -1,0 +1,4721 @@
+add_namespace = gdb_germany
+country_event = {
+	id = gdb_germany.0
+	title = gdb_germany.0.t
+	desc = gdb_germany.0.d
+	picture = GFX_report_event_hohenzollern_family
+	trigger = {
+		date > 1936.1.1
+		original_tag = GER
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = gdb_germany.0.a
+	}
+}
+
+country_event = {
+	id = gdb_germany.1
+	title = gdb_germany.1.t
+	desc = gdb_germany.1.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	#civil war starts
+	option = {
+		name = gdb_germany.1.a
+		hidden_effect = {
+			set_capital = { state = 19 }
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.58
+				set_capital = { state = 16 }
+				states = {
+					16
+					29
+					24
+					27
+					28
+					17
+					18
+					32
+					785
+					909
+					910
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = communism
+				}
+				set_stability = 0.9
+				set_war_support = 0.8
+				load_oob = "FRA_Civil_War_communism"
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.8
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0
+			}
+			set_stability = 0.9
+			set_war_support = 0.8
+			load_oob = "FRA_Civil_War_democratic"
+			GER = {
+				country_event = {
+					id = gdb_germany.70
+					days = 1
+				}
+			}
+			set_global_flag = enable_fra_switzerland
+			set_global_flag = enable_fra_belgium
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.2
+	title = gdb_germany.2.t
+	desc = gdb_germany.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.2.a
+		ai_chance = {
+			factor = 60
+		}
+		28 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 28
+		}
+		add_named_threat = {
+			threat = 2
+			name = zdb_small_greed
+		}
+	}
+	#greedy
+	option = {
+		name = gdb_germany.2.b
+		ai_chance = {
+			factor = 30
+		}
+		28 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 28
+		}
+		909 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 909
+		}
+		add_named_threat = {
+			threat = 5
+			name = zdb_large_greed
+		}
+	}
+	#refuse
+	option = {
+		name = gdb_germany.2.c
+	}
+}
+
+country_event = {
+	id = gdb_germany.3
+	title = gdb_germany.3.t
+	desc = gdb_germany.3.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.3.a
+		ai_chance = {
+			factor = 90
+		}
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 34
+		}
+		34 = {
+			add_core_of = FRA
+		}
+		6 = {
+			add_core_of = HOL
+		}
+		HOL = {
+			transfer_state = 6
+		}
+		911 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 911
+		}
+		913 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 913
+		}
+	}
+}
+
+#used 1.11
+#accept soviet help prompt
+country_event = {
+	id = gdb_germany.4
+	title = gdb_germany.4.t
+	desc = gdb_germany.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.4.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = GER_com_help_accepted
+		set_global_flag = gdb_path_global
+		GER = {
+			add_timed_idea = {
+				idea = zdb_soviet_help_civil_war
+				days = 150
+			}
+		}
+		BEL = {
+			add_timed_idea = {
+				idea = zdb_soviet_help_civil_war
+				days = 150
+			}
+		}
+		FRA = {
+			add_timed_idea = {
+				idea = zdb_soviet_help_civil_war
+				days = 150
+			}
+		}
+		HOL = {
+			add_timed_idea = {
+				idea = zdb_soviet_help_civil_war
+				days = 150
+			}
+		}
+		SWI = {
+			add_timed_idea = {
+				idea = zdb_soviet_help_civil_war
+				days = 150
+			}
+		}
+		LUX = {
+			add_timed_idea = {
+				idea = zdb_soviet_help_civil_war
+				days = 150
+			}
+		}
+		AUS = {
+			add_timed_idea = {
+				idea = zdb_soviet_help_civil_war
+				days = 150
+			}
+		}
+		hidden_effect = {
+			ENG = {
+				add_ideas = uk_we_stand_alone
+			}
+			GER = {
+				country_event = {
+					id = gdb_germany.93
+					days = 14
+				}
+			}
+			set_global_flag = GER_danger_diminished
+		}
+	}
+	#refuse
+	option = {
+		name = gdb_germany.4.b
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = GER_com_help_rejected
+	}
+}
+
+country_event = {
+	id = gdb_germany.5
+	title = gdb_germany.5.t
+	desc = gdb_germany.5.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.5.a
+	}
+}
+
+country_event = {
+	id = gdb_germany.6
+	title = gdb_germany.6.t
+	desc = gdb_germany.6.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.6.a
+		GER = {
+			country_event = {
+				id = gdb_germany.7
+				days = 14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.7
+	title = gdb_germany.7.t
+	desc = gdb_germany.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.7.a
+		GER = {
+			country_event = {
+				id = gdb_germany.8
+				days = 14
+			}
+			add_political_power = -150
+		}
+	}
+	option = {
+		name = gdb_germany.7.b
+		GER = {
+			country_event = {
+				id = gdb_germany.9
+				days = 14
+			}
+			add_political_power = -50
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.8
+	title = gdb_germany.8.t
+	desc = gdb_germany.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.8.a
+		ENG = {
+			transfer_state = 718
+		}
+		ENG = {
+			transfer_state = 768
+		}
+		ENG = {
+			transfer_state = 769
+		}
+		HOL = {
+			transfer_state = 295
+		}
+		LUX = {
+			transfer_state = 912
+		}
+		912 = {
+			add_core_of = LUX
+		}
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 538
+			transfer_state = 34
+			transfer_state = 912
+		}
+		34 = {
+			add_core_of = FRA
+		}
+		912 = {
+			add_core_of = FRA
+		}
+		6 = {
+			add_core_of = HOL
+		}
+		HOL = {
+			transfer_state = 6
+		}
+		911 = {
+			add_core_of = GER
+		}
+		913 = {
+			add_core_of = GER
+		}
+		914 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 911
+		}
+		GER = {
+			transfer_state = 913
+		}
+		GER = {
+			transfer_state = 914
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.9
+	title = gdb_germany.9.t
+	desc = gdb_germany.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.9.a
+		ENG = {
+			transfer_state = 718
+		}
+		ENG = {
+			transfer_state = 768
+		}
+		ENG = {
+			transfer_state = 769
+		}
+		GER = {
+			transfer_state = 295
+		}
+		GER = {
+			transfer_state = 538
+		}
+		LUX = {
+			transfer_state = 912
+		}
+		912 = {
+			add_core_of = LUX
+		}
+		34 = {
+			add_core_of = FRA
+		}
+		912 = {
+			add_core_of = FRA
+		}
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 34
+			transfer_state = 912
+		}
+		911 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 911
+		}
+		GER = {
+			transfer_state = 919
+		}
+		country_event = {
+			id = gdb_germany.10
+			days = 150
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.10
+	title = gdb_germany.10.t
+	desc = gdb_germany.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.10.a
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 845
+		}
+		845 = {
+			add_core_of = FRA
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.12
+	title = gdb_germany.12.t
+	desc = gdb_germany.12.d
+	picture = GFX_report_event_hohenzollern_family
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.12.a
+		GDB_friedrich_wilhelm_2_von_hohenzollern = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						headstrong
+						imperial_connections
+						autocratic_imperialist
+					}
+				}
+				promote_leader = yes	
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.12.b
+		GDB_friedrich_wilhelm_3_von_hohenzollern = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						the_legitimist
+						camarilla_leader
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.12.c
+		GDB_friedrich_wilhelm_4_von_hohenzollern = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						democratic_reformer
+						inexperienced_monarch
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.12.e
+		country_event = {
+			id = gdb_germany.107
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.13
+	title = gdb_germany.13.t
+	desc = gdb_germany.13.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.13.a
+		736 = {
+			add_core_of = AUS
+		}
+		852 = {
+			add_core_of = AUS
+		}
+		102 = {
+			add_core_of = AUS
+		}
+		69 = {
+			add_core_of = AUS
+		}
+		74 = {
+			add_core_of = AUS
+		}
+		75 = {
+			add_core_of = AUS
+		}
+		9 = {
+			add_core_of = AUS
+		}
+		917 = {
+			add_core_of = AUS
+		}
+		736 = {
+			add_core_of = GER
+		}
+		852 = {
+			add_core_of = GER
+		}		
+		102 = {
+			add_core_of = GER
+		}
+		69 = {
+			add_core_of = GER
+		}
+		74 = {
+			add_core_of = GER
+		}
+		75 = {
+			add_core_of = GER
+		}
+		9 = {
+			add_core_of = GER
+		}
+		917 = {
+			add_core_of = GER
+		}
+		country_event = {
+			id = gdb_germany.14
+			days = 7
+		}
+		set_country_flag = GER_austrian_claims
+	}
+}
+
+country_event = {
+	id = gdb_germany.14
+	title = gdb_germany.14.t
+	desc = gdb_germany.14.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.14.a
+		country_event = {
+			id = gdb_germany.15
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.15
+	title = gdb_germany.15.t
+	desc = gdb_germany.15.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.15.a
+		if = {
+			limit = {
+				country_exists = AUS
+			}
+			AUS = {
+				transfer_state = 102
+			}
+		}
+		else = {
+			GER = {
+				transfer_state = 102
+			}
+		}
+		country_event = {
+			id = gdb_germany.16
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.16
+	title = gdb_germany.16.t
+	desc = gdb_germany.16.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.16.a
+		if = {
+			limit = {
+				country_exists = AUS
+			}
+			AUS = {
+				transfer_state = 736
+			}
+			AUS = {
+				transfer_state = 852
+			}			
+			AUS = {
+				transfer_state = 39
+			}
+		}
+		else = {
+			GER = {
+				transfer_state = 736
+			}
+			GER = {
+				transfer_state = 852
+			}			
+			GER = {
+				transfer_state = 39
+			}
+		}
+		846 = {
+			add_core_of = ITA
+		}
+		ITA = {
+			transfer_state = 846
+		}
+	}
+	option = {
+		name = gdb_germany.16.b
+	}
+}
+
+country_event = {
+	id = gdb_germany.17
+	title = gdb_germany.17.t
+	desc = gdb_germany.17.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.17.a
+		664 = {
+			add_core_of = HUN
+		}
+		HUN = {
+			transfer_state = 664
+		}
+		country_event = {
+			id = gdb_germany.18
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.18
+	title = gdb_germany.18.t
+	desc = gdb_germany.18.d
+	picture = GFX_news_event_cze_divided_nation
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.18.a
+		if = {
+			limit = {
+				country_exists = AUS
+			}
+			AUS = {
+				transfer_state = 69
+			}
+			AUS = {
+				transfer_state = 74
+			}
+			AUS = {
+				transfer_state = 9
+			}
+			AUS = {
+				transfer_state = 75
+			}
+			AUS = {
+				transfer_state = 917
+			}
+		}
+		else = {
+			GER = {
+				transfer_state = 69
+			}
+			GER = {
+				transfer_state = 74
+			}
+			GER = {
+				transfer_state = 9
+			}
+			GER = {
+				transfer_state = 75
+			}
+			GER = {
+				transfer_state = 917
+			}
+		}
+		73 = {
+			add_core_of = HUN
+		}
+		HUN = {
+			transfer_state = 73
+		}
+		71 = {
+			add_core_of = POL
+		}
+		POL = {
+			transfer_state = 71
+		}
+		70 = {
+			add_core_of = POL
+		}
+		POL = {
+			transfer_state = 70
+		}
+		72 = {
+			add_core_of = POL
+		}
+		POL = {
+			transfer_state = 72
+		}
+		86 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 86
+		}
+		916 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 916
+		}
+		85 = {
+			add_core_of = GER
+		}
+		807 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 85
+		}
+		GER = {
+			transfer_state = 807
+		}
+		give_guarantee = POL
+	}
+}
+
+country_event = {
+	id = gdb_germany.19
+	title = gdb_germany.19.t
+	desc = gdb_germany.19.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.19.a
+		188 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 188
+		}
+		11 = {
+			add_core_of = POL
+		}
+		POL = {
+			transfer_state = 11
+		}
+		189 = {
+			add_core_of = POL
+		}
+		814 = {
+			add_core_of = POL
+		}
+		815 = {
+			add_core_of = POL
+		}
+		POL = {
+			transfer_state = 189
+		}
+		POL = {
+			transfer_state = 814
+		}
+		POL = {
+			transfer_state = 815
+		}
+		POL = {
+			set_cosmetic_tag = POL_GDB
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.20
+	title = gdb_germany.20.t
+	desc = gdb_germany.20.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.20.a
+		annex_country = {
+			target = LUX
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = AUS
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SWI
+			transfer_troops = yes
+		}
+		country_event = {
+			id = gdb_germany.90
+		}
+		add_threat = 3
+		3 = {
+			add_core_of = GER
+		}
+		151 = {
+			add_core_of = GER
+		}
+		847 = {
+			add_core_of = GER
+		}
+		8 = {
+			add_core_of = GER
+		}
+		153 = {
+			add_core_of = GER
+		}
+		152 = {
+			add_core_of = GER
+		}
+		4 = {
+			add_core_of = GER
+		}
+		39 = {
+			add_core_of = GER
+		}
+		69 = {
+			add_core_of = GER
+		}
+		9 = {
+			add_core_of = GER
+		}
+		74 = {
+			add_core_of = GER
+		}
+		75 = {
+			add_core_of = GER
+		}
+		917 = {
+			add_core_of = GER
+		}
+		AUS = {
+			every_unit_leader = {
+				set_nationality = GER
+			}
+		}
+		LUX = {
+			every_unit_leader = {
+				set_nationality = GER
+			}
+		}
+		SWI = {
+			every_unit_leader = {
+				set_nationality = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.21
+	title = gdb_germany.21.t
+	desc = gdb_germany.21.d
+	picture = GFX_report_event_hol_polderen
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.21.a
+		country_event = {
+			id = gdb_germany.22
+			days = 730
+		}
+		add_timed_idea = {
+			idea = zdb_ship_minimal_cost
+			days = 730
+		}
+	}
+	option = {
+		name = gdb_germany.21.b
+		country_event = {
+			id = gdb_germany.22
+			days = 365
+		}
+		add_timed_idea = {
+			idea = zdb_ship_maximal_cost
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.22
+	title = gdb_germany.22.t
+	desc = gdb_germany.22.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.22.a
+		create_equipment_variant = {
+			name = "Mackensen"
+			type = ship_hull_super_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_super_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_4
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_4
+				fixed_ship_engine_slot = heavy_ship_engine_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_armor_slot = ship_armor_shbb
+				front_1_custom_slot = ship_super_heavy_battery_1
+				front_2_custom_slot = ship_super_heavy_battery_1
+				mid_1_custom_slot = dp_ship_secondaries
+				mid_2_custom_slot = dp_ship_secondaries
+				mid_3_custom_slot = dp_ship_secondaries
+				rear_1_custom_slot = ship_super_heavy_battery_1
+				rear_2_custom_slot = ship_super_heavy_battery_1
+			}
+		}
+		load_oob = "GER_SMS_Mackensen"
+	}
+}
+
+country_event = {
+	id = gdb_germany.23
+	title = gdb_germany.23.t
+	desc = gdb_germany.23.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.23.a
+		FROM = {
+			add_to_faction = ROOT
+			country_event = {
+				id = gdb_germany.92
+				hours = 6
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = gdb_germany.23.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.24
+	title = gdb_germany.24.t
+	desc = gdb_germany.24.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.24.a
+		add_ideas = defender_of_freedom
+	}
+}
+
+country_event = {
+	id = gdb_germany.25
+	title = gdb_germany.25.t
+	desc = gdb_germany.25.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.25.a
+		every_country = {
+			GER = {
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.26
+	title = gdb_germany.26.t
+	desc = gdb_germany.26.d
+	picture = GFX_event_gdb_eastern_claims
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.26.a
+		country_event = {
+			id = gdb_germany.27
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.27
+	title = gdb_germany.27.t
+	desc = gdb_germany.27.d
+	picture = GFX_event_gdb_polish_eastern_claims_poland
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.27.a
+		country_event = {
+			id = gdb_germany.28
+			days = 3
+		}
+	}
+	option = {
+		name = gdb_germany.27.b
+		country_event = {
+			id = gdb_germany.29
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.28
+	title = gdb_germany.28.t
+	desc = gdb_germany.28.d
+	picture = GFX_event_gdb_polish_compromise
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.28.a
+		set_global_flag = german_polish_friendly_outcome
+		add_opinion_modifier = {
+			target = POL
+			modifier = medium_increase
+		}
+		POL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_increase
+			}
+		}
+		85 = {
+			add_core_of = GER
+		}
+		807 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 85
+			transfer_state = 807
+			add_political_power = -50
+			random_owned_state = {
+				limit = {
+					arms_factory > 0
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		POL = {
+			10 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.28.b
+		country_event = {
+			id = gdb_germany.29
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.29
+	title = gdb_germany.29.t
+	desc = gdb_germany.29.d
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.29.a
+		country_event = {
+			id = gdb_germany.30
+			days = 3
+		}
+	}
+	option = {
+		name = gdb_germany.29.b
+		country_event = {
+			id = gdb_germany.31
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.30
+	title = gdb_germany.30.t
+	desc = gdb_germany.30.d
+	picture = GFX_event_gdb_polish_compromise_2
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.30.a
+		set_global_flag = german_polish_friendly_outcome
+		add_opinion_modifier = {
+			target = POL
+			modifier = medium_increase
+		}
+		POL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_increase
+			}
+		}
+		85 = {
+			add_core_of = GER
+		}
+		807 = {
+			add_core_of = GER
+		}
+		86 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 85
+			transfer_state = 807
+			transfer_state = 86
+		}
+		GER = {
+			add_political_power = -100
+			random_owned_state = {
+				limit = {
+					industrial_complex > 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = {
+					arms_factory > 1
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+		POL = {
+			88 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			10 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.30.b
+		country_event = {
+			id = gdb_germany.31
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.31
+	title = gdb_germany.31.t
+	desc = gdb_germany.31.d
+	picture = GFX_report_event_por_president_military_inspection
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.31.a
+		country_event = {
+			id = gdb_germany.32
+			days = 3
+		}
+	}
+	option = {
+		name = gdb_germany.31.b
+		add_stability = -0.1
+		add_war_support = -0.2
+	}
+}
+
+country_event = {
+	id = gdb_germany.32
+	title = gdb_germany.32.t
+	desc = gdb_germany.32.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.32.a
+		add_named_threat = {
+			threat = 7
+			name = gdb_german_polish_war
+		}
+		hidden_effect = {
+			ENG = {
+				diplomatic_relation = {
+					country = POL
+					relation = guarantee
+					active = no
+				}
+			}
+			FRA = {
+				diplomatic_relation = {
+					country = POL
+					relation = guarantee
+					active = no
+				}
+			}
+		}
+		declare_war_on = {
+			target = POL
+			type = puppet_wargoal_focus
+		}
+		set_global_flag = limited_war_germany_poland
+	}
+}
+
+#limited war succes
+country_event = {
+	id = gdb_germany.33
+	title = gdb_germany.33.t
+	desc = gdb_germany.33.d
+	picture = GFX_event_gdb_eastern_claims_full
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		white_peace = POL
+	}
+	option = {
+		name = gdb_germany.33.a
+		85 = {
+			add_core_of = GER
+		}
+		807 = {
+			add_core_of = GER
+		}
+		86 = {
+			add_core_of = GER
+		}
+		916 = {
+			add_core_of = GER
+		}
+		762 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 85
+			transfer_state = 807
+			transfer_state = 86
+			transfer_state = 916
+			transfer_state = 762
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.111
+				days = 30
+			}
+		}
+	}
+}
+#limited war failure
+country_event = {
+	id = gdb_germany.34
+	title = gdb_germany.34.t
+	desc = gdb_germany.34.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		if = {
+			limit = {
+				GER = {
+					controls_province = 362
+				}
+			}
+			GER = {
+				transfer_state = 85
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 9263
+					controls_province = 3295
+				}
+			}
+			GER = {
+				transfer_state = 807
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 279
+					controls_province = 6558
+				}
+			}
+			GER = {
+				transfer_state = 86
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 6464
+				}
+			}
+			GER = {
+				transfer_state = 762
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_province = 17
+				}
+			}
+			GER = {
+				transfer_state = 916
+			}
+		}
+		white_peace = POL
+	}
+	option = {
+		name = gdb_germany.34.a
+	}
+}
+
+country_event = {
+	id = gdb_germany.35
+	title = gdb_germany.35.t
+	desc = gdb_germany.35.d
+	picture = GFX_event_gdb_polish_claims_north
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.35.a
+		country_event = {
+			id = gdb_germany.36
+			days = 10
+		}
+	}
+	option = {
+		name = gdb_germany.35.b
+	}
+}
+
+country_event = {
+	id = gdb_germany.36
+	title = gdb_germany.36.t
+	desc = gdb_germany.36.d
+	picture = GFX_event_gdb_polish_claims_north
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.36.a
+		188 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 188
+		}
+		11 = {
+			add_core_of = POL
+		}
+		189 = {
+			add_core_of = POL
+		}
+		814 = {
+			add_core_of = POL
+		}
+		815 = {
+			add_core_of = POL
+		}
+		190 = {
+			add_core_of = POL
+		}
+		809 = {
+			add_core_of = POL
+		}
+		POL = {
+			transfer_state = 11
+			transfer_state = 189
+			transfer_state = 190
+			transfer_state = 809
+			transfer_state = 814
+			transfer_state = 815
+		}
+		POL = {
+			set_cosmetic_tag = POL_GDB
+			add_named_threat = {
+				threat = 4
+				name = gdb_polish_baltics
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.37
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.37
+	title = gdb_germany.37.t
+	desc = gdb_germany.37.d
+	picture = GFX_report_event_soviet_in_riga
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.37.a
+		SOV = {
+			transfer_state = 12
+			transfer_state = 13
+			transfer_state = 191
+			transfer_state = 808
+			transfer_state = 810
+			transfer_state = 811
+			transfer_state = 812
+			transfer_state = 813
+			add_named_threat = {
+				threat = 3
+				name = gdb_soviet_baltics
+			}
+		}
+		12 = {
+			add_core_of = SOV
+		}
+		13 = {
+			add_core_of = SOV
+		}
+		191 = {
+			add_core_of = SOV
+		}
+		808 = {
+			add_core_of = SOV
+		}
+		810 = {
+			add_core_of = SOV
+		}
+		811 = {
+			add_core_of = SOV
+		}
+		812 = {
+			add_core_of = SOV
+		}
+		813 = {
+			add_core_of = SOV
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.38
+	title = gdb_germany.38.t
+	desc = gdb_germany.38.d
+	picture = GFX_news_event_cze_divided_nation
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.38.a
+		country_event = {
+			id = gdb_germany.39
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.39
+	title = gdb_germany.39.t
+	desc = gdb_germany.39.d
+	picture = GFX_news_event_cze_divided_nation
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.39.a
+		if = {
+			limit = {
+				has_global_flag = german_polish_friendly_outcome
+			}
+			country_event = {
+				id = gdb_germany.40
+				days = 7
+			}
+			else = {
+				country_event = {
+					id = gdb_germany.41
+					days = 7
+				}
+			}
+		}
+		AUS = {
+			transfer_state = 74
+			transfer_state = 69
+			transfer_state = 917
+		}
+		POL = {
+			transfer_state = 72
+		}
+		HUN = {
+			transfer_state = 73
+			transfer_state = 664
+		}
+		hidden_effect = {
+			74 = {
+				add_core_of = AUS
+			}
+			69 = {
+				add_core_of = AUS
+			}
+			917 = {
+				add_core_of = AUS
+			}
+			72 = {
+				add_core_of = POL
+			}
+			73 = {
+				add_core_of = HUN
+			}
+			664 = {
+				add_core_of = HUN
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.40
+	title = gdb_germany.40.t
+	desc = gdb_germany.40.d
+	picture = GFX_news_event_cze_divided_nation
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.40.a
+		AUS = {
+			transfer_state = 75
+			transfer_state = 9
+		}
+		HUN = {
+			transfer_state = 70
+			transfer_state = 71
+		}
+		add_threat = 3
+		HUN = {
+			add_threat = 2
+		}
+		hidden_effect = {
+			set_global_flag = hungarians_happy_czech_claims
+			75 = {
+				add_core_of = AUS
+			}
+			9 = {
+				add_core_of = AUS
+			}
+			70 = {
+				add_core_of = HUN
+			}
+			71 = {
+				add_core_of = HUN
+			}
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.41
+	title = gdb_germany.41.t
+	desc = gdb_germany.41.d
+	picture = GFX_news_event_cze_divided_nation
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.41.a
+		AUS = {
+			transfer_state = 75
+			transfer_state = 9
+		}
+		POL = {
+			transfer_state = 70
+			transfer_state = 71
+		}
+		hidden_effect = {
+			75 = {
+				add_core_of = AUS
+			}
+			9 = {
+				add_core_of = AUS
+			}
+			70 = {
+				add_core_of = HUN
+			}
+			71 = {
+				add_core_of = HUN
+			}
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.41.b
+		HUN = {
+			transfer_state = 70
+			transfer_state = 71
+		}
+		hidden_effect = {
+			set_global_flag = hungarians_happy_czech_claims
+			70 = {
+				add_core_of = HUN
+			}
+			71 = {
+				add_core_of = HUN
+			}
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.41.c
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.42
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.42
+	title = gdb_germany.42.t
+	desc = gdb_germany.42.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.42.a
+		POL = {
+			transfer_state = 80
+			add_threat = 1
+		}
+		HUN = {
+			transfer_state = 83
+			transfer_state = 76
+			add_threat = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.43
+				days = 3
+			}
+			80 = {
+				add_core_of = POL
+			}
+			83 = {
+				add_core_of = HUN
+			}
+			76 = {
+				add_core_of = HUN
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.43
+	title = gdb_germany.43.t
+	desc = gdb_germany.43.d
+	picture = GFX_report_event_soviet_tanks
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.43.a
+		SOV = {
+			transfer_state = 78
+			add_threat = 3
+		}
+		BUL = {
+			transfer_state = 77
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.44
+				days = 3
+			}
+			78 = {
+				add_core_of = SOV
+			}
+			77 = {
+				add_core_of = BUL
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.44
+	title = gdb_germany.44.t
+	desc = gdb_germany.44.d
+	picture = GFX_report_event_hungary_parliament
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.44.a
+		HUN = {
+			transfer_state = 84
+			transfer_state = 82
+			add_threat = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.45
+				days = 3
+			}
+			84 = {
+				add_core_of = HUN
+			}
+			82 = {
+				add_core_of = HUN
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.45
+	title = gdb_germany.45.t
+	desc = gdb_germany.45.d
+	picture = GFX_report_event_romania_parliament
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.45.a
+		SOV = {
+			transfer_state = 79
+			transfer_state = 766
+			add_threat = 3
+		}
+		BUL = {
+			transfer_state = 46
+			transfer_state = 81
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.46
+				days = 3
+			}
+			79 = {
+				add_core_of = SOV
+			}
+			766 = {
+				add_core_of = SOV
+			}
+			46 = {
+				add_core_of = BUL
+			}
+			81 = {
+				add_core_of = BUL
+			}
+			79 = {
+				add_core_of = BUL
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.46
+	title = gdb_germany.46.t
+	desc = gdb_germany.46.d
+	picture = GFX_report_event_aid_pact
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.46.a
+		if = {
+			limit = {
+				NOT = {
+					BUL = {
+						has_cosmetic_tag = BUL_GDB
+					}
+				}
+			}
+			BUL = {
+				set_cosmetic_tag = BUL_GDB_small
+			}
+		}
+
+		give_guarantee = BUL
+		hidden_effect = {
+			78 = {
+				add_core_of = BUL
+			}
+			78 = {
+				add_core_of = BUL
+			}
+			766 = {
+				add_core_of = BUL
+			}
+			set_global_flag = germany_helps_bulgaria
+		}
+	}
+	option = {
+		name = gdb_germany.46.b
+		hidden_effect = {
+			ROM = {
+				transfer_state = 46
+				transfer_state = 81
+			}
+			SOV = {
+				declare_war_on = {
+					target = BUL
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = ROM
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.47
+	title = gdb_germany.47.t
+	desc = gdb_germany.47.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.47.a
+		country_event = {
+			id = gdb_germany.48
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.48
+	title = gdb_germany.48.t
+	desc = gdb_germany.48.d
+	picture = GFX_report_event_yugoslavian_split
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.48.a
+		#north slovenia
+		if = {
+			limit = {
+				country_exists = AUS
+			}
+			if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_full_control_of_state = 102
+						}
+						GER = {
+							has_full_control_of_state = 102
+						}
+					}
+				}
+				AUS = {
+					transfer_state = 102
+					add_threat = 1
+				}
+			}
+		} else_if = {
+			limit = {
+				NOT = {
+					AUS = {
+						has_full_control_of_state = 102
+					}
+					GER = {
+						has_full_control_of_state = 102
+					}
+				}
+			}
+			GER = {
+				transfer_state = 102
+				add_threat = 1
+			}
+		}	
+
+		#south slovenia
+		if = {
+			limit = {
+				country_exists = AUS
+			}
+			if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_full_control_of_state = 853
+						}
+						GER = {
+							has_full_control_of_state = 853
+						}
+					}
+				}
+				AUS = {
+					transfer_state = 853
+					add_threat = 1
+				}
+			}
+		} else_if = {
+			limit = {
+				NOT = {
+					AUS = {
+						has_full_control_of_state = 853
+					}
+					GER = {
+						has_full_control_of_state = 853
+					}
+				}
+			}
+			GER = {
+				transfer_state = 853
+				add_threat = 1
+			}
+		}
+	
+		ITA = {
+			transfer_state = 103
+			transfer_state = 44
+			transfer_state = 805
+			add_threat = 1
+		}
+		HUN = {
+			transfer_state = 764
+			transfer_state = 45
+			add_threat = 1
+		}
+		country_event = {
+			id = gdb_germany.50
+			days = 3
+		}
+		hidden_effect = {
+			102 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			853 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			103 = {
+				add_core_of = ITA
+			}
+			104 = {
+				add_core_of = ITA
+			}
+			44 = {
+				add_core_of = ITA
+			}
+			764 = {
+				add_core_of = HUN
+			}
+			45 = {
+				add_core_of = HUN
+			}
+		}
+	}
+}
+
+#split of yugoslavia
+country_event = {
+	id = gdb_germany.50
+	title = gdb_germany.50.t
+	desc = gdb_germany.50.d
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.50.a
+		BUL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_increase
+			}
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_decrease
+			}
+		}
+		BUL = {
+			transfer_state = 105
+			transfer_state = 804
+			transfer_state = 802
+			transfer_state = 803
+			add_threat = 5
+		}
+
+		44 = {
+			add_core_of = BUL
+		}
+		103 = {
+			add_core_of = BUL
+		}
+		105 = {
+			add_core_of = BUL
+		}
+		163 = {
+			add_core_of = BUL
+		}
+		184 = {
+			add_core_of = BUL
+		}
+		341 = {
+			add_core_of = BUL
+		}
+		731 = {
+			add_core_of = BUL
+		}
+		802 = {
+			add_core_of = BUL
+		}
+		803 = {
+			add_core_of = BUL
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.51
+				days = 14
+			}
+			BUL = {
+				set_cosmetic_tag = BUL_GDB
+				transfer_state = 104
+				transfer_state = 106
+				transfer_state = 107
+				transfer_state = 108
+				transfer_state = 109
+				add_threat = 6
+			}
+			104 = {
+				add_core_of = BUL
+			}
+			106 = {
+				add_core_of = BUL
+			}
+			107 = {
+				add_core_of = BUL
+			}
+			108 = {
+				add_core_of = BUL
+			}
+			109 = {
+				add_core_of = BUL
+			}
+			804 = {
+				add_core_of = BUL
+			}
+			805 = {
+				add_core_of = BUL
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.50.b
+		BUL = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_decrease
+			}
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = medium_increase
+			}
+		}
+		ITA = {
+			transfer_state = 44
+			transfer_state = 105
+			transfer_state = 804
+			add_threat = 2
+		}
+		44 = {
+			add_core_of = ITA
+		}
+		105 = {
+			add_core_of = ITA
+		}
+		BUL = {
+			set_cosmetic_tag = BUL_GDB
+			transfer_state = 104
+			transfer_state = 106
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 109
+			transfer_state = 802
+			transfer_state = 803
+			add_threat = 3
+		}
+		104 = {
+			add_core_of = BUL
+		}
+		106 = {
+			add_core_of = BUL
+		}
+		107 = {
+			add_core_of = BUL
+		}
+		108 = {
+			add_core_of = BUL
+		}
+		109 = {
+			add_core_of = BUL
+		}
+		802 = {
+			add_core_of = BUL
+		}
+		803 = {
+			add_core_of = BUL
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.51
+	title = gdb_germany.51.t
+	desc = gdb_germany.51.d
+	picture = GFX_report_event_stalin_meeting
+	is_triggered_only = yes
+	#unholy
+	option = {
+		name = gdb_germany.51.a
+		SOV = {
+			add_opinion_modifier = {
+				target = ITA
+				modifier = medium_increase
+			}
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_increase
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.52
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.52
+	title = gdb_germany.52.t
+	desc = gdb_germany.52.d
+	picture = GFX_report_event_mussolini_hotel
+	is_triggered_only = yes
+	#unholy
+	option = {
+		name = gdb_germany.52.a
+		ITA = {
+			kill_ideology_leader = fascism
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.53
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.53
+	title = gdb_germany.53.t
+	desc = gdb_germany.53.d
+	picture = GFX_report_event_spr_spanish_civil_war
+	is_triggered_only = yes
+	#unholy
+	option = {
+		name = gdb_germany.53.a
+		add_political_power = -50
+		ITA = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		SOV = {
+			add_to_faction = ITA
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
+		}
+		ITA = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = fascism
+				size = 0.3
+				states = {
+					115
+					114
+					163
+					156
+					160
+					850
+				}
+				set_capital = { state = 115 }
+			}
+		}
+		hidden_effect = {
+			#north istria
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				if = {
+					limit = {
+						NOT = {
+							AUS = {
+								has_full_control_of_state = 736
+							}
+							GER = {
+								has_full_control_of_state = 736
+							}
+						}
+					}
+					AUS = {
+						transfer_state = 736
+					}
+				}
+			} else_if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_full_control_of_state = 736
+						}
+						GER = {
+							has_full_control_of_state = 736
+						}
+					}
+				}
+				GER = {
+					transfer_state = 736
+				}
+			}
+			736 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+
+			#south istria
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				if = {
+					limit = {
+						NOT = {
+							AUS = {
+								has_full_control_of_state = 852
+							}
+							GER = {
+								has_full_control_of_state = 852
+							}
+						}
+					}
+					AUS = {
+						transfer_state = 852
+					}
+				}
+			} else_if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_full_control_of_state = 852
+						}
+						GER = {
+							has_full_control_of_state = 852
+						}
+					}
+				}
+				GER = {
+					transfer_state = 852
+				}
+			}
+			852 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.53.b
+		GER = {
+			add_political_power = -200
+			send_equipment = {
+				target = ITA
+				type = infantry_equipment
+				amount = 25000
+			}
+			send_equipment = {
+				target = ITA
+				type = support_equipment
+				amount = 1000
+			}
+		}
+		ITA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 25000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = GER
+			}
+		}
+		ITA = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			effect_tooltip = {
+				ITA_victor_emmanuel_iii = {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+						promote_leader = yes
+					}
+				}	
+			}
+			set_capital = { state = 160 }
+		}
+		hidden_effect = {
+			#north istria
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				if = {
+					limit = {
+						NOT = {
+							AUS = {
+								has_full_control_of_state = 736
+							}
+							GER = {
+								has_full_control_of_state = 736
+							}
+						}
+					}
+					AUS = {
+						transfer_state = 736
+					}
+				}
+			} else_if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_full_control_of_state = 736
+						}
+						GER = {
+							has_full_control_of_state = 736
+						}
+					}
+				}
+				GER = {
+					transfer_state = 736
+				}
+			}			
+
+			#south istria
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				if = {
+					limit = {
+						NOT = {
+							AUS = {
+								has_full_control_of_state = 852
+							}
+							GER = {
+								has_full_control_of_state = 852
+							}
+						}
+					}
+					AUS = {
+						transfer_state = 852
+					}
+				}
+			} else_if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_full_control_of_state = 852
+						}
+						GER = {
+							has_full_control_of_state = 852
+						}
+					}
+				}
+				GER = {
+					transfer_state = 852
+				}
+			}
+
+			#south tryol
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				if = {
+					limit = {
+						NOT = {
+							AUS = {
+								has_full_control_of_state = 39
+							}
+							GER = {
+								has_full_control_of_state = 39
+							}
+						}
+					}
+					AUS = {
+						transfer_state = 39
+					}
+				}
+			} else_if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_full_control_of_state = 39
+						}
+						GER = {
+							has_full_control_of_state = 39
+						}
+					}
+				}
+				GER = {
+					transfer_state = 39
+				}
+			}
+
+			736 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			852 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			39 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			BUL = {
+				transfer_state = 103
+				transfer_state = 163
+				add_threat = 1
+			}
+
+			#albania
+			if = {
+				limit = {
+					ITA = {
+						has_full_control_of_state = 44
+					}
+				}
+				BUL = {
+					transfer_state = 44
+				}
+			}
+
+			#south albania
+			if = {
+				limit = {
+					ITA = {
+						has_full_control_of_state = 805
+					}
+				}
+				BUL = {
+					transfer_state = 805
+				}
+			}
+
+			ITA = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.4
+				}
+			}
+			country_event = {
+				id = gdb_germany.76
+				days = 60
+			}
+		}
+		ITA = {
+			start_civil_war = {
+				ruling_party = ROOT
+				ideology = communism
+				size = 0.5
+				states = {
+					2
+					156
+					158
+					162
+					117
+					157
+					448
+					449
+					450
+					451
+					661
+					662
+					663
+					273
+					550
+					271
+					559
+				}
+				capital = 2
+			}
+		}
+		GER = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.54
+	title = gdb_germany.54.t
+	desc = gdb_germany.54.d
+	picture = GFX_report_event_yugoslavian_split
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.54.a
+		if = {
+			limit = {
+				country_exists = AUS
+			}
+			AUS = {
+				transfer_state = 102
+			}
+		}
+		else = {
+			GER = {
+				transfer_state = 102
+			}
+		}
+		if = {
+			limit = {
+				country_exists = AUS
+			}
+			AUS = {
+				transfer_state = 853
+			}
+		}
+		else = {
+			GER = {
+				transfer_state = 853
+			}
+		}		
+		ITA = {
+			transfer_state = 103
+			transfer_state = 105
+			transfer_state = 804
+		}
+		HUN = {
+			transfer_state = 764
+			transfer_state = 45
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.55
+				days = 7
+			}
+			102 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}
+			853 = {
+				add_core_of = GER
+				add_core_of = AUS
+			}			
+			103 = {
+				add_core_of = ITA
+			}
+			804 = {
+				add_core_of = ITA
+			}
+			764 = {
+				add_core_of = HUN
+			}
+			45 = {
+				add_core_of = HUN
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.55
+	title = gdb_germany.55.t
+	desc = gdb_germany.55.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.55.a
+	}
+	option = {
+		name = gdb_germany.55.b
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.56
+				days = 14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.56
+	title = gdb_germany.56.t
+	desc = gdb_germany.56.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.56.a
+		hidden_effect = {
+			YUG = {
+				release = SER
+			}
+			106 = {
+				add_core_of = SER
+			}
+		}
+		ITA = {
+			transfer_state = 104
+			add_threat = 5
+		}
+		HUN = {
+			transfer_state = 109
+			add_threat = 1
+		}
+		SER = {
+			transfer_state = 106
+		}
+		hidden_effect = {
+			109 = {
+				add_core_of = HUN
+			}
+			736 = {
+				add_core_of = AUS
+				add_core_of = GER
+			}
+			852 = {
+				add_core_of = AUS
+				add_core_of = GER
+			}
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				AUS = {
+					transfer_state = 736
+				}
+			}
+			else = {
+				GER = {
+					transfer_state = 736
+				}
+			}
+
+			if = {
+				limit = {
+					country_exists = AUS
+				}
+				AUS = {
+					transfer_state = 852
+				}
+			}
+			else = {
+				GER = {
+					transfer_state = 852
+				}
+			}
+		}
+		ITA = {
+			puppet = SER
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.57
+	title = gdb_germany.57.t
+	desc = gdb_germany.57.d
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.57.a
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = SWI
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+				else = {
+					puppet = SWI
+				}
+			}
+			SWI = {
+				add_ideas = member_of_the_bund
+			}
+	}
+}
+
+country_event = {
+	id = gdb_germany.58
+	title = gdb_germany.58.t
+	desc = gdb_germany.58.d
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.58.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.59
+				days = 7
+			}
+		}
+		add_threat = 1
+	}
+}
+
+country_event = {
+	id = gdb_germany.59
+	title = gdb_germany.59.t
+	desc = gdb_germany.59.d
+	picture = GFX_report_event_eng_mosley_march_on_downing_street
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.59.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.60
+				days = 3
+			}
+		}
+		add_threat = 1
+	}
+}
+
+country_event = {
+	id = gdb_germany.60
+	title = gdb_germany.60.t
+	desc = gdb_germany.60.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.60.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.61
+				days = 1
+			}
+		}
+		add_threat = 1
+	}
+}
+
+country_event = {
+	id = gdb_germany.61
+	title = gdb_germany.61.t
+	desc = gdb_germany.61.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.61.a
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = LUX
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.5
+			}
+			else = {
+				puppet = LUX
+			}
+		}
+		LUX = {
+			add_ideas = member_of_the_bund
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.62
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.62
+	title = gdb_germany.62.t
+	desc = gdb_germany.62.d
+	picture = GFX_report_event_german_reichstag_bombed
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.62.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.63
+				days = 2
+			}
+		}
+		add_threat = 1
+	}
+}
+
+country_event = {
+	id = gdb_germany.63
+	title = gdb_germany.63.t
+	desc = gdb_germany.63.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.63.a
+		country_event = {
+			id = gdb_germany.65
+			days = 1
+		}
+		add_named_threat = {
+			threat = -3
+			name = germany_last_attempt_for_peace
+		}
+	}
+	option = {
+		name = gdb_germany.63.b
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.64
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.64
+	title = gdb_germany.64.t
+	desc = gdb_germany.64.d
+	picture = GFX_report_event_hungary_gains_transylvania
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.64.a
+		FRA = {
+			transfer_state = 911
+			transfer_state = 912
+			transfer_state = 919
+			transfer_state = 34
+			transfer_state = 6
+			transfer_state = 295
+			transfer_state = 718
+			transfer_state = 538
+			transfer_state = 768
+			transfer_state = 769
+		}
+		912 = {
+			add_core_of = FRA
+		}
+		919 = {
+			add_core_of = FRA
+		}
+		34 = {
+			add_core_of = FRA
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.65
+	title = gdb_germany.65.t
+	desc = gdb_germany.65.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.65.a
+		country_event = {
+			id = gdb_germany.66
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.66
+	title = gdb_germany.66.t
+	desc = gdb_germany.66.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.66.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.67
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.67
+	title = gdb_germany.67.t
+	desc = gdb_germany.67.d
+	picture = GFX_report_event_ast_planning
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.67.a
+		country_event = {
+			id = gdb_germany.68
+			days = 1
+		}
+		add_named_threat = {
+			threat = 3
+			name = france_angered_in_belgium
+		}
+	}
+	option = {
+		name = gdb_germany.67.b
+		country_event = {
+			id = gdb_germany.69
+			days = 1
+		}
+		add_named_threat = {
+			threat = -2
+			name = france_satisfied_in_belgium
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.68
+	title = gdb_germany.68.t
+	desc = gdb_germany.68.d
+	picture = GFX_report_event_imperial_conference
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.68.a
+		FRA = {
+			transfer_state = 912
+			transfer_state = 34
+			transfer_state = 538
+		}
+		912 = {
+			add_core_of = FRA
+		}
+		34 = {
+			add_core_of = FRA
+		}
+		ENG = {
+			transfer_state = 768
+			transfer_state = 769
+			transfer_state = 295
+			transfer_state = 718
+			transfer_state = 890
+			transfer_state = 888
+			transfer_state = 889
+		}
+		GER = {
+			transfer_state = 911
+			transfer_state = 913
+			transfer_state = 914
+			transfer_state = 919
+		}
+		911 = {
+			add_core_of = GER
+		}
+		HOL = {
+			transfer_state = 6
+		}
+		6 = {
+			add_core_of = HOL
+		}
+		add_named_threat = {
+			threat = 2
+			name = end_of_belgium
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.69
+	title = gdb_germany.69.t
+	desc = gdb_germany.69.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.69.a
+		FRA = {
+			transfer_state = 912
+			transfer_state = 34
+			transfer_state = 538
+			transfer_state = 718
+			transfer_state = 890
+		}
+		912 = {
+			add_core_of = FRA
+		}
+		34 = {
+			add_core_of = FRA
+		}
+		ENG = {
+			transfer_state = 768
+			transfer_state = 769
+			transfer_state = 889
+		}
+		GER = {
+			transfer_state = 911
+		}
+		911 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 919
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.70
+	title = gdb_germany.70.t
+	desc = gdb_germany.70.d
+	picture = GFX_report_event_royal_parade
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.70.a
+		ai_chance = {
+			factor = 60
+		}
+		28 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 28
+		}
+		add_named_threat = {
+			threat = 2
+			name = zdb_small_greed
+		}
+	}
+	option = {
+		name = gdb_germany.70.b
+		ai_chance = {
+			factor = 60
+		}
+		28 = {
+			add_core_of = GER
+		}
+		GER = {
+			transfer_state = 28
+		}
+		add_named_threat = {
+			threat = 2
+			name = zdb_large_greed
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 28
+				num_provinces = 6
+				on_win = gdb_germany.71
+				on_lose = gdb_germany.72
+				on_cancel = gdb_germany.72
+			}
+			defender = {
+				state = 909
+				num_provinces = 2
+				on_win = gdb_germany.73
+				on_lose = gdb_germany.73
+				on_cancel = gdb_germany.73
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.70.c
+	}
+}
+
+country_event = {
+	id = gdb_germany.71
+	title = gdb_germany.71.t
+	desc = gdb_germany.71.d
+	picture = GFX_report_event_generic_rifles
+	is_triggered_only = yes
+	#accept
+	option = {
+		name = gdb_germany.71.a
+		army_experience = 10
+		add_war_support = 0.05
+		GER = {
+			transfer_state = 909
+		}
+		909 = {
+			set_compliance = 50
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.72
+	title = gdb_germany.72.t
+	desc = gdb_germany.72.d
+	picture = GFX_report_event_spr_anarchist_success
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.72.a
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	id = gdb_germany.73
+	title = gdb_germany.73.t
+	desc = gdb_germany.73.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.73.a
+	}
+}
+
+country_event = {
+	id = gdb_germany.74
+	title = gdb_germany.74.t
+	desc = gdb_germany.74.d
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.74.a
+	}
+	option = {
+		name = gdb_germany.74.b
+		add_ideas = french_refugees_welcome
+	}
+}
+
+country_event = {
+	id = gdb_germany.75
+	title = gdb_germany.75.t
+	desc = gdb_germany.75.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.75.a
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = AUS
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.5
+			}
+			else = {
+				puppet = AUS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.76
+	title = gdb_germany.76.t
+	desc = gdb_germany.76.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.76.a
+		random_other_country = {
+			limit = {
+				original_tag = ITA
+				has_government = communism
+			}
+			SOV = {
+				add_to_faction = PREV
+			}
+		}
+	}
+}
+
+#Spain event chain
+country_event = {
+	id = gdb_germany.77
+	title = gdb_germany.77.t
+	desc = gdb_germany.77.d
+	picture = GFX_report_event_german_volunteers
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.77.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.78
+				days = 30
+			}
+		}
+		SOV = {
+			add_threat = 1
+		}
+	}
+}
+
+#Spain join comintern
+country_event = {
+	id = gdb_germany.78
+	title = gdb_germany.78.t
+	desc = gdb_germany.78.d
+	picture = GFX_report_event_stalin_meeting
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.78.a
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = democratic
+			}
+			SOV = {
+				add_to_faction = PREV
+			}
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = democratic
+				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.6
+				}
+				if = {
+					limit = {
+						has_idea = SPA_recovering_from_civil_war
+					}
+					remove_ideas = SPA_recovering_from_civil_war
+				}
+				if = {
+					limit = {
+						has_idea = SPA_recovering_from_civil_war_2
+					}
+					remove_ideas = SPA_recovering_from_civil_war_2
+				}
+				if = {
+					limit = {
+						has_idea = SPA_recovering_from_civil_war_3
+					}
+					remove_ideas = SPA_recovering_from_civil_war_3
+				}
+			}
+		}
+	}
+}
+
+#Seizing of Portugal
+country_event = {
+	id = gdb_germany.79
+	title = gdb_germany.79.t
+	desc = gdb_germany.79.d
+	picture = GFX_report_event_usa_heavy_cruiser
+	is_triggered_only = yes
+	immediate = {
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			transfer_state = 181
+			transfer_state = 795
+		}
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 296
+			transfer_state = 796
+			transfer_state = 540
+			transfer_state = 705
+		}
+	}
+	option = {
+		name = gdb_germany.79.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.80
+				days = 3
+			}
+		}
+	}
+}
+
+#Brits protect holdings
+country_event = {
+	id = gdb_germany.80
+	title = gdb_germany.80.t
+	desc = gdb_germany.80.d
+	picture = GFX_report_event_imperial_conference
+	is_triggered_only = yes
+	immediate = {
+		ENG = {
+			transfer_state = 544
+			transfer_state = 268
+		}
+		RAJ = {
+			transfer_state = 321
+			transfer_state = 320
+		}
+		AST = {
+			transfer_state = 721
+		}
+	}
+	option = {
+		name = gdb_germany.80.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.81
+				days = 21
+			}
+			country_event = {
+				id = gdb_germany.82
+				days = 14
+			}
+		}
+	}
+}
+
+#Spain takes gibraltar
+country_event = {
+	id = gdb_germany.81
+	title = gdb_germany.81.t
+	desc = gdb_germany.81.d
+	picture = GFX_report_event_french_resistance_01
+	is_triggered_only = yes
+	immediate = {
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			transfer_state = 118
+		}
+	}
+	option = {
+		name = gdb_germany.81.a
+		set_global_flag = uk_feels_threatened
+	}
+}
+
+#Portugal surrenders
+country_event = {
+	id = gdb_germany.82
+	title = gdb_germany.82.t
+	desc = gdb_germany.82.d
+	picture = GFX_report_event_hungarian_soldiers
+	is_triggered_only = yes
+	immediate = {
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = communism
+			}
+			annex_country = {
+				target = POR
+			}
+			set_cosmetic_tag = SPR_union
+		}
+	}
+	option = {
+		name = gdb_germany.82.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.83
+				days = 14
+			}
+		}
+	}
+}
+
+#French Iberian Colonial Exchange
+country_event = {
+	id = gdb_germany.83
+	title = gdb_germany.83.t
+	desc = gdb_germany.83.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.83.a
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				transfer_state = 461
+				transfer_state = 462
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = communism
+				}
+				transfer_state = 297
+			}
+		}
+	}
+}
+
+#France needs weapons
+country_event = {
+	id = gdb_germany.84
+	title = gdb_germany.84.t
+	desc = gdb_germany.84.d
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.84.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.85
+				days = 14
+			}
+		}
+	}
+}
+
+#Soviet weapons for alliance
+country_event = {
+	id = gdb_germany.85
+	title = gdb_germany.85.t
+	desc = gdb_germany.85.d
+	picture = GFX_report_event_generic_rifles
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.85.a
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			SOV = {
+				add_to_faction = PREV
+			}
+		}
+		hidden_effect = {
+			SOV = {
+				add_political_power = -200
+				send_equipment = {
+					target = FRA
+					type = infantry_equipment
+					amount = 50000
+				}
+				send_equipment = {
+					target = FRA
+					type = support_equipment
+					amount = 3000
+				}
+			}
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 50000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 3000
+					producer = SOV
+				}
+			}
+		}
+		FRA = {
+			add_named_threat = {
+				threat = 3
+				name = france_joins_comintern_threat
+			}
+		}
+	}
+}
+
+#France demands alsace-lorraine
+country_event = {
+	id = gdb_germany.86
+	title = gdb_germany.86.t
+	desc = gdb_germany.86.d
+	picture = GFX_report_event_polish_tanks_02
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.86.a
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.87
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.86.b
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			transfer_state = 28
+			if = {
+				limit = {
+					GER = {
+						has_full_control_of_state = 909
+					}
+				}
+				transfer_state = 909
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.88
+				days = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.87
+	title = gdb_germany.87.t
+	desc = gdb_germany.87.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.87.a
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			declare_war_on = {
+				target = GER
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.88
+	title = gdb_germany.88.t
+	desc = gdb_germany.88.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.88.a
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				has_government = communism
+			}
+			declare_war_on = {
+				target = GER
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gdb_germany.89
+	title = gdb_germany.89.t
+	desc = gdb_germany.89.d
+	picture = GFX_report_event_german_advisors_remain
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.89.a
+		set_country_flag = jewish_relations_reconciled
+		add_political_power = -50
+		add_stability = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+	option = {
+		name = gdb_germany.89.b
+		set_country_flag = jewish_relations_reconciled
+		set_country_flag = peacefull_compensations
+		add_political_power = -100
+		add_stability = 0.05
+		add_ideas = jewish_reparations_payments
+	}
+	option = {
+		name = gdb_germany.89.c
+		add_political_power = -10
+	}
+}
+
+#grossdeutscher bund flag choice
+country_event = {
+	id = gdb_germany.90
+	title = gdb_germany.90.t
+	desc = gdb_germany.90.d
+	picture = GFX_event_pictures_ger_new_bund_flag
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.90.a
+		set_cosmetic_tag = GER_MOD_bund_big
+	}
+	option = {
+		name = gdb_germany.90.b
+		set_cosmetic_tag = GER_united
+	}
+	option = {
+		name = gdb_germany.90.c
+		set_cosmetic_tag = GER_GDB
+	}
+}
+
+#dummy event join eu, no local needed
+country_event = {
+	id = gdb_germany.91
+	title = gdb_germany.91.t
+	desc = gdb_germany.91.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.91.a
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#response that country joined alliance
+country_event = {
+	id = gdb_germany.92
+	title = gdb_germany.92.t
+	desc = gdb_germany.92.d
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.92.a
+	}
+}
+
+#first wave of volunteers
+country_event = {
+	id = gdb_germany.93
+	title = gdb_germany.93.t
+	desc = gdb_germany.93.d
+	picture = GFX_report_event_canadian_soldiers
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.93.a
+		GER = {
+			load_oob = "GER_Soviet_Help"
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.94
+				days = 45
+			}
+		}
+	}
+}
+
+#soviets establish foreign intervention center
+country_event = {
+	id = gdb_germany.94
+	title = gdb_germany.94.t
+	desc = gdb_germany.94.d
+	picture = GFX_report_event_stalin_propaganda
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.94.a
+		hidden_effect = {
+			SOV = {
+				add_ideas = soviet_volunteer_army
+			}
+			country_event = {
+				id = gdb_germany.96
+				days = 21
+			}
+		}
+		SOV = {
+			add_threat = 1
+		}
+	}
+}
+
+#wolga germans express their desire to stay
+country_event = {
+	id = gdb_germany.95
+	title = gdb_germany.95.t
+	desc = gdb_germany.95.d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.95.a
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Wolga German ASSR Volunteer Division"
+			}
+		}
+		add_manpower = 23000
+		add_political_power = -20
+		army_experience = 5
+	}
+	option = {
+		name = gdb_germany.95.b
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Wolga German ASSR Volunteer Division"
+			}
+		}
+		SOV = {
+			add_political_power = 50
+			army_experience = 10
+		}
+	}
+}
+
+#workers demand more rights
+country_event = {
+	id = gdb_germany.96
+	title = gdb_germany.96.t
+	desc = gdb_germany.96.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.96.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.07
+		}
+		add_political_power = -25
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.97
+				days = 14
+			}
+		}
+	}
+}
+
+#leftist parties fuse
+country_event = {
+	id = gdb_germany.97
+	title = gdb_germany.97.t
+	desc = gdb_germany.97.d
+	picture = GFX_report_event_german_advisors_remain
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.97.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+		}
+		add_political_power = -50
+		add_stability = -0.1
+		add_war_support = -0.05
+		set_party_name = {
+			ideology = communism
+			long_name = GER_sed_long
+			name = GER_sed
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.98
+				days = 14
+			}
+		}
+	}
+}
+
+#labor unions demand max working hours
+country_event = {
+	id = gdb_germany.98
+	title = gdb_germany.98.t
+	desc = gdb_germany.98.d
+	picture = GFX_report_event_physics_lab_02
+	is_triggered_only = yes
+	#no
+	option = {
+		name = gdb_germany.98.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.99
+				days = 14
+			}
+		}
+	}
+	#yes
+	option = {
+		name = gdb_germany.98.b
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+		add_political_power = -25
+		add_timed_idea = {
+			idea = conessions_max_work_hours
+			days = 1095
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.99
+				days = 14
+			}
+		}
+	}
+}
+
+#labor unions demand collectivization of nazi industry
+country_event = {
+	id = gdb_germany.99
+	title = gdb_germany.99.t
+	desc = gdb_germany.99.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	#no
+	option = {
+		name = gdb_germany.99.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.100
+				days = 14
+			}
+		}
+	}
+	#yes
+	option = {
+		name = gdb_germany.99.b
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.02
+		}
+		add_political_power = -25
+		add_timed_idea = {
+			idea = conessions_factories
+			days = 730
+		}
+		add_ideas = trade_union_strenghend
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.100
+				days = 14
+			}
+		}
+	}
+}
+
+#militant underground discovered
+country_event = {
+	id = gdb_germany.100
+	title = gdb_germany.100.t
+	desc = gdb_germany.100.d
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.100.a
+		GER = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -12731
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -874
+				producer = GER
+			}
+		}
+		add_ideas = militant_underground_discovered
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.101
+				days = 70
+			}
+		}
+	}
+}
+
+#militant underground infiltrated
+country_event = {
+	id = gdb_germany.101
+	title = gdb_germany.101.t
+	desc = gdb_germany.101.d
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.101.a
+		swap_ideas = {
+			remove_idea = militant_underground_discovered
+			add_idea = militant_underground_infiltrated
+		}
+		random_state = {
+			limit = {
+				is_fully_controlled_by = GER
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.8
+			}
+		}
+		random_state = {
+			limit = {
+				is_fully_controlled_by = GER
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.8
+			}
+		}
+		random_state = {
+			limit = {
+				is_fully_controlled_by = GER
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.8
+			}
+		}
+	}
+}
+
+#blame the soviets for civil war
+country_event = {
+	id = gdb_germany.102
+	title = gdb_germany.102.t
+	desc = gdb_germany.102.d
+	picture = GFX_report_event_poland_rejects
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.102.a
+		every_other_country = {
+			limit = {
+				NOT = {
+					original_tag = SOV
+				}
+				has_government = democratic
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_decrease
+			}
+		}
+		every_other_country = {
+			limit = {
+				NOT = {
+					original_tag = SOV
+				}
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_decrease
+			}
+		}
+		every_other_country = {
+			limit = {
+				NOT = {
+					original_tag = SOV
+				}
+				has_government = communism
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_increase
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_decrease
+			}
+		}
+		set_global_flag = german_soviet_relation_shattered_flag
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.103
+				days = 3
+			}
+		}
+	}
+}
+
+#justify banning the communist party
+country_event = {
+	id = gdb_germany.103
+	title = gdb_germany.103.t
+	desc = gdb_germany.103.d
+	picture = GFX_report_event_romania_parliament
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.103.a
+		remove_ideas = militant_underground_infiltrated
+		hidden_effect = {
+			set_temp_variable = {
+				var = ban_ideology_var
+				value = party_popularity@communism
+			}
+			multiply_temp_variable = {
+				var = ban_ideology_var
+				value = -1
+			}
+			multiply_temp_variable = {
+				var = ban_ideology_var
+				value = 0.5
+			}
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -1
+		}
+		add_stability = ban_ideology_var
+	}
+	option = {
+		name = gdb_germany.103.b
+		remove_ideas = militant_underground_infiltrated
+		add_political_power = 50
+	}
+}
+
+#wolga refugees decision
+country_event = {
+	id = gdb_germany.104
+	title = gdb_germany.104.t
+	desc = gdb_germany.104.d
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.104.a
+		SOV = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = embargo
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.105
+				days = 1
+			}
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_stability = 0.01
+	}
+	option = {
+		name = gdb_germany.104.b
+		SOV = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = embargo
+			}
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+}
+
+#wolga refugees decision
+country_event = {
+	id = gdb_germany.105
+	title = gdb_germany.105.t
+	desc = gdb_germany.105.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.105.a
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = -150
+			producer = GER
+		}
+		add_fuel = -100000
+		hidden_effect = {
+			country_event = {
+				id = gdb_germany.106
+				days = 21
+			}
+		}
+	}
+}
+
+#resettle event
+country_event = {
+	id = gdb_germany.106
+	title = gdb_germany.106.t
+	desc = gdb_germany.106.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.106.a
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = 148
+			producer = GER
+		}
+		add_stability = -0.05
+		763 = {
+			add_manpower = 291923
+		}
+		5 = {
+			add_manpower = 122353
+		}
+		63 = {
+			add_manpower = 118452
+		}
+		68 = {
+			add_manpower = 126323
+		}
+		66 = {
+			add_manpower = 327524
+		}
+		67 = {
+			add_manpower = 172562
+		}
+		62 = {
+			add_manpower = 142376
+		}
+		61 = {
+			add_manpower = 120623
+		}
+		add_timed_idea = {
+			idea = ostsiedlungs_bau
+			days = 180
+		}
+		add_timed_idea = {
+			idea = cheap_labor
+			days = 3650
+		}
+	}
+}
+
+
+
+#select royal family start screen
+country_event = {
+	id = gdb_germany.107
+	title = gdb_germany.107.t
+	desc = gdb_germany.107.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#bigger houses
+	option = {
+		name = gdb_germany.107.a
+		country_event = {
+			id = gdb_germany.108
+		}
+	}
+	#smaller houses
+	option = {
+		name = gdb_germany.107.b
+		country_event = {
+			id = gdb_germany.109
+		}
+	}
+}
+
+#bigger houses
+country_event = {
+	id = gdb_germany.108
+	title = gdb_germany.108.t
+	desc = gdb_germany.108.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#prussia
+	option = {
+		name = gdb_germany.108.a
+		country_event = {
+			id = gdb_germany.12
+		}
+	}
+	#austria
+	option = {
+		name = gdb_germany.108.b
+		GDB_otto_von_habsburg = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						empire_builder
+						imperial_connections
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	#bavaria
+	option = {
+		name = gdb_germany.108.c
+		GDB_rupprecht_von_wittelsbach = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						retired_officer
+						anti_communist
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	#go back
+		option = {
+			name = gdb_germany.108.e
+			country_event = {
+				id = gdb_germany.107
+			}
+		}
+}
+
+#smaller houses
+country_event = {
+	id = gdb_germany.109
+	title = gdb_germany.109.t
+	desc = gdb_germany.109.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#hannover
+	option = {
+		name = gdb_germany.109.a
+		GDB_ernst_august_3_von_hannover = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						dealbroker
+					}
+				}
+				promote_leader = yes
+			}
+		}
+		hidden_effect = {
+		#eu4 unlucky gang
+		country_event = {
+			id = gdb_germany.110
+			days = 100
+		}
+		}
+	}
+	#swabia
+	option = {
+		name = gdb_germany.109.b
+		GDB_albrecht_von_wuerttemberg = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						retired_officer
+						anti_communist
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	#saxony
+	option = {
+		name = gdb_germany.109.c
+		GDB_friedrich_christian_von_wettin = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						retired_officer
+						political_dancer
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+		#go back
+		option = {
+			name = gdb_germany.109.e
+			country_event = {
+				id = gdb_germany.107
+			}
+		}
+}
+
+#bigger houses
+country_event = {
+	id = gdb_germany.110
+	title = gdb_germany.110.t
+	desc = gdb_germany.110.d
+	picture = GFX_report_event_europe_funeral
+	is_triggered_only = yes
+	#prussia
+	option = {
+		name = gdb_germany.110.a
+		kill_country_leader = yes
+		add_stability = -0.05
+		GDB_friedrich_christian_von_wettin = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						inexperienced_monarch
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.110.b
+		kill_country_leader = yes
+		add_stability = -0.05
+		GDB_victoria_3 = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						kaiserin_of_the_people
+						victoria_iii
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+}
+
+#purchase memel
+country_event = {
+	id = gdb_germany.111
+	title = gdb_germany.111.t
+	desc = gdb_germany.111.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	#prussia
+	option = {
+		name = gdb_germany.111.a
+		188 = {
+			add_core_of = GER
+			remove_core_of = LIT
+		}
+		GER = {
+			transfer_state = 188
+			add_timed_idea = {
+				idea = zdb_lose_money
+				days = 180
+			}
+		}
+		LIT = {
+			add_timed_idea = {
+				idea = zdb_make_money
+				days = 1095
+			} 
+		}
+	}
+	option = {
+		name = gdb_germany.111.b
+		
+	}
+}
+
+#hungary goes democratic after attaining enough old claims
+country_event = {
+	id = gdb_germany.112
+	title = gdb_germany.112.t
+	desc = gdb_germany.112.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.112.a
+		HUN = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_timed_idea = {
+				idea = GER_align_hungary_democratic
+				days = 365
+			} 
+		}
+	}
+}
+
+#hungary goes democratic 
+country_event = {
+	id = gdb_germany.113
+	title = gdb_germany.113.t
+	desc = gdb_germany.113.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.113.a
+		HUN = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+#new capital for the bund
+country_event = {
+	id = gdb_germany.114
+	title = gdb_germany.114.t
+	desc = gdb_germany.114.d
+	picture = GFX_event_pictures_ger_new_capital
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.114.a
+		GER = {
+			set_capital = { state = 55 }
+			#custom_effect_tooltip = GDB_TT_2
+		}
+	}
+	option = {
+		name = gdb_germany.114.b
+		GER = {
+			set_capital = { state = 64 }
+		}
+	}
+	option = {
+		name = gdb_germany.114.c
+		GER = {
+			set_capital = { state = 4 }
+		}
+	}
+	option = {
+		name = gdb_germany.114.e
+		GER = {
+			set_capital = { state = 52 }
+		}
+	}
+}
+
+#enable new generals after civ war start
+country_event = {
+	id = gdb_germany.115
+	title = gdb_germany.115.t
+	desc = gdb_germany.115.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.115.a
+		set_global_flag = GER_new_generals
+	}
+}
+
+#what to do with nazi soliders
+country_event = {
+	id = gdb_germany.116
+	title = gdb_germany.116.t
+	desc = gdb_germany.116.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.116.a
+
+		GER = {
+			country_event = {
+				id = gdb_germany.117
+				days = 1
+			}
+		}
+		GER = {
+			country_event = {
+				id = gdb_germany.119
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = gdb_germany.116.b
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_political_power = 50
+	}
+}
+
+#what to do with nazi soliders outcome 1
+country_event = {
+	id = gdb_germany.117
+	title = gdb_germany.117.t
+	desc = gdb_germany.117.d
+	picture = GFX_report_event_fascist_militia
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.117.a
+		add_manpower = 233198
+		add_political_power = -50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+	}
+	option = {
+		name = gdb_germany.117.b
+
+	}
+}
+
+#what to do with nazi soliders outcome 3
+country_event = {
+	id = gdb_germany.119
+	title = gdb_germany.119.t
+	desc = gdb_germany.119.d
+	picture = GFX_report_event_gre_officers_chatting
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.119.a
+		add_manpower = 11528
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.06
+		}
+		add_political_power = -60
+		army_experience = 80
+		air_experience = 35 
+		navy_experience = 20
+		add_ideas = guerilla_advisors
+	}
+	option = {
+		name = gdb_germany.119.b
+
+	}
+}
+
