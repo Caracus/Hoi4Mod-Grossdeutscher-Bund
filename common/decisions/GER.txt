@@ -1636,10 +1636,10 @@ political_actions = {
 			factor = 1000
 		}
 		visible = {
-			owns_state = 839
+			owns_state = 909
 		}
 		highlight_state_targets = {
-			state = 839
+			state = 909
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1836,10 +1836,10 @@ political_actions = {
 			factor = 1000
 		}
 		visible = {
-			owns_state = 836
+			owns_state = 917
 		}
 		highlight_state_targets = {
-			state = 836
+			state = 917
 		}
 		complete_effect = {
 			set_province_name = {
@@ -2170,8 +2170,8 @@ political_actions = {
 		}
 		days_remove = 14
 		remove_effect = {
-			transfer_state = 844
-			844 = {
+			transfer_state = 845
+			845 = {
 				add_core_of = FRA
 			}
 			GER = {
@@ -2249,7 +2249,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				843 = {
+				846 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2262,17 +2262,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 843
+			owns_state = 846
 			NOT = {
 				ROOT = {
-					843 = {
+					846 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 843
+			add_state_core = 846
 		}
 	}
 	# integrate danzig
@@ -2401,7 +2401,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				835 = {
+				916 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2414,17 +2414,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 835
+			owns_state = 916
 			NOT = {
 				ROOT = {
-					835 = {
+					916 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 835
+			add_state_core = 916
 		}
 	}
 	# integrate memel
@@ -2477,7 +2477,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				845 = {
+				915 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2490,17 +2490,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 845
+			owns_state = 915
 			NOT = {
 				ROOT = {
-					845 = {
+					915 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 845
+			add_state_core = 915
 		}
 	}
 	# integrate ost friesland
@@ -2515,7 +2515,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				842 = {
+				914 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2528,17 +2528,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 842
+			owns_state = 914
 			NOT = {
 				ROOT = {
-					842 = {
+					914 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 842
+			add_state_core = 914
 		}
 	}
 	# integrate limbourg
@@ -2591,7 +2591,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				847 = {
+				919 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2604,17 +2604,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 847
+			owns_state = 919
 			NOT = {
 				ROOT = {
-					847 = {
+					919 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 847
+			add_state_core = 919
 		}
 	}
 	# integrate eupen
@@ -2629,7 +2629,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				840 = {
+				911 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2642,17 +2642,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 840
+			owns_state = 911
 			NOT = {
 				ROOT = {
-					840 = {
+					911 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 840
+			add_state_core = 911
 		}
 	}
 	# west luxemburg
@@ -2668,7 +2668,7 @@ political_actions = {
 		available = {
 			ROOT = {
 				has_country_flag = natural_borders_west
-				846 = {
+				912 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2681,17 +2681,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 846
+			owns_state = 912
 			NOT = {
 				ROOT = {
-					846 = {
+					912 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 846
+			add_state_core = 912
 		}
 	}
 	# luxemburg
@@ -2745,7 +2745,7 @@ political_actions = {
 		available = {
 			ROOT = {
 				has_country_flag = natural_borders_west
-				837 = {
+				910 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2758,17 +2758,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 837
+			owns_state = 910
 			NOT = {
 				ROOT = {
-					837 = {
+					910 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 837
+			add_state_core = 910
 		}
 	}
 	# alsace
@@ -2822,7 +2822,7 @@ political_actions = {
 		available = {
 			ROOT = {
 				has_country_flag = natural_borders_west
-				839 = {
+				909 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2835,17 +2835,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 839
+			owns_state = 909
 			NOT = {
 				ROOT = {
-					839 = {
+					909 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 839
+			add_state_core = 909
 		}
 	}
 	# eastern switzerland
@@ -2881,9 +2881,29 @@ political_actions = {
 					}
 				}
 			}
+
+			owns_state = 3
+			NOT = {
+				ROOT = {
+					3 = {
+						is_core_of = ROOT
+					}
+				}
+			}
+
+			owns_state = 847
+			NOT = {
+				ROOT = {
+					847 = {
+						is_core_of = ROOT
+					}
+				}
+			}
 		}
 		remove_effect = {
 			add_state_core = 151
+			add_state_core = 3
+			add_state_core = 847
 		}
 	}
 	# western switzerland
@@ -3000,6 +3020,44 @@ political_actions = {
 			add_state_core = 736
 		}
 	}
+	# istria south
+	core_south_istria = {
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
+			}
+		}
+		available = {
+			ROOT = {
+				852 = {
+					compliance > 40
+					resistance < 10
+				}
+			}
+		}
+		cost = 20
+		fire_only_once = yes
+		days_remove = 40
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			owns_state = 852
+			NOT = {
+				ROOT = {
+					852 = {
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_state_core = 852
+		}
+	}	
 	# slovenia
 	core_slovenia = {
 		allowed = {
@@ -3076,6 +3134,44 @@ political_actions = {
 			add_state_core = 153
 		}
 	}
+	# vorarlberg
+	core_vorarlberg = {
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = AUS
+				original_tag = LUX
+				original_tag = SWI
+			}
+		}
+		available = {
+			ROOT = {
+				848 = {
+					compliance > 40
+					resistance < 10
+				}
+			}
+		}
+		cost = 15
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			owns_state = 848
+			NOT = {
+				ROOT = {
+					848 = {
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_state_core = 848
+		}
+	}	
 	# upper austria
 	core_upper_austria = {
 		allowed = {
@@ -3164,7 +3260,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				836 = {
+				917 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -3177,17 +3273,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 836
+			owns_state = 917
 			NOT = {
 				ROOT = {
-					836 = {
+					917 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 836
+			add_state_core = 917
 		}
 	}
 	# sudetenland
@@ -3387,7 +3483,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				844 = {
+				845 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -3400,17 +3496,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 844
+			owns_state = 845
 			NOT = {
 				ROOT = {
-					844 = {
+					845 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 844
+			add_state_core = 845
 		}
 	}
 	# ticino
@@ -3420,7 +3516,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				843 = {
+				846 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -3433,17 +3529,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 843
+			owns_state = 846
 			NOT = {
 				ROOT = {
-					843 = {
+					846 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 843
+			add_state_core = 846
 		}
 	}
 

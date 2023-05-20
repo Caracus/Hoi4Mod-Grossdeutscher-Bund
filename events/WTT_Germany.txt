@@ -399,6 +399,11 @@ country_event = {
 		GER = {
 			country_event = { id = wtt_germany.10 days = 1 random_days = 2 }
 		}
+		hidden_effect = {
+			GER = {	
+				set_country_flag = GER_italy_declined_assassination_of_mussolini_flag
+			}
+		}
 	}
 }
 
@@ -450,9 +455,23 @@ country_event = {
 			remove_idea = GER_preparing_ITA_coup
 			add_idea = GER_preparing_ITA_coup2
 		}
-		remove_ideas = victor_emmanuel
-		ITA_victor_emmanuel_iii = {
+		remove_ideas = vittorio_emanuele
+		ITA_vittorio_emanuele_iii = {
 			promote_character = { ideology = despotism }
+		}
+		
+		hidden_effect = {
+			retire_character = ITA_benito_mussolini
+			if = {
+				limit = {
+					has_any_power_balance = yes
+				}
+				set_power_balance = {
+					id = ITA_power_balance
+					right_side = ITA_king_side
+					set_value = 0.1
+				}
+			}
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -518,6 +537,7 @@ country_event = {
 			GER = { transfer_state = 807 }
 			GER = { transfer_state = 86 }
 			GER = { transfer_state = 762 }
+			GER = { transfer_state = 807 }
 			GER = { add_ideas = anti_soviet_pact }
 			add_ideas = anti_soviet_pact
 			add_opinion_modifier = { target = GER modifier = danzig_for_guarantees }
@@ -572,9 +592,11 @@ country_event = {
 		transfer_state = 807
 		transfer_state = 86
 		transfer_state = 762
+		transfer_state = 807
 		add_state_core = 85
 		add_state_core = 86
 		add_state_core = 762
+		add_state_core = 807
 		86 = { set_state_name = "Posen" }
 		set_province_name = { id = 6558 name = "Posen" }
 		762 = { set_state_name = "Kattowitz" }
@@ -2290,13 +2312,13 @@ country_event = {
 		add_popularity = { ideology = fascism popularity = 0.05 }
 		custom_effect_tooltip = reinstate_nazi_leadership_TT
 		set_country_flag = GER_reinstated_nazi_leadership
-		if = {  #I'm leaving these guys in the old system for now because it would be a lot of trouble to make them work properly and need not sure if it's worth it right now. 
+		if = {  #I'm leaving these guys in the old system for now because it would be a lot of trouble to make them work properly and need not sure if it's worth it right now.
 			limit = {
 				has_country_flag = model_survived
 			}
-			create_field_marshal = { 
+			create_field_marshal = {
 				name = GER_walter_model
-				picture = "Portrait_Germany_Walter_Model.dds"
+				picture = GFX_portrait_GER_walter_model
 				traits = { defensive_doctrine brilliant_strategist trait_cautious }
 				skill = 3
 				id = 10
@@ -2313,7 +2335,7 @@ country_event = {
 			}
 			create_corps_commander = {
 				name = "Walter Krüger"
-				picture = "Portrait_Germany_Walter_Kruger.dds"
+				picture = GFX_portrait_Walter_Kruger
 				traits = { panzer_leader trait_reckless }
 				skill = 3
 				id = 15
@@ -2330,7 +2352,7 @@ country_event = {
 			}
 			create_corps_commander = {
 				name = "Paul Hausser"
-				picture = "Portrait_Germany_Paul_Hausser.dds"
+				picture = GFX_portrait_Paul_Hausser
 				traits = {  armor_officer }
 				skill = 4
 				id = 20
@@ -2347,7 +2369,7 @@ country_event = {
 			}
 			create_corps_commander = {
 				name = "Sepp Dietrich"
-				picture = "Portrait_Germany_Josef_Dietrich.dds"
+				picture = GFX_portrait_Sepp_Dietrich
 				traits = { armor_officer brilliant_strategist trait_reckless }
 				skill = 4
 				id = 24
@@ -2402,52 +2424,49 @@ country_event = {
 	}
 }
 
-# German event for Austrian referendum to join Democratic Germany
-country_event = {
-	id = wtt_germany.53
-	title = wtt_germany.53.t
-	desc = wtt_germany.53.desc
-	picture = GFX_report_event_generic_parliament
-
-	trigger = {
-		original_tag = GER
-		OR = {
-			has_government = democratic
-			has_government = neutrality
-		}
-		is_in_faction_with = AUS
-		AUS = {
-			is_major = no
-		}
-		OR = {
-			AUS = { has_government = democratic }
-			AUS = { has_government = neutrality }
-		}
-		NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
-		NOT = { has_country_flag = GER_com_help_accepted }
-	}
-
-	mean_time_to_happen = { days = 60 }
-
-	fire_only_once = yes
-	
-	# Yes
-	option = {
-		name = wtt_germany.53.a
-		ai_chance = {
-			factor = 90
-		}
-		AUS = { country_event = { id = wtt_germany.54 days = 1 random_days = 6 } }
-	}
-
-	# No
-	option = {
-		name = wtt_germany.53.b
-		ai_chance = {
-			factor = 10
-		}
+#modded
+# German event for Austrian referendum to join Democratic Germany	
+country_event = {	
+	id = wtt_germany.53	
+	title = wtt_germany.53.t	
+	desc = wtt_germany.53.desc	
+	picture = GFX_report_event_generic_parliament	
+	trigger = {	
+		original_tag = GER	
+		OR = {	
+			has_government = democratic	
+			has_government = neutrality	
+		}	
+		is_in_faction_with = AUS	
+		AUS = {	
+			is_major = no	
+		}	
+		OR = {	
+			AUS = { has_government = democratic }	
+			AUS = { has_government = neutrality }	
+		}	
+		NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }	
+		NOT = { has_country_flag = GER_com_help_accepted }	
+	}	
+	mean_time_to_happen = { days = 60 }	
+	fire_only_once = yes	
 		
-	}
+	# Yes	
+	option = {	
+		name = wtt_germany.53.a	
+		ai_chance = {	
+			factor = 90	
+		}	
+		AUS = { country_event = { id = wtt_germany.54 days = 1 random_days = 6 } }	
+	}	
+	# No	
+	option = {	
+		name = wtt_germany.53.b	
+		ai_chance = {	
+			factor = 10	
+		}	
+			
+	}	
 }
 
 # Austrian event for Austrian referendum to join Democratic Germany
@@ -2500,6 +2519,12 @@ country_event = {
 			}
 		}
 		153 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		848 = { #Vorarlberg
 			if = {
 				limit = { is_owned_by = AUS }
 				add_core_of = GER
@@ -3120,6 +3145,7 @@ country_event = {
 			annex_country = { target = CZE transfer_troops = yes }
 			152 = { add_core_of = ROOT }
 			153 = { add_core_of = ROOT }
+			848 = { add_core_of = ROOT } #Vorarlberg 
 			4 = { add_core_of = ROOT }
 			69 = { add_core_of = ROOT }
 			9 = { add_core_of = ROOT }
@@ -3142,6 +3168,7 @@ country_event = {
 			annex_country = { target = AUS transfer_troops = yes }
 			152 = { add_core_of = ROOT }
 			153 = { add_core_of = ROOT }
+			848 = { add_core_of = ROOT } #Vorarlberg 
 			4 = { add_core_of = ROOT }
 			154 = { add_core_of = ROOT }
 			155 = { add_core_of = ROOT }
@@ -3381,9 +3408,9 @@ country_event = {
 				limit = {
 					is_subject_of = FROM
 				}
-				ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite } }
+				ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite end_wars = no end_civil_wars = no} }
 			}
-			set_autonomy = { target = FROM autonomy_state = autonomy_satellite }
+			set_autonomy = { target = FROM autonomy_state = autonomy_satellite end_wars = no end_civil_wars = no}
 		}
 		if = {
 			limit = { 
@@ -3395,9 +3422,9 @@ country_event = {
 				limit = {
 					is_subject_of = FROM
 				}
-				ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_dominion } }
+				ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_dominion end_wars = no end_civil_wars = no} }
 			}
-			set_autonomy = { target = FROM autonomy_state = autonomy_dominion }
+			set_autonomy = { target = FROM autonomy_state = autonomy_dominion end_wars = no end_civil_wars = no}
 		}
 		if = {
 			limit = { 
@@ -3601,5 +3628,20 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = wtt_germany.1006
+	title = wtt_germany.1006.t
+	desc = wtt_germany.1006.desc 
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = wtt_germany.1006.a
 	}
 }

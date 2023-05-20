@@ -1160,13 +1160,37 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = fighter_command_focus
-				bonus = 1.0
-				uses = 2
-				category = light_fighter
-				category = cat_heavy_fighter
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				air_experience = 25
+				add_tech_bonus = {
+					name = fighter_command_focus
+					bonus = 1.0
+					uses = 2
+					category = light_fighter
+					category = cat_heavy_fighter
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				air_experience = 25
+				add_tech_bonus = {
+					name = fighter_command_focus
+					bonus = 1.0
+					uses = 1
+					category = light_fighter
+					category = cat_heavy_fighter
+				}
+				add_doctrine_cost_reduction = {
+					name = ENG_fighter_command_focus #land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = air_doctrine
+				}
 			}
 		}
 	}
@@ -1185,13 +1209,37 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = bomber_command_focus
-				bonus = 1.0
-				uses = 2
-				category = cat_strategic_bomber
-				category = tactical_bomber
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				air_experience = 25
+				add_tech_bonus = {
+					name = bomber_command_focus
+					bonus = 1.0
+					uses = 2
+					category = cat_strategic_bomber
+					category = tactical_bomber
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				air_experience = 25
+				add_tech_bonus = {
+					name = bomber_command_focus
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+					category = tactical_bomber
+				}
+				add_doctrine_cost_reduction = {
+					name = ENG_bomber_command_focus #land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = air_doctrine
+				}
 			}
 		}
 	}
@@ -1210,13 +1258,37 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-				category = cas_bomber
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				air_experience = 25
+				add_tech_bonus = {
+					name = coastal_command_focus
+					bonus = 1.0
+					uses = 2
+					category = naval_bomber
+					category = cas_bomber
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				air_experience = 25
+				add_tech_bonus = {
+					name = coastal_command_focus
+					bonus = 1.0
+					uses = 1
+					category = naval_bomber
+					category = cas_bomber
+				}
+				add_doctrine_cost_reduction = {
+					name = ENG_coastal_command_focus #land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = air_doctrine
+				}
 			}
 		}
 	}
@@ -1710,7 +1782,7 @@ focus_tree = {
 			has_tech = advanced_ship_hull_heavy
 			has_full_control_of_state = 133
 			#has_tech = improved_heavy_battery
-			#has_tech = dp_secondary_battery
+			#has_tech = dp_light_battery_3
 			#has_tech = antiair5
 		}
 
@@ -1728,11 +1800,11 @@ focus_tree = {
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
 					fixed_ship_radar_slot = ship_radar_3
 					fixed_ship_engine_slot = heavy_ship_engine_4
-					fixed_ship_secondaries_slot = dp_ship_secondaries
+					fixed_ship_secondaries_slot = dp_ship_secondaries_3
 					fixed_ship_armor_slot = ship_armor_bb_3
 					front_1_custom_slot = ship_heavy_battery_3
 					mid_1_custom_slot = ship_anti_air_4
-					mid_2_custom_slot = dp_ship_secondaries
+					mid_2_custom_slot = dp_ship_secondaries_3
 					mid_3_custom_slot = ship_airplane_launcher_2
 					rear_1_custom_slot = ship_heavy_battery_3
 				}
@@ -1786,6 +1858,21 @@ focus_tree = {
 			NOT = { has_government = communism }
 			num_subjects > 0
 		} 
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_revisit_colonial_policy
+				}
+			}
+		}
+
 		icon = GFX_goal_generic_national_unity
 		x = 28
 		y = 0
@@ -1793,7 +1880,16 @@ focus_tree = {
 			x = -2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				OR = {
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+						has_completed_focus = uk_empire_focus
+					}
+				}
 			}
 		}
 		cost = 10
@@ -1810,6 +1906,18 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1825,7 +1933,16 @@ focus_tree = {
 			x = 2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				OR = {
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+						has_completed_focus = uk_empire_focus
+					}
+				}
 			}
 		}
 		relative_position_id = uk_empire_focus
@@ -2443,6 +2560,17 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = uk_empire_focus
+				}
+			}
 		}
 
 		available = { 
@@ -2456,11 +2584,24 @@ focus_tree = {
 			}
 		}
 
-		continue_if_invalid = no
+		continue_if_invalid = yes
 
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		x = 33
 		y = 0
+
+		offset = {
+			x = -16
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_revisit_colonial_policy
+			}
+		}
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2482,6 +2623,17 @@ focus_tree = {
 			add_political_power = 80
 			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
 			hidden_effect = { news_event = { id = mtg_news.14 days = 1 } }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
@@ -2502,6 +2654,19 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ENG_revisit_colonial_policy
+
+		offset = {
+			x = -3
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_revisit_colonial_policy
+			}
+		}
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2950,6 +3115,7 @@ focus_tree = {
 				has_full_control_of_state = 331
 				has_full_control_of_state = 119
 				has_full_control_of_state = 118
+				has_full_control_of_state = 906
 			}
 		}
 		bypass = {
@@ -2961,6 +3127,7 @@ focus_tree = {
 					owns_state = 331
 					owns_state = 119
 					owns_state = 118
+					owns_state = 906
 				}
 			}
 		}
@@ -2986,6 +3153,20 @@ focus_tree = {
 				YEM = {
 					transfer_state = 659
 					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 906
+				}
+				YEM = {
+					transfer_state = 906
+					IF = {
+						limit = {
+							YEM = { NOT = { has_opinion_modifier = ENG_returned_our_territory} }
+						}
+						add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+					}
 				}
 			}
 			if = {
@@ -3185,44 +3366,65 @@ focus_tree = {
 		available = { 
 			is_subject = no
 			OR = {
-			has_full_control_of_state = 767
-			has_full_control_of_state = 551
-			has_full_control_of_state = 549
-			has_full_control_of_state = 269
-			has_full_control_of_state = 548
-			has_full_control_of_state = 547
-			has_full_control_of_state = 546
-			has_full_control_of_state = 771
-			has_full_control_of_state = 770
-			has_full_control_of_state = 545
-			has_full_control_of_state = 542
-			has_full_control_of_state = 558
-			has_full_control_of_state = 274
-			has_full_control_of_state = 700
-			has_full_control_of_state = 701
-		}
+				has_full_control_of_state = 767
+				has_full_control_of_state = 551
+				has_full_control_of_state = 549
+				has_full_control_of_state = 269
+				has_full_control_of_state = 548
+				has_full_control_of_state = 547
+				has_full_control_of_state = 903
+				has_full_control_of_state = 904
+				has_full_control_of_state = 905
+				has_full_control_of_state = 546
+				has_full_control_of_state = 771
+				has_full_control_of_state = 770
+				has_full_control_of_state = 545
+				has_full_control_of_state = 542
+				has_full_control_of_state = 558
+				has_full_control_of_state = 900
+				has_full_control_of_state = 901
+				has_full_control_of_state = 902
+				has_full_control_of_state = 274
+				has_full_control_of_state = 700
+				has_full_control_of_state = 701
+				has_full_control_of_state = 883
+				has_full_control_of_state = 884
+				has_full_control_of_state = 885
+				has_full_control_of_state = 886
+				has_full_control_of_state = 887
+			}
 		}
 
 		bypass = {
-			NOT = {
-				AND = {
-					owns_state = 767
-					owns_state = 551
-					owns_state = 549
-					owns_state = 269
-					owns_state = 548
-					owns_state = 547
-					owns_state = 546
-					owns_state = 771
-					owns_state = 770
-					owns_state = 545
-					owns_state = 542
-					owns_state = 558
-					owns_state = 274
-					owns_state = 700
-					owns_state = 701
-		}
-			}
+			#NOT = {
+			#	AND = {
+					NOT = { owns_state = 767 }
+					NOT = { owns_state = 551 }
+					NOT = { owns_state = 549 }
+					NOT = { owns_state = 269 }
+					NOT = { owns_state = 548 }
+					NOT = { owns_state = 547 }
+					NOT = { owns_state = 903 }
+					NOT = { owns_state = 904 }
+					NOT = { owns_state = 905 }
+					NOT = { owns_state = 546 }
+					NOT = { owns_state = 771 }
+					NOT = { owns_state = 770 }
+					NOT = { owns_state = 545 }
+					NOT = { owns_state = 542 }
+					NOT = { owns_state = 558 }
+					NOT = { owns_state = 900 }
+					NOT = { owns_state = 901 }
+					NOT = { owns_state = 902 }
+					NOT = { owns_state = 274 }
+					NOT = { owns_state = 700 }
+					NOT = { owns_state = 883 }
+					NOT = { owns_state = 884 }
+					NOT = { owns_state = 885 }
+					NOT = { owns_state = 886 }
+					NOT = { owns_state = 887 }
+				#}
+			#}
 		}
 
 		continue_if_invalid = no
@@ -3244,6 +3446,11 @@ focus_tree = {
 					has_full_control_of_state = 767
 					has_full_control_of_state = 551
 					has_full_control_of_state = 549
+					has_full_control_of_state = 883
+					has_full_control_of_state = 884
+					has_full_control_of_state = 885
+					has_full_control_of_state = 886
+					has_full_control_of_state = 887
 				}
 				release = SUD
 				if = {
@@ -3264,6 +3471,51 @@ focus_tree = {
 							has_war_with = ENG
 						}
 						SUD = {
+							add_to_war = { targeted_alliance = ENG enemy = PREV hostility_reason = asked_to_join }
+						}
+					}
+				}
+			}
+			# Kenya
+			if = {
+				limit = {
+					OR = {
+						has_full_control_of_state = 547
+						has_full_control_of_state = 903
+						has_full_control_of_state = 904
+						has_full_control_of_state = 905
+					}
+					KEN = { exists = no }
+				}
+				effect_tooltip = {
+					release = KEN 
+				}
+				hidden_effect = {
+					every_owned_state = {
+						limit = {
+							is_core_of = KEN 
+						}
+						KEN = { transfer_state = PREV }
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					set_autonomy = { target = KEN autonomy_state = autonomy_dominion }
+				}
+				if = {
+					limit = {
+						NOT = { has_dlc = "Together for Victory" }
+					}
+					puppet = KEN
+				}
+				hidden_effect = {
+					every_other_country = {
+						limit = {
+							has_war_with = ENG
+						}
+						KEN = {
 							add_to_war = { targeted_alliance = ENG enemy = PREV hostility_reason = asked_to_join }
 						}
 					}
@@ -3325,34 +3577,6 @@ focus_tree = {
 							has_war_with = ENG
 						}
 						UGA = {
-							add_to_war = { targeted_alliance = ENG enemy = PREV hostility_reason = asked_to_join }
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 547
-				}
-				release = KEN
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					set_autonomy = { target = KEN autonomy_state = autonomy_dominion }
-				}
-				if = {
-					limit = {
-						NOT = { has_dlc = "Together for Victory" }
-					}
-					puppet = KEN
-				}
-				hidden_effect = {
-					every_other_country = {
-						limit = {
-							has_war_with = ENG
-						}
-						KEN = {
 							add_to_war = { targeted_alliance = ENG enemy = PREV hostility_reason = asked_to_join }
 						}
 					}
@@ -3501,6 +3725,9 @@ focus_tree = {
 			if = {
 				limit = {
 					has_full_control_of_state = 558
+					has_full_control_of_state = 900
+					has_full_control_of_state = 901
+					has_full_control_of_state = 902
 				}
 				release = NGA
 				if = {
@@ -3625,6 +3852,7 @@ focus_tree = {
 			has_full_control_of_state = 452
 			has_full_control_of_state = 447
 			has_full_control_of_state = 446
+			has_full_control_of_state = 907
 			has_full_control_of_state = 457
 			has_full_control_of_state = 456
 			has_full_control_of_state = 656
@@ -3641,6 +3869,7 @@ focus_tree = {
 					owns_state = 452
 					owns_state = 447
 					owns_state = 446
+					owns_state = 907
 					owns_state = 457
 					owns_state = 456
 					owns_state = 656
@@ -5554,10 +5783,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_india_focus
-				}
+				ENG_viceroy_reduce_autonomy_effect = yes
 			}
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -5612,10 +5838,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_india_focus_1IC
 				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_india_focus
-				}
+				ENG_viceroy_reduce_autonomy_effect = yes
 			}
 		}
 	}
@@ -6334,6 +6557,17 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_revisit_colonial_policy
+				}
+			}
 		}
 
 		available = { 	
@@ -6374,6 +6608,17 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_revisit_colonial_policy
+				}
+			}
 		}
 
 		available = {
@@ -6585,6 +6830,7 @@ focus_tree = {
 								OR = {
 									has_autonomy_state = autonomy_integrated_puppet
 									has_autonomy_state = autonomy_reichskommissariat
+									ROOT = { has_country_leader_with_trait = viceroy_emeritus }
 								}
 							}
 							AND = {
@@ -7027,6 +7273,23 @@ focus_tree = {
 				    target = RAJ
 				    transfer_troops = yes
 				}
+				if = {
+					limit = {
+						ROOT = { has_country_leader_with_trait = viceroy_emeritus }
+					}
+					custom_effect_tooltip = viceroy_emeritus_downside_tt
+					every_state = {
+						limit = { 
+							OR = {
+								is_owned_by = ROOT
+								is_owned_by = RAJ #For the tooltip
+							}
+							is_core_of = RAJ 
+							NOT = { is_core_of = ROOT }
+						}
+						add_resistance = 15
+					}
+				}
 			}
 			AST = {
 				every_unit_leader = {
@@ -7075,21 +7338,26 @@ focus_tree = {
 	focus = {
 		id = ENG_steady_as_she_goes
 		mutually_exclusive = { focus = ENG_a_change_in_course }
-		available = { 
+		icon = GFX_goal_support_democracy
+
+		allow_branch = {
 			if = {
 				limit = {
-					NOT = { has_country_flag = ENG_abdication_crisis_changed_mind }
-		}
-				NOT = { has_country_flag = edward_viii_refused_to_abdicate_flag }
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_a_change_in_course
+				}
 			}
 		}
 
-		cancel_if_invalid = yes
-
-		icon = GFX_goal_support_democracy
-
 		x = 14
 		y = 0
+		relative_position_id = ENG_revisit_colonial_policy
+
 		offset = {
 			x = -7
 			y = 0
@@ -7097,7 +7365,52 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		relative_position_id = ENG_revisit_colonial_policy
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_dlc = "Man the Guns"
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = uk_empire_focus
+			}
+		}
+		offset = {
+			x = -3
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_revisit_colonial_policy
+			}
+		}
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_global_defense
+			}
+		}
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_home_defence
+			}
+		}
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -7109,9 +7422,32 @@ focus_tree = {
 				}
 			}
 		}
+
+		available = { 
+			if = {
+				limit = {
+					NOT = { has_country_flag = ENG_abdication_crisis_changed_mind }
+				}
+				NOT = { has_country_flag = edward_viii_refused_to_abdicate_flag }
+			}
+		}
+		cancel_if_invalid = yes
+
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}	
 		completion_reward = {
 			add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 365 }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
@@ -7124,6 +7460,20 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = ENG_home_defence
+						has_completed_focus = ENG_a_change_in_course
+					}
+				}
+			}
 		}
 
 		available = {
@@ -7136,6 +7486,19 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ENG_steady_as_she_goes
+
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_global_defense
+			}
+		}
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -7268,6 +7631,17 @@ focus_tree = {
 						instant_build = yes
 					}
 				}								
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
 			}
 		}
 	}
@@ -7745,11 +8119,40 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_home_defence
+			}
+		}
 		relative_position_id = ENG_steady_as_she_goes
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = ENG_global_defense
+						has_completed_focus = ENG_a_change_in_course
+					}
+				}
+			}
+		}
+
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}	
 		completion_reward = {
 			add_war_support = 0.05
@@ -7810,6 +8213,17 @@ focus_tree = {
 						province = 540
 						instant_build = yes
 					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -7898,7 +8312,29 @@ focus_tree = {
 		prerequisite = { focus = uk_iran_focus focus = ENG_no_further_appeasement }
 
 		allow_branch = {
-			always = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_a_change_in_course
+				}
+			}
+		}
+
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_global_defense
+			}
 		}
 
 		available = {
@@ -7918,10 +8354,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			SOV = {
-				add_opinion_modifier = { target = ENG modifier = embargo }
-				add_opinion_modifier = { target = ENG modifier = sanctions_relations } 
-			}
+			send_embargo = SOV
+			custom_effect_tooltip = embargo_relation_tt
 		}
 	}
 	focus = {
@@ -8036,10 +8470,8 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = ENG modifier = embargo }
-				add_opinion_modifier = { target = ENG modifier = sanctions_relations }  
-			}
+			send_embargo = GER
+			custom_effect_tooltip = embargo_relation_tt
 		}
 	}
 
@@ -8420,6 +8852,17 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_steady_as_she_goes
+				}
+			}
 		}
 
 		available = {
@@ -8431,6 +8874,68 @@ focus_tree = {
 		x = 18
 		y = 0
 		relative_position_id = ENG_steady_as_she_goes
+
+		offset = {
+			x = -18
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_a_change_in_course
+			}
+		}
+
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_the_kings_party
+			}
+		}
+
+		offset = {
+			x = -3
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_organize_the_blackshirts
+			}
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_organize_the_blackshirts
+				has_completed_focus = uk_empire_focus
+			}
+		}
+
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_concessions_to_the_trade_unions
+			}
+		}
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -8574,6 +9079,17 @@ focus_tree = {
 					value = -200
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
@@ -8583,6 +9099,38 @@ focus_tree = {
 		id = ENG_the_kings_party
 		prerequisite = { focus = ENG_a_change_in_course }
 		mutually_exclusive = { focus = ENG_organize_the_blackshirts focus = ENG_concessions_to_the_trade_unions }
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = ENG_organize_the_blackshirts
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+						has_completed_focus = ENG_steady_as_she_goes
+					}
+				}
+			}
+		}
+
+		offset = {
+			x = 5
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_the_kings_party
+			}
+		}
+
 		available = {
 			has_country_flag = edward_viii_married_wallis_simpson
 			is_subject = no
@@ -8629,6 +9177,17 @@ focus_tree = {
 					type = contain
 					id = GER
 					value = -200
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -8832,13 +9391,45 @@ focus_tree = {
 		id = ENG_organize_the_blackshirts
 		prerequisite = { focus = ENG_a_change_in_course }
 		mutually_exclusive = { focus = ENG_the_kings_party focus = ENG_concessions_to_the_trade_unions }
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = ENG_the_kings_party
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+						has_completed_focus = ENG_steady_as_she_goes
+					}
+				}
+			}
+		}
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_organize_the_blackshirts
+			}
+		}
+
 		available = {
 			is_subject = no
 			has_war = no
 			if = {
 				limit = {
 					NOT = { has_country_flag = ENG_abdication_crisis_changed_mind }
-		}
+				}
 				NOT = { has_country_flag = edward_viii_refused_to_abdicate_flag }
 			}
 		}
@@ -8932,6 +9523,17 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
@@ -8974,11 +9576,27 @@ focus_tree = {
 			country_exists = ITA
 			NOT = { has_war_together_with = FRA }
 			NOT = { has_war_with = ITA }
+			ITA = { is_in_faction = no }
 		}
 		bypass = {
 			OR = {
-				ITA = { exists = no }
+				ITA = {	exists = no }
 				ITA = { is_subject = yes }
+				ITA = { is_in_faction = yes }
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					ITA = {
+						OR = {
+							has_completed_focus = ITA_defy_the_duce
+							custom_trigger_tooltip = {
+								tooltip = ITA_RDS_exists_tt
+								tag = RDS
+							}
+						}
+					}
+				}
 			}
 		}
 		icon = GFX_goal_generic_major_alliance
@@ -10014,13 +10632,45 @@ focus_tree = {
 		id = ENG_concessions_to_the_trade_unions
 		prerequisite = { focus = ENG_a_change_in_course }
 		mutually_exclusive = { focus = ENG_the_kings_party focus = ENG_organize_the_blackshirts }
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = ENG_the_kings_party
+						has_completed_focus = ENG_organize_the_blackshirts
+						has_completed_focus = ENG_steady_as_she_goes
+					}
+				}
+			}
+		}
+
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_concessions_to_the_trade_unions
+			}
+		}
+
 		available = {
 			is_subject = no
 			has_war = no
 			if = {
 				limit = {
 					NOT = { has_country_flag = ENG_abdication_crisis_changed_mind }
-		}
+				}
 				NOT = { has_country_flag = edward_viii_refused_to_abdicate_flag }
 			}
 			NOT = {
@@ -10106,12 +10756,36 @@ focus_tree = {
 				}
 			}
 			hidden_effect = { news_event = { id = mtg_news.33 days = 1 } }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_move_to_secure_the_dominions
 		prerequisite = { focus = ENG_organize_the_blackshirts focus = ENG_concessions_to_the_trade_unions }
+
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ENG_concessions_to_the_trade_unions
+			}
+		}
+
 		available = {
 			is_subject = no
 			has_war = no
@@ -10657,6 +11331,10 @@ focus_tree = {
 							NOT = { original_tag = ANG }
 							owns_state = 540
 							has_full_control_of_state = 540
+							owns_state = 891
+							has_full_control_of_state = 891
+							owns_state = 892
+							has_full_control_of_state = 892
 						}
 						AND = {
 							NOT = { original_tag = MZB }
@@ -10761,6 +11439,12 @@ focus_tree = {
 							has_full_control_of_state = 538
 							owns_state = 718
 							has_full_control_of_state = 718
+							owns_state = 888
+							has_full_control_of_state = 888
+							owns_state = 889
+							has_full_control_of_state = 889
+							owns_state = 890
+							has_full_control_of_state = 890
 						}
 						COG = {
 							is_subject_of = PREV
