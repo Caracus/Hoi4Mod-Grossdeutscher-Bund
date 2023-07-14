@@ -14,7 +14,7 @@ Download your desired version from the releases section.
 Short intro:
 Großdeutscher Bund explores an alternative history where the Wehrmacht successfully opposes Hitler with the help of the Soviet Union and thereby opens the door for something that might be far more dangerous...
 
-The public Steam release version for 1.10.5 can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=2182657195
+The public Steam release version for 1.12 can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=2742669872
 
 If you want to contribute to the mod then heres a little how to. I suggest to install Git and watch a video on how to use it.
 Just download all the files here and move the GDB.mod file one folder up into the level as the main GDB folder. Then open it with something like notepad++, visual studio code or any other compatible editor and make sure that the path matches the one on your machine. You should be able to launch the downloaded version afterwards from the regular game launcher.
