@@ -1538,8 +1538,10 @@ political_actions = {
 		visible = {
 			owns_state = 85
 		}
-		highlight_state_targets = {
-			state = 85
+		highlight_states = {
+			highlight_state_targets = {
+				state = 85
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1565,8 +1567,10 @@ political_actions = {
 		visible = {
 			owns_state = 762
 		}
-		highlight_state_targets = {
-			state = 762
+		highlight_states = {
+			highlight_state_targets = {
+				state = 762
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1588,8 +1592,10 @@ political_actions = {
 		visible = {
 			owns_state = 86
 		}
-		highlight_state_targets = {
-			state = 86
+		highlight_states = {
+			highlight_state_targets = {
+				state = 86
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1611,8 +1617,10 @@ political_actions = {
 		visible = {
 			owns_state = 28
 		}
-		highlight_state_targets = {
-			state = 28
+		highlight_states = {
+			highlight_state_targets = {
+				state = 28
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1638,8 +1646,10 @@ political_actions = {
 		visible = {
 			owns_state = 909
 		}
-		highlight_state_targets = {
-			state = 909
+		highlight_states = {
+			highlight_state_targets = {
+				state = 909
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1661,8 +1671,10 @@ political_actions = {
 		visible = {
 			owns_state = 8
 		}
-		highlight_state_targets = {
-			state = 8
+		highlight_states = {
+			highlight_state_targets = {
+				state = 8
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1684,8 +1696,10 @@ political_actions = {
 		visible = {
 			owns_state = 102
 		}
-		highlight_state_targets = {
-			state = 102
+		highlight_states = {
+			highlight_state_targets = {
+				state = 102
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1707,8 +1721,10 @@ political_actions = {
 		visible = {
 			owns_state = 736
 		}
-		highlight_state_targets = {
-			state = 736
+		highlight_states = {
+			highlight_state_targets = {
+				state = 736
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1730,8 +1746,10 @@ political_actions = {
 		visible = {
 			owns_state = 69
 		}
-		highlight_state_targets = {
-			state = 69
+		highlight_states = {
+			highlight_state_targets = {
+				state = 69
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1757,8 +1775,10 @@ political_actions = {
 		visible = {
 			owns_state = 9
 		}
-		highlight_state_targets = {
-			state = 9
+		highlight_states = {
+			highlight_state_targets = {
+				state = 9
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1788,8 +1808,10 @@ political_actions = {
 		visible = {
 			owns_state = 75
 		}
-		highlight_state_targets = {
-			state = 75
+		highlight_states = {
+			highlight_state_targets = {
+				state = 75
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1815,8 +1837,10 @@ political_actions = {
 		visible = {
 			owns_state = 74
 		}
-		highlight_state_targets = {
-			state = 74
+		highlight_states = {
+			highlight_state_targets = {
+				state = 74
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1838,8 +1862,10 @@ political_actions = {
 		visible = {
 			owns_state = 917
 		}
-		highlight_state_targets = {
-			state = 917
+		highlight_states = {
+			highlight_state_targets = {
+				state = 917
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1861,8 +1887,10 @@ political_actions = {
 		visible = {
 			owns_state = 3
 		}
-		highlight_state_targets = {
-			state = 3
+		highlight_states = {
+			highlight_state_targets = {
+				state = 3
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1878,8 +1906,10 @@ political_actions = {
 		available = {
 		}
 		fire_only_once = yes
-		highlight_state_targets = {
-			state = 4
+		highlight_states = {
+			highlight_state_targets = {
+				state = 4
+			}
 		}
 		ai_will_do = {
 			factor = 1000
@@ -1907,8 +1937,10 @@ political_actions = {
 		visible = {
 			owns_state = 52
 		}
-		highlight_state_targets = {
-			state = 52
+		highlight_states = {
+			highlight_state_targets = {
+				state = 52
+			}
 		}
 		complete_effect = {
 			set_province_name = {
@@ -1927,8 +1959,10 @@ political_actions = {
 		ai_will_do = {
 			factor = 1000
 		}
-		highlight_state_targets = {
-			state = 54
+		highlight_states = {
+			highlight_state_targets = {
+				state = 54
+			}
 		}
 		visible = {
 			owns_state = 54
