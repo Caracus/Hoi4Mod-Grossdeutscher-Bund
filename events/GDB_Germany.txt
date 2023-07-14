@@ -881,6 +881,9 @@ country_event = {
 		847 = {
 			add_core_of = GER
 		}
+		848 = {
+			add_core_of = GER
+		}
 		8 = {
 			add_core_of = GER
 		}
