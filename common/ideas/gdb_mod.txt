@@ -435,7 +435,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_volunteer_expedition_bonus
 			modifier = {
-				send_volunteer_size = 18
+				send_volunteer_size = 26
 			}
 		}
 		zdb_send_com_away = {
