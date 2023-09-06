@@ -730,7 +730,7 @@ focus_tree = {
 					id = gdb_germany.1
 				}
 				add_named_threat = {
-					threat = 5
+					threat = 6
 					name = zdb_french_civil
 				}
 			}
@@ -827,7 +827,7 @@ focus_tree = {
 			}
 			set_global_flag = bund_has_unified
 			add_named_threat = {
-				threat = 3
+				threat = 4
 				name = zdb_deutscher_bund
 			}
 			country_event = {
@@ -1962,7 +1962,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			threat > 0.3
+			threat > 0.25
 		}
 		completion_reward = {
 			add_war_support = 0.05

@@ -871,7 +871,7 @@ country_event = {
 		country_event = {
 			id = gdb_germany.90
 		}
-		add_threat = 3
+		add_threat = 4
 		3 = {
 			add_core_of = GER
 		}
@@ -1279,7 +1279,7 @@ country_event = {
 	option = {
 		name = gdb_germany.32.a
 		add_named_threat = {
-			threat = 7
+			threat = 8
 			name = gdb_german_polish_war
 		}
 		hidden_effect = {
@@ -1509,7 +1509,7 @@ country_event = {
 			transfer_state = 812
 			transfer_state = 813
 			add_named_threat = {
-				threat = 3
+				threat = 4
 				name = gdb_soviet_baltics
 			}
 		}
@@ -1734,7 +1734,7 @@ country_event = {
 		name = gdb_germany.42.a
 		POL = {
 			transfer_state = 80
-			add_threat = 1
+			add_threat = 2
 		}
 		HUN = {
 			transfer_state = 83
@@ -1802,7 +1802,7 @@ country_event = {
 		HUN = {
 			transfer_state = 84
 			transfer_state = 82
-			add_threat = 1
+			add_threat = 2
 		}
 		hidden_effect = {
 			country_event = {
@@ -1831,7 +1831,7 @@ country_event = {
 		SOV = {
 			transfer_state = 79
 			transfer_state = 766
-			add_threat = 3
+			add_threat = 5
 		}
 		BUL = {
 			transfer_state = 46
@@ -1960,7 +1960,7 @@ country_event = {
 				}
 				AUS = {
 					transfer_state = 102
-					add_threat = 1
+					add_threat = 2
 				}
 			}
 		} else_if = {
@@ -1976,7 +1976,7 @@ country_event = {
 			}
 			GER = {
 				transfer_state = 102
-				add_threat = 1
+				add_threat = 2
 			}
 		}	
 
@@ -1998,7 +1998,7 @@ country_event = {
 				}
 				AUS = {
 					transfer_state = 853
-					add_threat = 1
+					add_threat = 2
 				}
 			}
 		} else_if = {
@@ -2014,7 +2014,7 @@ country_event = {
 			}
 			GER = {
 				transfer_state = 853
-				add_threat = 1
+				add_threat = 2
 			}
 		}
 	
@@ -2022,12 +2022,12 @@ country_event = {
 			transfer_state = 103
 			transfer_state = 44
 			transfer_state = 805
-			add_threat = 1
+			add_threat = 2
 		}
 		HUN = {
 			transfer_state = 764
 			transfer_state = 45
-			add_threat = 1
+			add_threat = 2
 		}
 		country_event = {
 			id = gdb_germany.50
@@ -2560,7 +2560,7 @@ country_event = {
 			BUL = {
 				transfer_state = 103
 				transfer_state = 163
-				add_threat = 1
+				add_threat = 2
 			}
 
 			#albania
@@ -2747,7 +2747,7 @@ country_event = {
 		}
 		HUN = {
 			transfer_state = 109
-			add_threat = 1
+			add_threat = 2
 		}
 		SER = {
 			transfer_state = 106
@@ -2839,7 +2839,7 @@ country_event = {
 				days = 7
 			}
 		}
-		add_threat = 1
+		add_threat = 2
 	}
 }
 
@@ -2857,7 +2857,7 @@ country_event = {
 				days = 3
 			}
 		}
-		add_threat = 1
+		add_threat = 2
 	}
 }
 
@@ -2875,7 +2875,7 @@ country_event = {
 				days = 1
 			}
 		}
-		add_threat = 1
+		add_threat = 2
 	}
 }
 
@@ -2926,7 +2926,7 @@ country_event = {
 				days = 2
 			}
 		}
-		add_threat = 1
+		add_threat = 2
 	}
 }
 
@@ -2943,7 +2943,7 @@ country_event = {
 			days = 1
 		}
 		add_named_threat = {
-			threat = -3
+			threat = -2
 			name = germany_last_attempt_for_peace
 		}
 	}
@@ -3035,7 +3035,7 @@ country_event = {
 			days = 1
 		}
 		add_named_threat = {
-			threat = 3
+			threat = 4
 			name = france_angered_in_belgium
 		}
 	}
@@ -3046,7 +3046,7 @@ country_event = {
 			days = 1
 		}
 		add_named_threat = {
-			threat = -2
+			threat = -5
 			name = france_satisfied_in_belgium
 		}
 	}
