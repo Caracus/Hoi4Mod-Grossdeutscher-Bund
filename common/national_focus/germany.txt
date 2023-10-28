@@ -469,17 +469,17 @@ focus_tree = {
 				add_state_claim = 9
 				add_state_claim = 75
 				add_state_claim = 74
-				add_state_claim = 917
+				add_state_claim = 942
 				add_state_claim = 39
 			}
-			918 = {
+			943 = {
 				remove_core_of = HUN
 			}
 			AUS = {
-				transfer_state = 918
+				transfer_state = 943
 			}
 			hidden_effect = {
-				918 = {
+				943 = {
 					add_core_of = GER
 				}
 			}
@@ -1120,7 +1120,7 @@ focus_tree = {
 					}
 				}
 			}
-			914 = {
+			940 = {
 				if = {
 					limit = {
 						OR = {
@@ -1322,7 +1322,7 @@ focus_tree = {
 					}
 				}
 			}
-			917 = {
+			942 = {
 				if = {
 					limit = {
 						OR = {
@@ -1637,7 +1637,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			917 = {
+			942 = {
 				if = {
 					limit = {
 						OR = {
@@ -2100,11 +2100,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			915 = {
+			912 = {
 				add_core_of = GER
 			}
 			GER = {
-				transfer_state = 915
+				transfer_state = 912
 				add_timed_idea = {
 					idea = zdb_lose_money
 					days = 180
