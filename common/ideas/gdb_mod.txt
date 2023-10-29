@@ -195,9 +195,9 @@ ideas = {
 			picture = generic_army_war_college
 			modifier = {
 				acclimatization_cold_climate_gain_factor = 0.3
-				special_forces_attack_factor = 0.05
 				max_dig_in = 5
 				training_time_factor = 0.1
+				special_forces_attack_factor = 0.1
 			}
 		}
 		jewish_reparations_payments = {
@@ -333,7 +333,7 @@ ideas = {
 				intelligence_agency_defense = 1.5
 				enemy_operative_recruitment_chance = 0.5
 				crypto_strength = 3
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.03
 
 			}
 		}
@@ -353,7 +353,7 @@ ideas = {
 				enemy_operative_recruitment_chance = 0.5
 				crypto_strength = 3
 				decryption_power_factor = 0.25
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.05
 			}
 		}
 		abteilung_3_b_upgrade_2_offensive = {
@@ -370,7 +370,7 @@ ideas = {
 				agency_upgrade_time = -0.25
 				commando_trait_chance_factor = 1
 				operative_death_on_capture_chance = 0.2
-				consumer_goods_factor = 0.01
+				consumer_goods_factor = 0.02
 			}
 		}
 		abteilung_3_b_upgrade_3_offensive = {
@@ -388,7 +388,7 @@ ideas = {
 				commando_trait_chance_factor = 1
 				operative_death_on_capture_chance = 0.2
 				intel_network_gain_factor = 0.5
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.05
 			}
 		}
 		abteilung_3_b_upgrade_4_offensive = {
@@ -407,7 +407,7 @@ ideas = {
 				operative_death_on_capture_chance = 0.2
 				intel_network_gain_factor = 0.5
 				operation_outcome = 0.5
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.1
 			}
 		}
 		member_of_the_bund = {
@@ -607,14 +607,14 @@ ideas = {
 			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.1
+				small_plane_airframe = {
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
 			modifier = {
 				air_air_superiority_agility_factor = 0.1
-				air_air_superiority_attack_factor = 0.05
+				air_air_superiority_attack_factor = 0.1
 			}
 		}
 		zdb_cas_discount = {
@@ -627,8 +627,8 @@ ideas = {
 			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
-				cas = {
-					build_cost_ic = -0.1
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}
@@ -647,14 +647,15 @@ ideas = {
 			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.1
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
 			modifier = {
 				air_air_superiority_attack_factor = 0.1
 				air_air_superiority_defence_factor = 0.1
+				air_range_factor = 0.1
 			}
 		}
 		zdb_strat_discount = {
@@ -667,14 +668,14 @@ ideas = {
 			picture = generic_air_payment
 			removal_cost = -1
 			equipment_bonus = {
-				strat_bomber_equipment = {
-					build_cost_ic = -0.1
+				large_plane_airframe = {
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
 			modifier = {
 				air_strategic_bomber_attack_factor = 0.1
-				air_strategic_bomber_defence_factor = 0.1
+				air_strategic_bomber_defence_factor = 0.2
 			}
 		}
 		zdb_ship_bureau = {

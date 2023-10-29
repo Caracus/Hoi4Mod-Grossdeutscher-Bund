@@ -1,0 +1,34 @@
+state={
+	id=942
+	name="STATE_942"
+	provinces={
+		9539 9692 
+	}
+	manpower=524197
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	history={
+		owner = CZE
+		victory_points = {
+			9692 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+
+		}
+		add_core_of = CZE
+		1939.3.14 = {
+			owner = SLO
+			controller = SLO
+			add_core_of = SLO
+
+		}
+
+	}
+	local_supplies=0.0 
+
+}

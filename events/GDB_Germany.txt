@@ -973,6 +973,7 @@ country_event = {
 		create_equipment_variant = {
 			name = "Mackensen"
 			type = ship_hull_super_heavy_1
+			design_team = mio:GER_germaniawerft_organization
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_super_heavy_battery_1
@@ -980,18 +981,44 @@ country_event = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
 				fixed_ship_radar_slot = ship_radar_4
 				fixed_ship_engine_slot = heavy_ship_engine_4
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot = dp_ship_secondaries_3
 				fixed_ship_armor_slot = ship_armor_shbb
 				front_1_custom_slot = ship_super_heavy_battery_1
 				front_2_custom_slot = ship_super_heavy_battery_1
-				mid_1_custom_slot = dp_ship_secondaries
-				mid_2_custom_slot = dp_ship_secondaries
-				mid_3_custom_slot = dp_ship_secondaries
+				mid_1_custom_slot = dp_ship_secondaries_3
+				mid_2_custom_slot = dp_ship_secondaries_3
+				mid_3_custom_slot = dp_ship_secondaries_3
 				rear_1_custom_slot = ship_super_heavy_battery_1
 				rear_2_custom_slot = ship_super_heavy_battery_1
 			}
 		}
 		load_oob = "GER_SMS_Mackensen"
+	}
+	option = {
+		name = gdb_germany.22.b
+		create_equipment_variant = {
+			name = "Husar Mackensen"
+			type = ship_hull_super_heavy_1
+			design_team = mio:GER_germaniawerft_organization
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_super_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_4
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_4
+				fixed_ship_engine_slot = heavy_ship_engine_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries_3
+				fixed_ship_armor_slot = ship_armor_shbb
+				front_1_custom_slot = ship_anti_air_4
+				front_2_custom_slot = ship_anti_air_4
+				mid_1_custom_slot = ship_anti_air_4
+				mid_2_custom_slot = ship_anti_air_4
+				mid_3_custom_slot = ship_anti_air_4
+				rear_1_custom_slot = ship_anti_air_4
+				rear_2_custom_slot = ship_anti_air_4
+			}
+		}
+		load_oob = "GER_SMS_Husar_Mackensen"
 	}
 }
 

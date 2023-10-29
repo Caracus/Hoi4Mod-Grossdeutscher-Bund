@@ -1,0 +1,12 @@
+units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "SMS Husar Mackensen"			
+		naval_base = 6325 # Hamburg
+		task_force = {
+			name = "SMS Husar Mackensen"
+			location = 6325 # Hamburg
+			ship = { name = "SMS Husar Mackensen" definition = battleship equipment = { ship_hull_super_heavy_1= { amount = 1 owner = GER version_name = "Husar Mackensen" } } }
+		}
+	}
+}
