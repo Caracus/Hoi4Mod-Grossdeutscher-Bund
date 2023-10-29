@@ -2031,6 +2031,7 @@ political_actions = {
 					producer = SPR
 				}
 				add_manpower = 500000
+				load_oob = SPR_International_Volunteers
 			}
 		}
 	}

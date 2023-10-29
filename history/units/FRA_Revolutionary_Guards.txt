@@ -185,4 +185,172 @@ start_manpower_factor = 0.25
 		start_equipment_factor = 0.1
 start_manpower_factor = 0.25
 	}
+	division = {
+		name = "25. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+		division = {
+		name = "26. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+		division = {
+		name = "27. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "28. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "29. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "30. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "31. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "32. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "33. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "34. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "35. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "36. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "37. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "38. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "39. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "40. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "41. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "42. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "43. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "44. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "45. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "46. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "47. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}
+	division = {
+		name = "48. French Revolutionary Guard"
+		location = 11506
+		division_template = "French Revolutionary Guard"
+		start_equipment_factor = 0.1
+start_manpower_factor = 0.25
+	}	
 }

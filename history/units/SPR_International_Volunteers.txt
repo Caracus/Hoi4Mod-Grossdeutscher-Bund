@@ -1,0 +1,89 @@
+﻿division_template = {
+	name = "Voluntarios Internacionales"
+
+	division_names_group = SPR_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+		division = {
+		name = "2. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+		division = {
+		name = "3. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12. Voluntarios Internacionales"
+		location = 3938
+		division_template = "Voluntarios Internacionales"
+		start_equipment_factor = 0.8
+	}
+}
