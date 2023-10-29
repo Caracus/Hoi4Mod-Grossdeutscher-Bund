@@ -1,0 +1,103 @@
+﻿division_template = {
+	name = "Spanish Revolutionary Guard"
+
+	division_names_group = FRA_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+		division = {
+		name = "2. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+		division = {
+		name = "3. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "4. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "5. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "6. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "7. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "8. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "9. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "10. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "11. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+	division = {
+		name = "12. Spanish Revolutionary Guard"
+		location = 3938
+		division_template = "Spanish Revolutionary Guard"
+		start_equipment_factor = 0.1
+		start_manpower_factor = 0.25
+	}
+}

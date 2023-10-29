@@ -549,7 +549,7 @@
  gdb_germany.77.d:0"After the Spanish Civil War, Spain is looking for allies that could help eliminate any possible resurgencies of radicals and supply them with weapons for protection and security. Rumors have it that they are in talks with the Soviet Union."
  gdb_germany.77.a:0"Useless Franco"
  gdb_germany.78.t:0"The Comintern grows"
- gdb_germany.78.d:0"Today Spain and the Soviet Union announced closer relations and mutual assistance."
+ gdb_germany.78.d:0"Today Spain and the Soviet Union announced closer relations and mutual assistance. High ranking Soviet officials have been tasked with overseeing the creation of a revolutionary guard."
  gdb_germany.78.a:0"Keep an eye on this!"
  gdb_germany.79.t:0"Invasion of Portugal"
  gdb_germany.79.d:0"Today Spain and France carried out a surprise attack against neutral Portugal, claiming a restoration of the Iberian Union. While Spanish troops are advancing towards Lisbon, the French fleet started a blockade of the harbors and Portuguese colonial holdings."
@@ -694,6 +694,9 @@
  gdb_germany.119.d:0"Here are those that coordinated Hitlers last stand. Officers and others that led the soliders into combat. How much worse is giving orders than executing them? They too were under pressure from everyone around them. But How much was pressure and how much own conviction? Are they just another kog in the machine or the ones who enabled all this misery. Is their only value now measured in experience of Guerilla warfare and scorched German earth?"
  gdb_germany.119.a:0"We dont have the luxury of choice right now."
  gdb_germany.119.b:0"Make an exemple of them!"
+ gdb_germany.120.t:0"Armee Auxiliaire Rouge"
+ gdb_germany.120.d:0"After receiving a sizeable amount of military equipment from the Soviet Union, the French government has announced the creation of an auxiliary force, led by veterans of the revolutionary war. This new revolutionary guard is tasked with a broad variety of civil and military tasks."
+ gdb_germany.120.a:0"A worrysome development."
 
  gdb_germany..t:0""
  gdb_germany..d:0""

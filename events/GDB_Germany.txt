@@ -3371,6 +3371,13 @@ country_event = {
 				add_to_faction = PREV
 			}
 		}
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = democratic
+			}
+			load_oob = "SPR_Revolutionary_Guards"
+		}
 		hidden_effect = {
 			random_other_country = {
 				limit = {
@@ -3596,6 +3603,18 @@ country_event = {
 			}
 			SOV = {
 				add_to_faction = PREV
+			}
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = communism
+				}
+				country_event = {
+					id = gdb_germany.120
+					days = 45
+				}
 			}
 		}
 		hidden_effect = {
@@ -4746,6 +4765,27 @@ country_event = {
 	option = {
 		name = gdb_germany.119.b
 
+	}
+}
+
+# 120 France gets revolutionary guards after buying soviet guns
+country_event = {
+	id = gdb_germany.120
+	title = gdb_germany.120.t
+	desc = gdb_germany.120.d
+	picture = GFX_report_event_canadian_soldiers
+	is_triggered_only = yes
+	option = {
+		name = gdb_germany.120.a
+		random_country = {
+			limit = {
+				OR = {
+					original_tag = FRA
+					tag = FRA
+				}
+			}
+			load_oob = "FRA_Revolutionary_Guards"
+		}
 	}
 }
 
