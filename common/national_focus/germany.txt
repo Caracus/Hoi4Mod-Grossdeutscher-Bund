@@ -24,6 +24,92 @@ focus_tree = {
 		focus = a_bright_future
 	}
 
+	focus = {
+		id = GER_naval_rearmament
+		icon = GFX_goal_generic_build_navy
+		x = 55
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = naval_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			every_state = {
+				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_naval_rearmament_2dockyards
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_naval_rearmament_1dockyard
+			}
+		}
+	}
+
 	#start modded#
 
 	focus = {
@@ -40,7 +126,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 16
+		x = 15
 		y = 0
 		cost = 4
 		ai_will_do = {
@@ -101,6 +187,47 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = realpolitik_idea
+		}
+	}
+	focus = {
+		id = the_polish_corridor
+		icon = GFX_focus_generic_polish_deal
+		prerequisite = {
+			focus = realpolitik
+		}
+		x = -3
+		y = 2
+		relative_position_id = a_bright_future
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = gdb_germany.26
+			}
+		}
+	}
+	focus = {
+		id = polish_cooperation
+		icon = GFX_goal_tripartite_pact
+		prerequisite = {
+			focus = the_polish_corridor
+		}
+		x = 0
+		y = 1
+		relative_position_id = the_polish_corridor
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_global_flag = german_polish_friendly_outcome
+		}
+		completion_reward = {
+			country_event = {
+				id = gdb_germany.35
+			}
 		}
 	}
 	focus = {
@@ -236,6 +363,9 @@ focus_tree = {
 		prerequisite = {
 			focus = eastern_expansion
 		}
+		prerequisite = {
+			focus = the_polish_corridor
+		}
 		x = -5
 		y = 3
 		relative_position_id = a_bright_future
@@ -284,12 +414,6 @@ focus_tree = {
 	focus = {
 		id = the_future_of_czechoslovakia
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = {
-			focus = the_polish_corridor
-		}
-		prerequisite = {
-			focus = approach_hungary
-		}
 		prerequisite = {
 			focus = austrian_claims
 		}
@@ -1836,47 +1960,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = the_polish_corridor
-		icon = GFX_focus_generic_polish_deal
-		prerequisite = {
-			focus = realpolitik
-		}
-		x = -3
-		y = 2
-		relative_position_id = a_bright_future
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event = {
-				id = gdb_germany.26
-			}
-		}
-	}
-	focus = {
-		id = polish_cooperation
-		icon = GFX_goal_tripartite_pact
-		prerequisite = {
-			focus = the_polish_corridor
-		}
-		x = 0
-		y = 1
-		relative_position_id = the_polish_corridor
-		cost = 3
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_global_flag = german_polish_friendly_outcome
-		}
-		completion_reward = {
-			country_event = {
-				id = gdb_germany.35
-			}
-		}
-	}
-	focus = {
 		id = eastern_expansion
 		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = {
@@ -3107,7 +3190,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = neue_kriegsflotte
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3174,6 +3257,92 @@ focus_tree = {
 			add_ideas = zdb_ship_bureau
 		}
 	}
+
+	focus = {
+		id = gdb_pick_up_carrier_efforts
+		icon = GFX_focus_generic_refit_civilian_ships
+		prerequisite = {
+			focus = abteilung_drei_b
+		}
+		x = 2
+		y = 2
+		relative_position_id = abteilung_drei_b
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {	
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:GER_deutsche_werke_organization = {
+					add_mio_size = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = graf_zeppelin_class
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = {
+			focus = gdb_pick_up_carrier_efforts
+		}
+		x = 0
+		y = 1
+		relative_position_id = gdb_pick_up_carrier_efforts
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = GER_naval_rearmament
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_tech = basic_ship_hull_carrier
+			} 
+			
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				country_event = {
+					id = gdb_germany.121
+					days = 180
+				}
+			} else = {
+				58 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
 	focus = {
 		id = neue_luftwaffe
 		icon = GFX_goal_generic_build_airforce

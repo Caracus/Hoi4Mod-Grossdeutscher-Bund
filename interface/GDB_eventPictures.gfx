@@ -67,5 +67,10 @@ spriteTypes = {
 		name = "GFX_event_pictures_ger_new_capital"
 		texturefile = "gfx/event_pictures/ger_new_capital.dds"
 	}
+
+	spriteType = {
+		name = "GFX_event_graf_zeppelin_carrier"
+		texturefile = "gfx/event_pictures/graf_zeppelin_carrier.dds"
+	}
 }
 
