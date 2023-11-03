@@ -36,7 +36,7 @@ Will our plan work? What will be the outcome of it? No one knows. The only thing
 How to check if the mod is working:
 [list]
     [*]Germany should have an extra focus path
-    [*]If Switzerland has 4 states you are also good to go
+    [*]Check for extra states like on the Dutch or French border
 [/list]
 
 Things that should be incompatible:
@@ -55,11 +55,12 @@ If the mod does not work, you can try a few things:
 [/olist]
 
 [h2]Version[/h2]
-[i] Now updated to No Step Back![/i]
-HOI4 Version 1.11.5 - 1.11.*
+[i] Now updated to Arms against tyranny![/i]
+HOI4 Version 1.13.4 - 1.13.*
 
 [h2]Other versions:[/h2]
 [url=https://github.com/Caracus/Hoi4Mod-Grossdeutscher-Bund]Github[/url] if you want to contribute
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2182657195]Pre NSB version[/url] 1.10.* if you want an older version
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978168758]No Step Back version[/url] 1.11.*
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2182657195]Battle for the Bosporus version[/url] 1.10.* 
 
 Enjoy!
