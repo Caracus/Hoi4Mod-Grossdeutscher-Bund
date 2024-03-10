@@ -2951,7 +2951,7 @@ focus_tree = {
 							hidden_effect = {
 								set_politics = {
 									ruling_party = democratic
-									last_election = "1979.1.1"
+									last_election = "1936.1.1"
 									election_frequency = 48
 									elections_allowed = yes
 								}
