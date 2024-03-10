@@ -1,4 +1,4 @@
-version="1.13.0"
+version="1.14.*"
 tags={
 	"Alternative History"
 	"Map"
@@ -6,4 +6,4 @@ tags={
 	"Events"
 }
 name="Großdeutscher Bund"
-supported_version="1.13.*"
+supported_version="1.14.*"

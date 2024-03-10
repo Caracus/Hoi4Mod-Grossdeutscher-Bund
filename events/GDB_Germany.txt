@@ -43,7 +43,7 @@ country_event = {
 					18
 					32
 					785
-					935
+					978
 					979
 				}
 			}
@@ -126,11 +126,11 @@ country_event = {
 		GER = {
 			transfer_state = 28
 		}
-		935 = {
+		978 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 935
+			transfer_state = 978
 		}
 		add_named_threat = {
 			threat = 5
@@ -3233,7 +3233,7 @@ country_event = {
 				on_cancel = gdb_germany.72
 			}
 			defender = {
-				state = 935
+				state = 978
 				num_provinces = 2
 				on_win = gdb_germany.73
 				on_lose = gdb_germany.73
@@ -3258,9 +3258,9 @@ country_event = {
 		army_experience = 10
 		add_war_support = 0.05
 		GER = {
-			transfer_state = 935
+			transfer_state = 978
 		}
-		935 = {
+		978 = {
 			set_compliance = 50
 		}
 	}
@@ -3700,10 +3700,10 @@ country_event = {
 			if = {
 				limit = {
 					GER = {
-						has_full_control_of_state = 935
+						has_full_control_of_state = 978
 					}
 				}
-				transfer_state = 935
+				transfer_state = 978
 			}
 		}
 		hidden_effect = {

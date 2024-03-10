@@ -1,4 +1,4 @@
-version="1.13.*"
+version="1.14.*"
 tags={
 	"Alternative History"
 	"Map"
@@ -6,5 +6,5 @@ tags={
 	"Events"
 }
 name="Großdeutscher Bund"
-supported_version="1.13.*"
+supported_version="1.14.*"
 path="C:/Users/333ha/Documents/Paradox Interactive/Hearts of Iron IV/mod/GDB"

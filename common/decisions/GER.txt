@@ -1625,7 +1625,7 @@ political_actions = {
 			factor = 1000
 		}
 		visible = {
-			owns_state = 935
+			owns_state = 978
 		}
 		complete_effect = {
 			set_province_name = {
@@ -2773,7 +2773,7 @@ political_actions = {
 		available = {
 			ROOT = {
 				has_country_flag = natural_borders_west
-				935 = {
+				978 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2786,17 +2786,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 935
+			owns_state = 978
 			NOT = {
 				ROOT = {
-					935 = {
+					978 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 935
+			add_state_core = 978
 		}
 	}
 	# eastern switzerland
