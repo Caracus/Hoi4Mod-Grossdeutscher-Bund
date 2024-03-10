@@ -1,25 +1,18 @@
 state={
-	id=936
-	name="STATE_936"
+	id=977
+	name="STATE_977"
 	provinces={
-		3560 5291 
+		11407 
 	}
 	history={
-		owner = FRA
-		victory_points = {
-			3560 1
-		}
-
-
+		owner = BEL
+	
 		buildings = {
 			infrastructure = 4
-
 		}
-		add_core_of = FRA
-
+		add_core_of = BEL
 	}
-
-	manpower=125894
+	manpower=163745
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.0 

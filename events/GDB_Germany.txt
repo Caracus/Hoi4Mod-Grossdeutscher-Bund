@@ -5,7 +5,7 @@ country_event = {
 	desc = gdb_germany.0.d
 	picture = GFX_report_event_hohenzollern_family
 	trigger = {
-		date > 1936.1.1
+		date > 1979.1.1
 		original_tag = GER
 	}
 	fire_only_once = yes
@@ -44,7 +44,7 @@ country_event = {
 					32
 					785
 					935
-					936
+					979
 				}
 			}
 			random_other_country = {
@@ -171,17 +171,17 @@ country_event = {
 		HOL = {
 			transfer_state = 6
 		}
-		937 = {
+		970 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 937
+			transfer_state = 970
 		}
-		939 = {
+		972 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 939
+			transfer_state = 972
 		}
 	}
 }
@@ -344,9 +344,9 @@ country_event = {
 			transfer_state = 295
 		}
 		LUX = {
-			transfer_state = 938
+			transfer_state = 971
 		}
-		938 = {
+		971 = {
 			add_core_of = LUX
 		}
 		random_other_country = {
@@ -356,12 +356,12 @@ country_event = {
 			}
 			transfer_state = 538
 			transfer_state = 34
-			transfer_state = 938
+			transfer_state = 971
 		}
 		34 = {
 			add_core_of = FRA
 		}
-		938 = {
+		971 = {
 			add_core_of = FRA
 		}
 		6 = {
@@ -370,23 +370,23 @@ country_event = {
 		HOL = {
 			transfer_state = 6
 		}
-		937 = {
+		970 = {
 			add_core_of = GER
 		}
-		939 = {
+		972 = {
 			add_core_of = GER
 		}
-		940 = {
+		973 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 937
+			transfer_state = 970
 		}
 		GER = {
-			transfer_state = 939
+			transfer_state = 972
 		}
 		GER = {
-			transfer_state = 940
+			transfer_state = 973
 		}
 	}
 }
@@ -415,15 +415,15 @@ country_event = {
 			transfer_state = 538
 		}
 		LUX = {
-			transfer_state = 938
+			transfer_state = 971
 		}
-		938 = {
+		971 = {
 			add_core_of = LUX
 		}
 		34 = {
 			add_core_of = FRA
 		}
-		938 = {
+		971 = {
 			add_core_of = FRA
 		}
 		random_other_country = {
@@ -432,16 +432,16 @@ country_event = {
 				has_government = communism
 			}
 			transfer_state = 34
-			transfer_state = 938
+			transfer_state = 971
 		}
-		937 = {
+		970 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 937
+			transfer_state = 970
 		}
 		GER = {
-			transfer_state = 944
+			transfer_state = 977
 		}
 		country_event = {
 			id = gdb_germany.10
@@ -563,7 +563,7 @@ country_event = {
 		9 = {
 			add_core_of = AUS
 		}
-		942 = {
+		975 = {
 			add_core_of = AUS
 		}
 		736 = {
@@ -587,7 +587,7 @@ country_event = {
 		9 = {
 			add_core_of = GER
 		}
-		942 = {
+		975 = {
 			add_core_of = GER
 		}
 		country_event = {
@@ -732,7 +732,7 @@ country_event = {
 				transfer_state = 75
 			}
 			AUS = {
-				transfer_state = 942
+				transfer_state = 975
 			}
 		}
 		else = {
@@ -749,7 +749,7 @@ country_event = {
 				transfer_state = 75
 			}
 			GER = {
-				transfer_state = 942
+				transfer_state = 975
 			}
 		}
 		73 = {
@@ -782,11 +782,11 @@ country_event = {
 		GER = {
 			transfer_state = 86
 		}
-		941 = {
+		974 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 941
+			transfer_state = 974
 		}
 		85 = {
 			add_core_of = GER
@@ -911,7 +911,7 @@ country_event = {
 		75 = {
 			add_core_of = GER
 		}
-		942 = {
+		975 = {
 			add_core_of = GER
 		}
 		AUS = {
@@ -1358,7 +1358,7 @@ country_event = {
 		86 = {
 			add_core_of = GER
 		}
-		941 = {
+		974 = {
 			add_core_of = GER
 		}
 		762 = {
@@ -1368,7 +1368,7 @@ country_event = {
 			transfer_state = 85
 			transfer_state = 807
 			transfer_state = 86
-			transfer_state = 941
+			transfer_state = 974
 			transfer_state = 762
 		}
 		hidden_effect = {
@@ -1437,7 +1437,7 @@ country_event = {
 				}
 			}
 			GER = {
-				transfer_state = 941
+				transfer_state = 974
 			}
 		}
 		white_peace = POL
@@ -1611,7 +1611,7 @@ country_event = {
 		AUS = {
 			transfer_state = 74
 			transfer_state = 69
-			transfer_state = 942
+			transfer_state = 975
 		}
 		POL = {
 			transfer_state = 72
@@ -1627,7 +1627,7 @@ country_event = {
 			69 = {
 				add_core_of = AUS
 			}
-			942 = {
+			975 = {
 				add_core_of = AUS
 			}
 			72 = {
@@ -3013,9 +3013,9 @@ country_event = {
 	option = {
 		name = gdb_germany.64.a
 		FRA = {
-			transfer_state = 937
-			transfer_state = 938
-			transfer_state = 944
+			transfer_state = 970
+			transfer_state = 971
+			transfer_state = 977
 			transfer_state = 34
 			transfer_state = 6
 			transfer_state = 295
@@ -3024,10 +3024,10 @@ country_event = {
 			transfer_state = 768
 			transfer_state = 769
 		}
-		938 = {
+		971 = {
 			add_core_of = FRA
 		}
-		944 = {
+		977 = {
 			add_core_of = FRA
 		}
 		34 = {
@@ -3107,11 +3107,11 @@ country_event = {
 	option = {
 		name = gdb_germany.68.a
 		FRA = {
-			transfer_state = 938
+			transfer_state = 971
 			transfer_state = 34
 			transfer_state = 538
 		}
-		938 = {
+		971 = {
 			add_core_of = FRA
 		}
 		34 = {
@@ -3127,12 +3127,12 @@ country_event = {
 			transfer_state = 889
 		}
 		GER = {
-			transfer_state = 937
-			transfer_state = 939
-			transfer_state = 940
-			transfer_state = 944
+			transfer_state = 970
+			transfer_state = 972
+			transfer_state = 973
+			transfer_state = 977
 		}
-		937 = {
+		970 = {
 			add_core_of = GER
 		}
 		HOL = {
@@ -3157,13 +3157,13 @@ country_event = {
 	option = {
 		name = gdb_germany.69.a
 		FRA = {
-			transfer_state = 938
+			transfer_state = 971
 			transfer_state = 34
 			transfer_state = 538
 			transfer_state = 718
 			transfer_state = 890
 		}
-		938 = {
+		971 = {
 			add_core_of = FRA
 		}
 		34 = {
@@ -3175,13 +3175,13 @@ country_event = {
 			transfer_state = 889
 		}
 		GER = {
-			transfer_state = 937
+			transfer_state = 970
 		}
-		937 = {
+		970 = {
 			add_core_of = GER
 		}
 		GER = {
-			transfer_state = 944
+			transfer_state = 977
 		}
 	}
 }

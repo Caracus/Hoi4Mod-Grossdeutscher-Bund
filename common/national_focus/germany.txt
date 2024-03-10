@@ -507,17 +507,17 @@ focus_tree = {
 				add_state_claim = 9
 				add_state_claim = 75
 				add_state_claim = 74
-				add_state_claim = 942
+				add_state_claim = 975
 				add_state_claim = 39
 			}
-			943 = {
+			976 = {
 				remove_core_of = HUN
 			}
 			AUS = {
-				transfer_state = 943
+				transfer_state = 976
 			}
 			hidden_effect = {
-				943 = {
+				976 = {
 					add_core_of = GER
 				}
 			}
@@ -1198,7 +1198,7 @@ focus_tree = {
 					}
 				}
 			}
-			940 = {
+			973 = {
 				if = {
 					limit = {
 						OR = {
@@ -1400,7 +1400,7 @@ focus_tree = {
 					}
 				}
 			}
-			942 = {
+			975 = {
 				if = {
 					limit = {
 						OR = {
@@ -1715,7 +1715,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			942 = {
+			975 = {
 				if = {
 					limit = {
 						OR = {

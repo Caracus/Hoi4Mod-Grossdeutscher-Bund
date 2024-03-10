@@ -1,6 +1,6 @@
 state={
-	id=941
-	name="STATE_941"
+	id=974
+	name="STATE_974"
 	history={
 		owner = POL
 		buildings = {
@@ -17,7 +17,7 @@ state={
 
 		}
 		add_core_of = POL
-		1938.3.12 = {
+		1971.3.12 = {
 			add_claim_by = GER
 
 		}
