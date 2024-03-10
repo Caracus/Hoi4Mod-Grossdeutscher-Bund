@@ -545,7 +545,7 @@
  gdb_germany.74.b:0"Let them do what they do best!"
  gdb_germany.75.t:0"Further Centralization"
  gdb_germany.75.d:0"Recent developments have shown that our nations must work more together than ever before. In order to be a more effective body, we have to resolve the leadership question. The only other option apart from us would be Austria, who spearheaded the first Bund. Ever since then, however, the power equilibrium has changed. It is only fair that the successor of Prussia now gets its turn."
- gdb_germany.75.a:0"Eine Vision. Ein Bund. Ein Volk."
+ gdb_germany.75.a:0"Ein Volk. Ein Bund. Eine Vision."
  gdb_germany.76.t:0"The Soviet Union intervenes."
  gdb_germany.76.d:0"Today the Soviet announced that it will officially support the Italian Union to put an end to yet another civil war. "
  gdb_germany.76.a:0"I wish we kept those guns..."
@@ -704,6 +704,8 @@
  gdb_germany.121.t:0"Graf Zeppelin Completed"
  gdb_germany.121.d:0"Today is a glorious day. With the launch of our first dedicated purpose built carrier we mark a new era not only for our fleet but also for our doctrine. We can now bring combined warfare to the seas.\nWith a length of 262.5 meters, more than 34 thousand tons of displacement, 200 thousand shaft horsepower, 15.000 km range, 33.8 knots top speed and room for 42 planes she is a true marvel of engineering."
  gdb_germany.121.a:0"Hope I get a miniature model aswell!"
+
+ FRA_Revolutionary_Guards:0"French Revolutionary Guards"
 
  gdb_germany..t:0""
  gdb_germany..d:0""
@@ -1062,3 +1064,4 @@
  paul_von_lettow_vorbeck_recalled:0 "Paul von Lettow-Vorbeck has been recalled"
  GER_Soviet_Help:0 "Volga German Divisions"
  GER_deutsche_werke_organization:0 "Deutsche Werke Kiel"
+ iron_cross_first_class:0 "Iron Cross (1st Class)"

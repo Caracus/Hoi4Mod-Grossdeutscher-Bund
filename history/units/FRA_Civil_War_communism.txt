@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Armée des peuples"
+	name = "Armee des peuples"
 	is_locked = yes
 
 	division_names_group = GER_Inf_01
@@ -13,178 +13,178 @@
 
 units = {
 	division = {
-		name = "1. Armée des peuples"
+		name = "1. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 		division = {
-		name = "2. Armée des peuples"
+		name = "2. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 		division = {
-		name = "3. Armée des peuples"
+		name = "3. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 		division = {
-		name = "4. Armée des peuples"
+		name = "4. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 		division = {
-		name = "5. Armée des peuples"
+		name = "5. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "6. Armée des peuples"
+		name = "6. Armee des peuples"
 		location = 3652
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 		division = {
-		name = "7. Armée des peuples"
+		name = "7. Armee des peuples"
 		location = 3652
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "8. Armée des peuples"
+		name = "8. Armee des peuples"
 		location = 3652
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "9. Armée des peuples"
+		name = "9. Armee des peuples"
 		location = 3652
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "10. Armée des peuples"
+		name = "10. Armee des peuples"
 		location = 3652
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "11. Armée des peuples"
+		name = "11. Armee des peuples"
 		location = 512
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "12. Armée des peuples"
+		name = "12. Armee des peuples"
 		location = 512
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "13. Armée des peuples"
+		name = "13. Armee des peuples"
 		location = 512
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "14. Armée des peuples"
+		name = "14. Armee des peuples"
 		location = 512
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "15. Armée des peuples"
+		name = "15. Armee des peuples"
 		location = 512
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "16. Armée des peuples"
+		name = "16. Armee des peuples"
 		location = 9578
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "17. Armée des peuples"
+		name = "17. Armee des peuples"
 		location = 9578
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "18. Armée des peuples"
+		name = "18. Armee des peuples"
 		location = 9578
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "19. Armée des peuples"
+		name = "19. Armee des peuples"
 		location = 9578
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 			division = {
-		name = "20. Armée des peuples"
+		name = "20. Armee des peuples"
 		location = 9578
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 				division = {
-		name = "21. Armée des peuples"
+		name = "21. Armee des peuples"
 		location = 9642
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 				division = {
-		name = "22. Armée des peuples"
+		name = "22. Armee des peuples"
 		location = 9642
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 				division = {
-		name = "23. Armée des peuples"
+		name = "23. Armee des peuples"
 		location = 9642
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 				division = {
-		name = "24. Armée des peuples"
+		name = "24. Armee des peuples"
 		location = 9642
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 				division = {
-		name = "25. Armée des peuples"
+		name = "25. Armee des peuples"
 		location = 9642
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 				division = {
-		name = "26. Armée des peuples"
+		name = "26. Armee des peuples"
 		location = 6649
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 					division = {
-		name = "27. Armée des peuples"
+		name = "27. Armee des peuples"
 		location = 6649
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 					division = {
-		name = "28. Armée des peuples"
+		name = "28. Armee des peuples"
 		location = 6649
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 					division = {
-		name = "29. Armée des peuples"
+		name = "29. Armee des peuples"
 		location = 6649
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 					division = {
-		name = "30. Armée des peuples"
+		name = "30. Armee des peuples"
 		location = 6649
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 						division = {
-		name = "31. Armée des peuples"
+		name = "31. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 						division = {
-		name = "32. Armée des peuples"
+		name = "32. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 						division = {
-		name = "33. Armée des peuples"
+		name = "33. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 						division = {
-		name = "34. Armée des peuples"
+		name = "34. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 						division = {
-		name = "35. Armée des peuples"
+		name = "35. Armee des peuples"
 		location = 11506
-		division_template = "Armée des peuples"
+		division_template = "Armee des peuples"
 	}
 }

@@ -4858,7 +4858,7 @@ country_event = {
 	}
 }
 
-# spawn graf spee carrier
+# spawn graf zeppelin carrier
 country_event = {
 	id = gdb_germany.121
 	title = gdb_germany.121.t
@@ -4868,7 +4868,7 @@ country_event = {
 	option = {
 		name = gdb_germany.121.a
 		create_equipment_variant = {
-			name = "Graf Spee"
+			name = "Graf Zeppelin"
 			type = ship_hull_carrier_1
 			design_team = mio:GER_deutsche_werke_organization
 			parent_version = 0

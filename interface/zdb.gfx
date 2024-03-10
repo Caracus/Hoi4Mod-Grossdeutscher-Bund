@@ -78,5 +78,10 @@ spriteTypes = {
 		name = "GFX_idea_paul_von_lettow_vorbeck"
 		texturefile = "gfx/interface/ideas/idea_paul_von_lettow_vorbeck.dds"
 	}
+
+	spriteType = {
+		name = "GFX_medal_icon_ger_iron_cross"
+		texturefile = "gfx/interface/medals/GER_medal_1.dds"
+    }
 	
 }
