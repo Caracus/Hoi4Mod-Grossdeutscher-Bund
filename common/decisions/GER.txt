@@ -2504,7 +2504,7 @@ political_actions = {
 		}
 		available = {
 			ROOT = {
-				841 = {
+				972 = {
 					compliance > 40
 					resistance < 10
 				}
@@ -2517,17 +2517,17 @@ political_actions = {
 			factor = 10
 		}
 		visible = {
-			owns_state = 841
+			owns_state = 972
 			NOT = {
 				ROOT = {
-					841 = {
+					972 = {
 						is_core_of = ROOT
 					}
 				}
 			}
 		}
 		remove_effect = {
-			add_state_core = 841
+			add_state_core = 972
 		}
 	}
 	# integrate spa
